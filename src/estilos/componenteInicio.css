@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Antonio */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    user-select: none;
+}
+p {
+    font-family: "Monsetrrat";
+    font-weight: 100 !important;
+    font-size: 18px;
+}
+body {
+    background-color: black;
+}
+.seccion-encabezado {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+}
+.seccion-encabezado::before {
+    content: "";
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(15%);
+    -webkit-filter: brightness(15%);
+}
+.seccion-encabezado .row {
+    padding: 50px 0;
+    margin: 0;
+    height: 100%;
+}
+.seccion-encabezado .row .primera-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-encabezado .row .primera-columna div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+}
+.seccion-encabezado .row .primera-columna div:nth-child(1) h6 {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.seccion-encabezado .row .primera-columna div:nth-child(1) h1 {
+    font-size: 80px;
+    font-family: "Antonio", sans-serif;
+}
+.seccion-encabezado .row .primera-columna div:nth-child(1) h2 {
+    font-size: 80px;
+    font-family: "Antonio", sans-serif;
+    color: #FD5D05;
+}
+.seccion-encabezado .row .primera-columna div:nth-child(2) {
+    background-color: #FD5D05;
+    font-weight: 700;
+}
+
+.seccion-encabezado .row .segunda-columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-encabezado .row .segunda-columna .container-fluid {
+    background-image: linear-gradient(180deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:   
+        "imagen1 imagen2"        
+        "imagen3 imagen3"    
+    ;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.seccion-encabezado .row .segunda-columna .container-fluid div:nth-child(1) {
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: imagen1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.seccion-encabezado .row .segunda-columna .container-fluid div:nth-child(2) {
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: imagen2;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.seccion-encabezado .row .segunda-columna .container-fluid div:nth-child(3) {
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: imagen3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* SEGUNDA SECCION */
+.seccion-segunda {
+    background-color: black;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-segunda div:nth-child(1) {
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+.seccion-segunda div:nth-child(1) h1 {
+    font-family: "Antonio";
+    font-size: 30px;
+    font-weight: 700;
+}
+.seccion-segunda div:nth-child(1) h2 {
+    font-family: "Antonio";
+    font-size: 40px;
+    color: #FD5D05;
+    font-weight: 700;
+}
+.seccion-segunda .contenedor-cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+.seccion-segunda .contenedor-cartas .carta {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    gap: 20px;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+.seccion-segunda .contenedor-cartas .carta:hover {
+    box-shadow: 0px 0px 100px 0px gray;
+}
+
+.seccion-segunda .contenedor-cartas .carta img {
+    width: 100%;
+    height: 300px;
+    border-radius: 3% 3% 0 0;
+    -webkit-border-radius: 3% 3% 0 0;
+    -moz-border-radius: 3% 3% 0 0;
+    -ms-border-radius: 3% 3% 0 0;
+    -o-border-radius: 3% 3% 0 0;
+}
+.seccion-segunda .contenedor-cartas .carta h1 {
+    font-family: "Antonio";
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.seccion-segunda .contenedor-cartas .carta p {
+    text-align: center;
+}
+
+/* TERCERA SECCION */
+.seccion-tercera {
+    background-color: black;
+    height: 600px;
+    padding: 40px;
+}
+.seccion-tercera .contenedor-info {
+    background-color: #FFFFFF;
+    height: 100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: grid;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+        "titulo texto"
+        "imagen imagen"
+    ;
+    padding: 20px;
+    gap: 10px;
+}
+.seccion-tercera .contenedor-info div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+    font-family: "Antonio";
+    padding: 0 10px;
+}
+.seccion-tercera .contenedor-info div:nth-child(1) h1 {
+    color: #FD5D05;
+    font-size: 40px;
+    font-weight: 700;
+}
+.seccion-tercera .contenedor-info div:nth-child(1) span {
+    font-size: 20px;
+    font-weight: 700;
+}
+.seccion-tercera .contenedor-info div:nth-child(2) {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+.seccion-tercera .contenedor-info div:nth-child(2) p {
+    text-align: justify;
+}
+.seccion-tercera .contenedor-info div:nth-child(2) div {
+    color: white;
+    background-image: linear-gradient(90deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.seccion-tercera .contenedor-info div:nth-child(3) {
+    background-image: url("../images/imagen7.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: imagen;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* SECCION CUARTA */
+.seccion-cuarta {
+    background-color: black;
+    height: 600px;
+    padding: 40px;
+}
+.seccion-cuarta .row {
+    height: 100%;
+}
+.seccion-cuarta .row .info {
+    color: white;
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+}
+.seccion-cuarta .row .info::before {
+    content: "";
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(15%);
+    -webkit-filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+
+}
+.seccion-cuarta .row .info div {
+    background-color: white;
+    height: 50%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+.seccion-cuarta .row .info div h3 {
+    color: #FD5D05;
+    text-align: center;
+    font-family: "Antonio";
+}
+.seccion-cuarta .row .info div span {
+    color: black;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "carta1 carta2 carta3"
+        "carta4 carta5 carta6"
+    ;
+    gap: 25px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(1) {
+    grid-area: carta1;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(1) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(1) p{
+    font-size: 12px;
+    text-align: center;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(2) {
+    grid-area: carta2;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards img {
+    width: 80px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(2) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(2) p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.seccion-cuarta .row .contenedor-cards div:nth-child(3) {
+    grid-area: carta3;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(3) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(3) p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.seccion-cuarta .row .contenedor-cards div:nth-child(4) {
+    grid-area: carta4;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(4) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(4) p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.seccion-cuarta .row .contenedor-cards div:nth-child(5) {
+    grid-area: carta5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(5) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(5) p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.seccion-cuarta .row .contenedor-cards div:nth-child(6) {
+    grid-area: carta6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    outline: 2px solid #FD5D05;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(6) h1{
+    font-size: 24px;
+    font-family: "Antonio";
+    text-align: center;
+    font-weight: bold;
+}
+.seccion-cuarta .row .contenedor-cards div:nth-child(6) p{
+    font-size: 12px;
+    text-align: center;
+}
+.seccion-cuarta .row .contenedor-cards div {
+    gap: 10px;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+.seccion-cuarta .row .contenedor-cards div:hover {
+    background-color: #FD5D05;
+    outline: 2px solid white;
+    cursor: pointer;
+}
+/* QUINTA SECCION */
+.seccion-quinta {
+    height: 600px;
+    background-color: black;
+    color: white;
+    padding: 0 30px;
+}
+.seccion-quinta .row {
+    height: 100%;
+}
+.seccion-quinta .row div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.seccion-quinta .row div:nth-child(1) h1 {
+    font-family: "Antonio";
+    font-weight: 700;
+    font-size: 70px;
+}
+.seccion-quinta .row div:nth-child(1) h2 {
+    font-family: "Antonio";
+    font-weight: 700;
+    color: #FD5D05;
+    font-size: 70px;
+}
+.seccion-quinta .row div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seccion-quinta .row div:nth-child(2) img {
+    width: 100%;
+}
+/* Sexta seccion */
+.seccion-sexta {
+    height: auto;
+    padding: 50px 100px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.seccion-sexta .texting {
+    color: white;
+    font-family: "Antonio";
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    animation: typing 6s steps(80) infinite;
+    -webkit-animation: typing 6s steps(80) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+}
+.seccion-sexta::before {
+    content: "";
+    background-image: url("../images/imagen9.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+}
