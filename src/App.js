@@ -70,7 +70,6 @@ function App() {
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/login"> Login </Link> 
-                                        {/* Jhoan cambio */}
                                     </li>
                                 </ul>
                             </div>
