@@ -513,7 +513,7 @@ export function ComponenteSolucionesCloud () {
         <>
             {/* Parte de Alex */}
             <ComponenteEncabezadoSoluciones 
-                titulo = "MONITORIZACIÓN CLOUD Y VIRTUAL ALEX"
+                titulo = "MONITORIZACIÓN CLOUD Y VIRTUAL"
                 subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
             />
