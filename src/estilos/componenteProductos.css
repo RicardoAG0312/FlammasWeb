@@ -14,7 +14,8 @@ header.tituloProductos {
 h1.subTituloProductos {
     padding: 20px 10px;
     color: white;
-    font-family: "Roboto";
+    font-family: "Antonio";
+    font-weight: bold;
     font-size: 45px;
     padding-bottom: 0;
     margin: 0;
