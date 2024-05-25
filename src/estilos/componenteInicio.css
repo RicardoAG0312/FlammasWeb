@@ -8,9 +8,10 @@
     user-select: none;
 }
 p {
-    font-family: "Monsetrrat";
-    font-weight: 100 !important;
     font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 body {
     background-color: black;
@@ -58,22 +59,25 @@ body {
 .seccion-encabezado .row .primera-columna div:nth-child(1) h6 {
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    font-style: normal;
 }
 .seccion-encabezado .row .primera-columna div:nth-child(1) h1 {
     font-size: 80px;
     font-family: "Antonio", sans-serif;
+    font-weight: bolder;
 }
 .seccion-encabezado .row .primera-columna div:nth-child(1) h2 {
     font-size: 80px;
     font-family: "Antonio", sans-serif;
-    color: #FD5D05;
+    color: black;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px #FD5D05;
 }
 .seccion-encabezado .row .primera-columna div:nth-child(2) {
     background-color: #FD5D05;
-    font-weight: 700;
+    font-weight: bolder;
 }
-
 .seccion-encabezado .row .segunda-columna {
     display: flex;
     flex-direction: column;
@@ -133,8 +137,6 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
-
 /* SEGUNDA SECCION */
 .seccion-segunda {
     background-color: black;
@@ -153,13 +155,13 @@ body {
 .seccion-segunda div:nth-child(1) h1 {
     font-family: "Antonio";
     font-size: 30px;
-    font-weight: 700;
+    font-weight: bolder;
 }
 .seccion-segunda div:nth-child(1) h2 {
     font-family: "Antonio";
     font-size: 40px;
     color: #FD5D05;
-    font-weight: 700;
+    font-weight: bolder;
 }
 .seccion-segunda .contenedor-cartas {
     display: flex;
@@ -192,7 +194,6 @@ body {
 .seccion-segunda .contenedor-cartas .carta:hover {
     box-shadow: 0px 0px 100px 0px gray;
 }
-
 .seccion-segunda .contenedor-cartas .carta img {
     width: 100%;
     height: 300px;
@@ -205,13 +206,12 @@ body {
 .seccion-segunda .contenedor-cartas .carta h1 {
     font-family: "Antonio";
     font-size: 30px;
-    font-weight: 700;
+    font-weight: bolder;
     text-align: center;
 }
 .seccion-segunda .contenedor-cartas .carta p {
     text-align: center;
 }
-
 /* TERCERA SECCION */
 .seccion-tercera {
     background-color: black;
@@ -242,16 +242,17 @@ body {
     align-items: center;
     grid-area: titulo;
     font-family: "Antonio";
+    font-weight: bolder;
     padding: 0 10px;
 }
 .seccion-tercera .contenedor-info div:nth-child(1) h1 {
     color: #FD5D05;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bolder;
 }
 .seccion-tercera .contenedor-info div:nth-child(1) span {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bolder;
 }
 .seccion-tercera .contenedor-info div:nth-child(2) {
     grid-area: texto;
@@ -334,6 +335,7 @@ body {
     color: #FD5D05;
     text-align: center;
     font-family: "Antonio";
+    font-weight: bolder;
 }
 .seccion-cuarta .row .info div span {
     color: black;
@@ -537,12 +539,12 @@ body {
 }
 .seccion-quinta .row div:nth-child(1) h1 {
     font-family: "Antonio";
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 70px;
 }
 .seccion-quinta .row div:nth-child(1) h2 {
     font-family: "Antonio";
-    font-weight: 700;
+    font-weight: bolder;
     color: #FD5D05;
     font-size: 70px;
 }

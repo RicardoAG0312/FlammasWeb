@@ -84,8 +84,8 @@ function ComponenteCartaAnimable ({nombreIcono, titulo, subtitulo, texto}) {
     )
 }
 
-// Componentes a renderizar
 
+// Componentes a renderizar
 export function ComponenteSolucionesMonitorizacion () {
     return (
         <>
@@ -511,7 +511,28 @@ export function ComponenteSolucionesInfraestructura () {
 export function ComponenteSolucionesCloud () {
     return (
         <>
-            Cloud
+            {/* Parte de Alex */}
+            <ComponenteEncabezadoSoluciones 
+                titulo = "MONITORIZACIÓN CLOUD Y VIRTUAL"
+                subtitulo = "SOLUCIONES DE FLAMMAS"
+                texto = "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
+            />
+
+
+
+
+
+
+
+
+
+
+            {/* Parte de Jhoan */}
+            <ComponenteEncabezadoSoluciones 
+                titulo = ""
+                subtitulo = "SOLUCIONES DE FLAMMAS"
+                texto = ""
+            />
         </>
     )
 }
