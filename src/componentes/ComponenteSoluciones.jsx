@@ -42,6 +42,37 @@ function ComponenteInfoDerechoSoluciones ({titulo, texto, imagen}) {
         </section>
     ) 
 }
+function ComponentetxtDerechoSoluciones({titulo, texto, texto1, imagen    }){
+    return(
+        <section className="container contenedorAZJIzquierda">
+            <div className="row">
+                <div className="col-12 col-sm-6 col-xl-6 info">
+                    <h2 className="text-end"> {titulo} </h2>
+                    <p className="text-end"> {texto} </p>
+                    <p className="text-end"> {texto1} </p>
+                </div>
+                <div className="col-12 col-sm-6 col-xl-6 imagen">
+                <img src={require(`../images/${imagen}.png`)} alt="Imagen" />
+                </div>
+            </div>
+        </section>
+    )
+}
+function ComponentetxtIzquierdaSoluciones({titulo,texto,imagen}){
+    return(
+        <section className="container contenedorAZJIzquierda">
+            <div className="row">
+            <div className="col-12 col-sm-6 col-xl-6 imagen">
+                    <img src={require(`../images/${imagen}.png`)} alt="Imagen" />
+                </div>
+                <div className="col-12 col-sm-6 col-xl-6 info">
+                    <h2 className="text-start"> {titulo} </h2>
+                    <p className="text-start"> {texto} </p>
+                </div>
+            </div>
+        </section>
+    )
+}
 function ComponenteFuncionalidadAvanzada ({imagen, titulo, texto}) {
     return (
         <div className="funcionalidades">
@@ -516,6 +547,23 @@ export function ComponenteSolucionesCloud () {
                 titulo = "MONITORIZACIÓN CLOUD Y VIRTUAL"
                 subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
+            />
+            <ComponentetxtDerechoSoluciones
+                titulo="Monitorización centralizada de entornos híbridos"
+                texto="Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción."
+                texto1="Unifica todo el control de tus activos en un único lugar: la consola de Pandora FMS. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
+                imagen="40"
+            />
+            <ComponentetxtIzquierdaSoluciones
+                titulo="Entornos Cloud"
+                texto="Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor."
+                imagen="47"
+            />
+            <ComponentetxtDerechoSoluciones
+                titulo="Toma el control de los datos de tus sistemas"
+                texto="Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo."
+                texto1="Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
+                imagen="48"
             />
 
 

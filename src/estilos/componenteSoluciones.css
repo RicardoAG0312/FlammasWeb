@@ -97,6 +97,46 @@
 .contenedorCartaInfoIzquierda img {
     width: 400px;
 }
+/*Seccion AZJ Informacion Izqueirda*/
+.contenedorAZJIzquierda {
+    height: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+.contenedorAZJIzquierda .info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+}
+.contenedorAZJIzquierda .info h2 {
+    font-size: 30px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+}
+.contenedorAZJIzquierda .info p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.contenedorAZJIzquierda .imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorAZJIzquierda img{
+    width: 100%;
+    height: auto;
+}
 /* Seccion Funcionalidades Avanzadas */
 .funcionalidades {
     color: #FD5D05;
