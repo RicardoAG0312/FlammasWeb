@@ -529,8 +529,7 @@ export function ComponenteSolucionesCloud () {
 
             {/* Parte de Jhoan */}
             <ComponenteEncabezadoSoluciones 
-                titulo = "Monitorización Continua
-                de la Seguridad del Sistema"
+                titulo = "Monitorización Continua de la Seguridad del Sistema"
                 subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
             />
