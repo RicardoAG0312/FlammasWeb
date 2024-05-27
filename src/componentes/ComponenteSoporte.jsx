@@ -2,12 +2,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../estilos/componenteSoporte.css";
 
-function ComponenteSoporte () {
+export function ComponenteSoporteProfesional () {
     return (
         <>
-            Soporte
+            Servicio Profesional
         </>
     )
 }
 
-export default ComponenteSoporte;
+export function ComponenteSoporteTecnico () {
+    return (
+        <>
+            Servicio Tecnico
+        </>
+    )
+}
+
