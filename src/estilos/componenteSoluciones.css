@@ -100,11 +100,6 @@
 /*Seccion AZJ Informacion Izqueirda*/
 .contenedorAZJIzquierda {
     height: 300px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
     margin-bottom: 50px;
     color: white;
 }
@@ -136,6 +131,44 @@
 .contenedorAZJIzquierda img{
     width: 100%;
     height: auto;
+}
+/*Sección Fondo Blanco*/
+.contenedorFondoBlanco{
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: white;
+}
+.contenedorFondoBlanco .info {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+}
+.contenedorFondoBlanco .info h2 {
+    font-size: 50px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+    margin-bottom: 20px;
+}
+.contenedorFondoBlanco .info p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: justify;
+}
+
+.contenedorFondoBlanco .imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedorFondoBlanco img{
+    object-fit: cover;
+    width: 80%;
 }
 /* Seccion Funcionalidades Avanzadas */
 .funcionalidades {

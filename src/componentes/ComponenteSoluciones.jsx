@@ -73,6 +73,25 @@ function ComponentetxtIzquierdaSoluciones({titulo,texto,imagen}){
         </section>
     )
 }
+function ComponenteInfoCentral({imagen1, imagen2, titulo, texto1, texto2}){
+    return(
+        <section className="container">
+            <div className="row">
+                <div className="col-md-3">
+                    <img src={require(`../images/${imagen1}.png`)} alt="Imagen" className="img-fluid"/>
+                </div>
+                <div className="col-md-6">
+                    <h2 className="text-center">{titulo}</h2>
+                    <p className="text-justify">{texto1}</p>
+                    <p className="text-justify">{texto2}</p>
+                </div>
+                <div className="col-md-3">
+                <img src={require(`../images/${imagen2}.png`)} alt="Imagen" className="img-fluid"/>
+                </div>
+            </div>
+        </section>
+    )
+}
 function ComponenteFuncionalidadAvanzada ({imagen, titulo, texto}) {
     return (
         <div className="funcionalidades">
@@ -564,6 +583,25 @@ export function ComponenteSolucionesCloud () {
                 texto="Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo."
                 texto1="Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
                 imagen="48"
+            />
+            <section className="container-fluid bg-white contenedorFondoBlanco">
+            <div className="row">
+                <div className="col-12 col-sm-6 col-xl-6 info text-dark">
+                    <h2 className="text-start"> <span className="text-dark">INTEGRACIÓN</span> LAAS </h2>
+                        <p> En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.</p>
+                        <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Pandora FMS.</p>
+                </div>
+                    <div className="col-12 col-sm-6 col-xl-6 imagen">
+                        <img src={require(`../images/49.png`)} alt="Imagen" />
+                    </div>
+            </div>
+            </section>
+            <ComponenteInfoCentral
+                imagen1="50"
+                titulo="INFRAESTRUCTURA DE VIRTUALIZACIÓN"
+                texto1="Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información."
+                texto2="También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
+                imagen2="51"
             />
 
 
