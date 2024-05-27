@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flammas/static/css/main.945bfd97.css",
-    "main.js": "/flammas/static/js/main.7fe55f44.js",
+    "main.css": "/flammas/static/css/main.005475cb.css",
+    "main.js": "/flammas/static/js/main.d6bb55b5.js",
     "static/media/24.png": "/flammas/static/media/24.bb348995d9100481efb5.png",
     "static/media/imagen7.png": "/flammas/static/media/imagen7.1a6c22f76e3b3339e751.png",
     "static/media/imagen9.png": "/flammas/static/media/imagen9.4a487beaef5bf64b248d.png",
@@ -61,11 +61,11 @@
     "static/media/Recurso 3.png": "/flammas/static/media/Recurso 3.65e6949c3f70bf739d5e.png",
     "static/media/report.png": "/flammas/static/media/report.b7ca636f365bda284862.png",
     "index.html": "/flammas/index.html",
-    "main.945bfd97.css.map": "/flammas/static/css/main.945bfd97.css.map",
-    "main.7fe55f44.js.map": "/flammas/static/js/main.7fe55f44.js.map"
+    "main.005475cb.css.map": "/flammas/static/css/main.005475cb.css.map",
+    "main.d6bb55b5.js.map": "/flammas/static/js/main.d6bb55b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.945bfd97.css",
-    "static/js/main.7fe55f44.js"
+    "static/css/main.005475cb.css",
+    "static/js/main.d6bb55b5.js"
   ]
 }
