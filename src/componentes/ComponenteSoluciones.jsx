@@ -551,7 +551,7 @@ export function ComponenteSolucionesCloud () {
             <ComponentetxtDerechoSoluciones
                 titulo="Monitorización centralizada de entornos híbridos"
                 texto="Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción."
-                texto1="Unifica todo el control de tus activos en un único lugar: la consola de Pandora FMS. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
+                texto1="Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
                 imagen="40"
             />
             <ComponentetxtIzquierdaSoluciones
