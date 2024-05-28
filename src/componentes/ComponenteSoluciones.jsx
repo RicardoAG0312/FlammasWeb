@@ -639,6 +639,25 @@ export function ComponenteSolucionesCloud () {
                     />
                 </div>
             </section>
+            <section className="container-fluid seccion-segunda">
+                <div className='container contenedor-cartas'> 
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD"
+                    texto = "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
+                    />
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES"
+                    texto = "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
+                    />
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "ALERTAS PROACTIVAS"
+                    texto = "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
+                    />
+                </div>
+            </section>
         </>
     )
 }
