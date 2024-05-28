@@ -1,7 +1,7 @@
 import React from "react";
 import "../estilos/componenteSoluciones.css";
-import { MiniComponenteProductos } from "./ComponenteProductos";
-import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
+import ComponenteProductos, { MiniComponenteProductos } from "./ComponenteProductos";
+import { MiniComponenteQuintaSeccion, MiniComponentesSegundaSeccion } from "./ComponenteInicio";
 
 function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
     return (
@@ -619,7 +619,13 @@ export function ComponenteSolucionesCloud () {
                 subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
             />
+        <section className="container-fluid contenedor-cartas"/>
+        <MiniComponenteProductos
+        imagen="52"  
+        titulo="Monitorización del Hardening"
+        texto="Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
+            />
+
         </>
     )
 }
-
