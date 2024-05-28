@@ -1,7 +1,8 @@
 import React from "react";
 import "../estilos/componenteSoluciones.css";
-import ComponenteProductos, { MiniComponenteProductos } from "./ComponenteProductos";
+import "../estilos/componenteInicio.css"
 import { MiniComponenteQuintaSeccion, MiniComponentesSegundaSeccion } from "./ComponenteInicio";
+import { MiniComponenteProductos } from "./ComponenteProductos"
 
 function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
     return (
@@ -585,16 +586,16 @@ export function ComponenteSolucionesCloud () {
                 imagen="48"
             />
             <section className="container-fluid bg-white contenedorFondoBlanco">
-            <div className="row">
-                <div className="col-12 col-sm-6 col-xl-6 info text-dark">
-                    <h2 className="text-start"> <span className="text-dark">INTEGRACIÓN</span> LAAS </h2>
+                <div className="row">
+                    <div className="col-12 col-sm-6 col-xl-6 info text-dark">
+                        <h2 className="text-start"> <span className="text-dark">INTEGRACIÓN</span> LAAS </h2>
                         <p> En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.</p>
                         <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Pandora FMS.</p>
-                </div>
+                    </div>
                     <div className="col-12 col-sm-6 col-xl-6 imagen">
                         <img src={require(`../images/49.png`)} alt="Imagen" />
                     </div>
-            </div>
+                </div>
             </section>
             <ComponenteInfoCentral
                 imagen1="50"
@@ -619,13 +620,25 @@ export function ComponenteSolucionesCloud () {
                 subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
             />
-        <section className="container-fluid contenedor-cartas"/>
-        <MiniComponenteProductos
-        imagen="52"  
-        titulo="Monitorización del Hardening"
-        texto="Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
-            />
-
+            <section className="container-fluid seccion-segunda">
+                <div className='container contenedor-cartas'> 
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "MONITORIZACIÓN DEL HARDENING"
+                    texto = "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
+                    />
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE"
+                    texto = "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
+                    />
+                    <MiniComponentesSegundaSeccion 
+                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    titulo = "FLEXIBILIDAD EN EL INVENTARIO"
+                    texto = "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Pandora FMS puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
+                    />
+                </div>
+            </section>
         </>
     )
 }
