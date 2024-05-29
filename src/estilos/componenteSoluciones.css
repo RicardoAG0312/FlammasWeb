@@ -170,6 +170,44 @@
     object-fit: cover;
     width: 80%;
 }
+/*Sección Info Central*/
+.contenedorInfoCentral{
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+.contenedorInfoCentral .info{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contenedorInfoCentral .info h2 {
+    font-size: 35px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+    margin-bottom: 20px;
+}
+.contenedorInfoCentral .info p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.contenedorInfoCentral .derecha{
+    background-image: url('../images/50.png');
+    background-size: cover;
+    background-position: left;
+    
+}
+.contenedorInfoCentral .izquierda{
+    background-image: url('../images/51.png');
+    background-size: cover; 
+    background-position: center;
+    background-position-x: -250px;
+}
 /* Seccion Funcionalidades Avanzadas */
 .funcionalidades {
     color: #FD5D05;

@@ -74,20 +74,20 @@ function ComponentetxtIzquierdaSoluciones({titulo,texto,imagen}){
         </section>
     )
 }
-function ComponenteInfoCentral({imagen1, imagen2, titulo, texto1, texto2}){
+function ComponenteInfoCentral({titulo, texto1, texto2}){
     return(
-        <section className="container">
+        <section className="container contenedorInfoCentral">
             <div className="row">
-                <div className="col-md-3">
-                    <img src={require(`../images/${imagen1}.png`)} alt="Imagen" className="img-fluid"/>
+                <div className="col-md-3 d-flex justify-content-center align-items-center derecha">
+                    
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 info">
                     <h2 className="text-center">{titulo}</h2>
                     <p className="text-justify">{texto1}</p>
                     <p className="text-justify">{texto2}</p>
                 </div>
-                <div className="col-md-3">
-                <img src={require(`../images/${imagen2}.png`)} alt="Imagen" className="img-fluid"/>
+                <div className="col-md-3 d-flex justify-content-center align-items-center izquierda">
+                    
                 </div>
             </div>
         </section>
@@ -598,11 +598,9 @@ export function ComponenteSolucionesCloud () {
                 </div>
             </section>
             <ComponenteInfoCentral
-                imagen1="50"
                 titulo="INFRAESTRUCTURA DE VIRTUALIZACIÓN"
                 texto1="Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información."
                 texto2="También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
-                imagen2="51"
             />
 
 
