@@ -621,17 +621,17 @@ export function ComponenteSolucionesCloud () {
             <section className="container-fluid seccion-segunda">
                 <div className='container contenedor-cartas'> 
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN52"
                     titulo = "MONITORIZACIÓN DEL HARDENING"
                     texto = "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN53"
                     titulo = "MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE"
                     texto = "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN54"
                     titulo = "FLEXIBILIDAD EN EL INVENTARIO"
                     texto = "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Pandora FMS puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
                     />
@@ -640,17 +640,17 @@ export function ComponenteSolucionesCloud () {
             <section className="container-fluid seccion-segunda">
                 <div className='container contenedor-cartas'> 
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN55"
                     titulo = "MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD"
                     texto = "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN56"
                     titulo = "MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES"
                     texto = "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    imagen = "IMAGEN57"
                     titulo = "ALERTAS PROACTIVAS"
                     texto = "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
                     />
