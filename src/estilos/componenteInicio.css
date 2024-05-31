@@ -139,7 +139,6 @@ body {
 }
 /* SEGUNDA SECCION */
 .seccion-segunda {
-    background-color: black;
     height: auto;
     color: white;
     display: flex;
@@ -196,7 +195,7 @@ body {
 }
 .seccion-segunda .contenedor-cartas .carta img {
     width: 100%;
-    height: 300px;
+    height: 100px;
     border-radius: 3% 3% 0 0;
     -webkit-border-radius: 3% 3% 0 0;
     -moz-border-radius: 3% 3% 0 0;

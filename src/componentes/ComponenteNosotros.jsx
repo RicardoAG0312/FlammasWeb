@@ -38,7 +38,7 @@ function ComponenteSobreFlammas ({imagen, titulo, texto}) {
 }
 
 
-export function ComponenteNosotrosFlammas () {
+function ComponenteNosotrosFlammas () {
     return (
         <>
             <ComponenteEncabezadoNosotros 
@@ -84,19 +84,8 @@ export function ComponenteNosotrosFlammas () {
     ) 
 }
 
-export function ComponentePartners () {
-    return (
-        <>
-            Partners
-        </>
-    )
-}
+export default ComponenteNosotrosFlammas;
 
-export function ComponenteContactanos () {
-    return (
-        <>
-            Contactanos
-        </>
-    )
-}
+
+
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "../estilos/componenteSoluciones.css";
 import "../estilos/componenteInicio.css"
-import { MiniComponenteQuintaSeccion, MiniComponentesSegundaSeccion } from "./ComponenteInicio";
+import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 import { MiniComponenteProductos } from "./ComponenteProductos"
 
 function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
@@ -43,7 +43,7 @@ function ComponenteInfoDerechoSoluciones ({titulo, texto, imagen}) {
         </section>
     ) 
 }
-function ComponentetxtDerechoSoluciones({titulo, texto, texto1, imagen    }){
+function ComponentetxtDerechoSoluciones({titulo, texto, texto1, imagen}){
     return(
         <section className="container contenedorAZJIzquierda">
             <div className="row">
@@ -134,7 +134,26 @@ function ComponenteCartaAnimable ({nombreIcono, titulo, subtitulo, texto}) {
         </div>
     )
 }
-
+function ComponenteViñetaAnimada ({ nombreImagen, titulo, texto }) {
+    return (
+        <>
+            <div className="viñeta-animada">
+                <img src={require(`../images/${nombreImagen}.png`)} />
+                <h2> {titulo} </h2>
+                <p> {texto} </p>
+            </div>
+        </>
+    )
+}
+function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
+    return (
+        <div className='carta'>
+            <img src={require(`../images/${imagen}.svg`)} alt="Imagen" />
+            <h1> {titulo} </h1>
+            <p> {texto} </p>
+        </div>
+    )
+}
 
 // Componentes a renderizar
 export function ComponenteSolucionesMonitorizacion () {
@@ -153,35 +172,35 @@ export function ComponenteSolucionesMonitorizacion () {
             <ComponenteInfoIzquierdaSoluciones 
                 titulo = "Desde lo más básico a lo inimaginable"
                 texto = "Ancho de banda, pérdida de paquetes, latencia, disponibilidad, número de conexiones. Da igual el origen: routers, AP, switches, firewalls, servidores, estaciones de trabajo, IoT. Si tiene IP, Flammas puede coger el dato. No estamos limitados sólo a SNMP o a recogida de datos con agentes."
-                imagen = "8"
+                imagen = "41"
                 id = "none"
+            />
+            <ComponenteInfoDerechoSoluciones 
+                titulo = "Gestión de IPs"
+                texto = "Nuestro sistema IPAM permite gestionar redes, superedes y hacer subnetting. Podrás gestionar ubicaciones físicas, realizar reservas de IP y disponer de un mapa de IP así como informes de uso de IP, y alertas cuando te quedes sin IP disponibles. Se puede integrar con un servidor DHCP de Microsoft."
+                imagen = "42"
+                id = "none"
+            />
+            <ComponenteInfoIzquierdaSoluciones 
+                titulo = "Análisis de red en tiempo real"
+                texto = "Netflow sirve para obtener estadísticas en tiempo real de tus equipos de red (routers, switches, firewalls) y ofrecer informes de uso, cuellos de botella o ayudar a hacer diagnósticos de problemas."
+                imagen = "43"
+            />
+            <ComponenteInfoDerechoSoluciones 
+                titulo = "Alta escalabilidad"
+                texto = "Escalabilidad prácticamente ilimitada gracias a Command Center, y nuestros Servidores Satélite que permiten escalar horizontalmente y generar decenas de miles de consultas de red por segundo de forma distribuida. Contamos con clientes con más 100.000 dispositivos de red en una única instancia."
+                imagen = "44"
+                id = "none"
+            />
+            <ComponenteInfoIzquierdaSoluciones
+                titulo = "Informes y cuadros de mando"
+                texto = "Flammas recoge todo tipo de datos y te ofrece un editor de informes para que puedas generarlos de manera personalizada: top N, gráficas detalladas a cualquier escala de tiempo, informes SLA, informes de disponibilidad, cronogramas y decenas más."
+                imagen = "45"
             />
             <ComponenteInfoDerechoSoluciones 
                 titulo = "Gestión de configuraciones"
                 texto = "Flammas puede recoger la configuraciones de tus equipos, detectar cuando cambian (y donde) y recuperar backup de dichas configuraciones. También podrá desplegar cambios masivamente en decenas de equipos (como por ejemplo añadir una VLAN)."
-                imagen = "8"
-            />
-            <ComponenteInfoIzquierdaSoluciones 
-                titulo = "Gestión de IPs"
-                texto = "Nuestro sistema IPAM permite gestionar redes, superedes y hacer subnetting. Podrás gestionar ubicaciones físicas, realizar reservas de IP y disponer de un mapa de IP así como informes de uso de IP, y alertas cuando te quedes sin IP disponibles. Se puede integrar con un servidor DHCP de Microsoft."
-                imagen = "8"
-                id = "none"
-            />
-            <ComponenteInfoDerechoSoluciones 
-                titulo = "Análisis de red en tiempo real"
-                texto = "Netflow sirve para obtener estadísticas en tiempo real de tus equipos de red (routers, switches, firewalls) y ofrecer informes de uso, cuellos de botella o ayudar a hacer diagnósticos de problemas."
-                imagen = "8"
-            />
-            <ComponenteInfoIzquierdaSoluciones 
-                titulo = "Alta escalabilidad"
-                texto = "Escalabilidad prácticamente ilimitada gracias a Command Center, y nuestros Servidores Satélite que permiten escalar horizontalmente y generar decenas de miles de consultas de red por segundo de forma distribuida. Contamos con clientes con más 100.000 dispositivos de red en una única instancia."
-                imagen = "8"
-                id = "none"
-            />
-            <ComponenteInfoDerechoSoluciones 
-                titulo = "Informes y cuadros de mando"
-                texto = "Flammas recoge todo tipo de datos y te ofrece un editor de informes para que puedas generarlos de manera personalizada: top N, gráficas detalladas a cualquier escala de tiempo, informes SLA, informes de disponibilidad, cronogramas y decenas más."
-                imagen = "8"
+                imagen = "46"
             />
             <header className="funcionalidades"> Funcionalidades Avanzadas </header>
             <section className="container-fluid seccionFuncionAvanzadas">
@@ -562,7 +581,6 @@ export function ComponenteSolucionesInfraestructura () {
 export function ComponenteSolucionesCloud () {
     return (
         <>
-            {/* Parte de Alex */}
             <ComponenteEncabezadoSoluciones 
                 titulo = "MONITORIZACIÓN CLOUD Y VIRTUAL"
                 subtitulo = "SOLUCIONES DE FLAMMAS"
@@ -602,17 +620,6 @@ export function ComponenteSolucionesCloud () {
                 texto1="Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información."
                 texto2="También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
             />
-
-
-
-
-
-
-
-
-
-
-            {/* Parte de Jhoan */}
             <ComponenteEncabezadoSoluciones 
                 titulo = "Monitorización Continua de la Seguridad del Sistema"
                 subtitulo = "SOLUCIONES DE FLAMMAS"
@@ -621,41 +628,103 @@ export function ComponenteSolucionesCloud () {
             <section className="container-fluid seccion-segunda">
                 <div className='container contenedor-cartas'> 
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN52"
+                    imagen = "1"
                     titulo = "MONITORIZACIÓN DEL HARDENING"
                     texto = "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN53"
+                    imagen = "2"
                     titulo = "MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE"
                     texto = "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN54"
+                    imagen = "3"
                     titulo = "FLEXIBILIDAD EN EL INVENTARIO"
                     texto = "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Pandora FMS puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
                     />
-                </div>
-            </section>
-            <section className="container-fluid seccion-segunda">
-                <div className='container contenedor-cartas'> 
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN55"
+                    imagen = "4"
                     titulo = "MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD"
                     texto = "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN56"
+                    imagen = "5"
                     titulo = "MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES"
                     texto = "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
                     />
                     <MiniComponentesSegundaSeccion 
-                    imagen = "IMAGEN57"
+                    imagen = "6"
                     titulo = "ALERTAS PROACTIVAS"
                     texto = "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
                     />
                 </div>
             </section>
+            <section className="container-fluid seccion-viñetas-animadas">
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "58"
+                    titulo = "INVENTARIO Y CONTROL DE ACTIVOS HARDWARE Y SOFTWARE"
+                    texto = "Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "59"
+                    titulo = "Inventario y Control de Dispositivos"
+                    texto = "En Pandora FMS, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "60"
+                    titulo = "Gestión de Vulnerabilidades"
+                    texto = "Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "61"
+                    titulo = "Uso Controlado de Privilegios Administrativos"
+                    texto = "Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "62"
+                    titulo = "Configuración Segura de Hardware y Software"
+                    texto = "Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "63"
+                    titulo = "Mantenimiento, Supervisión y Análisis de Logs de Auditoría"
+                    texto = "Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "64"
+                    titulo = "Defensas contra Malware"
+                    texto = "Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "65"
+                    titulo = "Protección del Correo Electrónico y los Navegadores Web"
+                    texto = "Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "66"
+                    titulo = "Capacidades de Recuperación de Datos"
+                    texto = "Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "67"
+                    titulo = "Defensa de Límites y Protección de Datos"
+                    texto = "Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "68"
+                    titulo = "Supervisión y Control de Cuentas"
+                    texto = "Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos."
+                />
+            </section>
+            <section className="container-fluid seccionImg">
+                <div></div>
+            </section>
+            <ComponentetxtDerechoSoluciones
+                titulo="LA BASE DE DATOS DE VULNERABILIDADES MÁS COMPLETA"
+                texto="Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar."
+                texto1="Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
+                imagen="70"
+            />
         </>
     )
 }

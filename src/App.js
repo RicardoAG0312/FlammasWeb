@@ -9,7 +9,12 @@ import './App.css';
 // Importaciones de imágenes
 import LogoFlammas from './images/Recurso 6.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponentePartners, ComponenteContactanos } from './componentes';
+import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(function() {
@@ -63,22 +68,7 @@ function App() {
                                         </Dropdown>
                                     </li>
                                     <li className="nav-item">
-                                        <Dropdown>
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                                ¿Por qué Flammas?
-                                            </Dropdown.Toggle>
-                                            <Dropdown.Menu id="dropdown-menu">
-                                                <Dropdown.Item id="drop-item">
-                                                    <Link className="nav-link" to="/nosotros/flammas"> Sobre Nosotros </Link>
-                                                </Dropdown.Item>
-                                                <Dropdown.Item id="drop-item">
-                                                    <Link className="nav-link" to="/nosotros/partners"> Partners </Link>
-                                                </Dropdown.Item>
-                                                <Dropdown.Item id="drop-item">
-                                                    <Link className="nav-link" to="/nosotros/contactanos"> Contáctanos </Link>
-                                                </Dropdown.Item>
-                                            </Dropdown.Menu>
-                                        </Dropdown>
+                                        <Link className="nav-link" to="/nosotros"> ¿Por qué Flammas? </Link>
                                     </li>
                                     <li className="nav-item">
                                         <Dropdown>
@@ -96,7 +86,7 @@ function App() {
                                         </Dropdown>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/login"> Login </Link> 
+                                        <Link className="nav-link" to="/login"> Contacto </Link> 
                                     </li>
                                 </ul>
                             </div>
@@ -106,12 +96,10 @@ function App() {
                         <Route index path="/flammas" element={<Navigate to="/inicio" />} />
                         <Route path="/inicio" element={<ComponenteInicio />} />
                         <Route path="/productos" element={<ComponenteProductos />} />
+                        <Route path="/nosotros" element={<ComponenteNosotrosFlammas />} />
                         <Route path="/soluciones/monitorizacion" element={<ComponenteSolucionesMonitorizacion />} />
                         <Route path="/soluciones/infraestructura" element={<ComponenteSolucionesInfraestructura />} />
                         <Route path="/soluciones/cloud" element={<ComponenteSolucionesCloud />} />
-                        <Route path="/nosotros/flammas" element={<ComponenteNosotrosFlammas />} />
-                        <Route path="/nosotros/partners" element={<ComponentePartners />} />
-                        <Route path="/nosotros/contactanos" element={<ComponenteContactanos />} />
                         <Route path="/soporte/profesional" element={<ComponenteSoporteProfesional />} />
                         <Route path="/soporte/tecnico" element={<ComponenteSoporteTecnico />} />
                         <Route path="/login" element={<ComponenteLogin />} />
