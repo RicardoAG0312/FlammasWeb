@@ -472,8 +472,9 @@
     padding: 15px;
 }
 .seccion-segunda .contenedor-cartas .carta {
-    height: 600px;
-    width: 31%;
+    min-height: 580px;
+    max-height: 580px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,7 +498,7 @@
 }
 .seccion-segunda .contenedor-cartas .carta img {
     width: 100%;
-    height: 350px;
+    height: 100%;
     border-radius: 3% 3% 0 0;
     -webkit-border-radius: 3% 3% 0 0;
     -moz-border-radius: 3% 3% 0 0;
@@ -631,11 +632,105 @@
     background-repeat: no-repeat;
     background-position-x: -265px;
 }
+.seccion-viñetas-animadas {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    gap: 30px;
+    padding: 30px;
+}
+.seccion-viñetas-animadas .viñeta-animada{
+    width: 22%;
+    height: 520px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    outline: 2px solid #FD5D05;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+.seccion-viñetas-animadas .viñeta-animada h2 {
+    color: #FD5D05;
+    text-transform: uppercase;
+    font-family: "Antonio";
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    margin-top: 80px;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-animadas .viñeta-animada p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-animadas .viñeta-animada img {
+    width: 150px;
+    position: absolute;
+    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.seccion-viñetas-animadas .viñeta-animada:hover img {
+    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+}
+.seccion-viñetas-animadas .viñeta-animada:hover h2,
+.seccion-viñetas-animadas .viñeta-animada:hover p {
+    opacity: 1;
+}
+.seccionImg {
+    height: auto;
+    padding: 20px;
+    background-color: #E0223C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccionImg div {
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/69.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*Seccion Img TOP/BOTTOM*/
 .contenedorIMGTopBot {
-    margin-top:100px;
+    margin-top:50px;
     height: auto;
-    margin-bottom: 50px;
     color: white;
     padding: 30px;
     text-align: center;
@@ -704,64 +799,4 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
-}
-
-.seccion-viñetas-animadas {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    color: black;
-    gap: 30px;
-    padding: 30px;
-}
-.seccion-viñetas-animadas .viñeta-animada{
-    width: 22%;
-    height: 520px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 20px;
-    outline: 2px solid #FD5D05;
-    background-color: white;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-.seccion-viñetas-animadas .viñeta-animada h2 {
-    color: #FD5D05;
-    text-transform: uppercase;
-    font-family: "Antonio";
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
-.seccion-viñetas-animadas .viñeta-animada p {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-}
-.seccion-viñetas-animadas .viñeta-animada img {
-    width: 150px;
-}
-.seccionImg {
-    height: auto;
-    padding: 20px;
-    background-color: #E0223C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.seccionImg div {
-    width: 100%;
-    height: 700px;
-    background-image: url("../images/69.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }

@@ -202,6 +202,10 @@ body {
     -ms-border-radius: 3% 3% 0 0;
     -o-border-radius: 3% 3% 0 0;
 }
+.seccion-segunda .contenedor-cartas .carta #imagenInicio {
+    width: 100%;
+    height: 350px;
+}
 .seccion-segunda .contenedor-cartas .carta h1 {
     font-family: "Antonio";
     font-size: 30px;
@@ -522,6 +526,7 @@ body {
 }
 /* QUINTA SECCION */
 .seccion-quinta {
+    margin-top: 50px;
     height: 600px;
     background-color: black;
     color: white;

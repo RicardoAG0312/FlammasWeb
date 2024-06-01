@@ -111,9 +111,9 @@ function App() {
                             <img src={LogoFlammas} alt="Logo Flammas" />
                             <p> Calle 122 7 A 18 Oficina 104, Bogota, Colombia </p>
                             <div>
-                                <i class="bi bi-linkedin"></i>
-                                <i class="bi bi-whatsapp"></i>
-                                <i class="bi bi-envelope"></i>
+                                <i className="bi bi-linkedin"></i>
+                                <i className="bi bi-whatsapp"></i>
+                                <i className="bi bi-envelope"></i>
                             </div>
                         </div>
                         <div className="col-12 col-9 col-xl-9 links">

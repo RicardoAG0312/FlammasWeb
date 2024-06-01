@@ -4,7 +4,7 @@ import "../estilos/componenteInicio.css"
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 import { MiniComponenteProductos } from "./ComponenteProductos"
 
-function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
+export function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
     return (
         <section className="container-fluid seccionEncabezadoSoluciones">
             <h3> {subtitulo} </h3>
@@ -217,7 +217,7 @@ export function ComponenteSolucionesMonitorizacion () {
                 <ComponenteFuncionalidadAvanzada 
                     imagen = "27"
                     titulo = "Monitorización de seguridad"
-                    texto = "Conrola en todo momento de qué versiones, modelos e IP dispones. No sólo de equipos de red como switches, routers, también firewalls. Establece alertas si se usan modelos con vulnerabilidades. Envía los logs de todos tus sistemas a nuestra consola de logs y crea alertas de correlación."
+                    texto = "Controla en todo momento de qué versiones, modelos e IP dispones. No sólo de equipos de red como switches, routers, también firewalls. Establece alertas si se usan modelos con vulnerabilidades. Envía los logs de todos tus sistemas a nuestra consola de logs y crea alertas de correlación."
                 />
                 <ComponenteFuncionalidadAvanzada 
                     imagen = "28"
@@ -482,22 +482,22 @@ export function ComponenteSolucionesInfraestructura () {
                 <header> ¿POR QUÉ ELEGIR FLAMMAS TU MONITORIZACIÓN DE EXPERIENCIA DE USUARIO? </header>
                 <div className="container sub-contenedor-usu">
                     <div>
-                        <i class="bi bi-broadcast"></i>
+                        <i className="bi bi-broadcast"></i>
                         <h2> ¿Utilizas Selenium u otros programas de monitorización UX? </h2>
                         <p> Flammas es flexible y se adapta a cualquier tecnología del mercado, pudiendo integrar toda la monitorización en un solo punto, podemos reutilizar tus scrips actuales e integrarlos. </p>
                     </div>
                     <div>
-                        <i class="bi bi-robot"></i>
+                        <i className="bi bi-robot"></i>
                         <h2> Automatización todo-en-uno </h2>
                         <p> Si dispones de un sistema de automatización de tareas, Flammas UX te permitirá ejecutar los scripts que hayas desarrollado e implementado, para monitorizar su ejecución. </p>
                     </div>
                     <div>
-                        <i class="bi bi-person-circle"></i>
+                        <i className="bi bi-person-circle"></i>
                         <h2> End User Experience controlado </h2>
                         <p> Podrá monitorizar el rendimiento de tráfico de datos, así como los tiempos de respuesta de su aplicación, además de solventar cualquier problema antes que tus clientes. </p>
                     </div>
                     <div>
-                        <i class="bi bi-lightbulb"></i>
+                        <i className="bi bi-lightbulb"></i>
                         <h2> Licencia sencilla de entender </h2>
                         <p> La monitorización de experiencia de usuario está incluida de serie en la licencia estándar Enterprise. No hagas cábalas, y disfruta sin límites de la monitorización extremo a extremo que ofrecemos. </p>
                     </div>
@@ -608,7 +608,7 @@ export function ComponenteSolucionesCloud () {
                     <div className="col-12 col-sm-6 col-xl-6 info text-dark">
                         <h2 className="text-start"> <span className="text-dark">INTEGRACIÓN</span> LAAS </h2>
                         <p> En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.</p>
-                        <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Pandora FMS.</p>
+                        <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas.</p>
                     </div>
                     <div className="col-12 col-sm-6 col-xl-6 imagen">
                         <img src={require(`../images/49.png`)} alt="Imagen" />
@@ -640,7 +640,7 @@ export function ComponenteSolucionesCloud () {
                     <MiniComponentesSegundaSeccion 
                     imagen = "3"
                     titulo = "FLEXIBILIDAD EN EL INVENTARIO"
-                    texto = "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Pandora FMS puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
+                    texto = "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Flammas puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
                     />
                     <MiniComponentesSegundaSeccion 
                     imagen = "4"
@@ -668,7 +668,7 @@ export function ComponenteSolucionesCloud () {
                 <ComponenteViñetaAnimada 
                     nombreImagen = "59"
                     titulo = "Inventario y Control de Dispositivos"
-                    texto = "En Pandora FMS, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
+                    texto = "En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
                 />
                 <ComponenteViñetaAnimada 
                     nombreImagen = "60"
@@ -731,9 +731,9 @@ export function ComponenteSolucionesCloud () {
                         <img src={require(`../images/71.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info text-dark">
-                        <h2 className="text-center"> <span class="text-dark">NUESTRO</span> ROADMAP <span class="text-dark">DE SEGURIDAD</span></h2>
+                        <h2 className="text-center"> <span className="text-dark">NUESTRO</span> ROADMAP <span className="text-dark">DE SEGURIDAD</span></h2>
                         <p className="p-orange fw-bold">Estamos construyendo una herramienta para controlarlo todo.</p>
-                        <p>Pandora FMS es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.</p>
+                        <p> Flammas es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.</p>
                         <p>Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.</p>
                     </div>
                     <div className="col-12 container-fluid imagen-fullwidth">
@@ -750,11 +750,82 @@ export function ComponenteSolucionesCloud () {
                         <img src={require(`../images/73.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info2 text-white">
-                        <h2 className="text-center"> <span class="text-white">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
+                        <h2 className="text-center"> <span className="text-white">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
                         <p>Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno.</p>
                     </div>
                 </div>
             </section>
+            <section className="container-fluid contenedor-animables">
+                <header> La solución de supervisión total para la observabilidad total </header>
+                <div className="container contenedor-cartas-animables">
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-person-lines-fill"
+                        titulo = "Experiencia de usuario"
+                        subtitulo = "Experencia de usuario"
+                        texto = "Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-graph-up"
+                        titulo = "Monitorización de aplicaciones (APM)"
+                        subtitulo = "Monitorización de aplicaciones (APM)"
+                        texto = "Supervisa tus aplicaciones empresariales a todo nivel y obten todos los datos APM que necesites."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-display"
+                        titulo = "Monitorización de entornos virtuales"
+                        subtitulo = "Monitorización de entornos virtuales"
+                        texto = "Optimiza tu infraestructura ya sea en instalaciones hibridas, virtuales o cloud."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-exclamation-diamond-fill"
+                        titulo = "Gestión de incidencias"
+                        subtitulo = "Gestión de incidencias"
+                        texto = "Integra el sistema de ticketing de tu infraestructura en Flammas."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-joystick"
+                        titulo = "Control Remoto"
+                        subtitulo = "Control Remoto"
+                        texto = "Todos tus dispositivos controlados por una herramienta accesible con solo un navegador web."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-headset"
+                        titulo = "Gestión de servicio y asistencia"
+                        subtitulo = "Gestión de servicio y asistencia"
+                        texto = "Mida y supervise su pila de TI para detectar resolver problemas en tu infraestructura de TI."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-cpu-fill"
+                        titulo = "Monitorización mainframe"
+                        subtitulo = "Monitorización mainframe"
+                        texto = "Dispón de una única plataforma para recoger y mostrar la información venga de donde venga."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-ethernet"
+                        titulo = "Monitorización de redes"
+                        subtitulo = "Monitorización de redes"
+                        texto = "Observa toda tu información en conjunto, incluso cuando tengas miles de dispositivos que supervisar."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-card-checklist"
+                        titulo = "Inventario TI"
+                        subtitulo = "Inventario TI"
+                        texto = "Recoge y supervisa el estado de todos los datos de tu infraestructura informática en una sola herramienta."
+                    />
+                    <ComponenteCartaAnimable 
+                        nombreIcono = "bi-file-earmark-text"
+                        titulo = "Recolección de logs"
+                        subtitulo = "Recolección de logs"
+                        texto = "Recoge, visualiza y centraliza todos tus registros en un único punto."
+                    />
+                </div>
+            </section>
+            <MiniComponenteQuintaSeccion 
+                titulo = "+500 INTEGRACIONES:"
+                subtitulo = "EXPANDE EL PODER DE TU MONITORIZACIÓN"
+                texto1 = "Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
+                texto2 = "Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+            />
         </>
     )
 }

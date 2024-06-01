@@ -6,7 +6,7 @@ import imagen7 from "../images/7.png";
 export function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
     return (
         <div className='carta'>
-            <img src={require(`../images/${imagen}.jpeg`)} alt="Imagen" />
+            <img src={require(`../images/${imagen}.jpeg`)} alt="Imagen" id="imagenInicio"/>
             <h1> {titulo} </h1>
             <p> {texto} </p>
         </div>
@@ -26,7 +26,7 @@ export function MiniComponenteQuintaSeccion ({titulo, subtitulo, texto1, texto2}
         <section className='container-fluid seccion-quinta'>
             <div className="row">
                 <div className="col-12 col-sm-8 col-xxl-8">
-                    <h1> <i class="bi bi-gear-wide-connected"> </i> {titulo} </h1>
+                    <h1> <i className="bi bi-gear-wide-connected"> </i> {titulo} </h1>
                     <h2> {subtitulo} </h2>
                     <p> {texto1} </p>
                     <p> {texto2} </p>

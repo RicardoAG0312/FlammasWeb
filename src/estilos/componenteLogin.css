@@ -1,0 +1,99 @@
+.seccion-contac {
+    height: auto;
+    color: white;
+}
+.seccion-contac p {
+    font-size: 12px;
+}
+.seccion-contac .row {
+    padding: 30px;
+}
+.seccion-contac .info {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: black;
+    outline: 2px solid #FD5D05;
+}
+input[type=text], select, option, input[type=number], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #FD5D05;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+input[type=submit]:hover {
+    background-color: rgba(253, 93, 5, 0.9);
+}
+.seccion-contac .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.botones .minilogin {
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.botones .minilogin h1 {
+    font-family: "Antonio";
+    font-weight: bolder;
+    font-size: 45px;
+}
+.botones .minilogin p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+}
+.botones .minilogin button {
+    border: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 40%;
+    color: white;
+    background-image: linear-gradient(90deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
