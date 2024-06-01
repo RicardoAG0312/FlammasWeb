@@ -631,6 +631,81 @@
     background-repeat: no-repeat;
     background-position-x: -265px;
 }
+/*Seccion Img TOP/BOTTOM*/
+.contenedorIMGTopBot {
+    margin-top:100px;
+    height: auto;
+    margin-bottom: 50px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.contenedorIMGTopBot .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+.contenedorIMGTopBot .info h2 {
+    font-size: 40px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+    margin-bottom: 20px;
+}
+.contenedorIMGTopBot .info p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    max-width: 700px;
+}
+/*Seccion img TOP/BOT info2*/
+.contenedorIMGTopBot .info2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+.contenedorIMGTopBot .info2 h2 {
+    font-size: 40px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+    margin-bottom: 20px;
+}
+.contenedorIMGTopBot .info2 p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    max-width: 900px;
+}
+/*Seccion img TOP/BOT info2*/
+.contenedorIMGTopBot .p-orange {
+    color: #FD5D05;
+}
+.contenedorIMGTopBot .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contenedorIMGTopBot img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+}
+.contenedorIMGTopBot .imagen-fullwidth{
+    background-image: url('../images/72.png');
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
 .seccion-viñetas-animadas {
     height: auto;
     display: flex;

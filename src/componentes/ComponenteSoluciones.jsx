@@ -138,7 +138,7 @@ function ComponenteViñetaAnimada ({ nombreImagen, titulo, texto }) {
     return (
         <>
             <div className="viñeta-animada">
-                <img src={require(`../images/${nombreImagen}.png`)} />
+                <img src={require(`../images/${nombreImagen}.png`)} alt="Imagen"/>
                 <h2> {titulo} </h2>
                 <p> {texto} </p>
             </div>
@@ -725,6 +725,36 @@ export function ComponenteSolucionesCloud () {
                 texto1="Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
                 imagen="70"
             />
+            <section className="container-fluid bg-white contenedorIMGTopBot">
+                <div className="row">
+                    <div className="col-12 imagen">
+                        <img src={require(`../images/71.png`)} alt="Imagen" />
+                    </div>
+                    <div className=" container-fluid info text-dark">
+                        <h2 className="text-center"> <span class="text-dark">NUESTRO</span> ROADMAP <span class="text-dark">DE SEGURIDAD</span></h2>
+                        <p className="p-orange fw-bold">Estamos construyendo una herramienta para controlarlo todo.</p>
+                        <p>Pandora FMS es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.</p>
+                        <p>Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.</p>
+                    </div>
+                    <div className="col-12 container-fluid imagen-fullwidth">
+                        
+                    </div>
+                    <div className="container-fluid info text-dark">
+                        <p className="p-orange fw-bold">Flammas será verdaderamente, la herramienta única para controlarlo todo.</p>
+                    </div>
+                </div>
+            </section>
+            <section className="container-fluid contenedorIMGTopBot">
+                <div className="row">
+                    <div className="col-12 imagen">
+                        <img src={require(`../images/73.png`)} alt="Imagen" />
+                    </div>
+                    <div className=" container-fluid info2 text-white">
+                        <h2 className="text-center"> <span class="text-white">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
+                        <p>Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno.</p>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
