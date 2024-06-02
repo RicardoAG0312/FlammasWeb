@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
 import "../estilos/componenteLogin.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ComponenteEncabezadoSoluciones } from "./ComponenteSoluciones";
 
-function MiniComponenteLogin ({titulo, texto, nombreBoton, link}) {
+function MiniComponenteLogin ({titulo, texto, nombreBoton}) {
     return (
         <div className='minilogin'>
             <h1> {titulo} </h1>
@@ -14,6 +14,32 @@ function MiniComponenteLogin ({titulo, texto, nombreBoton, link}) {
 }
 
 function ComponenteLogin() {
+    const formRef = useRef(null);
+    useEffect(() => {
+        const form = formRef.current;
+        if(form) {
+            form.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                const nombres = event.target.elements.fname.value;
+                const apellidos = event.target.elements.lname.value;
+                const email = event.target.elements.email.value;
+                const telefono = event.target.elements.phone.value;
+                const empresa = event.target.elements.company.value;
+                const cargo = event.target.elements.cargo.value;
+                const conocimiento = event.target.elements.conocimiento.value;
+                const producto = event.target.elements.product.value;
+                const mensaje = event.target.elements.message.value;
+                const asunto = "Información sobre Flammas";
+                const encodedAsunto = encodeURI(asunto);
+                const emailBody = `Nombres: ${nombres}\nApellidos: ${apellidos}\nEmail: ${email}\nTeléfono: ${telefono}\nEmpresa: ${empresa}\nCargo: ${cargo}\n¿Cómo conoció Flammas?: ${conocimiento}\nProducto de Interés: ${producto}\nMensaje: ${mensaje}`;
+                const encodedEmailBody = encodeURI(emailBody);
+                const correo = "ventas@flammas.com"
+                const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodedAsunto}&body=${encodedEmailBody}`;
+                window.open(gmailUrl, '_blank');
+                setTimeout(() => form.reset(), 1000);
+            });
+        }
+    }, []);
     return (
         <>
             <ComponenteEncabezadoSoluciones 
@@ -24,7 +50,7 @@ function ComponenteLogin() {
             <section className='container-fluid seccion-contac'>
                 <div className="row">
                     <div className="col-12 col-sm-6 col-xxl-6 info">
-                        <form action="/submit_form" method='POST'>
+                        <form ref={formRef} action="/submit_form" method='POST'>
                             <label for="fname"> (*) Nombres: </label>
                             <input type="text" id="fname" name="firstname" placeholder="Ingresa tus nombres" />
                             <label for="lname"> (*) Apellidos: </label>
@@ -85,9 +111,10 @@ function ComponenteLogin() {
                     </div>
                 </div>
             </section>
-    
         </>
     )
 }
+
+
 
 export default ComponenteLogin;
