@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flammas/static/css/main.005475cb.css",
-    "main.js": "/flammas/static/js/main.d6bb55b5.js",
+    "main.css": "/flammas/static/css/main.2198034c.css",
+    "main.js": "/flammas/static/js/main.39544c71.js",
     "static/media/24.png": "/flammas/static/media/24.bb348995d9100481efb5.png",
     "static/media/imagen7.png": "/flammas/static/media/imagen7.1a6c22f76e3b3339e751.png",
     "static/media/imagen9.png": "/flammas/static/media/imagen9.4a487beaef5bf64b248d.png",
@@ -59,13 +59,19 @@
     "static/media/56.png": "/flammas/static/media/56.72f7cc790835070fe454.png",
     "static/media/57.png": "/flammas/static/media/57.e3da075a5b20348a7902.png",
     "static/media/Recurso 3.png": "/flammas/static/media/Recurso 3.65e6949c3f70bf739d5e.png",
+    "static/media/1.svg": "/flammas/static/media/1.7dcd2bb495fd3f2ba1ce.svg",
     "static/media/report.png": "/flammas/static/media/report.b7ca636f365bda284862.png",
+    "static/media/3.svg": "/flammas/static/media/3.9bc198baaa479eb0c161.svg",
+    "static/media/2.svg": "/flammas/static/media/2.0afcea9d8bcd9217a912.svg",
+    "static/media/6.svg": "/flammas/static/media/6.0938004cd97a8d08dd6d.svg",
+    "static/media/4.svg": "/flammas/static/media/4.669e99f858f3f11df885.svg",
+    "static/media/5.svg": "/flammas/static/media/5.7553df8b6b05e61487d0.svg",
     "index.html": "/flammas/index.html",
-    "main.005475cb.css.map": "/flammas/static/css/main.005475cb.css.map",
-    "main.d6bb55b5.js.map": "/flammas/static/js/main.d6bb55b5.js.map"
+    "main.2198034c.css.map": "/flammas/static/css/main.2198034c.css.map",
+    "main.39544c71.js.map": "/flammas/static/js/main.39544c71.js.map"
   },
   "entrypoints": [
-    "static/css/main.005475cb.css",
-    "static/js/main.d6bb55b5.js"
+    "static/css/main.2198034c.css",
+    "static/js/main.39544c71.js"
   ]
 }
