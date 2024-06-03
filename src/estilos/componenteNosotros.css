@@ -116,3 +116,75 @@
     font-weight: bold;
     font-size: 50px;
 }
+/*Seccion VISION*/
+.seccion-mision {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-mision h2 {
+    font-family: "Antonio";
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.contenedor-cartas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+.carta {
+    flex: 1;
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid #FD5D05;
+}
+.imagen-contenedor {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.seccion-mision .imagen img{
+    width: 100%;
+    height: auto;
+}
+/*Seccion Mision*/
+.seccion-vision h2{
+    font-family: "Antonio";
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.seccion-vision p{
+    color: white;
+}
+.seccion-vision .row{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    outline: 1px solid #FD5D05;
+}
+.imagenVision img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
