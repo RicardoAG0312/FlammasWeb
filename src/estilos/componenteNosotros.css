@@ -167,6 +167,7 @@
 }
 /*Seccion Vision*/
 .seccion-vision{
+    margin-top: 40px;
     margin-bottom: 50px;
 }
 .seccion-vision h2{
@@ -311,4 +312,54 @@
     border-radius: 10px;
     object-fit: cover;
     /*margin-left: 70px;*/
+}
+/*Seccion HMV*/
+.seccion-HMV{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.seccion-HMV .btn-full-width {
+    width: 100%;
+}
+.seccion-HMV .content {
+    display: none;
+}
+.seccion-HMV .btn-full-width:hover + .content,
+.btn-full-width:focus-within + .content {
+    display: block;
+}
+.txt-menu{
+    font-family: "Antonio";
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+/*.boton-oscuro{
+    outline: 1px solid white;
+    padding-bottom: 0;
+}*/
+.boton-oscuro{
+    outline: 1px solid white;
+    margin-bottom: 15px;
+    margin-top: 0;
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 1.5s ease;
+}
+.boton-oscuro h2.txt-menu {
+    margin: 0;
+}
+  /* Cambio de color al pasar el mouse sobre el botón */
+.boton-oscuro:hover {
+    background-color: #FD5D05;
+}
+/* Mantener el color al hacer clic en el botón */
+.boton-oscuro:focus,
+.boton-oscuro:active,
+.boton-oscuro.active {
+    outline: none;
+    background-color: #FD5D05;
 }

@@ -145,6 +145,54 @@ function ComponenteNosotrosFlammas () {
                 subtitulo = "DESDE 2004 DESARROLLANDO SOFTWARE CON PASIÓN Y TALENTO"
                 titulo = "SOMOS UN EQUIPO DE EXPERTOS VOLCADO EN AYUDAR A LÍDERES Y PERSONAL TI A CONSEGUIR LA TOTAL OBSERVABILIDAD DE SU ORGANIZACIÓN"
             />
+            <section className="container-fluid seccion-HMV">
+            <div className="container">
+                <button className="btn boton-oscuro btn-lg btn-full-width"><h2 className="txt-menu">Nuestra Historia</h2></button>
+                <div className="content mt-3">
+                    <ComponenteSobreFlammas 
+                        imagen = "82"
+                        titulo = "SOBRE FLAMMAS:"
+                        texto = "Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
+                    />
+                </div>
+                <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">Misión</h2></button>
+                <div className="content mt-3">
+                    <section className="container-fluid seccion-mision">
+                        <div className="mt-3">
+                            <h2>NUESTRA MISION</h2>
+                        </div>
+                        <div className="container contenedor-cartas">
+                            <ComponenteMision
+                                imagen="25"
+                                texto="Nuestra misión es ofrecer un sistema de monitorización integrado y horizontal para medianas y grandes empresas, capaz de proveer información de distintas fuentes a diferentes departamentos, todo a través de una única consola."
+                            />
+                            <ComponenteMision
+                                imagen="26"
+                                texto="Creemos en el enorme potencial de la monitorización para mejorar cualquier organización que apoye su negocio en tecnología."
+                            />
+                            <ComponenteMision
+                                imagen="25"
+                                texto="Queremos ser una alerta temprana, queremos ser aquellos que avisan en el momento exacto antes de que suceda algo imprevisto, queremos ser ese compañero de viaje imprescindible para cualquier aventura y caminar juntos hasta la siguiente meta."
+                            />
+                        </div>
+                    </section>
+                </div>
+                <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">Visión</h2></button>
+                <div className="content mt-3">
+                    <section className="container-fluid seccion-vision">
+                        <div className="mt-3">
+                            <h2 className="text-center">NUESTRA VISION</h2>
+                        </div>
+                        <ComponenteVision
+                            imagen="75"
+                            texto="Creemos en el crecimiento sostenido. No tenemos prisa, hemos venido para quedarnos. Nuestra relación con clientes y empleados siempre es a largo plazo. Sabemos que el mercado actual está maduro y se renueva constantemente, cambiando las reglas del juego."
+                            texto2="Aprendemos, nos adaptamos y crecemos conforme lo hacen nuestros clientes. Nuestra visión es ser los proveedores de tecnología de servicios clave y estar presentes en empresas de todos los sectores a nivel mundial."
+                        />
+                    </section>
+                </div>
+            </div>
+            </section>
+            {/* Esto es un comentario 
             <ComponenteSobreFlammas 
                 imagen = "82"
                 titulo = "SOBRE FLAMMAS:"
@@ -178,7 +226,7 @@ function ComponenteNosotrosFlammas () {
                     texto="Creemos en el crecimiento sostenido. No tenemos prisa, hemos venido para quedarnos. Nuestra relación con clientes y empleados siempre es a largo plazo. Sabemos que el mercado actual está maduro y se renueva constantemente, cambiando las reglas del juego."
                     texto2="Aprendemos, nos adaptamos y crecemos conforme lo hacen nuestros clientes. Nuestra visión es ser los proveedores de tecnología de servicios clave y estar presentes en empresas de todos los sectores a nivel mundial."
                 />
-            </section>
+            </section>*/}
             <section className="container-fluid contenedor-tercera-seccion">
                 <h2> FLAMMAS EN NÚMEROS EN LA ACTUALIDAD </h2>
                 <p> Desde 2004, Flammas no ha parado de crecer, posibilitando la evolución constante de este proyecto que hace que nos adaptemos a la realidad cambiante de hoy. </p>
