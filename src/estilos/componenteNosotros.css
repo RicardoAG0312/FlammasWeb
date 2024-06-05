@@ -116,7 +116,7 @@
     font-weight: bold;
     font-size: 50px;
 }
-/*Seccion VISION*/
+/*Seccion MISION*/
 .seccion-mision {
     color: white;
     display: flex;
@@ -131,14 +131,14 @@
     font-weight: bolder;
     margin-bottom: 30px;
 }
-.contenedor-cartas {
+.seccion-mision .contenedor-cartas {
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 20px;
     padding-bottom: 40px;
 }
-.carta {
+.seccion-mision .carta {
     flex: 1;
     max-width: calc(33.333% - 20px);
     padding: 20px;
@@ -149,13 +149,13 @@
     align-items: center;
     outline: 1px solid #FD5D05;
 }
-.imagen-contenedor {
+.seccion-mision .imagen-contenedor {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.imagen-contenedor img {
+.seccion-mision .imagen-contenedor img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -165,7 +165,10 @@
     width: 100%;
     height: auto;
 }
-/*Seccion Mision*/
+/*Seccion Vision*/
+.seccion-vision{
+    margin-bottom: 50px;
+}
 .seccion-vision h2{
     font-family: "Antonio";
     font-size: 60px;
@@ -187,4 +190,125 @@
     width: 100%;
     height: 250px;
     border-radius: 10px;
+}
+/*Seccion Imagen Central*/
+.seccion-Img-Central{
+    margin-top: 80px;
+    margin-bottom: 130px;
+}
+.seccion-Img-Central h2{
+    font-family: "Antonio";
+    color: #FD5D05;
+    font-weight: bold;
+    font-size: 50px;
+}
+.seccion-Img-Central .card{
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-radius: 0%;
+}
+.seccion-Img-Central .t1, .t2{
+    text-align: right;
+    position: absolute;
+    bottom: 0%;
+}
+.seccion-Img-Central .t3, .t4{
+    text-align: left;
+    position: absolute;
+    bottom: 0%;
+}
+.seccion-Img-Central .card-body{
+    align-items: center;
+    height: 150px;
+}
+.seccion-Img-Central .middle-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-Img-Central .middle-col img{
+    width: 500px;
+    height: auto;
+}
+/*Seccion Valores*/
+.seccion-valores h2{
+    font-family: "Antonio";
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.seccion-valores .card{
+    border-radius: 25px;
+    width: 350px;
+}
+.seccion-valores .imagen-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+/*.seccion-valores .img-fluid{
+    border: 2px solid silver;
+    border-radius: 40% / 15%;
+}*/
+.seccion-valores .imagen-puesta{
+    width: 150px;
+}
+.seccion-valores .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.seccion-valores p{
+    font-weight: bold;
+    font-size: 15px;
+}
+/*Seccion TSTI*/
+.seccion-TSTI{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.seccion-TSTI .container{
+    outline: 1px solid white;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}
+.seccion-TSTI h2{
+    font-family: "Antonio";
+    font-size: 70px;
+    color: #FD5D05;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.subti {
+    font-size: 25px;
+    font-weight: bold;
+}
+.parrafo{
+    text-align: right;
+}
+.seccion-TSTI p{
+    color: white;
+}
+.seccion-TSTI .row{
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    /*outline: 1px solid #FD5D05;*/
+}
+.seccion-TSTI .imagenTSTI{
+    text-align: right;
+}
+.seccion-TSTI .imagenTSTI img{
+    width: 400px;
+    height: auto;
+    /*height: 250px;*/
+    border-radius: 10px;
+    object-fit: cover;
+    /*margin-left: 70px;*/
 }

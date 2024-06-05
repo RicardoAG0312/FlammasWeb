@@ -26,7 +26,7 @@ function ComponenteSobreFlammas ({imagen, titulo, texto}) {
         <section className="container seccion-sobre-flammas">
             <div className="row">
                 <div className="col-12 col-sm-5 col-xl-5 imagen">
-                    <img src={require(`../images/${imagen}.jpeg`)} alt="imagen" />
+                    <img src={require(`../images/${imagen}.png`)} alt="imagen" />
                 </div>
                 <div className="col-12 col-sm-5 col-xl-5 texto">
                     <h2> {titulo} </h2>
@@ -61,6 +61,81 @@ function ComponenteVision({imagen, texto, texto2}){
         </div>
     )
 }
+function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
+    return(
+        <div className="container">
+            <div className="row">
+                <div className="col-md-5">
+                    <div className="card mb-3">
+                        <div className="card-body text-white">
+                            <p className="t1">{texto1}</p>
+                        </div>
+                    </div>
+                    <div className="card mb-3">
+                        <div className="card-body text-white">
+                            <p className="t2">{texto2}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-2 middle-col">
+                    <img src={require(`../images/${imagen}.png`)} alt="imagen" />
+                </div>
+                <div className="col-md-5">
+                    <div className="card mb-3">
+                        <div className="card-body text-white">
+                            <p className="t3">{texto3}</p>
+                        </div>
+                    </div>
+                    <div className="card mb-3">
+                    <div className="card-body text-white">
+                            <p className="t4">{texto4}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+function ComponenteValores({imagen, texto}){
+    return(
+        <div className="col-md-4 col-lg-4 d-flex justify-content-center mb-5">
+            <div className="card">
+                <div className="row g-0">
+                    <div className="col-md-4 imagen-contenido">
+                    <img className="imagen-puesta" src={require(`../images/${imagen}.png`)} alt="imagen" />
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <p className="card-text">{texto}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+function ComponenteTSTI({titulo, subtitulo, texto, imagen}){
+    return(
+        <section className="container-fluid seccion-TSTI">
+                <div className="container">
+                    <div className="mt-3">
+                        <h2 className="text-center">{titulo}</h2>
+                    </div>
+                <div className="mt-5">
+                    <p className="text-center subti">{subtitulo}</p>
+                </div>
+                    <div className="row">
+                        <div className="col-md-5 text-content">
+                            <p className="parrafo"> {texto} </p>
+                        </div>
+                        <div className="col-md-5 imagenTSTI">
+                            <img src={require(`../images/${imagen}.png`)} alt="imagen" />
+                        </div>
+                    </div>
+                </div>
+        </section>
+    )
+}
 
 
 function ComponenteNosotrosFlammas () {
@@ -71,7 +146,7 @@ function ComponenteNosotrosFlammas () {
                 titulo = "SOMOS UN EQUIPO DE EXPERTOS VOLCADO EN AYUDAR A LÍDERES Y PERSONAL TI A CONSEGUIR LA TOTAL OBSERVABILIDAD DE SU ORGANIZACIÓN"
             />
             <ComponenteSobreFlammas 
-                imagen = "IMAGEN-FONDO-PRINCIPAL"
+                imagen = "82"
                 titulo = "SOBRE FLAMMAS:"
                 texto = "Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
             />
@@ -99,7 +174,7 @@ function ComponenteNosotrosFlammas () {
                     <h2 className="text-center">NUESTRA VISION</h2>
                 </div>
                 <ComponenteVision
-                    imagen="24"
+                    imagen="75"
                     texto="Creemos en el crecimiento sostenido. No tenemos prisa, hemos venido para quedarnos. Nuestra relación con clientes y empleados siempre es a largo plazo. Sabemos que el mercado actual está maduro y se renueva constantemente, cambiando las reglas del juego."
                     texto2="Aprendemos, nos adaptamos y crecemos conforme lo hacen nuestros clientes. Nuestra visión es ser los proveedores de tecnología de servicios clave y estar presentes en empresas de todos los sectores a nivel mundial."
                 />
@@ -134,6 +209,54 @@ function ComponenteNosotrosFlammas () {
                     />
                 </div>
             </section>
+            <section className="container-fluid seccion-Img-Central">
+                <div className="mt-3 titulo">
+                    <h2 className="text-center mb-5">¿POR QUÉ CONTAR CON NOSOTROS?</h2>
+                </div>
+                <ComponenteImagenCentral
+                    texto1 = "Somos expertos en migraciones y grandes implantaciones. Tenemos nuestro propio equipo de consultoría e ingeniería especializada."
+                    texto2 = "Quién mejor que el fabricante para asegurarse del éxito de un proyecto."
+                    texto3 = "Si no estamos lo suficientemente cerca, podemos colaborar con un partner que conozca."
+                    texto4 = "Precios muy competitivos."
+                    imagen = "74"
+                />
+            </section>
+            <section className="container-fluid seccion-valores">
+                <div className="mt-3 mb-5">
+                    <h2 className="text-center">NUESTROS VALORES</h2>
+                </div>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <ComponenteValores
+                            imagen = "76"
+                            texto = "Innovar como forma de ver la vida."
+                        />
+                        <ComponenteValores
+                            imagen = "77"
+                            texto = "Cuidar y escuchar a nuestros clientes, sobre todo si son críticos."
+                        />
+                        <ComponenteValores
+                            imagen = "78"
+                            texto = "Ofrecer el mejor soporte técnico a nuestros clientes."
+                        />
+                        <ComponenteValores
+                            imagen = "79"
+                            texto = "Seguir aprendiendo siempre, incluso de lo inesperado."
+                        />
+                        <ComponenteValores
+                            imagen = "80"
+                            texto = "Mejora continua y autocrítica constante."
+                        />
+                    </div>
+                </div>
+                
+            </section>
+            <ComponenteTSTI
+                titulo="I+D+i"
+                subtitulo="Investigación + Desarrollo + Innovación"
+                texto="Desde sus orígenes Pandora siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde que ya en 2007 lideramos un consorcio Europeo que combinaba seguridad y monitorización."
+                imagen="81"
+            />
         </>
     ) 
 }
