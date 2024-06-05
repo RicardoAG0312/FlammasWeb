@@ -322,24 +322,30 @@
     width: 100%;
 }
 .seccion-HMV .content {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    padding: 0 10px;
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 .seccion-HMV .btn-full-width:hover + .content,
-.btn-full-width:focus-within + .content {
-    display: block;
+.seccion-HMV .btn-full-width:focus-within + .content,
+.seccion-HMV .content:hover {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 10px;
 }
-.txt-menu{
+.txt-menu {
     font-family: "Antonio";
     font-size: 50px;
     color: white;
     font-weight: bolder;
     margin-bottom: 30px;
 }
-/*.boton-oscuro{
-    outline: 1px solid white;
-    padding-bottom: 0;
-}*/
-.boton-oscuro{
+.boton-oscuro {
     outline: 1px solid white;
     margin-bottom: 15px;
     margin-top: 0;
@@ -352,14 +358,11 @@
 .boton-oscuro h2.txt-menu {
     margin: 0;
 }
-  /* Cambio de color al pasar el mouse sobre el botón */
 .boton-oscuro:hover {
     background-color: #FD5D05;
 }
-/* Mantener el color al hacer clic en el botón */
 .boton-oscuro:focus,
 .boton-oscuro:active,
 .boton-oscuro.active {
-    outline: none;
     background-color: #FD5D05;
 }
