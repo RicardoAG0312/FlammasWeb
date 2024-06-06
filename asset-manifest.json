@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/flammas/static/css/main.2198034c.css",
-    "main.js": "/flammas/static/js/main.39544c71.js",
+    "main.css": "/flammas/static/css/main.f77cf0ff.css",
+    "main.js": "/flammas/static/js/main.78634c55.js",
+    "static/media/2.mp4": "/flammas/static/media/2.ae6faaed885539ac59f8.mp4",
+    "static/media/flammas web.mp4": "/flammas/static/media/flammas web.a7059eb1ecb4362c11d7.mp4",
+    "static/media/1.mp4": "/flammas/static/media/1.62948a22ebd3e9876806.mp4",
+    "static/media/3.mp4": "/flammas/static/media/3.8726dbd7f3892bd15e20.mp4",
     "static/media/24.png": "/flammas/static/media/24.bb348995d9100481efb5.png",
     "static/media/imagen7.png": "/flammas/static/media/imagen7.1a6c22f76e3b3339e751.png",
+    "static/media/75.png": "/flammas/static/media/75.5f03a53eb6879b1c59e8.png",
     "static/media/imagen9.png": "/flammas/static/media/imagen9.4a487beaef5bf64b248d.png",
+    "static/media/82.png": "/flammas/static/media/82.6b9aff5df340779ae5bb.png",
     "static/media/22.png": "/flammas/static/media/22.6fa9dde74cb486d6df16.png",
     "static/media/imagen10.png": "/flammas/static/media/imagen10.6adf72fc77543ccc913c.png",
     "static/media/IMAGEN-FONDO-PRINCIPAL.jpeg": "/flammas/static/media/IMAGEN-FONDO-PRINCIPAL.dda39297e4941153fe35.jpeg",
     "static/media/imagen8.png": "/flammas/static/media/imagen8.262b1ee199a063a9833b.png",
+    "static/media/81.png": "/flammas/static/media/81.5d5e5d0028e748301672.png",
     "static/media/23.png": "/flammas/static/media/23.355344b822b3272037e3.png",
     "static/media/44.png": "/flammas/static/media/44.a11543b7818a5bfc3577.png",
     "static/media/41.png": "/flammas/static/media/41.2d3f956e00e4ca0cb003.png",
@@ -51,10 +58,16 @@
     "static/media/9.png": "/flammas/static/media/9.2116241bebd4fcb829d2.png",
     "static/media/58.png": "/flammas/static/media/58.60e3aa8b4091eae85b64.png",
     "static/media/8.png": "/flammas/static/media/8.2e36d1b8a612c60e11ab.png",
+    "static/media/78.png": "/flammas/static/media/78.f90f96063d4c43e90137.png",
     "static/media/13.png": "/flammas/static/media/13.77bde901ac9d0e106cc7.png",
     "static/media/dashboard.png": "/flammas/static/media/dashboard.218e074e4ba026041178.png",
     "static/media/10.png": "/flammas/static/media/10.c3184a87d02ec0a48935.png",
+    "static/media/79.png": "/flammas/static/media/79.d26f11fe08e5385ee616.png",
+    "static/media/76.png": "/flammas/static/media/76.296d899d93e84f301c5e.png",
+    "static/media/74.png": "/flammas/static/media/74.3f59daddb28267772414.png",
+    "static/media/80.png": "/flammas/static/media/80.04b0447395adf92e55c8.png",
     "static/media/12.png": "/flammas/static/media/12.c2a5149b0c2df264b847.png",
+    "static/media/77.png": "/flammas/static/media/77.851efba638252acec067.png",
     "static/media/55.png": "/flammas/static/media/55.803570914fbf6e1035c4.png",
     "static/media/56.png": "/flammas/static/media/56.72f7cc790835070fe454.png",
     "static/media/57.png": "/flammas/static/media/57.e3da075a5b20348a7902.png",
@@ -67,11 +80,11 @@
     "static/media/4.svg": "/flammas/static/media/4.669e99f858f3f11df885.svg",
     "static/media/5.svg": "/flammas/static/media/5.7553df8b6b05e61487d0.svg",
     "index.html": "/flammas/index.html",
-    "main.2198034c.css.map": "/flammas/static/css/main.2198034c.css.map",
-    "main.39544c71.js.map": "/flammas/static/js/main.39544c71.js.map"
+    "main.f77cf0ff.css.map": "/flammas/static/css/main.f77cf0ff.css.map",
+    "main.78634c55.js.map": "/flammas/static/js/main.78634c55.js.map"
   },
   "entrypoints": [
-    "static/css/main.2198034c.css",
-    "static/js/main.39544c71.js"
+    "static/css/main.f77cf0ff.css",
+    "static/js/main.78634c55.js"
   ]
 }
