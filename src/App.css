@@ -118,6 +118,10 @@ footer .row .info div {
 footer .row .info i {
     font-size: 35px;
 }
+footer .row .info a {
+    font-style: none;
+    color: #FD5D05;
+}
 footer .row .links {
     display: grid;
     grid-template-areas: 

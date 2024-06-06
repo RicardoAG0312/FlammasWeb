@@ -111,9 +111,15 @@ function App() {
                             <img src={LogoFlammas} alt="Logo Flammas" />
                             <p> Calle 122 7 A 18 Oficina 104, Bogota, Colombia </p>
                             <div>
-                                <i className="bi bi-linkedin"></i>
-                                <i className="bi bi-whatsapp"></i>
-                                <i className="bi bi-envelope"></i>
+                                <a href="https://www.linkedin.com/company/flammas/?viewAsMember=true" target='_blank' rel='noreferrer'>
+                                    <i className="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://wa.me/51987654321" target='_blank' rel='noreferrer'>
+                                    <i className="bi bi-whatsapp"></i>
+                                </a>
+                                <a href="mailto=ventas@flammas.com" target='_blank' rel='noreferrer'>
+                                    <i className="bi bi-envelope"></i>
+                                </a>    
                             </div>
                         </div>
                         <div className="col-12 col-9 col-xl-9 links">

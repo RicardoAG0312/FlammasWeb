@@ -1,5 +1,6 @@
 import "../estilos/componenteNosotros.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 
 function ComponenteEncabezadoNosotros ({titulo, subtitulo}) {
     return (
@@ -65,7 +66,7 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
     return(
         <div className="container">
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-5 pe-5">
                     <div className="card mb-3">
                         <div className="card-body text-white">
                             <p className="t1">{texto1}</p>
@@ -80,7 +81,7 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
                 <div className="col-md-2 middle-col">
                     <img src={require(`../images/${imagen}.png`)} alt="imagen" />
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 ps-5">
                     <div className="card mb-3">
                         <div className="card-body text-white">
                             <p className="t3">{texto3}</p>
@@ -269,6 +270,7 @@ function ComponenteNosotrosFlammas () {
                     imagen = "74"
                 />
             </section>
+            {/* Seccion Valores */}
             <section className="container-fluid seccion-valores">
                 <div className="mt-3 mb-5">
                     <h2 className="text-center">NUESTROS VALORES</h2>
@@ -297,13 +299,18 @@ function ComponenteNosotrosFlammas () {
                         />
                     </div>
                 </div>
-                
             </section>
             <ComponenteTSTI
                 titulo="I+D+i"
                 subtitulo="Investigación + Desarrollo + Innovación"
                 texto="Desde sus orígenes Pandora siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde que ya en 2007 lideramos un consorcio Europeo que combinaba seguridad y monitorización."
                 imagen="81"
+            />
+            <MiniComponenteQuintaSeccion 
+                titulo = "+500 INTEGRACIONES:"
+                subtitulo = "EXPANDE EL PODER DE TU MONITORIZACIÓN"
+                texto1 = "Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
+                texto2 = "Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
             />
         </>
     ) 

@@ -12,6 +12,17 @@ export function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
         </div>
     )
 }
+function MiniVideos ({imagen, titulo, texto}) {
+    return (
+        <div className='carta'>
+            <video autoPlay preload='auto' loop muted>
+                <source src={require(`../images/${imagen}.mp4`)} type='video/mp4' />
+            </video>
+            <h1> {titulo} </h1>
+            <p> {texto} </p>
+        </div>
+    )
+}
 function MiniComponentesCuartaSeccion ({imagen, titulo, texto}) {
     return (
         <div>
@@ -58,15 +69,9 @@ function ComponenteInicio() {
                     </div>
                     <div className="col-12 col-sm-4 col-xxl-4 segunda-columna">
                         <div className='container-fluid'>
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
+                            <video autoPlay preload='auto' loop muted>
+                                <source src={require("../images/flammas web.mp4")} type='video/mp4' />
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -77,18 +82,18 @@ function ComponenteInicio() {
                     <h2> SEA LO QUE SEA QUE QUIERAS SUPERVISAR, TENEMOS LO QUE NECESITAS </h2>
                 </div>
                 <div className='container contenedor-cartas'>
-                    <MiniComponentesSegundaSeccion 
-                        imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    <MiniVideos 
+                        imagen = "1"
                         titulo = "MONITORIZACIÓN INTEGRAL"
                         texto = "Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
                     />
-                    <MiniComponentesSegundaSeccion 
-                        imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    <MiniVideos
+                        imagen = "2"
                         titulo = "CONTROL REMOTO"
                         texto = "Un entorno dinámico con acceso remoto a tus servidores o estaciones de trabajo."
                     />
-                    <MiniComponentesSegundaSeccion 
-                        imagen = "IMAGEN-FONDO-PRINCIPAL"
+                    <MiniVideos
+                        imagen = "3"
                         titulo = "IT SERVICE MANAGER"
                         texto = "Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
                     />
