@@ -12,7 +12,7 @@ import LogoFlammas from './images/Recurso 6.png';
 import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
 
 document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
+    e.preventDefault(); 
 });
 
 
