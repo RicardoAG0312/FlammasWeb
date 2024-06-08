@@ -1,7 +1,5 @@
 /* Fuente Antonio: */
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
-/* Fuente Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     padding: 0;
@@ -18,14 +16,14 @@ p {
 body {
     background-color: black;
 }
-.seccion-encabezado {
-    height: 100vh;
+.seccion-encabezado-soporte {
+    height: auto;
     color: white;
-    background-color: black;
     position: relative;
     z-index: 0;
+    padding: 0;
 }
-.seccion-encabezado::before {
+.seccion-encabezado-soporte::before {
     content: "";
     background-image: url("../images/Imagen-Fondo_Princi.jpeg"); 
     background-position: center center;
@@ -40,37 +38,35 @@ body {
     filter: brightness(15%);
     -webkit-filter: brightness(15%);
 }
-.seccion-encabezado .row {
-    padding: 50px 0;
+.seccion-encabezado-soporte .row {
+    height: auto;
+    padding: 20px;
     margin: 0;
-    height: 100%;
 }
-.seccion-encabezado .row .primera-columna {
+.seccion-encabezado-soporte .row .primera-columna {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 800px;
 }
-.seccion-encabezado .row .primera-columna div:nth-child(1) {
+.seccion-encabezado-soporte .row .primera-columna div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 5px;
 }
-.seccion-encabezado .row .primera-columna div:nth-child(1) h6 {
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.seccion-encabezado .row .primera-columna div:nth-child(1) h1 {
-    font-size: 52px;
-    font-family: "Antonio", sans-serif;
+.seccion-encabezado-soporte .row .primera-columna div:nth-child(1) h1 {
+    font-size: 60px;
+    font-family: "Antonio";
     font-weight: bolder;
     transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
 }
-.seccion-encabezado .row .primera-columna div:nth-child(1) h2 {
+.seccion-encabezado-soporte .row .primera-columna div:nth-child(1) h2 {
     font-size: 90px;
     font-family: "Antonio", sans-serif;
     color: #FD5D05;
@@ -79,60 +75,76 @@ body {
     line-height: 1,1;
     transform: scale(0.9);
 }
-.seccion-encabezado .row .primera-columna div:nth-child(1) p { 
-    font-size: 32px;
-    line-height: 1;
-    transform: scale(0.8);
+.seccion-encabezado-soporte .row .primera-columna div:nth-child(1) p { 
+    font-size: 22px;
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-left: 40px;
+    width: 80%;
 }
-
-.seccion-encabezado .row .primera-columna div:nth-child(2) {
-    background-color: #FD5D05;
-    font-weight: bolder;
-}
-.seccion-encabezado .row .segunda-columna {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.seccion-encabezado .row .segunda-columna .container-fluid {
-    background-image: linear-gradient(180deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
 /*Seccion login */
-.seccion-contac {
-    height: 1000px;
-    color: white;
-    background: red
+.seccion-contac-soporte {
+    padding: 10px;
+    height: auto;
+    color: black;
+    padding-top: 20px;
 }
-.seccion-contac p {
-    font-size: 12px;
+.seccion-contac-soporte p {
+    font-size: 10px;
 }
-.seccion-contac .row {
-    padding: 30px;
-    height:100%;
-    background: blue
-}
-.seccion-contac .info {
-    border-radius: 20px;
-    padding: 20px;
+.seccion-contac-soporte form {
     background-color: white;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    color: black;
-    outline: 2px solid #FD5D05;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "nombres apellidos"
+    "email email"
+    "empresa pais"
+    "mensaje mensaje"
+    "captcha captcha"
+    "enviar enviar"
+    ;
 }
+.seccion-contac-soporte form div:nth-child(1) { 
+    grid-area: nombres;
+}
+.seccion-contac-soporte form div:nth-child(2) {
+    grid-area: apellidos;
+}
+.seccion-contac-soporte form div:nth-child(3) {
+    grid-area: email;
+}
+.seccion-contac-soporte form div:nth-child(4) {
+    grid-area: empresa;
+}
+.seccion-contac-soporte form div:nth-child(5) {
+    grid-area: pais;
+}
+.seccion-contac-soporte form div:nth-child(6) {
+    grid-area: mensaje;
+}
+.seccion-contac-soporte form div:nth-child(7) {
+    grid-area: captcha;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.seccion-contac-soporte form div:nth-child(8) {
+    grid-area: enviar;
+}
+
 input[type=text], select, option, input[type=number], input[type=email]{
     width: 100%;
     padding: 12px 20px;
@@ -141,6 +153,11 @@ input[type=text], select, option, input[type=number], input[type=email]{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 input[type=submit] {
     width: 100%;
@@ -162,10 +179,11 @@ input[type=submit] {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+
 input[type=submit]:hover {
     background-color: rgba(253, 93, 5, 0.9);
 }
-.seccion-contac .botones {
+.seccion-contac-soporte .botones {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +268,7 @@ input[type=submit]:hover {
 .contenedorAZJIzquierda .info p {
     font-size: 18px;
     font-weight: 400;
-    font-family: "Roboto";
+    font-family: "Montserrat";
     padding: 10px 0;
     text-align: justify !important;
 }
