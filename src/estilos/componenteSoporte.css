@@ -191,65 +191,6 @@ input[type=submit]:hover {
     gap: 20px;
 }
 
-
-/*Seccion 49 */
-.contenedorPrincipalCards {
-    background-color: black;
-    height: auto;
-    padding: 20px;
-}
-.contenedorPrincipalCards .containCartas {
-    height: auto;
-    background-color: white;
-    border-radius: 20px;
-}
-.contenedorPrincipalCards .containCartas header {
-    color: orange;
-    font-family: "Antonio";
-    font-weight: bold;
-    background-color: white;
-    padding: 15px;
-    text-align: left;
-    font-size: 40px;
-}
-.contenedorPrincipalCards .containCartas p {
-    font-family: "Antonio";
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    opacity: 0;
-}
-.contenedorPrincipalCards .containCartas .subcontainCards {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 20px 0;
-}
-.contenedorPrincipalCards .containCartas .subcontainCards div {
-    width: 24%;
-    height: 150px;
-    padding: 10px;
-    background-color: white;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    outline: 3px solid #D3D3D3
-}
-.contenedorPrincipalCards .containCartas .subcontainCards img {
-    width: 100px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-}
-.contenedorPrincipalCards .containCartas .subcontainCards div:nth-child(7) {
-    width: 45%;
-}
-
 /*Seccion soporte tecnico */
 .contenedorAZJIzquierda {
     height: auto;
@@ -284,7 +225,7 @@ input[type=submit]:hover {
 
 
 /*seccion segunda*/
-.seccion-segunda {
+.seccion-jhoan {
     height: auto;
     color: white;
     display: flex;
@@ -358,11 +299,11 @@ input[type=submit]:hover {
 .seccion-viñetas-jhoan .viñeta-animada img {
     width: 150px;
     position: absolute;
-    transform: translateY(-40%);
-    -webkit-transform: translateY(-40%);
-    -moz-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    -o-transform: translateY(-40%);
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -379,4 +320,267 @@ input[type=submit]:hover {
 .seccion-viñetas-jhoan .viñeta-animada:hover h1,
 .seccion-viñetas-jhoan .viñeta-animada:hover p {
     opacity: 1;
+}
+
+/*otras viñetas lol*/
+.seccion-viñetas-urquia {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    gap: 30px;
+    padding: 30px;
+}
+.seccion-viñetas-urquia .viñeta-animada{
+    width: 30%;
+    height: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    outline: 2px solid #FD5D05;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+.seccion-viñetas-urquia .viñeta-animada p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-urquia .viñeta-animada img {
+    width: 150px;
+    position: absolute;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.seccion-viñetas-urquia .viñeta-animada:hover img {
+    transform: translateY(-69px);
+    -webkit-transform: translateY(-69px);
+    -moz-transform: translateY(-69px);
+    -ms-transform: translateY(-69px);
+    -o-transform: translateY(-69px);
+}
+.seccion-viñetas-urquia .viñeta-animada:hover p {
+    opacity: 1;
+}
+/*pagina 51*/
+.contenedorCartaInfojhoanIzquierda {
+    margin-top: 50px;
+    height: 300px;
+    outline: 1px solid #FD5D05;
+    padding: 2px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+.contenedorCartaInfojhoanIzquierda .info {
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 30px;
+}
+.contenedorCartaInfojhoanIzquierda .info h2 {
+    font-size: 65px;
+    color: #FD5D05;
+    font-weight: bold;
+    font-family: "Antonio";
+}
+.contenedorCartaInfojhoanIzquierda .info p {
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.contenedorCartaInfojhoanIzquierda h3 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: "Antonio";
+}
+.contenedorCartaInfojhoanIzquierda .imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedorCartaInfojhoanIzquierda .imagen div:nth-child(1){
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedorCartaInfojhoanIzquierda .imagen div:nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.contenedorCartaInfojhoanIzquierda .imagen div:nth-child(2) {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedorCartaInfojhoanIzquierda .imagen div:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.contenedorCartaInfojhoanIzquierda .imagen img {
+    width: 100px;
+}
+
+/*pagina 49*/
+.seccion-49 {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 20px;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-49 div:nth-child(1) {
+    text-align: center;
+}
+.seccion-49 div:nth-child(1) h2 {
+    font-family: "Antonio";
+    font-size: 65px;
+    color: #FD5D05;
+    font-weight: bolder;
+}
+.seccion-viñetas-mart {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    gap: 7px;
+    padding: 30px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-areas: 
+        "viñeta1 viñeta2 viñeta3 viñeta4"
+        "viñeta5 viñeta6 viñeta7 viñeta7"
+    ;
+}
+.seccion-viñetas-mart .viñeta-animada{
+    width: 24%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    outline: 2px solid #D3D3D3;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+.seccion-viñetas-mart div:nth-child(1) {
+    grid-area: viñeta1;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(2) {
+    grid-area: viñeta2;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(3) {
+    grid-area: viñeta3;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(4) {
+    grid-area: viñeta4;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(5) {
+    grid-area: viñeta5;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(6) {
+    grid-area: viñeta6;
+    width: 100%;
+}
+.seccion-viñetas-mart div:nth-child(7) {
+    grid-area: viñeta7;
+    width: 100%;
+}
+.seccion-viñetas-mart .viñeta-animada p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-mart .viñeta-animada img {
+    width: 135px;
+    position: absolute;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.seccion-viñetas-mart .viñeta-animada:hover img {
+    transform: translateY(-103px);
+    -webkit-transform: translateY(-103px);
+    -moz-transform: translateY(-103px);
+    -ms-transform: translateY(-103px);
+    -o-transform: translateY(-103px);
+}
+.seccion-viñetas-mart .viñeta-animada:hover p {
+    opacity: 1;
+}
+.seccion-viñetas-mart .viñeta-animada div:nth-child(7) {
+    width: 40%;
 }
