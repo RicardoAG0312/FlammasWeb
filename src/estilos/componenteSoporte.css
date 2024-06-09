@@ -283,4 +283,100 @@ input[type=submit]:hover {
 }
 
 
-/*viñetas animadas*/
+/*seccion segunda*/
+.seccion-segunda {
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-jhoan div:nth-child(1) {
+    text-align: center;
+}
+.seccion-jhoan div:nth-child(1) h2 {
+    font-family: "Antonio";
+    font-size: 65px;
+    color: #FD5D05;
+    font-weight: bolder;
+}
+.seccion-viñetas-jhoan {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    gap: 30px;
+    padding: 30px;
+}
+.seccion-viñetas-jhoan .viñeta-animada{
+    width: 22%;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    outline: 2px solid #FD5D05;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+.seccion-viñetas-jhoan .viñeta-animada h1 {
+    color: black;
+    text-transform: uppercase;
+    font-family: "Antonio";
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    margin-top: 80px;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-jhoan .viñeta-animada p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.seccion-viñetas-jhoan .viñeta-animada img {
+    width: 150px;
+    position: absolute;
+    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.seccion-viñetas-jhoan .viñeta-animada:hover img {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+.seccion-viñetas-jhoan .viñeta-animada:hover h1,
+.seccion-viñetas-jhoan .viñeta-animada:hover p {
+    opacity: 1;
+}

@@ -3,14 +3,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../estilos/componenteSoporte.css";
 
-function ComponenteCartasPrincipales({ titulo , texto}) {
-    return(
-    <div className="containCartas">
-        <h1> {titulo} </h1>
-        <p> {texto} </p>
-    </div>
-    )
-}
 function onChange(value) {
 //     console.log("Captcha value:", value);
 }
@@ -56,19 +48,17 @@ function ComponentetxtIzquierdaSoluciones({titulo,texto,texto1,texto2,imagen}){
         </section>
     )
 }
-/*falta corregir*/
-function ComponenteViñetaAnimada ({ imagen, titulo, texto }) {
+function ComponenteViñetaAnimada ({ nombreImagen, titulo, texto }) {
     return (
         <>
             <div className="viñeta-animada">
-                <img src={require(`../images/${imagen}.png`)} alt="Imagen"/>
-                <h2> {titulo} </h2>
+                <img src={require(`../images/${nombreImagen}.png`)} alt="nombreImagen"/>
+                <h1> {titulo} </h1>
                 <p> {texto} </p>
             </div>
         </>
     )
 }
-
 //Componentes a renderizar
 
 export function ComponenteSoporteProfesional () {
@@ -126,6 +116,7 @@ export function ComponenteSoporteProfesional () {
                     </div>
                 </div>
             </section>
+
         </>
     )
 }
@@ -197,7 +188,33 @@ export function ComponenteSoporteTecnico () {
         texto2="Los clientes con niveles de soporte avanzados pueden acceder a los servicios de soporte por teléfono, llamando a números dedicados. El soporte 24/7 también está disponible para niveles de soporte avanzado."
         imagen="83"
         />
-        
-    </>
+            <section className='container-fluid seccion-jhoan'>
+                <div>
+                    <h2> NOS GANAMOS LA CONFIANZA DE NUESTROS CLIENTES EN TODO EL MUNDO </h2>
+                </div>
+                <section className="container-fluid seccion-viñetas-jhoan">
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "84"
+                    titulo = "Rápido y eficiente"
+                    texto = "Soporte ofrecido por el equipo de ingeniería de Flammas.."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "85"
+                    titulo = "Soporte integral"
+                    texto = "Ofrecemos soporte opcional 24/7 para entornos críticos."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "86"
+                    titulo = "SLA controlado"
+                    texto = "Nuestros procedimientos de soporte incluyen una estricto monitorización de SLA."
+                />
+                <ComponenteViñetaAnimada 
+                    nombreImagen = "87"
+                    titulo = "Servicio confiable"
+                    texto = "Nuestro soporte es el activo mejor valorado de nuestra plataforma."
+                />
+                </section>
+            </section>
+        </>
     )
 }
