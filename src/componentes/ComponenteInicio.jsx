@@ -14,7 +14,7 @@ export function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
 }
 function MiniVideos ({imagen, titulo, texto}) {
     return (
-        <div className='carta'>
+        <div className='carta-video'>
             <video autoPlay preload='auto' loop muted>
                 <source src={require(`../images/${imagen}.mp4`)} type='video/mp4' />
             </video>
@@ -50,7 +50,7 @@ export function MiniComponenteQuintaSeccion ({titulo, subtitulo, texto1, texto2}
     )
 }
 
-
+//Componente a renderizar 
 function ComponenteInicio() {
     return (
         <>

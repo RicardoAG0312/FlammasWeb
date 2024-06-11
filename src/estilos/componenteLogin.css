@@ -51,6 +51,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgba(253, 93, 5, 0.9);
 }
+.seccion-contac form a {
+    color: #FD5D05;
+    text-decoration: none;
+}
 .seccion-contac .botones {
     display: flex;
     align-items: center;

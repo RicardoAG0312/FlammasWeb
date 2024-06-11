@@ -31,7 +31,7 @@ function ComponenteLogin() {
                 const mensaje = event.target.elements.message.value;
                 const asunto = "Información sobre Flammas";
                 const encodedAsunto = encodeURI(asunto);
-                const emailBody = `Nombres: ${nombres}\nApellidos: ${apellidos}\nEmail: ${email}\nTeléfono: ${telefono}\nEmpresa: ${empresa}\nCargo: ${cargo}\n¿Cómo conoció Flammas?: ${conocimiento}\nProducto de Interés: ${producto}\nMensaje: ${mensaje}`;
+                const emailBody = `Nombres: ${nombres}\nApellidos: ${apellidos}\nEmail: ${email}\nTeléfono: ${telefono}\nEmpresa: ${empresa}\nCargo: ${cargo}\n¿Cómo conoció Flammas?: ${conocimiento}\nProducto de Interés: ${producto}\nMensaje: ${mensaje}\nAceptación de política: Si`;
                 const encodedEmailBody = encodeURI(emailBody);
                 const correo = "ventas@flammas.com"
                 const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodedAsunto}&body=${encodedEmailBody}`;
@@ -52,18 +52,18 @@ function ComponenteLogin() {
                     <div className="col-12 col-sm-6 col-xxl-6 info">
                         <form ref={formRef} action="/submit_form" method='POST'>
                             <label for="fname"> (*) Nombres: </label>
-                            <input type="text" id="fname" name="firstname" placeholder="Ingresa tus nombres" />
+                            <input type="text" id="fname" name="firstname" placeholder="Ingresa tus nombres" required="true"/>
                             <label for="lname"> (*) Apellidos: </label>
-                            <input type="text" id="lname" name="lastname" placeholder="Ingresa tus apellidos" />
+                            <input type="text" id="lname" name="lastname" placeholder="Ingresa tus apellidos" required="true"/>
                             <label for="email"> (*) Email: </label>
-                            <input type="email" id="email" name="email" placeholder="Ingresa tu email" />
+                            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required="true"/>
                             <label for="phone"> (*) Número de teléfono: </label>
-                            <input type="number" id="phone" name="phone" placeholder="Ingresa tu número" />
+                            <input type="number" id="phone" name="phone" placeholder="Ingresa tu número" required="true"/>
                             <label for="company"> (*) Empresa: </label>
-                            <input type="text" id="company" name="company" placeholder="Ingresa tu empresa" />
+                            <input type="text" id="company" name="company" placeholder="Ingresa tu empresa" required="true"/>
                             <label for="cargo"> (*) Cargo: </label>
-                            <select id="cargo" name="cargo">
-                                <option value="Selecciona"> Selecciona </option>
+                            <select id="cargo" name="cargo" required="true">
+                                <option value=""> Selecciona </option>
                                 <option value="CTO - CIO - Director"> CTO - CIO - Director </option>
                                 <option value="Usuario IT"> Usuario IT </option>
                                 <option value="Partner"> Partner </option>
@@ -71,8 +71,8 @@ function ComponenteLogin() {
                                 <option value="Otro"> Otros </option>
                             </select>
                             <label for="conocimiento" className='mt-3'> (*) ¿Cómo conoció Flammas?: </label>
-                            <select id="conocimiento" name="conocimiento">
-                                <option value="Selecciona"> Selecciona </option>
+                            <select id="conocimiento" name="conocimiento" required="true">
+                                <option value=""> Selecciona </option>
                                 <option value="Buscador (Google - Yahoo, etc)"> Buscador (Google - Yahoo, etc) </option>
                                 <option value="Redes Sociales"> Redes Sociales </option>
                                 <option value="Publicidad"> Publicidad </option>
@@ -83,15 +83,15 @@ function ComponenteLogin() {
                                 <option value="Otro"> Otro </option>
                             </select>
                             <label for="product" className='mt-3'> (*) Producto de Interés: </label>
-                            <select id="product" name="product">
-                                <option value="Selecciona"> Selecciona </option>
-                                <option value="Flammas Monitoring"> Flammas (Monitoring) </option>
-                                <option value="Flammas ITSM"> Flammas ITSM </option>    
-                                <option value="Flammas RC"> Flammas RC (Remoto control) </option>
+                            <select id="product" name="product" required="true">
+                                <option value=""> Selecciona </option>
+                                <option value="Flammas 1"> Flammas 1 </option>
+                                <option value="Flammas 2"> Flammas 2 </option>    
+                                <option value="Flammas 3"> Flammas 3 </option>
                             </select>
                             <label for="message" className='mt-3'> (*) Mensaje: </label>
-                            <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" />
-                            <label for="privacy" className='me-3'> (*) Sí, acepto la política de privacidad </label>
+                            <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" required="true"/>
+                            <label for="privacy" className='me-3'> (*) <a href="./"> Sí, acepto la política de privacidad </a> </label>
                             <input type="checkbox" id="privacy" name="privacy" required="true" />
                             <p> Al hacer clic en enviar, aceptas que Flammas almacene y procese la información personal suministrada arriba para proporcionarte el contenido solicitado. </p>
                             <input type="submit" value="Enviar" />
