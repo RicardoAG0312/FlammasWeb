@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flammas/static/css/main.c5e0c232.css",
-    "main.js": "/flammas/static/js/main.0bc4aee5.js",
+    "main.css": "/flammas/static/css/main.eea8e712.css",
+    "main.js": "/flammas/static/js/main.c9ea3c23.js",
     "static/media/2.mp4": "/flammas/static/media/2.ae6faaed885539ac59f8.mp4",
     "static/media/flammas web.mp4": "/flammas/static/media/flammas web.a7059eb1ecb4362c11d7.mp4",
     "static/media/1.mp4": "/flammas/static/media/1.62948a22ebd3e9876806.mp4",
@@ -26,6 +26,8 @@
     "static/media/73.png": "/flammas/static/media/73.2672a6fb083d5d917e81.png",
     "static/media/43.png": "/flammas/static/media/43.cf0d63eb654ae5084b53.png",
     "static/media/49.png": "/flammas/static/media/49.7efb2b910c13ebfb268c.png",
+    "static/media/dash.png": "/flammas/static/media/dash.a4133d61a4f80eb93458.png",
+    "static/media/dashboard.png": "/flammas/static/media/dashboard.a4133d61a4f80eb93458.png",
     "static/media/46.png": "/flammas/static/media/46.76c44b7ab4d67b463145.png",
     "static/media/51.png": "/flammas/static/media/51.105e4df80027a3696e52.png",
     "static/media/50.png": "/flammas/static/media/50.e7ccf2222ffe1f227884.png",
@@ -47,6 +49,8 @@
     "static/media/96.png": "/flammas/static/media/96.8f17c5758278919f52bd.png",
     "static/media/25.png": "/flammas/static/media/25.2171e72484a82abc0722.png",
     "static/media/72.png": "/flammas/static/media/72.b7a919c9ddd46663b9de.png",
+    "static/media/infor.png": "/flammas/static/media/infor.f9c6b8a53f2d9401a195.png",
+    "static/media/report.png": "/flammas/static/media/report.f9c6b8a53f2d9401a195.png",
     "static/media/91.png": "/flammas/static/media/91.f0d8ced1d0004a445c40.png",
     "static/media/100.png": "/flammas/static/media/100.b7d9afa6059beaac0fe8.png",
     "static/media/52.png": "/flammas/static/media/52.d541516e0768b8ffda5b.png",
@@ -79,7 +83,6 @@
     "static/media/8.png": "/flammas/static/media/8.2e36d1b8a612c60e11ab.png",
     "static/media/78.png": "/flammas/static/media/78.f90f96063d4c43e90137.png",
     "static/media/13.png": "/flammas/static/media/13.77bde901ac9d0e106cc7.png",
-    "static/media/dashboard.png": "/flammas/static/media/dashboard.218e074e4ba026041178.png",
     "static/media/10.png": "/flammas/static/media/10.c3184a87d02ec0a48935.png",
     "static/media/79.png": "/flammas/static/media/79.d26f11fe08e5385ee616.png",
     "static/media/76.png": "/flammas/static/media/76.296d899d93e84f301c5e.png",
@@ -94,18 +97,17 @@
     "static/media/94.png": "/flammas/static/media/94.0b48b7567af6e7107476.png",
     "static/media/Recurso 3.png": "/flammas/static/media/Recurso 3.65e6949c3f70bf739d5e.png",
     "static/media/1.svg": "/flammas/static/media/1.7dcd2bb495fd3f2ba1ce.svg",
-    "static/media/report.png": "/flammas/static/media/report.b7ca636f365bda284862.png",
     "static/media/3.svg": "/flammas/static/media/3.9bc198baaa479eb0c161.svg",
     "static/media/2.svg": "/flammas/static/media/2.0afcea9d8bcd9217a912.svg",
     "static/media/6.svg": "/flammas/static/media/6.0938004cd97a8d08dd6d.svg",
     "static/media/4.svg": "/flammas/static/media/4.669e99f858f3f11df885.svg",
     "static/media/5.svg": "/flammas/static/media/5.7553df8b6b05e61487d0.svg",
     "index.html": "/flammas/index.html",
-    "main.c5e0c232.css.map": "/flammas/static/css/main.c5e0c232.css.map",
-    "main.0bc4aee5.js.map": "/flammas/static/js/main.0bc4aee5.js.map"
+    "main.eea8e712.css.map": "/flammas/static/css/main.eea8e712.css.map",
+    "main.c9ea3c23.js.map": "/flammas/static/js/main.c9ea3c23.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5e0c232.css",
-    "static/js/main.0bc4aee5.js"
+    "static/css/main.eea8e712.css",
+    "static/js/main.c9ea3c23.js"
   ]
 }
