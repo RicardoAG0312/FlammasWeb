@@ -224,8 +224,6 @@ export function ComponenteSoporteProfesional () {
         </>
     )
 }
-
-//Componente a renderizar
 export function ComponenteSoporteTecnico () {
     const formRef = useRef(null);
     useEffect(() => {
@@ -305,7 +303,7 @@ export function ComponenteSoporteTecnico () {
                 </div>
         </section>
         <ComponentetxtIzquierdaSoluciones
-        texto="El objetivo principal del servicio de soporte técnico es brindar soporte para ayudar a resolver cualquier problema relacionado con la instalación, funcionamiento y uso de Pandora FMS."
+        texto="El objetivo principal del servicio de soporte técnico es brindar soporte para ayudar a resolver cualquier problema relacionado con la instalación, funcionamiento y uso de Flammas."
         texto1="El canal de soporte principal disponible para todos los clientes de soporte es nuestro Sistema de soporte, que garantiza la mensajería en línea para una comunicación rápida y fácil entre los clientes y nuestros especialistas técnicos. Damos soporte en inglés y español:"
         texto2="Los clientes con niveles de soporte avanzados pueden acceder a los servicios de soporte por teléfono, llamando a números dedicados. El soporte 24/7 también está disponible para niveles de soporte avanzado."
         imagen="83"

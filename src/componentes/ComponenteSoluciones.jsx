@@ -354,13 +354,12 @@ export function ComponenteSolucionesMonitorizacion () {
         </>
     )
 }
-
 export function ComponenteSolucionesInfraestructura () {
     return (
         <>
             <ComponenteEncabezadoSoluciones 
                 titulo = "MONITORIZACIÓN DE INFRAESTRUCTURA"
-                subtitulo = "SOLUCIONES DE FLAMMA"
+                subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "Flammas no es un puzzle de distintas soluciones integradas de forma superficial, cubrimos desde el hardware hasta las aplicaciones de usuario."
             />
             <section className="container-fluid contenedor-cartas-infra">
@@ -449,7 +448,7 @@ export function ComponenteSolucionesInfraestructura () {
             </section>
             <ComponenteEncabezadoSoluciones 
                 titulo = "MONITORIZACIÓN DE EXPERIENCIA DE USUARIO"
-                subtitulo = "SOLUCIONES DE FLAMMA"
+                subtitulo = "SOLUCIONES DE FLAMMAS"
                 texto = "Detecta y analiza problemas que afectan al usuario en cualquier punto de tu stack tecnológico."
             />
             <section className="container-fluid contenedor-cartas-infra">
@@ -577,7 +576,6 @@ export function ComponenteSolucionesInfraestructura () {
         </>
     )
 }
-
 export function ComponenteSolucionesCloud () {
     return (
         <>

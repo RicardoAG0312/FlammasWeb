@@ -268,7 +268,7 @@ function ComponenteNosotrosFlammas () {
             <ComponenteTSTI
                 titulo="I+D+i"
                 subtitulo="Investigación + Desarrollo + Innovación"
-                texto="Desde sus orígenes Pandora siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde que ya en 2007 lideramos un consorcio Europeo que combinaba seguridad y monitorización."
+                texto="Desde sus orígenes Flammas siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde que ya en 2007 lideramos un consorcio Europeo que combinaba seguridad y monitorización."
                 imagen="81"
             />
             <MiniComponenteQuintaSeccion 

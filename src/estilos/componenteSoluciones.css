@@ -1045,7 +1045,7 @@
         font-size: 14px;
     }
     .seccionFuncionAvanzadas .funcionalidades img{
-        width: 300px;
+        width: 100%;
     }
 }
 /* Pequeño (para teléfonos móviles pequeños) */
@@ -1768,6 +1768,10 @@
 }
 /* Medio pequeño (para teléfonos móviles grandes) */
 @media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedorAZJIzquierda img {
+        width: 300px !important;
+        height: 300px !important;
+    }
     .contenedorInfoCentral{
         height: auto;
         margin-bottom: 50px;
@@ -1793,5 +1797,151 @@
 @media only screen and (max-width: 320px) {
     .contenedorFondoBlanco .info {
         height: auto;
+    }
+}
+
+
+/* Seccion Encabezado */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .seccionEncabezadoSoluciones h3 {
+        font-size: 50px;
+    }
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 60px;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 40px !important;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 30px !important;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 100% !important;
+        font-size: 14px;
+    }
+}
+
+/* Seccion Cartas */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedor-cartas .carta h1 {
+        font-size: 20px !important;
+    }
+    .contenedor-cartas .carta p {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contenedor-cartas .carta h1 {
+        font-size: 20px !important;
+    }
+    .contenedor-cartas .carta p {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-cartas .carta {
+        width: 47% !important;
+    }
+    .contenedor-cartas .carta h1 {
+        font-size: 18px !important;
+    }
+    .contenedor-cartas .carta p {
+        font-size: 14px !important;
+        text-align: justify !important;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-cartas .carta {
+        width: 47% !important;
+    }
+    .contenedor-cartas .carta h1 {
+        font-size: 18px !important;
+    }
+    .contenedor-cartas .carta p {
+        font-size: 14px !important;
+        text-align: justify !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contenedor-cartas .carta {
+        width: 100% !important;
+    }
+    .contenedor-cartas .carta h1 {
+        font-size: 22px !important;
+    }
+}
+
+/* Seccion Cartas Animables */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .seccion-viñetas-animadas .viñeta-animada h2 {
+        font-size: 14px !important;
+    }
+    .seccion-viñetas-animadas .viñeta-animada p {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .seccion-viñetas-animadas .viñeta-animada {
+        width: 30%;
+    }
+    .seccion-viñetas-animadas .viñeta-animada h2 {
+        font-size: 14px !important;
+    }
+    .seccion-viñetas-animadas .viñeta-animada p {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .seccion-viñetas-animadas .viñeta-animada {
+        width: 45%;
+    }
+    .seccion-viñetas-animadas .viñeta-animada h2 {
+        font-size: 16px !important;
+    }
+    .seccion-viñetas-animadas .viñeta-animada p {
+        font-size: 14px !important;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccionImg div {
+        width: 350px;
+        height: 350px;
+    }
+    .seccion-viñetas-animadas .viñeta-animada {
+        width: 46%;
+    }
+    .seccion-viñetas-animadas .viñeta-animada h2 {
+        font-size: 16px !important;
+    }
+    .seccion-viñetas-animadas .viñeta-animada p {
+        font-size: 13px !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .seccionImg div {
+        width: 250px;
+        height: 250px;
+    }
+    .seccion-viñetas-animadas .viñeta-animada {
+        width: 100%;
+    }
+    .seccion-viñetas-animadas .viñeta-animada h2 {
+        font-size: 20px !important;
+    }
+    .seccion-viñetas-animadas .viñeta-animada p {
+        font-size: 15px !important;
     }
 }
