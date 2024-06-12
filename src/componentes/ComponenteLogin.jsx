@@ -13,6 +13,7 @@ function MiniComponenteLogin ({titulo, texto, nombreBoton}) {
     )
 }
 
+//Componente a renderizar 
 function ComponenteLogin() {
     const formRef = useRef(null);
     useEffect(() => {
@@ -91,7 +92,7 @@ function ComponenteLogin() {
                             </select>
                             <label for="message" className='mt-3'> (*) Mensaje: </label>
                             <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" required="true"/>
-                            <label for="privacy" className='me-3'> (*) <a href="./"> Sí, acepto la política de privacidad </a> </label>
+                            <label for="privacy" className='me-3'> (*) <a href={process.env.PUBLIC_URL + "/Política de Privacidad_Flammas.pdf"} target="_blank" rel="noopener noreferrer"> Sí, acepto la política de privacidad </a> </label>
                             <input type="checkbox" id="privacy" name="privacy" required="true" />
                             <p> Al hacer clic en enviar, aceptas que Flammas almacene y procese la información personal suministrada arriba para proporcionarte el contenido solicitado. </p>
                             <input type="submit" value="Enviar" />

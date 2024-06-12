@@ -177,13 +177,14 @@
     outline: none;
 }
 #log img {
-    width: 600px;
+    width: 100%;
     float: right;
 }
 #log h2 {
     text-transform: uppercase;
     font-size: 50px;
 }
+/* Cartas Logs */
 .contenedor-cartas-logs {
     height: auto;
     display: grid;
@@ -237,6 +238,7 @@
 .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
     font-size: 30px;
 }
+/* Cartas Animables */
 .contenedor-animables {
     height: auto;
     padding: 0;
@@ -378,6 +380,7 @@
 .contenedor-tercero-infra .row div:nth-child(2) p {
     color: white;
 }
+/* Seccion Cuarta */
 .contenedor-cuarta-infra {
     height: auto;
     color: white;
@@ -790,4 +793,1005 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
+}
+
+/* Media Querys */
+/* Monitorizacion de red */
+/* Seccion Encabezado */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .seccionEncabezadoSoluciones h3 {
+        font-size: 60px;
+    }
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 70px;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .seccionEncabezadoSoluciones h3 {
+        font-size: 50px;
+    }
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 60px;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccionEncabezadoSoluciones h3 {
+        font-size: 40px;
+    }
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 40px;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .seccionEncabezadoSoluciones h3 {
+        font-size: 30px !important;
+    }
+    .seccionEncabezadoSoluciones h1 {
+        font-size: 35px !important;
+    }
+    .seccionEncabezadoSoluciones p {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Seccion Principal Soluciones */
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .seccionEscrituraPrincipalSoluciones {
+        gap: 10px;
+    }
+    .seccionEscrituraPrincipalSoluciones h2 {
+        font-family: "Antonio";
+        color: #FD5D05;
+        font-weight: bold;
+    }
+    .seccionEscrituraPrincipalSoluciones p {
+        width: 100%;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccionEscrituraPrincipalSoluciones {
+        gap: 10px;
+    }
+    .seccionEscrituraPrincipalSoluciones h2 {
+        font-family: "Antonio";
+        color: #FD5D05;
+        font-weight: bold;
+    }
+    .seccionEscrituraPrincipalSoluciones p {
+        width: 100%;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .seccionEscrituraPrincipalSoluciones {
+        gap: 10px;
+    }
+    .seccionEscrituraPrincipalSoluciones h2 {
+        font-family: "Antonio";
+        color: #FD5D05;
+        font-weight: bold;
+    }
+    .seccionEscrituraPrincipalSoluciones p {
+        width: 100%;
+    }
+}
+
+/* Seccion Info Izquiera */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedorCartaInfoIzquierda {
+        height: auto;
+    }
+    .contenedorCartaInfoIzquierda .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+    }
+    .contenedorCartaInfoIzquierda .info h2 {
+        font-size: 40px;
+        color: #FD5D05;
+        font-weight: bold;
+        font-family: "Antonio";
+    }
+    .contenedorCartaInfoIzquierda .imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorCartaInfoIzquierda img {
+        width: 400px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contenedorCartaInfoIzquierda {
+        height: auto;
+    }
+    .contenedorCartaInfoIzquierda .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+    }
+    .contenedorCartaInfoIzquierda .info h2 {
+        font-size: 40px;
+        color: #FD5D05;
+        font-weight: bold;
+        font-family: "Antonio";
+    }
+    .contenedorCartaInfoIzquierda .imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorCartaInfoIzquierda img {
+        width: 400px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedorCartaInfoIzquierda {
+        height: auto;
+    }
+    .contenedorCartaInfoIzquierda .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+    }
+    .contenedorCartaInfoIzquierda .info h2 {
+        font-size: 30px;
+    }
+    .contenedorCartaInfoIzquierda img {
+        width: 100%;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedorCartaInfoIzquierda {
+        height: auto;
+        padding: 30px 0;
+        width: 90%;
+    }
+    .contenedorCartaInfoIzquierda .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .contenedorCartaInfoIzquierda .info h2 {
+        font-size: 30px;
+    }
+    .contenedorCartaInfoIzquierda img {
+        width: 100%;
+    }
+    .contenedorCartaInfoIzquierda .imgagen {
+        width: auto;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedorCartaInfoIzquierda {
+        height: auto;
+        padding: 30px 0;
+        width: 90%;
+    }
+    .contenedorCartaInfoIzquierda .info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+    }
+    .contenedorCartaInfoIzquierda .info h2 {
+        font-size: 30px;
+    }
+    .contenedorCartaInfoIzquierda img {
+        width: 100%;
+    }
+}
+
+/* Seccion Funciones Avanzadas */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .seccionFuncionAvanzadas .funcionalidades h2{
+        font-size: 30px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades p{
+        font-size: 15px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades img{
+        width: 320px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .seccionFuncionAvanzadas .funcionalidades h2{
+        font-size: 25px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades p{
+        font-size: 14px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades img{
+        width: 300px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccionFuncionAvanzadas .funcionalidades h2{
+        font-size: 25px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades p{
+        font-size: 12px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades img{
+        width: 200px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .seccionFuncionAvanzadas {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        gap: 15px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades {
+        width: 100%;
+    }
+    .seccionFuncionAvanzadas .funcionalidades h2{
+        font-size: 30px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades p{
+        font-size: 14px;
+    }
+    .seccionFuncionAvanzadas .funcionalidades img{
+        width: 250px;
+    }
+}
+
+/* Seccion Log */
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #log {
+        outline: none;
+    }
+    #log img {
+        width: 100%;
+    }
+    #log h2 {
+        font-size: 40px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    #log {
+        outline: none;
+        padding: 0;
+    }
+    #log img {
+        width: 100%;
+    }
+    #log h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #log p {
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    #log {
+        outline: none;
+        padding: 0;
+    }
+    #log img {
+        width: 100%;
+    }
+    #log h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    #log p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    #log {
+        outline: none;
+        padding: 0;
+    }
+    #log .imagen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #log img {
+        width: 100%;
+        margin-left: 30px;
+    }
+    #log h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+    #log p {
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+/* Seccion Mini Logs*/
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 14px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 200px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 20px;
+    }
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 13px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 200px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 20px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 14px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 250px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 22px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 12px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 300px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 24px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 16px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 300px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 30px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-cartas-logs {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-cartas-logs .carta-log p, .contenedor-cartas-infra .carta-log p{
+        font-size: 18px;
+    }
+    .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
+        height: 300px;
+    }
+    .contenedor-cartas-logs .carta-log i, .contenedor-cartas-infra .carta-log i{
+        font-size: 35px;
+    }
+}
+
+/* Seccion Carta Animables */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedor-cartas-animables {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    .contenedor-cartas-animables .maincontainer {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .contenedor-cartas-animables .maincontainer i {
+        font-size: 35px;
+    }
+    .contenedor-cartas-animables .maincontainer .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all ease-in-out 0.5s;
+        -webkit-transition: all ease-in-out 0.5s;
+        -moz-transition: all ease-in-out 0.5s;
+        -ms-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card:hover {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+    }
+    .contenedor-cartas-animables .maincontainer .card .thefront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #FD5D05;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 5px;
+        outline: 2px solid white;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card .theback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        text-align: center;
+        padding: 10px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card .theback p {
+        font-size: 14px;
+        font-weight: 100;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contenedor-cartas-animables {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    .contenedor-cartas-animables .maincontainer {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .contenedor-cartas-animables .maincontainer i {
+        font-size: 35px;
+    }
+    .contenedor-cartas-animables .maincontainer .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all ease-in-out 0.5s;
+        -webkit-transition: all ease-in-out 0.5s;
+        -moz-transition: all ease-in-out 0.5s;
+        -ms-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card:hover {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+    }
+    .contenedor-cartas-animables .maincontainer .card .thefront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #FD5D05;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 5px;
+        outline: 2px solid white;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card .theback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+        text-align: center;
+        padding: 10px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+    .contenedor-cartas-animables .maincontainer .card .theback p {
+        font-size: 14px;
+        font-weight: 100;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-cartas-animables {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-column-gap: 0px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-cartas-animables {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        grid-column-gap: 0px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-cartas-animables {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+
+/* Infraestructura */
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-tercero-infra .row div:nth-child(1), .contenedor-tercero-infra .row div:nth-child(3) {
+        background-color: white;
+        min-height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: start;
+    }
+    .contenedor-tercero-infra .row div:nth-child(1) h2, .contenedor-tercero-infra .row div:nth-child(3) h2 {  
+        font-size: 24px;
+        text-align: center;
+    }
+    .contenedor-tercero-infra .row div:nth-child(2){
+        background-color: #FD5D05;
+        min-height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: center;
+    }
+    .contenedor-tercero-infra .row div:nth-child(2) h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .contenedor-tercero-infra .row div:nth-child(2) p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-tercero-infra .row div:nth-child(1) h2, .contenedor-tercero-infra .row div:nth-child(2) h2, .contenedor-tercero-infra .row div:nth-child(3) h2 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+    .contenedor-tercero-infra .row div:nth-child(1) p, .contenedor-tercero-infra .row div:nth-child(2) p, .contenedor-tercero-infra .row div:nth-child(3) p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-tercero-infra .row div:nth-child(1) h2, .contenedor-tercero-infra .row div:nth-child(2) h2, .contenedor-tercero-infra .row div:nth-child(3) h2 {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+    .contenedor-tercero-infra .row div:nth-child(1) p, .contenedor-tercero-infra .row div:nth-child(2) p, .contenedor-tercero-infra .row div:nth-child(3) p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+
+/* Seccion Caracteristicas Tecnicas */
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-cuarta-infra .row .primera-col .carta-infra, .contenedor-cuarta-infra .row .segunda-col .carta-infra {
+        height: 280px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-cuarta-infra .row .primera-col .carta-infra, .contenedor-cuarta-infra .row .segunda-col .carta-infra {
+        height: auto;
+    }
+}
+
+/* Seccion Segunda Usu */
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedor-segunda-usu header {
+        font-size: 30px;
+    }
+    .contenedor-segunda-usu i {
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        gap: 10px;
+        padding: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div {
+        height: 350px;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div h2{
+        font-size: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div p{
+        font-size: 14px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedor-cartas-infra .carta-log i {
+        font-size: 35px;
+    }
+    .contenedor-cartas-infra .carta-log p {
+        font-size: 10px;
+    }
+    .contenedor-segunda-usu header {
+        font-size: 30px;
+    }
+    .contenedor-segunda-usu i {
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        gap: 10px;
+        padding: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div {
+        height: 350px;
+        justify-content: flex-start;
+        align-items: start;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div h2{
+        font-size: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div p{
+        font-size: 14px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedor-cartas-infra {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+    .contenedor-segunda-usu header {
+        font-size: 20px;
+    }
+    .contenedor-segunda-usu i {
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        gap: 10px;
+        padding: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div {
+        height: 300px;
+        justify-content: flex-start;
+        align-items: start;
+        width: 100%;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div h2{
+        font-size: 20px;
+    }
+    .contenedor-segunda-usu .sub-contenedor-usu div p{
+        font-size: 14px;
+    }
+}
+
+/* Cloud*/
+/* Integracion Lass */
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .contenedorFondoBlanco .info {
+        height: auto;
+    }
+    .contenedorInfoCentral{
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .contenedorInfoCentral .info h2 {
+        font-size: 38px;
+    }
+    .contenedorInfoCentral .info p {
+        font-size: 18px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .contenedorInfoCentral .derecha{
+        background-position-x: -200px;
+    }
+    .contenedorInfoCentral .izquierda{
+        background-position-x: -400px;
+    }
+    .contenedorInfoCentral{
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .contenedorInfoCentral .info {
+        height: auto;
+    }
+    .contenedorInfoCentral .info h2 {
+        font-size: 38px;
+    }
+    .contenedorInfoCentral .info p {
+        font-size: 18px;
+    }
+    .contenedorFondoBlanco .info {
+        height: auto;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .contenedorInfoCentral{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .contenedorInfoCentral .info {
+        height: auto;
+    }
+    .contenedorFondoBlanco .info {
+        height: auto;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .contenedorInfoCentral{
+        height: auto;
+        margin-bottom: 150px;
+    }
+    .contenedorFondoBlanco .info {
+        height: auto;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .contenedorFondoBlanco .info {
+        height: auto;
+    }
 }

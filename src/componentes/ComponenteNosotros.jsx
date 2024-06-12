@@ -26,10 +26,10 @@ function ComponenteSobreFlammas ({imagen, titulo, texto}) {
     return (
         <section className="container seccion-sobre-flammas">
             <div className="row">
-                <div className="col-12 col-sm-5 col-xl-5 imagen">
+                <div className="col-12 col-sm-12 col-xl-6 imagen">
                     <img src={require(`../images/${imagen}.png`)} alt="imagen" />
                 </div>
-                <div className="col-12 col-sm-5 col-xl-5 texto">
+                <div className="col-12 col-sm-12 col-xl-6 texto">
                     <h2> {titulo} </h2>
                     <p> {texto} </p>
                 </div>
@@ -66,7 +66,7 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
     return(
         <div className="container">
             <div className="row">
-                <div className="col-md-5 pe-5">
+                <div className="col-12 col-md-5 pe-5">
                     <div className="card mb-3">
                         <div className="card-body text-white">
                             <p className="t1">{texto1}</p>
@@ -78,10 +78,10 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
                         </div>
                     </div>
                 </div>
-                <div className="col-md-2 middle-col">
+                <div className="col-12 col-md-2 middle-col">
                     <img src={require(`../images/${imagen}.png`)} alt="imagen" />
                 </div>
-                <div className="col-md-5 ps-5">
+                <div className="col-12 col-md-5 ps-5">
                     <div className="card mb-3">
                         <div className="card-body text-white">
                             <p className="t3">{texto3}</p>
@@ -103,7 +103,7 @@ function ComponenteValores({imagen, texto}){
             <div className="card">
                 <div className="row g-0">
                     <div className="col-md-4 imagen-contenido">
-                    <img className="imagen-puesta" src={require(`../images/${imagen}.png`)} alt="imagen" />
+                        <img className="imagen-puesta" src={require(`../images/${imagen}.png`)} alt="imagen" />
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
@@ -138,7 +138,7 @@ function ComponenteTSTI({titulo, subtitulo, texto, imagen}){
     )
 }
 
-
+//Componente a renderizar
 function ComponenteNosotrosFlammas () {
     return (
         <>
@@ -160,7 +160,7 @@ function ComponenteNosotrosFlammas () {
                     <div className="content mt-3">
                         <section className="container-fluid seccion-mision">
                             <div className="mt-3">
-                                <h2>NUESTRA MISION</h2>
+                                <h2 className="text-center">NUESTRA MISIÓN</h2>
                             </div>
                             <div className="container contenedor-cartas">
                                 <ComponenteMision
@@ -182,7 +182,7 @@ function ComponenteNosotrosFlammas () {
                     <div className="content mt-3">
                         <section className="container-fluid seccion-vision">
                             <div className="mt-3">
-                                <h2 className="text-center">NUESTRA VISION</h2>
+                                <h2 className="text-center">NUESTRA VISIÓN</h2>
                             </div>
                             <ComponenteVision
                                 imagen="75"
@@ -193,41 +193,6 @@ function ComponenteNosotrosFlammas () {
                     </div>
                 </div>
             </section>
-            {/* Esto es un comentario 
-            <ComponenteSobreFlammas 
-                imagen = "82"
-                titulo = "SOBRE FLAMMAS:"
-                texto = "Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
-            />
-            <section className="container-fluid seccion-mision">
-                <div className="mt-5">
-                    <h2>NUESTRA MISION</h2>
-                </div>
-                <div className="container contenedor-cartas">
-                    <ComponenteMision
-                        imagen="25"
-                        texto="Nuestra misión es ofrecer un sistema de monitorización integrado y horizontal para medianas y grandes empresas, capaz de proveer información de distintas fuentes a diferentes departamentos, todo a través de una única consola."
-                    />
-                    <ComponenteMision
-                        imagen="26"
-                        texto="Creemos en el enorme potencial de la monitorización para mejorar cualquier organización que apoye su negocio en tecnología."
-                    />
-                    <ComponenteMision
-                        imagen="25"
-                        texto="Queremos ser una alerta temprana, queremos ser aquellos que avisan en el momento exacto antes de que suceda algo imprevisto, queremos ser ese compañero de viaje imprescindible para cualquier aventura y caminar juntos hasta la siguiente meta."
-                    />
-                </div>
-            </section>
-            <section className="container-fluid seccion-vision">
-                <div className="mt-5">
-                    <h2 className="text-center">NUESTRA VISION</h2>
-                </div>
-                <ComponenteVision
-                    imagen="75"
-                    texto="Creemos en el crecimiento sostenido. No tenemos prisa, hemos venido para quedarnos. Nuestra relación con clientes y empleados siempre es a largo plazo. Sabemos que el mercado actual está maduro y se renueva constantemente, cambiando las reglas del juego."
-                    texto2="Aprendemos, nos adaptamos y crecemos conforme lo hacen nuestros clientes. Nuestra visión es ser los proveedores de tecnología de servicios clave y estar presentes en empresas de todos los sectores a nivel mundial."
-                />
-            </section>*/}
             <section className="container-fluid contenedor-tercera-seccion">
                 <h2> FLAMMAS EN NÚMEROS EN LA ACTUALIDAD </h2>
                 <p> Desde 2004, Flammas no ha parado de crecer, posibilitando la evolución constante de este proyecto que hace que nos adaptemos a la realidad cambiante de hoy. </p>

@@ -20,7 +20,7 @@ function MiniComponenteProductosConImagenes ({imagen, titulo, texto}) {
     )
 }
 
-
+//Componente a renderizar
 function ComponenteProductos () {
     return (
         <>
