@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/flammas/static/css/main.3128f979.css",
-    "main.js": "/flammas/static/js/main.2fcac757.js",
+    "main.css": "/flammas/static/css/main.746f3c7f.css",
+    "main.js": "/flammas/static/js/main.749c890f.js",
     "static/media/2.mp4": "/flammas/static/media/2.ae6faaed885539ac59f8.mp4",
     "static/media/flammas web.mp4": "/flammas/static/media/flammas web.a7059eb1ecb4362c11d7.mp4",
     "static/media/1.mp4": "/flammas/static/media/1.62948a22ebd3e9876806.mp4",
@@ -103,11 +103,11 @@
     "static/media/4.svg": "/flammas/static/media/4.669e99f858f3f11df885.svg",
     "static/media/5.svg": "/flammas/static/media/5.7553df8b6b05e61487d0.svg",
     "index.html": "/flammas/index.html",
-    "main.3128f979.css.map": "/flammas/static/css/main.3128f979.css.map",
-    "main.2fcac757.js.map": "/flammas/static/js/main.2fcac757.js.map"
+    "main.746f3c7f.css.map": "/flammas/static/css/main.746f3c7f.css.map",
+    "main.749c890f.js.map": "/flammas/static/js/main.749c890f.js.map"
   },
   "entrypoints": [
-    "static/css/main.3128f979.css",
-    "static/js/main.2fcac757.js"
+    "static/css/main.746f3c7f.css",
+    "static/js/main.749c890f.js"
   ]
 }
