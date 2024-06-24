@@ -64,7 +64,7 @@ function ComponenteInicio() {
                             <p> Una Suite de Supervisión Integral que Incluye Auditoría, Monitorización, Gestión de Configuración, Control Remoto, ITSM, Inventario y Seguridad del Sistema. </p>
                         </div>
                         <div className='btn btn-danger'>
-                            Ver más
+                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> Ver Más </a> 
                         </div>
                     </div>
                     <div className="col-12 col-sm-4 col-xxl-4 segunda-columna">
@@ -107,7 +107,7 @@ function ComponenteInicio() {
                     </div>
                     <div>
                         <p> Así como el prisma descompone la luz en sus colores individuales, FLlammas divide la complejidad de los datos empresariales. Cada componente, ya sea proveniente de proveedores, servicios en la nube o clientes, se analiza con precisión milimétrica. Esto permite una comprensión detallada de cada aspecto, facilitando la identificación de áreas de mejora y optimización. </p>
-                        <div> DESCUBRE TODAS SUS FUNCIONALIDADES </div>
+                        <div> <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
                     </div>
                     <div>
                         

@@ -24,6 +24,10 @@ body {
     position: relative;
     z-index: 0;
 }
+.botonInfoFlammas {
+    text-decoration: none;
+    color: white;
+}
 .seccion-encabezado::before {
     content: "";
     background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
