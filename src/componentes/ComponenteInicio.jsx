@@ -64,7 +64,7 @@ function ComponenteInicio() {
                             <p> Una Suite de Supervisión Integral que Incluye Auditoría, Monitorización, Gestión de Configuración, Control Remoto, ITSM, Inventario y Seguridad del Sistema. </p>
                         </div>
                         <div className='btn btn-danger'>
-                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> Ver Más </a> 
+                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"MARCUS-Hoja-de-Datos.pdf"} rel="noopener noreferrer"> Hoja de Datos </a> 
                         </div>
                     </div>
                     <div className="col-12 col-sm-4 col-xxl-4 segunda-columna">
