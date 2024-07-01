@@ -78,9 +78,9 @@ function App() {
                                 <a href="https://www.linkedin.com/company/flammas/?viewAsMember=true" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-linkedin"></i>
                                 </a>
-                                <a href="https://wa.me/51987654321" target='_blank' rel='noreferrer'>
+                                {/* <a href="https://wa.me/51987654321" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-whatsapp"></i>
-                                </a>
+                                </a> */}
                                 <a href="mailto=ventas@flammas.com" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-envelope"></i>
                                 </a>    
