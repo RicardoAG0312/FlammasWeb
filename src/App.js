@@ -57,7 +57,7 @@ function App() {
                         </Navbar.Collapse>
                     </Navbar>
                     <Routes>
-                        <Route index path="/flammas" element={<Navigate to="/inicio" />} />
+                        <Route index path="/" element={<Navigate to="/inicio" />} />
                         <Route path="/inicio" element={<ComponenteInicio />} />
                         <Route path="/productos" element={<ComponenteProductos />} />
                         <Route path="/nosotros" element={<ComponenteNosotrosFlammas />} />

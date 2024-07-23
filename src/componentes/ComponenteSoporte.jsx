@@ -131,7 +131,7 @@ export function ComponenteSoporteProfesional () {
                                 <div className = "recaptcha">
                                     <ReCAPTCHA
                                         ref={ReCAPTCHA}
-                                        sitekey="6Ldp0PMpAAAAAEWkyegdZWGYBaZxvOlpkeXOPEV6"
+                                        sitekey="6Lc1HwoqAAAAABkcsPIudTn2uCqLIOIMGxS37ysm"
                                         onChange={onChange}
                                     />
                                 </div>
@@ -290,7 +290,7 @@ export function ComponenteSoporteTecnico () {
                                 <div className = "recaptcha" id="recap">
                                     <ReCAPTCHA
                                         ref={ReCAPTCHA}
-                                        sitekey="6Ldp0PMpAAAAAEWkyegdZWGYBaZxvOlpkeXOPEV6"
+                                        sitekey="6Lc1HwoqAAAAABkcsPIudTn2uCqLIOIMGxS37ysm"
                                         onChange={onChange}
                                     />
                                 </div>
