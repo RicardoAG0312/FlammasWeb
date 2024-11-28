@@ -30,7 +30,7 @@ body {
 }
 .seccion-encabezado::before {
     content: "";
-    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,7 +236,7 @@ video {
     -o-border-radius: 20px;
 }
 .seccion-tercera .contenedor-info div:nth-child(3) {
-    background-image: url("../images/imagen7.png");
+    background-image: url("../images/imagen7.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,7 +264,7 @@ video {
 }
 .seccion-cuarta .row .info::before {
     content: "";
-    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg");
+    background-image: url("../images/IMAGEN-FONDO-PRINCIPAL.jpeg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -546,7 +546,7 @@ video {
 }
 .seccion-sexta::before {
     content: "";
-    background-image: url("../images/imagen9.png");
+    background-image: url("../images/imagen9.png.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -86,9 +86,11 @@ function ComponenteLogin() {
                             <label for="product" className='mt-3'> (*) Producto de Interés: </label>
                             <select id="product" name="product" required="true">
                                 <option value=""> Selecciona </option>
-                                <option value="Flammas 1"> Flammas 1 </option>
-                                <option value="Flammas 2"> Flammas 2 </option>    
-                                <option value="Flammas 3"> Flammas 3 </option>
+                                <option value="Monitorización de Redes"> Monitorización de Redes </option>
+                                <option value="Infraestructura Integral"> Infraestructura Integral </option>    
+                                <option value="Cloud y Virtualización"> Cloud y Virtualización </option>
+                                <option value="Marcus"> Marcus </option>
+                                <option value="OneSecurity"> OneSecurity </option>
                             </select>
                             <label for="message" className='mt-3'> (*) Mensaje: </label>
                             <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" required="true"/>

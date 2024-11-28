@@ -1,7 +1,7 @@
 import React from 'react'
 import "../estilos/componenteInicio.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import imagen7 from "../images/7.png";
+import imagen7 from "../images/7.png.png";
 
 export function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
     return (
@@ -124,32 +124,32 @@ function ComponenteInicio() {
                     </div>
                     <div className='col-12 col-sm-8 col-xxl-8 contenedor-cards'>
                         <MiniComponentesCuartaSeccion 
-                            imagen = "8"
+                            imagen = "8.png"
                             titulo = "Monitorización de redes"
                             texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
                         <MiniComponentesCuartaSeccion 
-                            imagen = "9"
+                            imagen = "9.png"
                             titulo = "Monitorización UX"
                             texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
                         <MiniComponentesCuartaSeccion 
-                            imagen = "10"
+                            imagen = "10.png"
                             titulo = "Monitorización Cloud"
                             texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
                         <MiniComponentesCuartaSeccion 
-                            imagen = "11"
+                            imagen = "11.png"
                             titulo = "Servidores"
                             texto = "Mainframe, IBM-i, Unix, Windows, Android y Linux: nuestro sistema es compatible con diversas plataformas."
                         />
                         <MiniComponentesCuartaSeccion 
-                            imagen = "12"
+                            imagen = "12.png"
                             titulo = "Aplicaciones"
                             texto = "Soluciones personalizables para casi cualquier caso y fuente de datos antes de afectar a los usuarios."
                         />
                         <MiniComponentesCuartaSeccion 
-                            imagen = "13"
+                            imagen = "13.png"
                             titulo = "Gestión de logs"
                             texto = "Recoge y almacena registros de todo tipo (incluyendo eventos de Windows) para búsquedas y alertas eficientes. "
                         />

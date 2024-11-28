@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import "../estilos/componenteSoluciones.css";
 import "../estilos/componenteInicio.css"
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
-import { MiniComponenteProductos } from "./ComponenteProductos"
+import { MiniComponenteProductos } from "./ComponenteProductos";
+import ImagenOne from "../images/ultimg.png.png";
 
 export function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
     return (
@@ -10,6 +11,19 @@ export function ComponenteEncabezadoSoluciones ({titulo, subtitulo, texto}) {
             <h3> {subtitulo} </h3>
             <h1> {titulo} </h1>
             <p> <b> {texto} </b> </p>
+        </section>
+    )
+}
+
+export function ComponenteEncabezadoSolucionesOne ({titulo, subtitulo, texto, boton}) {
+    return (
+        <section className="container-fluid seccionEncabezadoSoluciones">
+            <h3> {subtitulo} </h3>
+            <h1> {titulo} </h1>
+            <p> <b> {texto} </b> </p>
+            <div style={{background: "#FD5D05"}} className='btn btn-danger'>
+                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_OneSecurity.pdf"} download={"Datasheet-ApexSecurity.pdf"} rel="noopener noreferrer"> {boton} </a> 
+            </div>
         </section>
     )
 }
@@ -154,6 +168,18 @@ function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
         </div>
     )
 }
+function EndVIñetas ({titulo, texto}) {
+    return (
+        <div className="card d-flex justify-content-center align-content-center p-5">
+            <h2> {titulo} </h2>
+            <p style={{fontSize: "18px", fontFamily: "Montserrat"}}> {texto} </p>
+        </div>
+    )
+}
+
+
+
+
 
 // Componentes a renderizar
 export function ComponenteSolucionesMonitorizacion () {
@@ -172,55 +198,55 @@ export function ComponenteSolucionesMonitorizacion () {
             <ComponenteInfoIzquierdaSoluciones 
                 titulo = "Desde lo más básico a lo inimaginable"
                 texto = "Ancho de banda, pérdida de paquetes, latencia, disponibilidad, número de conexiones. Da igual el origen: routers, AP, switches, firewalls, servidores, estaciones de trabajo, IoT. Si tiene IP, Flammas puede coger el dato. No estamos limitados sólo a SNMP o a recogida de datos con agentes."
-                imagen = "41"
+                imagen = "41.png"
                 id = "none"
             />
             <ComponenteInfoDerechoSoluciones 
                 titulo = "Gestión de IPs"
                 texto = "Nuestro sistema IPAM permite gestionar redes, superedes y hacer subnetting. Podrás gestionar ubicaciones físicas, realizar reservas de IP y disponer de un mapa de IP así como informes de uso de IP, y alertas cuando te quedes sin IP disponibles. Se puede integrar con un servidor DHCP de Microsoft."
-                imagen = "42"
+                imagen = "42.png"
                 id = "none"
             />
             <ComponenteInfoIzquierdaSoluciones 
                 titulo = "Análisis de red en tiempo real"
                 texto = "Netflow sirve para obtener estadísticas en tiempo real de tus equipos de red (routers, switches, firewalls) y ofrecer informes de uso, cuellos de botella o ayudar a hacer diagnósticos de problemas."
-                imagen = "43"
+                imagen = "43.png"
             />
             <ComponenteInfoDerechoSoluciones 
                 titulo = "Alta escalabilidad"
                 texto = "Escalabilidad prácticamente ilimitada gracias a Command Center, y nuestros Servidores Satélite que permiten escalar horizontalmente y generar decenas de miles de consultas de red por segundo de forma distribuida. Contamos con clientes con más 100.000 dispositivos de red en una única instancia."
-                imagen = "44"
+                imagen = "44.png"
                 id = "none"
             />
             <ComponenteInfoIzquierdaSoluciones
                 titulo = "Informes y cuadros de mando"
                 texto = "Flammas recoge todo tipo de datos y te ofrece un editor de informes para que puedas generarlos de manera personalizada: top N, gráficas detalladas a cualquier escala de tiempo, informes SLA, informes de disponibilidad, cronogramas y decenas más."
-                imagen = "45"
+                imagen = "45.png"
             />
             <ComponenteInfoDerechoSoluciones 
                 titulo = "Gestión de configuraciones"
                 texto = "Flammas puede recoger la configuraciones de tus equipos, detectar cuando cambian (y donde) y recuperar backup de dichas configuraciones. También podrá desplegar cambios masivamente en decenas de equipos (como por ejemplo añadir una VLAN)."
-                imagen = "46"
+                imagen = "46.png"
             />
             <header className="funcionalidades"> Funcionalidades Avanzadas </header>
             <section className="container-fluid seccionFuncionAvanzadas">
                 <ComponenteFuncionalidadAvanzada 
-                    imagen = "25"
+                    imagen = "25.png"
                     titulo = "Entornos distribuidos"
                     texto = "Descubre y monitoriza equipos remotos en redes de clientes de manera autónoma y desplegando una sencilla sonda instalable en Windows, Raspberrys o pequeñas máquinas virtuales. Nuestros servidores satélites funcionan de manera autónoma y silenciosa y son capaces de gestionar cientos de dispositivos."
                 />
                 <ComponenteFuncionalidadAvanzada 
-                    imagen = "26"
+                    imagen = "26.png"
                     titulo = "Licenciamiento sin sorpresas"
                     texto = "Conoce exactamente lo que te va a costar, sin sorpresas, sin ampliaciones, sin módulos adicionales. Planifica el crecimiento de su entorno con exactitud desde el día uno. En Flammas todo incluido, significa eso, todo incluido en el coste inicial de la licencia."
                 />
                 <ComponenteFuncionalidadAvanzada 
-                    imagen = "27"
+                    imagen = "27.png"
                     titulo = "Monitorización de seguridad"
                     texto = "Controla en todo momento de qué versiones, modelos e IP dispones. No sólo de equipos de red como switches, routers, también firewalls. Establece alertas si se usan modelos con vulnerabilidades. Envía los logs de todos tus sistemas a nuestra consola de logs y crea alertas de correlación."
                 />
                 <ComponenteFuncionalidadAvanzada 
-                    imagen = "28"
+                    imagen = "28.png"
                     titulo = "Inteligencia artificial"
                     texto = "Deja que se configuren solo los umbrales de fallo de manera automática, en base al uso cotidiano. Crea alertas en base al uso proyectado de tus recursos. Genera informes útiles para planificar el uso de tu red."
                 />
@@ -233,7 +259,7 @@ export function ComponenteSolucionesMonitorizacion () {
             <ComponenteInfoIzquierdaSoluciones 
                 titulo = "Auditoría y seguridad (HIPAA, RGPD, ISO 27001)"
                 texto = "Lo último que quieres es fallar en una auditoría o tener que revelar una posible violación de datos porque no has recogido los datos necesarios para una investigación o no dispones de los datos requeridos para averiguar lo que ha pasado. Si ya monitorizas esos sistemas, guarda sus logs."
-                imagen = "23"
+                imagen = "23.png"
                 id = "log"
             />
             <section className="container-fluid contenedor-cartitas">
@@ -588,18 +614,18 @@ export function ComponenteSolucionesCloud () {
                 titulo="Monitorización centralizada de entornos híbridos"
                 texto="Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción."
                 texto1="Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
-                imagen="40"
+                imagen="40.png"
             />
             <ComponentetxtIzquierdaSoluciones
                 titulo="Entornos Cloud"
                 texto="Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor."
-                imagen="47"
+                imagen="47.png"
             />
             <ComponentetxtDerechoSoluciones
                 titulo="Toma el control de los datos de tus sistemas"
                 texto="Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo."
                 texto1="Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
-                imagen="48"
+                imagen="48.png"
             />
             <section className="container-fluid bg-white contenedorFondoBlanco">
                 <div className="row">
@@ -609,7 +635,7 @@ export function ComponenteSolucionesCloud () {
                         <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas.</p>
                     </div>
                     <div className="col-12 col-sm-6 col-xl-6 imagen">
-                        <img src={require(`../images/49.png`)} alt="Imagen" />
+                        <img src={require(`../images/49.png.png`)} alt="Imagen" />
                     </div>
                 </div>
             </section>
@@ -659,57 +685,57 @@ export function ComponenteSolucionesCloud () {
             </section>
             <section className="container-fluid seccion-viñetas-animadas">
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "58"
+                    nombreImagen = "58.png"
                     titulo = "INVENTARIO Y CONTROL DE ACTIVOS HARDWARE Y SOFTWARE"
                     texto = "Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "59"
+                    nombreImagen = "59.png"
                     titulo = "Inventario y Control de Dispositivos"
                     texto = "En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "60"
+                    nombreImagen = "60.png"
                     titulo = "Gestión de Vulnerabilidades"
                     texto = "Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "61"
+                    nombreImagen = "61.png"
                     titulo = "Uso Controlado de Privilegios Administrativos"
                     texto = "Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "62"
+                    nombreImagen = "62.png"
                     titulo = "Configuración Segura de Hardware y Software"
                     texto = "Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "63"
+                    nombreImagen = "63.png"
                     titulo = "Mantenimiento, Supervisión y Análisis de Logs de Auditoría"
                     texto = "Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "64"
+                    nombreImagen = "64.png"
                     titulo = "Defensas contra Malware"
                     texto = "Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "65"
+                    nombreImagen = "65.png"
                     titulo = "Protección del Correo Electrónico y los Navegadores Web"
                     texto = "Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "66"
+                    nombreImagen = "66.png"
                     titulo = "Capacidades de Recuperación de Datos"
                     texto = "Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "67"
+                    nombreImagen = "67.png"
                     titulo = "Defensa de Límites y Protección de Datos"
                     texto = "Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos."
                 />
                 <ComponenteViñetaAnimada 
-                    nombreImagen = "68"
+                    nombreImagen = "68.png"
                     titulo = "Supervisión y Control de Cuentas"
                     texto = "Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos."
                 />
@@ -721,12 +747,12 @@ export function ComponenteSolucionesCloud () {
                 titulo="LA BASE DE DATOS DE VULNERABILIDADES MÁS COMPLETA"
                 texto="Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar."
                 texto1="Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
-                imagen="70"
+                imagen="70.png"
             />
             <section className="container-fluid bg-white contenedorIMGTopBot">
                 <div className="row">
                     <div className="col-12 imagen">
-                        <img src={require(`../images/71.png`)} alt="Imagen" />
+                        <img src={require(`../images/71.png.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info text-dark">
                         <h2 className="text-center"> <span className="text-dark">NUESTRO</span> ROADMAP <span className="text-dark">DE SEGURIDAD</span></h2>
@@ -745,7 +771,7 @@ export function ComponenteSolucionesCloud () {
             <section className="container-fluid contenedorIMGTopBot">
                 <div className="row">
                     <div className="col-12 imagen">
-                        <img src={require(`../images/73.png`)} alt="Imagen" />
+                        <img src={require(`../images/73.png.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info2 text-white">
                         <h2 className="text-center"> <span className="text-white">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
@@ -824,6 +850,178 @@ export function ComponenteSolucionesCloud () {
                 texto1 = "Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
                 texto2 = "Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
             />
+        </>
+    )
+}
+
+
+
+export function ComponenteSolucionesOneSecurity () {
+    const [componenteActivo, setComponenteActivo] = useState("maxima");
+
+    const infoTecnicas = [
+        "Machine learning en pre-ejecución y en runtime",
+        "Detección más precisa de malware avanzado, como el tipo de fileless y las amenazas de ransomware",
+        "Técnicas de noise-cancelling como el censo y el safelisting a lo largo de cada capa de detección para reducir de forma dramática los falsos positivos",
+        "Protección efectiva contra scripts, injection, ransomware y ataques contra navegadores y memoria a través de un innovador análisis de comportamiento.",
+    ]
+
+    const infoDeteccionRespuesta = [
+        "Reciba alertas procesables",
+        "Descubra el impacto e inicie una respuesta directa",
+        "Consiga detección, investigación y respuesta correlacionadas y mejoradas en email, redes, nubes y workloads",
+        "Identifique amenazas y valide actividad sospechosa",
+        "Integre mediante API con plataformas SIEM y herramientas SOAR",
+        "Utilice las 24 horas, los 7 días de la semana, los 365 días del año"
+    ]
+
+    const componenteRenderData = () => {
+        switch (componenteActivo) {
+            case 'maxima':
+                return (
+                    <section>
+                        <h1 style={{color: "#FF7700"}}> La seguridad de endpoints redefinida </h1>
+                        <p> 
+                            One Security utiliza un sistema de prevención de intrusiones basado en host (HIPS) para aplicar parches de forma virtual vulnerabilidades conocidas y desconocidas antes de que el parche esté disponible o pueda desplegarse.
+                        </p>
+                        <ul style={{fontSize: "18px", fontFamily: "Montserrat"}}>
+                            <li className="mb-2"> Eliminar la exposición al riesgo </li>
+                            <li className="mb-2"> Extender la protección hasta las plataformas críticas y los dispositivos físicos o virtuales </li>
+                            <li className="mb-2"> Reducir el tiempo de inactividad durante la recuperación y la aplicación de parches de emergencia </li>
+                            <li className="mb-2"> Identificar vulnerabilidades basadas en CVE, MS-ID y gravedad </li>
+                            <li className="mb-2"> Detectar más vulnerabilidades que cualquier otro proveedor gracias a nuestra investigación líder en el sector </li>
+                        </ul>
+                    </section>
+                )
+            case 'proteccion':
+                return (
+                    <section>
+                        <h1 style={{color: "#FF7700"}}> Seguridad efectiva para sus datos sensibles </h1>
+                        <p> 
+                            Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption,* DLP integrado y control de dispositivos.
+                        </p>
+                        <ul style={{fontSize: "18px", fontFamily: "Montserrat"}}>
+                            <li className="mb-2"> Proteja el más amplio rango de dispositivos, aplicaciones y tipos de archivos </li>
+                            <li className="mb-2"> Cumple con la mayoria de las regulaciones, incluyendo GDPR </li>
+                            <li className="mb-2"> Protege sus datos con encripción completa del disco, folders y archivos, y encripción de dispositivos externos </li>
+                            <li className="mb-2"> Activa políticas granulares para el control de dispositivos y la gestión de datos </li>
+                            <li className="mb-2"> Utiliza llaves de encripción de Microsoft BitLocker y Apple FileVault </li>
+                        </ul>
+                    </section>  
+                )
+            case 'control':
+                return (
+                    <section>
+                        <h1 style={{color: "#FF7700"}}> Control mejorado de aplicaciones frente a software malicioso </h1>
+                        <p> 
+                            Evite que se ejecuten aplicaciones no deseadas y desconocidas en sus endpoints. Te permite:
+                        </p>
+                        <ul style={{fontSize: "18px", fontFamily: "Montserrat"}}>
+                            <li className="mb-2"> Usa politícas personalizables de lockdown, safelisting y blocklisting para bloquear software malicioso </li>
+                            <li className="mb-2"> Cree politícas dinámicas a través de la categorización de aplicaciones e inteligencia de la reputación para reducir la gestión de gastos generales </li>
+                            <li className="mb-2"> Correlacionar datos de millones de eventos de aplicaciones para identificar amenazas y mantener una base de datos actualizada de aplicaciones validadas </li>
+                        </ul>
+                    </section>
+                )
+            case 'insights':
+                return (
+                    <section>
+                        <h1 style={{color: "#FF7700"}}> Manténgase al día con TrendConnect </h1>
+                        <p> 
+                            La aplicación proporciona alertas de producto e información de amenazas en tiempo real, permitiéndole:
+                        </p>
+                        <ul style={{fontSize: "18px", fontFamily: "Montserrat"}}>
+                            <li className="mb-2"> Ver de forma instantánea el estatus de sus despliegues para evitar correr versiones desactualizadas </li>
+                            <li className="mb-2"> Alinear despligues con las mejores prácticas de asegurar una protección óptima </li>
+                            <li className="mb-2"> Mantenerse un paso adelante con asesorías en tiempo real de nuevas vulnerabilidades / amenazas y notificaciones de nuevos y esenciales parches </li>
+                        </ul>
+                    </section>
+                )
+            default:
+                return 'No hay info';
+        }
+    };
+
+    return (
+        <>
+            <ComponenteEncabezadoSolucionesOne 
+                titulo = "ONE SECURITY CON FLAMMAS"
+                subtitulo = "SOLUCIONES DE FLAMMAS"
+                texto = "Máxima protección con seguridad de endpoint por capas."
+                boton = "Hoja de Datos"
+            />
+            <section className="deteccionOne">
+                <div className="row p-0 m-0">
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-content-center flex-row">
+                        <img src={ImagenOne} className="img-fluid" alt="Imagen" />
+                    </div>
+                    <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 style={{color: "#FD5D05", marginBottom: "30px"}}> Técnicas de detección avanzadas </h1>
+                        <p style={{color: "white", marginBottom: "30px"}}> Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas. </p>
+                        <ul>
+                            {
+                                infoTecnicas.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#FD5D05"}}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section className="endpointOne">
+                <div className="titus" style={{padding: "10px 50px"}}>
+                    <h5 style={{color: "white"}}> PORQUÉ FLAMMAS </h5>
+                    <h1 style={{color: "#FF7700"}}> La seguridad de endpoints redefinida </h1>
+                </div>
+                <div style={{padding: "10px 50px"}}>
+                    <div className="row">
+                        <div className="col-12 col-md-5 links">
+                            <h3 className={componenteActivo === 'maxima' ? 'active' : ''} onClick={() => setComponenteActivo('maxima')}> Máxima Protección </h3>
+                            <h3 className={componenteActivo === 'proteccion' ? 'active' : ''} onClick={() => setComponenteActivo('proteccion')}> Protección Datos Sensibles </h3>
+                            <h3 className={componenteActivo === 'control' ? 'active' : ''} onClick={() => setComponenteActivo('control')}> Control Mejorado de Aplicaciones </h3>
+                            <h3 className={componenteActivo === 'insights' ? 'active' : ''} onClick={() => setComponenteActivo('insights')}> Insights en tiempo real </h3>
+                        </div>
+                        <div className="col-12 col-md-7 info">
+                            {componenteRenderData()}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="endviñetas">
+                <EndVIñetas 
+                    titulo = "Automatizado"
+                    texto = "Reciba detección y respuesta frente amenazas automatizadas y avanzadas, así como protección contra una variedad de amenazas en continuo crecimiento como ataques sin archivos y ransomware. Nuestra combinación de técnicas avanzadas de distintas generaciones ofrece una protección de endpoints que maximiza el rendimiento y la eficacia."
+                />
+                <EndVIñetas 
+                    titulo = "Integrada"
+                    texto = "Obtenga información práctica, funciones de investigación ampliadas y visibilidad centralizada con un conjunto de herramientas EDR unificado, integración SIEM consolidada y un juego de API abierto. Realice investigaciones de amenazas correlacionadas y extendidas que van más allá del endpoint y de reforzar sus equipos de seguridad con un servicio de detección y respuesta gestionadas."
+                />
+                <EndVIñetas 
+                    titulo = "Integración"
+                    texto = "En un panorama tecnológica y de amenazas que no para de evolucionar, usted necesita una seguridad que vaya más allá del antivirus tradicional. Trend Micro Apex One™ ofrece detección de amenazas, investigación y respuestas con un único agente. Consolide capacidades y consolas y obtenga flexibilidad de implementación a través de las opciones: on premise y SaaS."
+                />
+            </section>
+            <section className="deteccionOne op d-flex justify-content-center align-content-center">
+                <div className="row m-0">
+                    <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 style={{color: "#FF7700"}}> Detección y respuesta integradas </h1>
+                        <p> Al usar One Security con Flammas, obtendrá capacidades de XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
+                    </div>
+                    <div className="col-12 col-md-6 info">
+                        <ul>
+                            {
+                                infoDeteccionRespuesta.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#FD5D05"}}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>      
+            </section>
         </>
     )
 }

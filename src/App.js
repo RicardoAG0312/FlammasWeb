@@ -7,9 +7,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // Importaciones de estilos
 import './App.css';
 // Importaciones de imágenes
-import LogoFlammas from './images/Recurso 6.png';
+import LogoFlammas from './images/Recurso 6.png.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
+import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
 
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault(); 
@@ -46,6 +46,7 @@ function App() {
                                     <NavDropdown.Item as={Link} to="/soluciones/monitorizacion" id="drop-item">Monitorización de Redes</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/infraestructura" id="drop-item">Infraestructura Integral</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/cloud" id="drop-item">Cloud y Virtualización</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/soluciones/onesecurity" id="drop-item"> One Security </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/nosotros">¿Por qué Flammas?</Nav.Link>
                                 <NavDropdown title="Soporte" id="basic-nav-dropdown">
@@ -64,6 +65,7 @@ function App() {
                         <Route path="/soluciones/monitorizacion" element={<ComponenteSolucionesMonitorizacion />} />
                         <Route path="/soluciones/infraestructura" element={<ComponenteSolucionesInfraestructura />} />
                         <Route path="/soluciones/cloud" element={<ComponenteSolucionesCloud />} />
+                        <Route path="/soluciones/onesecurity" element={<ComponenteSolucionesOneSecurity />} />
                         <Route path="/soporte/profesional" element={<ComponenteSoporteProfesional />} />
                         <Route path="/soporte/tecnico" element={<ComponenteSoporteTecnico />} />
                         <Route path="/login" element={<ComponenteLogin />} />
