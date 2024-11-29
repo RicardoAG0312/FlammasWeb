@@ -898,7 +898,7 @@ export function ComponenteSolucionesOneSecurity () {
                     <section>
                         <h1 style={{color: "#FF7700"}}> Seguridad efectiva para sus datos sensibles </h1>
                         <p> 
-                            Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption,* DLP integrado y control de dispositivos.
+                            Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption, DLP integrado y control de dispositivos.
                         </p>
                         <ul style={{fontSize: "18px", fontFamily: "Montserrat"}}>
                             <li className="mb-2"> Proteja el más amplio rango de dispositivos, aplicaciones y tipos de archivos </li>
@@ -926,7 +926,7 @@ export function ComponenteSolucionesOneSecurity () {
             case 'insights':
                 return (
                     <section>
-                        <h1 style={{color: "#FF7700"}}> Manténgase al día con TrendConnect </h1>
+                        <h1 style={{color: "#FF7700"}}> Manténgase al día con One Security </h1>
                         <p> 
                             La aplicación proporciona alertas de producto e información de amenazas en tiempo real, permitiéndole:
                         </p>
@@ -1000,7 +1000,7 @@ export function ComponenteSolucionesOneSecurity () {
                 />
                 <EndVIñetas 
                     titulo = "Integración"
-                    texto = "En un panorama tecnológica y de amenazas que no para de evolucionar, usted necesita una seguridad que vaya más allá del antivirus tradicional. Trend Micro Apex One™ ofrece detección de amenazas, investigación y respuestas con un único agente. Consolide capacidades y consolas y obtenga flexibilidad de implementación a través de las opciones: on premise y SaaS."
+                    texto = "En un panorama tecnológica y de amenazas que no para de evolucionar, usted necesita una seguridad que vaya más allá del antivirus tradicional. One Security ofrece detección de amenazas, investigación y respuestas con un único agente. Consolide capacidades y consolas y obtenga flexibilidad de implementación a través de las opciones: on premise y SaaS."
                 />
             </section>
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
