@@ -55,7 +55,7 @@ function ComponenteInfojhoanIzquierdaSoluciones ({titulo, texto, imagen, imagen2
                         <img src={require(`../images/${imagen2}.png`)} alt="Imagen" className="imagen" />
                         <div className='telefono'>
                             <h3>TELÉFONO</h3>
-                            <p></p>
+                            <p> +57 3242927704 </p>
                         </div>
                     </div>
                 </div>
