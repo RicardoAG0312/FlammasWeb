@@ -22,7 +22,7 @@ export function ComponenteEncabezadoSolucionesOne ({titulo, subtitulo, texto, bo
             <h1> {titulo} </h1>
             <p> <b> {texto} </b> </p>
             <div style={{background: "#FD5D05"}} className='btn btn-danger'>
-                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_OneSecurity.pdf"} download={"Datasheet-ApexSecurity.pdf"} rel="noopener noreferrer"> {boton} </a> 
+                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_OneSecurity.pdf"} download={"Flammas-OneSecurity-Series"} rel="noopener noreferrer"> {boton} </a> 
             </div>
         </section>
     )
