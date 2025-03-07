@@ -996,7 +996,7 @@ export function ComponenteSolucionesOneSecurity () {
                 />
                 <EndVIñetas 
                     titulo = "Integrada"
-                    texto = "Obtenga información práctica, funciones de investigación ampliadas y visibilidad centralizada con un conjunto de herramientas EDR unificado, integración SIEM consolidada y un juego de API abierto. Realice investigaciones de amenazas correlacionadas y extendidas que van más allá del endpoint y de reforzar sus equipos de seguridad con un servicio de detección y respuesta gestionadas."
+                    texto = "Obtenga información práctica, funciones de investigación ampliadas y visibilidad centralizada con un conjunto de herramientas EDR & XDR unificado, integración SIEM consolidada y un juego de API abierto. Realice investigaciones de amenazas correlacionadas y extendidas que van más allá del endpoint y de reforzar sus equipos de seguridad con un servicio de detección y respuesta gestionadas."
                 />
                 <EndVIñetas 
                     titulo = "Integración"
@@ -1007,7 +1007,7 @@ export function ComponenteSolucionesOneSecurity () {
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
                         <h1 style={{color: "#FF7700"}}> Detección y respuesta integradas </h1>
-                        <p> Al usar One Security con Flammas, obtendrá capacidades de XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
+                        <p> Al usar One Security con Flammas, obtendrá capacidades de EDR & XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>
