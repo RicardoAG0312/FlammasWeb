@@ -66,29 +66,6 @@ function ComponenteInfojhoanIzquierdaSoluciones ({titulo, texto, imagen, imagen2
 
 //Componentes a renderizar
 export function ComponenteSoporteProfesional () {  
-    const formRef = useRef(null);
-    useEffect(() => {
-        const form = formRef.current;
-        if(form) {
-            form.addEventListener('submit', async function(event) {
-                event.preventDefault();
-                const nombres = event.target.elements.fname.value;
-                const apellidos = event.target.elements.lname.value;
-                const email = event.target.elements.email.value;
-                const empresa = event.target.elements.company.value;
-                const país = event.target.elements.country.value;
-                const mensaje = event.target.elements.message.value;
-                const asunto = "Información sobre Flammas";
-                const encodedAsunto = encodeURI(asunto);
-                const emailBody = `Nombres: ${nombres}\nApellidos: ${apellidos}\nEmail: ${email}\nEmpresa: ${empresa}\nPaís: ${país}\nMensaje: ${mensaje}`;
-                const encodedEmailBody = encodeURI(emailBody);
-                const correo = "ventas@flammas.com"
-                const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodedAsunto}&body=${encodedEmailBody}`;
-                window.open(gmailUrl, '_blank');
-                setTimeout(() => form.reset(), 1000);
-            });
-        }
-    }, []);
     return (
         <>
             <section className='container-fluid seccion-encabezado-soporte'>
@@ -101,14 +78,14 @@ export function ComponenteSoporteProfesional () {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-xxl-6 seccion-contac-soporte ">
-                        <form ref={formRef} action="/submit_form" method='POST'>
+                        <form action="https://formsubmit.co/ventas@flammas.com" method="POST">
                             <div>
                                 <label for="fname"> (*) Nombres: </label>
-                                <input type="text" id="fname" name="firstname" placeholder="Ingresa tus nombres" required="true"/>
+                                <input type="text" id="fname" name="nombres" placeholder="Ingresa tus nombres" required="true"/>
                             </div>
                             <div>
                                 <label for="lname"> (*) Apellidos: </label>
-                                <input type="text" id="lname" name="lastname" placeholder="Ingresa tus apellidos" required="true"/>
+                                <input type="text" id="lname" name="apellidos" placeholder="Ingresa tus apellidos" required="true"/>
                             </div>
                             <div>
                                 <label for="email"> (*) Email: </label>
@@ -116,15 +93,15 @@ export function ComponenteSoporteProfesional () {
                             </div>
                             <div>
                                 <label for="company"> (*) Empresa - Compañia: </label>
-                                <input type="text" id="company" name="company" placeholder="Ingresa tu empresa - compañia" required="true"/>
+                                <input type="text" id="company" name="empresa" placeholder="Ingresa tu empresa - compañia" required="true"/>
                             </div>
                             <div>
                                 <label for="country"> (*) País: </label>
-                                <input type="text" id="country" name="country" placeholder="Ingresa tu país" required="true"/>
+                                <input type="text" id="country" name="país" placeholder="Ingresa tu país" required="true"/>
                             </div>
                             <div>
                                 <label for="message" className='mt-3'> (*) Mensaje: </label>
-                                <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" required="true"/>
+                                <input type="text" id="message" name="mensaje" placeholder="Ingresa tu mensaje" required="true"/>
                             </div>
                             <div>
                                 <p> Flammas necesita la información de contacto que nos proporciona para ponernos en contacto contigo acerca de nuestros productos y servicios. Puedes darte de baja de estas comunicaciones en cualquier momento. Para obtener información sobre como darte de baja, asi como nuestras practicas de privacidad y el compromiso de proteger su privacidad, consulta nuestra Política de privacidad. </p>
@@ -225,29 +202,6 @@ export function ComponenteSoporteProfesional () {
     )
 }
 export function ComponenteSoporteTecnico () {
-    const formRef = useRef(null);
-    useEffect(() => {
-        const form = formRef.current;
-        if(form) {
-            form.addEventListener('submit', async function(event) {
-                event.preventDefault();
-                const nombres = event.target.elements.fname.value;
-                const apellidos = event.target.elements.lname.value;
-                const email = event.target.elements.email.value;
-                const empresa = event.target.elements.company.value;
-                const país = event.target.elements.country.value;
-                const mensaje = event.target.elements.message.value;
-                const asunto = "Información sobre Flammas";
-                const encodedAsunto = encodeURI(asunto);
-                const emailBody = `Nombres: ${nombres}\nApellidos: ${apellidos}\nEmail: ${email}\nEmpresa: ${empresa}\nPaís: ${país}\nMensaje: ${mensaje}`;
-                const encodedEmailBody = encodeURI(emailBody);
-                const correo = "ventas@flammas.com"
-                const gmailUrl = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=${correo}&su=${encodedAsunto}&body=${encodedEmailBody}`;
-                window.open(gmailUrl, '_blank');
-                setTimeout(() => form.reset(), 1000);
-            });
-        }
-    }, []);
     return (
         <>
         <section className='container-fluid seccion-encabezado-soporte'>
@@ -260,14 +214,14 @@ export function ComponenteSoporteTecnico () {
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-xxl-6 seccion-contac-soporte ">
-                    <form ref={formRef} action="/submit_form" method='POST'>
+                    <form action="https://formsubmit.co/ventas@flammas.com" method="POST">
                             <div>
                                 <label for="fname"> (*) Nombres: </label>
-                                <input type="text" id="fname" name="firstname" placeholder="Ingresa tus nombres" required="true"/>
+                                <input type="text" id="fname" name="nombres" placeholder="Ingresa tus nombres" required="true"/>
                             </div>
                             <div>
                                 <label for="lname"> (*) Apellidos: </label>
-                                <input type="text" id="lname" name="lastname" placeholder="Ingresa tus apellidos" required="true"/>
+                                <input type="text" id="lname" name="apellidos" placeholder="Ingresa tus apellidos" required="true"/>
                             </div>
                             <div>
                                 <label for="email"> (*) Email: </label>
@@ -275,15 +229,15 @@ export function ComponenteSoporteTecnico () {
                             </div>
                             <div>
                                 <label for="company"> (*) Empresa - Compañia: </label>
-                                <input type="text" id="company" name="company" placeholder="Ingresa tu empresa - compañia" required="true"/>
+                                <input type="text" id="company" name="empresa" placeholder="Ingresa tu empresa - compañia" required="true"/>
                             </div>
                             <div>
                                 <label for="country"> (*) País: </label>
-                                <input type="text" id="country" name="country" placeholder="Ingresa tu país" required="true"/>
+                                <input type="text" id="country" name="país" placeholder="Ingresa tu país" required="true"/>
                             </div>
                             <div>
                                 <label for="message" className='mt-3'> (*) Mensaje: </label>
-                                <input type="text" id="message" name="message" placeholder="Ingresa tu mensaje" required="true"/>
+                                <input type="text" id="message" name="mensaje" placeholder="Ingresa tu mensaje" required="true"/>
                             </div>
                             <div>
                                 <p> Flammas necesita la información de contacto que nos proporciona para ponernos en contacto contigo acerca de nuestros productos y servicios. Puedes darte de baja de estas comunicaciones en cualquier momento. Para obtener información sobre como darte de baja, asi como nuestras practicas de privacidad y el compromiso de proteger su privacidad, consulta nuestra Política de privacidad. </p>
