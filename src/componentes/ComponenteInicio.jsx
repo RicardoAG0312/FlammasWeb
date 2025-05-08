@@ -110,7 +110,6 @@ function ComponenteInicio() {
                         <div> <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
                     </div>
                     <div>
-                        
                     </div>
                 </div>
             </section>

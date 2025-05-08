@@ -9,7 +9,7 @@ body, html, *{
 }
 /* Barra de navegacion */
 #navbar{
-    background-color: black;
+    background-color: #FFFFFF;
     height: 100px;
     padding: 20px;
     outline: 0.5px solid white;
@@ -17,7 +17,7 @@ body, html, *{
 .barra-nav a{
     font-size: 18px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.369);
-    color: white;
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     transition: all ease-in-out 0.2s;
@@ -27,7 +27,7 @@ body, html, *{
     -o-transition: all ease-in-out 0.2s;
 }
 .barra-nav a:hover {
-    color: #E0223C;
+    color: #CF0F09;
 }
 .navbar{
     margin-top: 0;
@@ -62,7 +62,7 @@ body, html, *{
     width: 200px;
 }
 #contacto {
-    background-color: #FD5D05;
+    background-color: #CF0F09;
     border-radius: 60px;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -70,12 +70,13 @@ body, html, *{
     -o-border-radius: 60px;
     width: auto;
     text-align: center;
+    color: white;
 }
 .nav-link:active {
-    color: #E0223C !important;
+    color: black !important;
 }
 .nav-link:focus {
-    color: #E0223C !important;
+    color: #CF0F09 !important;
 }
 #basic-nav-dropdown {
     border: none;
@@ -86,17 +87,18 @@ body, html, *{
     padding: 0;
 }
 #drop-item {
-    background-color: black;
+    background-color: #F4F4F4;
     padding: 0;
 }
 /* Seccion Footer */
 footer {
     margin-top: 50px;
-    background-color: black;
+    background-color: #F4F4F4;
     height: auto;
     color: white;
     outline: 2px solid white;
     padding: 20px 0;
+    color: black;
 }
 footer img {
     width: 300px;
@@ -123,7 +125,7 @@ footer .row .info i {
 }
 footer .row .info a {
     font-style: none;
-    color: #FD5D05;
+    color: black;
 }
 footer .row .links {
     display: grid;
@@ -163,13 +165,13 @@ footer .row .links div:nth-child(2) {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 2px solid #FD5D05;
+    border: 2px solid #CF0F09;
 }
 #content {
     display: none;
 }
 .spinner-border {
-    color: #FD5D05; 
+    color: #CF0F09; 
     width: 3rem;
     height: 3rem;
 }
@@ -289,11 +291,11 @@ footer .row .links div:nth-child(2) {
     }
     #botonBarra{
         margin-left: 7px;
-        color: #FD5D05;
-        background-color: #FD5D05;
+        color: #CF0F09;
+        background-color: #CF0F09;
     }
     #contacto {
-        background-color: #FD5D05;
+        background-color: #CF0F09;
         border-radius: 60px;
         -webkit-border-radius: 60px;
         -moz-border-radius: 60px;
@@ -332,11 +334,11 @@ footer .row .links div:nth-child(2) {
     }
     #botonBarra{
         margin-left: 7px;
-        color: #FD5D05;
-        background-color: #FD5D05;
+        color: #CF0F09;
+        background-color: #CF0F09;
     }
     #contacto {
-        background-color: #FD5D05;
+        background-color: #CF0F09;
         border-radius: 60px;
         -webkit-border-radius: 60px;
         -moz-border-radius: 60px;
@@ -375,11 +377,11 @@ footer .row .links div:nth-child(2) {
     }
     #botonBarra{
         margin-left: 7px;
-        color: #FD5D05;
-        background-color: #FD5D05;
+        color: #CF0F09;
+        background-color: #CF0F09;
     }
     #contacto {
-        background-color: #FD5D05;
+        background-color: #CF0F09;
         border-radius: 60px;
         -webkit-border-radius: 60px;
         -moz-border-radius: 60px;

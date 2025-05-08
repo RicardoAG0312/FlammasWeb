@@ -14,7 +14,7 @@ p {
     font-style: normal;
 }
 body {
-    background-color: black;
+    background-color: #FFFFFF !important;
 }
 /* Seccion Encabezado */
 .seccion-encabezado {
@@ -26,7 +26,7 @@ body {
 }
 .botonInfoFlammas {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .seccion-encabezado::before {
     content: "";
@@ -77,10 +77,10 @@ body {
     font-family: "Antonio", sans-serif;
     color: black;
     font-weight: bolder;
-    -webkit-text-stroke: 2px #FD5D05;
+    -webkit-text-stroke: 2px #FFFFFF;
 }
 .seccion-encabezado .row .primera-columna div:nth-child(2) {
-    background-color: #FD5D05;
+    background-color: #CF0F09;
     font-weight: bolder;
 }
 .seccion-encabezado .row .segunda-columna {
@@ -90,7 +90,7 @@ body {
     align-items: center;
 }
 .seccion-encabezado .row .segunda-columna .container-fluid {
-    background-image: linear-gradient(180deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
+    background-color: #CF0F09;
     height: 100%;
     display: flex;
     align-items: center;
@@ -114,11 +114,13 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #FFFFFF;
 }
 .seccion-segunda div:nth-child(1) {
     height: auto;
     text-align: center;
     padding: 20px 0;
+    color: white;
 }
 .seccion-segunda div:nth-child(1) h1 {
     font-family: "Antonio";
@@ -128,7 +130,7 @@ video {
 .seccion-segunda div:nth-child(1) h2 {
     font-family: "Antonio";
     font-size: 40px;
-    color: #FD5D05;
+    color: black;
     font-weight: bolder;
 }
 .seccion-segunda .contenedor-cartas {
@@ -139,6 +141,12 @@ video {
     gap: 30px;
     padding-bottom: 40px;
 }
+
+.seccion-segunda  .contenedor-cartas  div:nth-child(2) {
+    background-color: transparent;
+    color: black;
+}
+
 .seccion-segunda .contenedor-cartas .carta-video{
     width: 30%;
     height: 100%;
@@ -147,13 +155,14 @@ video {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     gap: 20px;
+    background-color: #CF0F09;
 }
 .seccion-segunda .contenedor-cartas .carta img {
     width: 100%;
@@ -175,12 +184,13 @@ video {
 }
 /* TERCERA SECCION */
 .seccion-tercera {
-    background-color: black;
+    background-color: #fff;
     height: 600px;
     padding: 40px;
+    color: white;
 }
 .seccion-tercera .contenedor-info {
-    background-color: #FFFFFF;
+    background-color: #CF0F09;
     height: 100%;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -207,7 +217,7 @@ video {
     padding: 0 10px;
 }
 .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-    color: #FD5D05;
+    color: white;
     font-size: 40px;
     font-weight: bolder;
 }
@@ -227,8 +237,7 @@ video {
     text-align: justify;
 }
 .seccion-tercera .contenedor-info div:nth-child(2) div {
-    color: white;
-    background-image: linear-gradient(90deg, #d60b52 2%, #e6332a 28%, #f0962e 60%, #fcea10 96%);
+    background-color: #fff;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -249,7 +258,7 @@ video {
 }
 /* SECCION CUARTA */
 .seccion-cuarta {
-    background-color: black;
+    background-color: #fff;
     height: 600px;
     padding: 40px;
 }
@@ -257,7 +266,7 @@ video {
     height: 100%;
 }
 .seccion-cuarta .row .info {
-    color: white;
+    color: black ;
     position: relative;
     z-index: 0;
     padding: 20px;
@@ -293,7 +302,7 @@ video {
     padding: 0 10px;
 }
 .seccion-cuarta .row .info div h3 {
-    color: #FD5D05;
+    color: #CF0F09;
     text-align: center;
     font-family: "Antonio";
     font-weight: bolder;
@@ -314,7 +323,7 @@ video {
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(1) {
     grid-area: carta1;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -324,7 +333,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     padding: 10px;
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(1) h1{
@@ -339,7 +348,7 @@ video {
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(2) {
     grid-area: carta2;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -349,7 +358,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     padding: 10px;
 }
 .seccion-cuarta .row .contenedor-cards img {
@@ -367,7 +376,7 @@ video {
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(3) {
     grid-area: carta3;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -377,7 +386,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     padding: 10px;
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(3) h1{
@@ -392,7 +401,7 @@ video {
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(4) {
     grid-area: carta4;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -402,7 +411,7 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     padding: 10px;
 }
 .seccion-cuarta .row .contenedor-cards div:nth-child(4) h1{
@@ -421,8 +430,8 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    outline: 2px solid #FD5D05;
+    color: black;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -446,8 +455,8 @@ video {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    outline: 2px solid #FD5D05;
+    color: black;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -474,16 +483,17 @@ video {
     -o-transition: all ease-in-out 0.5s;
 }
 .seccion-cuarta .row .contenedor-cards div:hover {
-    background-color: #FD5D05;
+    background-color: #CF0F09;
     outline: 2px solid white;
     cursor: pointer;
+    color: white;
 }
 /* QUINTA SECCION */
 .seccion-quinta {
     margin-top: 50px;
     height: 600px;
-    background-color: black;
-    color: white;
+    background-color: #FFFFFF;
+    color: black;
     padding: 0 30px;
 }
 .seccion-quinta .row {
@@ -503,7 +513,7 @@ video {
 .seccion-quinta .row div:nth-child(1) h2 {
     font-family: "Antonio";
     font-weight: bolder;
-    color: #FD5D05;
+    color: #CF0F09;
     font-size: 70px;
 }
 .seccion-quinta .row div:nth-child(2) {
