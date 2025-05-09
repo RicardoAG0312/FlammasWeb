@@ -69,9 +69,9 @@ body {
 .seccion-encabezado-soporte .row .primera-columna div:nth-child(1) h2 {
     font-size: 90px;
     font-family: "Antonio", sans-serif;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bolder;
-    -webkit-text-stroke: 2px #FD5D05;
+    -webkit-text-stroke: 2px #CF0F09;
     line-height: 1,1;
     transform: scale(0.9);
 }
@@ -159,7 +159,7 @@ input[type=text], select, option, input[type=number], input[type=email]{
 }
 input[type=submit] {
     width: 100%;
-    background-color: #FD5D05;
+    background-color: #CF0F09;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -178,7 +178,7 @@ input[type=submit] {
     -o-border-radius: 20px;
 }
 input[type=submit]:hover {
-    background-color: rgba(253, 93, 5, 0.9);
+    background-color: hwb(2 15% 54%);
 }
 .seccion-contac-soporte .botones {
     display: flex;
@@ -233,7 +233,7 @@ input[type=submit]:hover {
 .seccion-jhoan div:nth-child(1) h2 {
     font-family: "Antonio";
     font-size: 65px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bolder;
 }
 .seccion-viñetas-jhoan {
@@ -255,7 +255,7 @@ input[type=submit]:hover {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     background-color: white;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -335,7 +335,7 @@ input[type=submit]:hover {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     background-color: white;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -383,7 +383,7 @@ input[type=submit]:hover {
 .contenedorCartaInfojhoanIzquierda {
     margin-top: 50px;
     height: 300px;
-    outline: 1px solid #FD5D05;
+    outline: 1px solid black;
     padding: 2px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -391,6 +391,7 @@ input[type=submit]:hover {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     margin-bottom: 50px;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     color: white;
 }
 .contenedorCartaInfojhoanIzquierda .info {
@@ -404,7 +405,7 @@ input[type=submit]:hover {
 }
 .contenedorCartaInfojhoanIzquierda .info h2 {
     font-size: 65px;
-    color: #FD5D05;
+    color: white;
     font-weight: bold;
     font-family: "Antonio";
 }
@@ -473,7 +474,7 @@ input[type=submit]:hover {
 .seccion-49 div:nth-child(1) h2 {
     font-family: "Antonio";
     font-size: 65px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bolder;
 }
 .seccion-viñetas-mart {
@@ -501,7 +502,7 @@ input[type=submit]:hover {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    outline: 2px solid #D3D3D3;
+    outline: 2px solid #CF0F09;
     background-color: white;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;

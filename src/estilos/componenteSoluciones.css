@@ -34,7 +34,7 @@
 .seccionEncabezadoSoluciones h1 {
     font-family: "Antonio";
     text-transform: uppercase;
-    color: #FD5D05;
+    color: #CF0F09;
     font-size: 100px;
     text-align: center;
 }
@@ -50,13 +50,13 @@
     justify-content: center;
     align-items: center;
     padding: 30px 20px;
-    color: white;
+    color: black;
     gap: 20px;
     text-align: center;
 }
 .seccionEscrituraPrincipalSoluciones h2 {
     font-family: "Antonio";
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
 }
 .seccionEscrituraPrincipalSoluciones p {
@@ -72,7 +72,7 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     margin-bottom: 50px;
-    color: white;
+    color: black;
 }
 .contenedorCartaInfoIzquierda .info {
     height: 300px;
@@ -84,7 +84,7 @@
 }
 .contenedorCartaInfoIzquierda .info h2 {
     font-size: 40px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-family: "Antonio";
 }
@@ -99,7 +99,7 @@
 }
 /* Seccion Funcionalidades Avanzadas */
 .funcionalidades {
-    color: #FD5D05;
+    color: #CF0F09;
     font-family: "Antonio";
     text-align: center;
     padding: 20px 0;
@@ -139,7 +139,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #E0223C 20%, orange 100%);
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     z-index: -1;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -150,12 +150,12 @@
 .seccionFuncionAvanzadas .funcionalidades:hover::before{
     left: 0;
 }
-.seccionFuncionAvanzadas .funcionalidades:hover h2{
+.seccionFuncionAvanzadas .funcionalidades:hover h2, .seccionFuncionAvanzadas .funcionalidades:hover p{
     color: white;
 }
 .seccionFuncionAvanzadas .funcionalidades h2{
     font-family: "Antonio";
-    color: #FD5D05;
+    color: #CF0F09;
     font-size: 35px;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -164,7 +164,7 @@
     -o-transition: all 0.5s ease-in-out;
 }
 .seccionFuncionAvanzadas .funcionalidades p{
-    color: white;
+    color: black;
     font-size: 15px;
     font-weight: normal;
     text-transform: none;
@@ -200,7 +200,7 @@
     padding: 20px;
 }
 .contenedor-cartas-logs .carta-log, .contenedor-cartas-infra .carta-log {
-    color: white;
+    color: black;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -214,14 +214,14 @@
     padding: 10px 20px;
     position: relative;
     overflow: hidden;
-    outline: 1px solid #FD5D05;
+    outline: 1px solid #CF0F09;
     z-index: 0;
 }
 .contenedor-cartas-logs .carta-log::before, .contenedor-cartas-infra .carta-log::before{
     content: "";
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #E0223C 20%, orange 100%);
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     position: absolute;
     top: 0;
     left: -100%;
@@ -244,8 +244,7 @@
     padding: 0;
 }
 .contenedor-animables header, .contenedor-tercero-infra header, .contenedor-cuarta-infra header {
-    background-color: black;
-    color: #FD5D05;
+    color: #CF0F09;
     padding: 20px;
     font-size: 40px;
     font-family: "Antonio";
@@ -295,8 +294,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #FD5D05;
-    color: white;
+    background-color: transparent;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,7 +303,7 @@
     gap: 10px;
     text-align: center;
     padding: 5px;
-    outline: 2px solid white;
+    outline: 1px solid #CF0F09;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -317,7 +316,7 @@
     height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    background-color: black;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -361,11 +360,11 @@
     justify-content: space-evenly;
 }
 .contenedor-tercero-infra .row div:nth-child(1) h2, .contenedor-tercero-infra .row div:nth-child(3) h2 {
-    color: #FD5D05;
+    color: #CF0F09;
     font-family: "Antonio";
 }
 .contenedor-tercero-infra .row div:nth-child(2){
-    background-color: #FD5D05;
+    background-color: #CF0F09;
     min-height: 100%;
     padding: 20px;
     display: flex;
@@ -374,7 +373,7 @@
     justify-content: space-evenly;
 }
 .contenedor-tercero-infra .row div:nth-child(2) h2 {
-    color: black;
+    color: white;
     font-family: "Antonio";
 }
 .contenedor-tercero-infra .row div:nth-child(2) p {
@@ -383,7 +382,7 @@
 /* Seccion Cuarta */
 .contenedor-cuarta-infra {
     height: auto;
-    color: white;
+    color: black;
 }
 .contenedor-cuarta-infra i {
     font-size: 30px;
@@ -407,7 +406,7 @@
     flex-direction: column;
     height: 150px;
     width: 100%;
-    outline: 1px solid white;
+    outline: 1px solid #CF0F09;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -422,7 +421,7 @@
     background-color: white;
 }
 .contenedor-segunda-usu header {
-    color: #FD5D05;
+    color: #CF0F09;
     padding: 20px;
     font-size: 40px;
     font-family: "Antonio";
@@ -450,7 +449,7 @@
     padding: 20px;
 }
 .contenedor-segunda-usu .sub-contenedor-usu div h2{
-    color: #FD5D05;
+    color: #CF0F09;
     text-transform: uppercase;
     font-family: "Antonio";
 }
@@ -482,13 +481,14 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     gap: 20px;
+    color: black;
 }
 .seccion-segunda .contenedor-cartas .carta img {
     width: 100%;
@@ -504,7 +504,7 @@
     font-size: 26px;
     font-weight: bolder;
     text-align: center;
-    color: #FD5D05;
+    color: #CF0F09;
 }
 .seccion-segunda .contenedor-cartas .carta p {
     text-align: center;
@@ -524,10 +524,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px 30px;
+    color: black;
 }
 .contenedorAZJIzquierda .info h2 {
     font-size: 40px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-family: "Antonio";
     text-transform: uppercase;
@@ -550,6 +551,7 @@
 }
 /*Sección Fondo Blanco*/
 .contenedorFondoBlanco{
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     height: auto;
     margin-bottom: 50px;
     color: white;
@@ -564,7 +566,7 @@
 }
 .contenedorFondoBlanco .info h2 {
     font-size: 50px;
-    color: #FD5D05;
+    color: white;
     font-weight: bold;
     font-family: "Antonio";
     margin-bottom: 20px;
@@ -591,7 +593,7 @@
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    color: white;
+    color: black;
     padding: 30px;
 }
 .contenedorInfoCentral .info{
@@ -602,7 +604,7 @@
 }
 .contenedorInfoCentral .info h2 {
     font-size: 38px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-family: "Antonio";
     margin-bottom: 20px;
@@ -645,7 +647,7 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    outline: 2px solid #FD5D05;
+    outline: 2px solid #CF0F09;
     background-color: white;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -654,7 +656,7 @@
     position: relative;
 }
 .seccion-viñetas-animadas .viñeta-animada h2 {
-    color: #FD5D05;
+    color: #CF0F09;
     text-transform: uppercase;
     font-family: "Antonio";
     text-align: center;
@@ -738,7 +740,7 @@
 }
 .contenedorIMGTopBot .info h2 {
     font-size: 40px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-family: "Antonio";
     margin-bottom: 20px;
@@ -760,7 +762,7 @@
 }
 .contenedorIMGTopBot .info2 h2 {
     font-size: 40px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-family: "Antonio";
     margin-bottom: 20px;
@@ -774,7 +776,7 @@
 }
 /*Seccion img TOP/BOT info2*/
 .contenedorIMGTopBot .p-orange {
-    color: #FD5D05;
+    color: #CF0F09;
 }
 .contenedorIMGTopBot .imagen {
     display: flex;
@@ -905,7 +907,7 @@
 .op .row {
     width: 90%;
     border-radius: 20px;
-    outline: 1px solid #FD5D05;
+    outline: 1px solid #CF0F09;
     padding: 50px 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;

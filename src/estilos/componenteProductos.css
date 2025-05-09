@@ -8,12 +8,12 @@ header.tituloProductos {
     padding: 20px 0;
     font-family: "Antonio";
     font-size: 60px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
 }
 h1.subTituloProductos {
     padding: 20px 10px;
-    color: white;
+    color: black;
     font-family: "Antonio";
     font-weight: bold;
     font-size: 45px;
@@ -32,6 +32,7 @@ h1.subTituloProductos {
 }
 .cartita, .cartitaConImagen {
     width: 40%;
+    /* height: 70px; */
     min-height: 400px;
     color: white;
     border-radius: 15px;
@@ -39,8 +40,8 @@ h1.subTituloProductos {
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    outline: 2px solid #FD5D05;
-    transition: all ease-in-out 0.5s;
+    outline: 2px solid black;
+    transition: background-image  ease-in-out 0.5s;
     -webkit-transition: all ease-in-out 0.5s;
     -moz-transition: all ease-in-out 0.5s;
     -ms-transition: all ease-in-out 0.5s;
@@ -50,13 +51,20 @@ h1.subTituloProductos {
     align-items: flex-start;
     flex-direction: column;
     padding: 30px;
+    padding-top: 20px;
+    gap: 10px;
+    background-color: #CF0F09;
+}
+.cartita, .cartitaConImagen p, .cartita, .cartitaConImagen img {
+    overflow: hidden;
 }
 .cartitaConImagen img {
     width: 100%;
 }
 .cartita:hover, .cartitaConImagen:hover {
-    background-color: #FD5D05;
-    outline: 2px solid white;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
+    outline: 2px solid black;
+    /* height: 400px; */
 }
 
 /* Media Querys */

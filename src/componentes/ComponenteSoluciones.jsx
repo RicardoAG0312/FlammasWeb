@@ -629,8 +629,8 @@ export function ComponenteSolucionesCloud () {
             />
             <section className="container-fluid bg-white contenedorFondoBlanco">
                 <div className="row">
-                    <div className="col-12 col-sm-6 col-xl-6 info text-dark">
-                        <h2 className="text-start"> <span className="text-dark">INTEGRACIÓN</span> LAAS </h2>
+                    <div className="col-12 col-sm-6 col-xl-6 info text-white">
+                        <h2 className="text-start"> <span className="text-white">INTEGRACIÓN</span> LAAS </h2>
                         <p> En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.</p>
                         <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas.</p>
                     </div>
@@ -773,8 +773,8 @@ export function ComponenteSolucionesCloud () {
                     <div className="col-12 imagen">
                         <img src={require(`../images/73.png.png`)} alt="Imagen" />
                     </div>
-                    <div className=" container-fluid info2 text-white">
-                        <h2 className="text-center"> <span className="text-white">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
+                    <div className=" container-fluid info2 text-black">
+                        <h2 className="text-center"> <span className="text-black">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
                         <p>Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno.</p>
                     </div>
                 </div>

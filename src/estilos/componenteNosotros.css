@@ -13,7 +13,7 @@
 }
 .seccionEncabezadoNosotros div {
     padding: 0 20px;
-    border-left: 2px solid #FD5D05;
+    border-left: 2px solid #CF0F09;
 }
 .seccionEncabezadoNosotros::before {
     content: "";
@@ -39,7 +39,7 @@
 .seccionEncabezadoNosotros h1 {
     font-family: "Antonio";
     text-transform: uppercase;
-    color: #FD5D05;
+    color: #CF0F09;
     font-size: 60px;
     text-align: left;
     font-weight: bold;
@@ -54,11 +54,11 @@
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     margin-bottom: 30px;
-    color: white;
+    color: black;
 }
 .seccion-sobre-flammas h2 {
     font-family: "Antonio";
-    color: #FD5D05;
+    color: #CF0F09;
     font-size: 60px;
     font-weight: bold;
 }
@@ -78,7 +78,7 @@
 }
 /*Seccion Mision*/
 .seccion-mision {
-    color: white;
+    color: white !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@
 .seccion-mision h2 {
     font-family: "Antonio";
     font-size: 60px;
-    color: white;
+    color: black;
     font-weight: bolder;
     margin-bottom: 30px;
 }
@@ -107,7 +107,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px solid #FD5D05;
+    outline: 1px solid #CF0F09;
+    color: black !important;
 }
 .seccion-mision .imagen-contenedor {
     width: 100%;
@@ -133,19 +134,19 @@
 .seccion-vision h2{
     font-family: "Antonio";
     font-size: 60px;
-    color: white;
+    color: black;
     font-weight: bolder;
     margin-bottom: 30px;
 }
 .seccion-vision p{
-    color: white;
+    color: black;
 }
 .seccion-vision .row{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
-    outline: 1px solid #FD5D05;
+    outline: 1px solid #CF0F09;
 }
 .imagenVision img{
     width: 100%;
@@ -161,7 +162,7 @@
 }
 .contenedor-tercera-seccion h2 {
     font-family: "Antonio";
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-size: 40px;
 }
@@ -170,14 +171,14 @@
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-    background-color: white;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     padding: 15px;
-    color: black;
+    color: white;
 }
 .contenedor-cartas-terceraS .mini-terceraseccion {
     width: 30%;
@@ -189,7 +190,7 @@
     padding: 10px;
 }
 .contenedor-cartas-terceraS .mini-terceraseccion h1{
-    color: #FD5D05;
+    color: white;
     font-family: "Antonio";
     font-weight: bold;
     font-size: 50px;
@@ -201,12 +202,11 @@
 }
 .seccion-Img-Central h2{
     font-family: "Antonio";
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bold;
     font-size: 50px;
 }
 .seccion-Img-Central .card{
-    background-color: black;
     border-bottom: 1px solid white;
     border-radius: 0%;
 }
@@ -214,11 +214,15 @@
     text-align: right;
     position: absolute;
     bottom: 0%;
+    color: black ;
+
 }
 .seccion-Img-Central .t3, .t4{
     text-align: left;
     position: absolute;
     bottom: 0%;
+    color: black ;
+
 }
 .seccion-Img-Central .card-body{
     align-items: center;
@@ -244,13 +248,15 @@
 .seccion-valores h2{
     font-family: "Antonio";
     font-size: 60px;
-    color: white;
+    color: black;
     font-weight: bolder;
     margin-bottom: 30px;
 }
 .seccion-valores .card{
     border-radius: 25px;
     width: 350px;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
+    color: white;
 }
 .seccion-valores .imagen-contenido{
     display: flex;
@@ -277,7 +283,7 @@
     margin-bottom: 50px;
 }
 .seccion-TSTI .container{
-    outline: 1px solid white;
+    outline: 1px solid #CF0F09;
     padding-top: 1px;
     padding-bottom: 20px;
     border-radius: 30px;
@@ -285,7 +291,7 @@
 .seccion-TSTI h2{
     font-family: "Antonio";
     font-size: 70px;
-    color: #FD5D05;
+    color: #CF0F09;
     font-weight: bolder;
     margin-bottom: 30px;
 }
@@ -297,7 +303,7 @@
     text-align: right;
 }
 .seccion-TSTI p{
-    color: white;
+    color: black;
 }
 .seccion-TSTI .row{
     justify-content: center;
@@ -332,9 +338,11 @@
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
     padding: 0 10px;
-    background-color: black;
-    border-radius: 5px;
+    background-color: transparent;
+    
+    border-radius: 20px;
     margin-top: 10px;
+    color: black;
 }
 .seccion-HMV .btn-full-width:hover + .content,
 .seccion-HMV .btn-full-width:focus-within + .content,
@@ -346,15 +354,15 @@
 .txt-menu {
     font-family: "Antonio";
     font-size: 50px;
-    color: white;
+    color: black;
     font-weight: bolder;
     margin-bottom: 30px;
 }
 .boton-oscuro {
-    outline: 1px solid white;
+    outline: 1px solid black;
     margin-bottom: 15px;
     margin-top: 0;
-    background-color: #000;
+    background-color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -364,12 +372,13 @@
     margin: 0;
 }
 .boton-oscuro:hover {
-    background-color: #FD5D05;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
 }
 .boton-oscuro:focus,
 .boton-oscuro:active,
 .boton-oscuro.active {
-    background-color: #FD5D05;
+    background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
+
 }
 
 /* Medias Querys */
