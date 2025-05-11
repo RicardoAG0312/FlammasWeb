@@ -21,7 +21,7 @@ export function ComponenteEncabezadoSolucionesOne ({titulo, subtitulo, texto, bo
             <h3> {subtitulo} </h3>
             <h1> {titulo} </h1>
             <p> <b> {texto} </b> </p>
-            <div style={{background: "#FD5D05"}} className='btn btn-danger'>
+            <div style={{background: "#CF0F09"}} className='btn btn-danger'>
                 <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_OneSecurity.pdf"} download={"Flammas-OneSecurity-Series"} rel="noopener noreferrer"> {boton} </a> 
             </div>
         </section>
@@ -880,7 +880,7 @@ export function ComponenteSolucionesOneSecurity () {
             case 'maxima':
                 return (
                     <section>
-                        <h1 style={{color: "#FF7700"}}> La seguridad de endpoints redefinida </h1>
+                        <h1 style={{color: "#CF0F09"}}> La seguridad de endpoints redefinida </h1>
                         <p> 
                             One Security utiliza un sistema de prevención de intrusiones basado en host (HIPS) para aplicar parches de forma virtual vulnerabilidades conocidas y desconocidas antes de que el parche esté disponible o pueda desplegarse.
                         </p>
@@ -896,7 +896,7 @@ export function ComponenteSolucionesOneSecurity () {
             case 'proteccion':
                 return (
                     <section>
-                        <h1 style={{color: "#FF7700"}}> Seguridad efectiva para sus datos sensibles </h1>
+                        <h1 style={{color: "#CF0F09"}}> Seguridad efectiva para sus datos sensibles </h1>
                         <p> 
                             Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption, DLP integrado y control de dispositivos.
                         </p>
@@ -912,7 +912,7 @@ export function ComponenteSolucionesOneSecurity () {
             case 'control':
                 return (
                     <section>
-                        <h1 style={{color: "#FF7700"}}> Control mejorado de aplicaciones frente a software malicioso </h1>
+                        <h1 style={{color: "#CF0F09"}}> Control mejorado de aplicaciones frente a software malicioso </h1>
                         <p> 
                             Evite que se ejecuten aplicaciones no deseadas y desconocidas en sus endpoints. Te permite:
                         </p>
@@ -926,7 +926,7 @@ export function ComponenteSolucionesOneSecurity () {
             case 'insights':
                 return (
                     <section>
-                        <h1 style={{color: "#FF7700"}}> Manténgase al día con One Security </h1>
+                        <h1 style={{color: "#CF0F09"}}> Manténgase al día con One Security </h1>
                         <p> 
                             La aplicación proporciona alertas de producto e información de amenazas en tiempo real, permitiéndole:
                         </p>
@@ -956,13 +956,13 @@ export function ComponenteSolucionesOneSecurity () {
                         <img src={ImagenOne} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 style={{color: "#FD5D05", marginBottom: "30px"}}> Técnicas de detección avanzadas </h1>
-                        <p style={{color: "white", marginBottom: "30px"}}> Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas. </p>
+                        <h1 style={{color: "#CF0F09", marginBottom: "30px"}}> Técnicas de detección avanzadas </h1>
+                        <p style={{color: "black", marginBottom: "30px"}}> Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas. </p>
                         <ul>
                             {
                                 infoTecnicas.map((info, key) => (
                                     <div key={key} >
-                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#FD5D05"}}> </i> {info}
+                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#CF0F09"}}> </i> {info}
                                     </div>
                                 ))
                             }
@@ -973,7 +973,7 @@ export function ComponenteSolucionesOneSecurity () {
             <section className="endpointOne">
                 <div className="titus" style={{padding: "10px 50px"}}>
                     <h5 style={{color: "white"}}> PORQUÉ FLAMMAS </h5>
-                    <h1 style={{color: "#FF7700"}}> La seguridad de endpoints redefinida </h1>
+                    <h1 style={{color: "#CF0F09"}}> La seguridad de endpoints redefinida </h1>
                 </div>
                 <div style={{padding: "10px 50px"}}>
                     <div className="row">
@@ -1006,7 +1006,7 @@ export function ComponenteSolucionesOneSecurity () {
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 style={{color: "#FF7700"}}> Detección y respuesta integradas </h1>
+                        <h1 style={{color: "#CF0F09"}}> Detección y respuesta integradas </h1>
                         <p> Al usar One Security con Flammas, obtendrá capacidades de EDR & XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
                     </div>
                     <div className="col-12 col-md-6 info">
@@ -1014,7 +1014,7 @@ export function ComponenteSolucionesOneSecurity () {
                             {
                                 infoDeteccionRespuesta.map((info, key) => (
                                     <div key={key} >
-                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#FD5D05"}}> </i> {info}
+                                        <i className="bi bi-check-circle-fill me-2" style={{color: "#CF0F09"}}> </i> {info}
                                     </div>
                                 ))
                             }

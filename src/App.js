@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // Importaciones de estilos
 import './App.css';
 // Importaciones de imágenes
-import LogoFlammas from './images/Recurso 6.png.png';
+import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
 import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
 
