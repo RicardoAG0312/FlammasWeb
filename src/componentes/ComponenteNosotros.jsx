@@ -123,11 +123,11 @@ function ComponenteTSTI({titulo, subtitulo, texto, imagen}){
                         <h2 className="text-center">{titulo}</h2>
                     </div>
                 <div className="mt-5">
-                    <p className="text-center subti">{subtitulo}</p>
+                    <p className="text-center text-black subti">{subtitulo}</p>
                 </div>
                     <div className="row">
                         <div className="col-md-5 text-content">
-                            <p className="parrafo"> {texto} </p>
+                            <p className="parrafo text-black"> {texto} </p>
                         </div>
                         <div className="col-md-5 imagenTSTI">
                             <img src={require(`../images/${imagen}.png`)} alt="imagen" />

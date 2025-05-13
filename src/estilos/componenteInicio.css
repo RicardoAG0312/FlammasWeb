@@ -813,7 +813,7 @@ video {
         padding: 40px;
     }
     .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-        color: #FD5D05;
+        color: white;
         font-size: 40px;
         font-weight: bolder;
         text-align: center;
@@ -830,7 +830,7 @@ video {
 /* Medio (para retratos de tabletas y teléfonos móviles grandes) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-        color: #FD5D05;
+        color: white;
         font-size: 40px;
         font-weight: bolder;
         text-align: center;
@@ -854,7 +854,7 @@ video {
 /* Medio pequeño (para teléfonos móviles grandes) */
 @media only screen and (min-width: 481px) and (max-width: 600px) {
     .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-        color: #FD5D05;
+        color: white;
         font-size: 30px;
         font-weight: bolder;
         text-align: center;
@@ -878,7 +878,7 @@ video {
 /* Pequeño (para teléfonos móviles pequeños) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-        color: #FD5D05;
+        color: white;
         font-size: 25px;
         font-weight: bolder;
         text-align: center;
@@ -923,7 +923,7 @@ video {
         gap: 10px;
     }
     .seccion-tercera .contenedor-info div:nth-child(1) h1 {
-        color: #FD5D05;
+        color: white;
         font-size: 20px;
         font-weight: bolder;
         text-align: center;

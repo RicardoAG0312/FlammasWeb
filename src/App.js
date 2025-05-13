@@ -11,11 +11,11 @@ import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
 import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault(); 
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
 });
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById('loading-screen').remove();
         document.getElementById('content').style.display = 'block';
     }, 4000);
@@ -26,7 +26,7 @@ function App() {
     return (
         <div className="App">
             <div id="loading-screen">
-                <img src={LogoFlammas} alt="Logo Flammas" /> 
+                <img src={LogoFlammas} alt="Logo Flammas" />
                 <div className="spinner-border" role="status">
                     <span className="sr-only"> </span>
                 </div>
@@ -37,7 +37,7 @@ function App() {
                         <Navbar.Brand href="/inicio">
                             <img className="h-100" src={LogoFlammas} alt="Logo Flammas" />
                         </Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" id="botonBarra"/>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" id="botonBarra" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="barra-nav">
                                 <Nav.Link as={Link} to="/inicio">Inicio</Nav.Link>
@@ -85,7 +85,7 @@ function App() {
                                 </a>
                                 <a href="mailto=ventas@flammas.com" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-envelope"></i>
-                                </a>    
+                                </a>
                             </div>
                         </div>
                         <div className="col-12 col-sm-9 col-xl-9 links">

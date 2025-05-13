@@ -272,6 +272,7 @@ footer .row .links div:nth-child(2) {
     }
     .barra-nav a{
         font-size: 14px;
+        
     }
     #navbar img {
         width: 140px;
@@ -332,6 +333,9 @@ footer .row .links div:nth-child(2) {
     .barra-nav{
         padding: 0;
     }
+    .barra-nav a {
+        color: #CF0F09;
+    }
     #botonBarra{
         margin-left: 7px;
         color: #CF0F09;
@@ -363,7 +367,7 @@ footer .row .links div:nth-child(2) {
         width: 150px;
         height: 150px;
     }
-    .navbar-collapse.collapse.show {
+    .navbar-collapse.collapse.show  {
         margin-top: 32px;
     }
 }

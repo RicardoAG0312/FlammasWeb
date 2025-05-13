@@ -311,7 +311,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
-    /*outline: 1px solid #FD5D05;*/
 }
 .seccion-TSTI .imagenTSTI{
     text-align: right;
@@ -660,7 +659,7 @@
         height: auto;
         text-align: center;
         padding: 30px;
-        color: white;
+        color: black;
     }
     .contenedor-tercera-seccion h2 {
         font-size: 35px;
@@ -702,7 +701,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #FD5D05;
+        border-bottom: 1px solid #CF0F09;
     }
     .contenedor-cartas-terceraS .mini-terceraseccion h1{
         font-size: 35px;
@@ -768,7 +767,7 @@
         font-size: 50px;
     }
     .seccion-Img-Central .card{
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
         border-radius: 0%;
     }
     .seccion-Img-Central .t1, .t2{
@@ -1027,7 +1026,7 @@
     .seccion-TSTI h2{
         font-family: "Antonio";
         font-size: 70px;
-        color: #FD5D05;
+        color: #CF0F09;
         font-weight: bolder;
         margin-bottom: 30px;
     }
@@ -1039,7 +1038,7 @@
         text-align: right;
     }
     .seccion-TSTI p{
-        color: white;
+        color: black;
         text-align: center;
     }
     .seccion-TSTI .row{
@@ -1074,7 +1073,7 @@
     .seccion-TSTI h2{
         font-family: "Antonio";
         font-size: 70px;
-        color: #FD5D05;
+        color: #CF0F09;
         font-weight: bolder;
         margin-bottom: 30px;
     }
@@ -1121,7 +1120,7 @@
     .seccion-TSTI h2{
         font-family: "Antonio";
         font-size: 70px;
-        color: #FD5D05;
+        color: #CF0F09;
         font-weight: bolder;
         margin-bottom: 30px;
     }
@@ -1168,7 +1167,7 @@
     .seccion-TSTI h2{
         font-family: "Antonio";
         font-size: 70px;
-        color: #FD5D05;
+        color: #CF0F09;
         font-weight: bolder;
         margin-bottom: 30px;
     }
