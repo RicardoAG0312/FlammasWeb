@@ -43,8 +43,8 @@ body, html, *{
     z-index: 9999;
 }
 .dropdown-menu.show {
-    background-color: black;
-    padding: 5px;
+    background-color: #F4F4F4;
+    padding: 3px;
 }
 .navbar-nav {
     width: 80%;
@@ -78,17 +78,23 @@ body, html, *{
 .nav-link:focus {
     color: #CF0F09 !important;
 }
+#contacto:focus {
+    color: white !important;
+}
 #basic-nav-dropdown {
     border: none;
-    /* background-color: black; */
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-style: 400;
     padding: 0;
+    gap: 5px;
+    
 }
 #drop-item {
     background-color: #F4F4F4;
     padding: 0;
+    margin: 10px 0;
+
 }
 /* Seccion Footer */
 footer {

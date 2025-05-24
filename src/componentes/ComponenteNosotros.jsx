@@ -73,7 +73,7 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
                         </div>
                     </div>
                     <div className="card mb-3">
-                        <div className="card-body text-white">
+                        <div className="d-flex card-body text-white">
                             <p className="t2">{texto2}</p>
                         </div>
                     </div>
@@ -268,7 +268,7 @@ function ComponenteNosotrosFlammas () {
             <ComponenteTSTI
                 titulo="I+D+i"
                 subtitulo="Investigación + Desarrollo + Innovación"
-                texto="Desde sus orígenes Flammas siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde que ya en 2007 lideramos un consorcio Europeo que combinaba seguridad y monitorización."
+                texto="Desde sus orígenes Flammas siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde 2007."
                 imagen="81.png"
             />
             <MiniComponenteQuintaSeccion 

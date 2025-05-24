@@ -26,7 +26,7 @@ body {
 }
 .botonInfoFlammas {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .seccion-encabezado::before {
     content: "";
@@ -483,10 +483,10 @@ video {
     -o-transition: all ease-in-out 0.5s;
 }
 .seccion-cuarta .row .contenedor-cards div:hover {
-    background-color: #CF0F09;
-    outline: 2px solid white;
+    background-color: #ffe0df;
+    outline: 2px solid #CF0F09;
     cursor: pointer;
-    color: white;
+    color: #CF0F09;
 }
 /* QUINTA SECCION */
 .seccion-quinta {

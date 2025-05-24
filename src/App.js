@@ -83,7 +83,7 @@ function App() {
                                 <a href="https://wa.me/573242927704" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-whatsapp"></i>
                                 </a>
-                                <a href="mailto=ventas@flammas.com" target='_blank' rel='noreferrer'>
+                                <a href="mailto: ventas@flammas.com" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-envelope"></i>
                                 </a>
                             </div>

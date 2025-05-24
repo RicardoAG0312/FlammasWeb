@@ -171,7 +171,7 @@ function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
 function EndVIñetas ({titulo, texto}) {
     return (
         <div className="card d-flex justify-content-center align-content-center p-5">
-            <h2> {titulo} </h2>
+            <h2 className="text-black"> {titulo} </h2>
             <p style={{fontSize: "18px", fontFamily: "Montserrat"}}> {texto} </p>
         </div>
     )
