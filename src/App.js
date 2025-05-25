@@ -1,6 +1,6 @@
 // Importaciones de bibliotecas
-import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link, Routes, Navigate, useLocation } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -9,7 +9,7 @@ import './App.css';
 // Importaciones de imágenes
 import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas } from './componentes';
+import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus } from './componentes';
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('content').style.display = 'block';
     }, 4000);
 });
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+};
 
 //Componente a renderizar
 function App() {
@@ -28,11 +37,12 @@ function App() {
             <div id="loading-screen">
                 <img src={LogoFlammas} alt="Logo Flammas" />
                 <div className="spinner-border" role="status">
-                    <span className="sr-only"> </span>
+                    <span className="sr-only"></span>
                 </div>
             </div>
             <div id="content">
                 <Router>
+                    <ScrollToTop />
                     <Navbar expand="md" id="navbar">
                         <Navbar.Brand href="/inicio">
                             <img className="h-100" src={LogoFlammas} alt="Logo Flammas" />
@@ -47,6 +57,7 @@ function App() {
                                     <NavDropdown.Item as={Link} to="/soluciones/infraestructura" id="drop-item">Infraestructura Integral</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/cloud" id="drop-item">Cloud y Virtualización</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/onesecurity" id="drop-item"> One Security </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/soluciones/marcus" id="drop-item"> Marcus </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/nosotros">¿Por qué Flammas?</Nav.Link>
                                 <NavDropdown title="Soporte" id="basic-nav-dropdown">
@@ -66,6 +77,7 @@ function App() {
                         <Route path="/soluciones/infraestructura" element={<ComponenteSolucionesInfraestructura />} />
                         <Route path="/soluciones/cloud" element={<ComponenteSolucionesCloud />} />
                         <Route path="/soluciones/onesecurity" element={<ComponenteSolucionesOneSecurity />} />
+                        <Route path="/soluciones/marcus" element={<ComponenteSolucionesMarcus />} />
                         <Route path="/soporte/profesional" element={<ComponenteSoporteProfesional />} />
                         <Route path="/soporte/tecnico" element={<ComponenteSoporteTecnico />} />
                         <Route path="/login" element={<ComponenteLogin />} />
@@ -91,19 +103,15 @@ function App() {
                         <div className="col-12 col-sm-9 col-xl-9 links">
                             <div>
                                 <h3> SOLUCIONES </h3>
-                                <span> Monitorización de redes </span>
-                                <span> Gestión de logs </span>
-                                <span> Infraestructura integral </span>
-                                <span> Experiencia de Usuario </span>
-                                <span> Cloud y Virtualización </span>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/monitorizacion" rel='noreferrer'> Monitorización de redes </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/infraestructura" rel='noreferrer'> Infraestructura integral </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/cloud" rel='noreferrer'> Cloud y Virtualización </a >
                             </div>
                             <div>
                                 <h3> MONITORIZACIÓN </h3>
-                                <span> Monitorización de redes </span>
-                                <span> Gestión de logs </span>
-                                <span> Infraestructura integral </span>
-                                <span> Experiencia de Usuario </span>
-                                <span> Cloud y Virtualización </span>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/monitorizacion" rel='noreferrer'> Monitorización de redes </a >
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/infraestructura" rel='noreferrer'> Infraestructura integral </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/cloud" rel='noreferrer'> Cloud y Virtualización </a >
                             </div>
                         </div>
                     </div>

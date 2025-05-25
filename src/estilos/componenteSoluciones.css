@@ -889,47 +889,50 @@
   padding: 40px;
 }
 .endviñetas .card {
-        position: relative;
-      border: none;
-      background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
-      height: 450px;
-      width: 30%;
-      border-radius: 20px;
-      transition: all 0.5s ease-in-out;
-      color: black;
-      overflow: hidden;
-      padding: 20px;
-      text-align: center;
-
+  position: relative;
+  border: none;
+  background-image: linear-gradient(180deg, #a8191f 0%, #ff1b26 100%);
+  height: 450px;
+  width: 30%;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  color: black;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
 }
-.endviñetas    .card h2 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 30px;
-      margin: 0;
-      color: black;
-      transition: all 0.4s ease-in-out;
-    }
+.endviñetas .card h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  margin: 0;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
 .endviñetas .card p {
-      opacity: 0;
-      margin-top: 80px;
-      font-size: 18px;
-      transition: opacity 0.4s ease-in-out;
-    }
+  opacity: 0;
+  margin-top: 80px;
+  font-size: 18px;
+  transition: opacity 0.4s ease-in-out;
+}
 .endviñetas .card:hover h2 {
-    top: 40px;
-      transform: translate(-50%, 0%);
-      color: #CF0F09;
+  top: 40px;
+  transform: translate(-50%, 0%);
+  color: #cf0f09;
 }
 .endviñetas .card:hover {
-       background-image: linear-gradient(180deg, #fffdfc 16%, rgba(255, 255, 255, 0.92) 83%);
-      outline: 1px solid black;
+  background-image: linear-gradient(
+    180deg,
+    #fffdfc 16%,
+    rgba(255, 255, 255, 0.92) 83%
+  );
+  outline: 1px solid black;
 }
-.endviñetas  .card:hover p {
-      opacity: 1;
-    }
+.endviñetas .card:hover p {
+  opacity: 1;
+}
 .op .row {
   width: 90%;
   border-radius: 20px;

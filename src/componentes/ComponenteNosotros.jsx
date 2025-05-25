@@ -2,7 +2,7 @@ import "../estilos/componenteNosotros.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 
-function ComponenteEncabezadoNosotros ({titulo, subtitulo}) {
+function ComponenteEncabezadoNosotros({ titulo, subtitulo }) {
     return (
         <section className="container-fluid seccionEncabezadoNosotros">
             <div>
@@ -12,7 +12,7 @@ function ComponenteEncabezadoNosotros ({titulo, subtitulo}) {
         </section>
     )
 }
-function ComponenteMiniTerceraSeccion ({titulo, subtitulo}) {
+function ComponenteMiniTerceraSeccion({ titulo, subtitulo }) {
     return (
         <section className="mini-terceraseccion">
             <div>
@@ -22,7 +22,7 @@ function ComponenteMiniTerceraSeccion ({titulo, subtitulo}) {
         </section>
     )
 }
-function ComponenteSobreFlammas ({imagen, titulo, texto}) {
+function ComponenteSobreFlammas({ imagen, titulo, texto }) {
     return (
         <section className="container seccion-sobre-flammas">
             <div className="row">
@@ -37,8 +37,8 @@ function ComponenteSobreFlammas ({imagen, titulo, texto}) {
         </section>
     )
 }
-function ComponenteMision({imagen, texto}){
-    return(
+function ComponenteMision({ imagen, texto }) {
+    return (
         <div className="carta">
             <div className="imagen-contenedor">
                 <img src={require(`../images/${imagen}.png`)} alt="imagen" />
@@ -47,8 +47,8 @@ function ComponenteMision({imagen, texto}){
         </div>
     )
 }
-function ComponenteVision({imagen, texto, texto2}){
-    return(
+function ComponenteVision({ imagen, texto, texto2 }) {
+    return (
         <div className="container">
             <div className="row">
                 <div className="col-md-4 imagenVision">
@@ -62,8 +62,8 @@ function ComponenteVision({imagen, texto, texto2}){
         </div>
     )
 }
-function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
-    return(
+function ComponenteImagenCentral({ texto1, texto2, texto3, texto4, imagen }) {
+    return (
         <div className="container">
             <div className="row">
                 <div className="col-12 col-md-5 pe-5">
@@ -88,7 +88,7 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
                         </div>
                     </div>
                     <div className="card mb-3">
-                    <div className="card-body text-white">
+                        <div className="card-body text-white">
                             <p className="t4">{texto4}</p>
                         </div>
                     </div>
@@ -97,8 +97,8 @@ function ComponenteImagenCentral({texto1, texto2, texto3, texto4, imagen}){
         </div>
     )
 }
-function ComponenteValores({imagen, texto}){
-    return(
+function ComponenteValores({ imagen, texto }) {
+    return (
         <div className="col-md-4 col-lg-4 d-flex justify-content-center mb-5">
             <div className="card">
                 <div className="row g-0">
@@ -115,45 +115,45 @@ function ComponenteValores({imagen, texto}){
         </div>
     )
 }
-function ComponenteTSTI({titulo, subtitulo, texto, imagen}){
-    return(
+function ComponenteTSTI({ titulo, subtitulo, texto, imagen }) {
+    return (
         <section className="container-fluid seccion-TSTI">
-                <div className="container">
-                    <div className="mt-3">
-                        <h2 className="text-center">{titulo}</h2>
-                    </div>
+            <div className="container">
+                <div className="mt-3">
+                    <h2 className="text-center">{titulo}</h2>
+                </div>
                 <div className="mt-5">
                     <p className="text-center text-black subti">{subtitulo}</p>
                 </div>
-                    <div className="row">
-                        <div className="col-md-5 text-content">
-                            <p className="parrafo text-black"> {texto} </p>
-                        </div>
-                        <div className="col-md-5 imagenTSTI">
-                            <img src={require(`../images/${imagen}.png`)} alt="imagen" />
-                        </div>
+                <div className="row">
+                    <div className="col-md-5 text-content">
+                        <p className="parrafo text-black"> {texto} </p>
+                    </div>
+                    <div className="col-md-5 imagenTSTI">
+                        <img src={require(`../images/${imagen}.png`)} alt="imagen" />
                     </div>
                 </div>
+            </div>
         </section>
     )
 }
 
 //Componente a renderizar
-function ComponenteNosotrosFlammas () {
+function ComponenteNosotrosFlammas() {
     return (
         <>
-            <ComponenteEncabezadoNosotros 
-                subtitulo = "DESDE 2004 DESARROLLANDO SOFTWARE CON PASIÓN Y TALENTO"
-                titulo = "SOMOS UN EQUIPO DE EXPERTOS VOLCADO EN AYUDAR A LÍDERES Y PERSONAL TI A CONSEGUIR LA TOTAL OBSERVABILIDAD DE SU ORGANIZACIÓN"
+            <ComponenteEncabezadoNosotros
+                subtitulo="DESDE 2004 DESARROLLANDO SOFTWARE CON PASIÓN Y TALENTO"
+                titulo="SOMOS UN EQUIPO DE EXPERTOS VOLCADO EN AYUDAR A LÍDERES Y PERSONAL TI A CONSEGUIR LA TOTAL OBSERVABILIDAD DE SU ORGANIZACIÓN"
             />
             <section className="container-fluid seccion-HMV">
                 <div className="container">
                     <button className="btn boton-oscuro btn-lg btn-full-width"><h2 className="txt-menu">Nuestra Historia</h2></button>
                     <div className="content mt-3">
-                        <ComponenteSobreFlammas 
-                            imagen = "82.png"
-                            titulo = "SOBRE FLAMMAS:"
-                            texto = "Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
+                        <ComponenteSobreFlammas
+                            imagen="82.png"
+                            titulo="SOBRE FLAMMAS:"
+                            texto="Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
                         />
                     </div>
                     <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">Misión</h2></button>
@@ -197,29 +197,29 @@ function ComponenteNosotrosFlammas () {
                 <h2> FLAMMAS EN NÚMEROS EN LA ACTUALIDAD </h2>
                 <p> Desde 2004, Flammas no ha parado de crecer, posibilitando la evolución constante de este proyecto que hace que nos adaptemos a la realidad cambiante de hoy. </p>
                 <div className="container-fluid contenedor-cartas-terceraS">
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "+1M"
-                        subtitulo = "Métricas en la mayor de las instalaciones en un cliente real."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="+1M"
+                        subtitulo="Métricas en la mayor de las instalaciones en un cliente real."
                     />
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "24/7"
-                        subtitulo = "Soporte técnico disponible a nivel mundial."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="24/7"
+                        subtitulo="Soporte técnico disponible a nivel mundial."
                     />
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "+60"
-                        subtitulo = "Presentes en más de 60 países de todo el mundo en los cinco continentes."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="+60"
+                        subtitulo="Presentes en más de 60 países de todo el mundo en los cinco continentes."
                     />
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "96%"
-                        subtitulo = "De nuestros clientes se quedan con nosotros y renuevan cada año sus suscripciones."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="96%"
+                        subtitulo="De nuestros clientes se quedan con nosotros y renuevan cada año sus suscripciones."
                     />
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "+100K"
-                        subtitulo = "Usuarios en todo el mundo que utilizan Flammas en todo tipo de organizaciones."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="+100K"
+                        subtitulo="Usuarios en todo el mundo que utilizan Flammas en todo tipo de organizaciones."
                     />
-                    <ComponenteMiniTerceraSeccion 
-                        titulo = "1 HORA"
-                        subtitulo = "Es el tiempo que necesitas para instalarlo y cubrir tus sistemas."
+                    <ComponenteMiniTerceraSeccion
+                        titulo="1 HORA"
+                        subtitulo="Es el tiempo que necesitas para instalarlo y cubrir tus sistemas."
                     />
                 </div>
             </section>
@@ -228,11 +228,11 @@ function ComponenteNosotrosFlammas () {
                     <h2 className="text-center mb-5">¿POR QUÉ CONTAR CON NOSOTROS?</h2>
                 </div>
                 <ComponenteImagenCentral
-                    texto1 = "Somos expertos en migraciones y grandes implantaciones. Tenemos nuestro propio equipo de consultoría e ingeniería especializada."
-                    texto2 = "Quién mejor que el fabricante para asegurarse del éxito de un proyecto."
-                    texto3 = "Si no estamos lo suficientemente cerca, podemos colaborar con un partner que conozca."
-                    texto4 = "Precios muy competitivos."
-                    imagen = "74.png"
+                    texto1="Somos expertos en migraciones y grandes implantaciones. Tenemos nuestro propio equipo de consultoría e ingeniería especializada."
+                    texto2="Quién mejor que el fabricante para asegurarse del éxito de un proyecto."
+                    texto3="Si no estamos lo suficientemente cerca, podemos colaborar con un partner que conozca."
+                    texto4="Precios muy competitivos."
+                    imagen="74.png"
                 />
             </section>
             {/* Seccion Valores */}
@@ -243,24 +243,24 @@ function ComponenteNosotrosFlammas () {
                 <div className="container">
                     <div className="row justify-content-center">
                         <ComponenteValores
-                            imagen = "76.png"
-                            texto = "Innovar como forma de ver la vida."
+                            imagen="76.png"
+                            texto="Innovar como forma de ver la vida."
                         />
                         <ComponenteValores
-                            imagen = "77.png"
-                            texto = "Cuidar y escuchar a nuestros clientes, sobre todo si son críticos."
+                            imagen="77.png"
+                            texto="Cuidar y escuchar a nuestros clientes, sobre todo si son críticos."
                         />
                         <ComponenteValores
-                            imagen = "78.png"
-                            texto = "Ofrecer el mejor soporte técnico a nuestros clientes."
+                            imagen="78.png"
+                            texto="Ofrecer el mejor soporte técnico a nuestros clientes."
                         />
                         <ComponenteValores
-                            imagen = "79.png"
-                            texto = "Seguir aprendiendo siempre, incluso de lo inesperado."
+                            imagen="79.png"
+                            texto="Seguir aprendiendo siempre, incluso de lo inesperado."
                         />
                         <ComponenteValores
-                            imagen = "80.png"
-                            texto = "Mejora continua y autocrítica constante."
+                            imagen="80.png"
+                            texto="Mejora continua y autocrítica constante."
                         />
                     </div>
                 </div>
@@ -271,14 +271,14 @@ function ComponenteNosotrosFlammas () {
                 texto="Desde sus orígenes Flammas siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde 2007."
                 imagen="81.png"
             />
-            <MiniComponenteQuintaSeccion 
-                titulo = "+500 INTEGRACIONES:"
-                subtitulo = "EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1 = "Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2 = "Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+            <MiniComponenteQuintaSeccion
+                titulo="+500 INTEGRACIONES:"
+                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
+                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
+                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
             />
         </>
-    ) 
+    )
 }
 
 export default ComponenteNosotrosFlammas;

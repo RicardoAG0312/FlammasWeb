@@ -3,16 +3,16 @@ import "../estilos/componenteInicio.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import imagen7 from "../images/7.png.png";
 
-export function MiniComponentesSegundaSeccion ({imagen, titulo, texto}) {
+export function MiniComponentesSegundaSeccion({ imagen, titulo, texto }) {
     return (
         <div className='carta'>
-            <img src={require(`../images/${imagen}.jpeg`)} alt="Imagen" id="imagenInicio"/>
+            <img src={require(`../images/${imagen}.jpeg`)} alt="Imagen" id="imagenInicio" />
             <h1> {titulo} </h1>
             <p> {texto} </p>
         </div>
     )
 }
-function MiniVideos ({imagen, titulo, texto}) {
+function MiniVideos({ imagen, titulo, texto }) {
     return (
         <div className='carta-video'>
             <video autoPlay preload='auto' loop muted>
@@ -23,7 +23,7 @@ function MiniVideos ({imagen, titulo, texto}) {
         </div>
     )
 }
-function MiniComponentesCuartaSeccion ({imagen, titulo, texto}) {
+function MiniComponentesCuartaSeccion({ imagen, titulo, texto }) {
     return (
         <div>
             <img src={require(`../images/${imagen}.png`)} alt="Imagen" />
@@ -32,7 +32,7 @@ function MiniComponentesCuartaSeccion ({imagen, titulo, texto}) {
         </div>
     )
 }
-export function MiniComponenteQuintaSeccion ({titulo, subtitulo, texto1, texto2}) {
+export function MiniComponenteQuintaSeccion({ titulo, subtitulo, texto1, texto2 }) {
     return (
         <section className='container-fluid seccion-quinta'>
             <div className="row">
@@ -64,7 +64,7 @@ function ComponenteInicio() {
                             <p> Una Suite de Supervisión Integral que Incluye Auditoría, Monitorización, Gestión de Configuración, Control Remoto, ITSM, Inventario y Seguridad del Sistema. </p>
                         </div>
                         <div className='btn btn-danger'>
-                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Flammas-Marcus-Series.pdf"} rel="noopener noreferrer"> Hoja de Datos </a> 
+                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Flammas-Marcus-Series.pdf"} rel="noopener noreferrer"> Hoja de Datos </a>
                         </div>
                     </div>
                     <div className="col-12 col-sm-4 col-xxl-4 segunda-columna">
@@ -82,20 +82,20 @@ function ComponenteInicio() {
                     <h2> SEA LO QUE SEA QUE QUIERAS SUPERVISAR, TENEMOS LO QUE NECESITAS </h2>
                 </div>
                 <div className='container contenedor-cartas'>
-                    <MiniVideos 
-                        imagen = "1"
-                        titulo = "MONITORIZACIÓN INTEGRAL"
-                        texto = "Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
+                    <MiniVideos
+                        imagen="1"
+                        titulo="MONITORIZACIÓN INTEGRAL"
+                        texto="Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
                     />
                     <MiniVideos
-                        imagen = "2"
-                        titulo = "CONTROL REMOTO"
-                        texto = "Un entorno dinámico con acceso remoto a tus servidores o estaciones de trabajo."
+                        imagen="2"
+                        titulo="CONTROL REMOTO"
+                        texto="Un entorno dinámico con acceso remoto a tus servidores o estaciones de trabajo."
                     />
                     <MiniVideos
-                        imagen = "3"
-                        titulo = "IT SERVICE MANAGER"
-                        texto = "Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
+                        imagen="3"
+                        titulo="IT SERVICE MANAGER"
+                        texto="Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
                     />
                 </div>
             </section>
@@ -107,7 +107,7 @@ function ComponenteInicio() {
                     </div>
                     <div>
                         <p> Así como el prisma descompone la luz en sus colores individuales, FLlammas divide la complejidad de los datos empresariales. Cada componente, ya sea proveniente de proveedores, servicios en la nube o clientes, se analiza con precisión milimétrica. Esto permite una comprensión detallada de cada aspecto, facilitando la identificación de áreas de mejora y optimización. </p>
-                        <div> <a style={{color: "black"}} className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
+                        <div> <a style={{ color: "black" }} className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
                     </div>
                     <div>
                     </div>
@@ -122,44 +122,44 @@ function ComponenteInicio() {
                         </div>
                     </div>
                     <div className='col-12 col-sm-8 col-xxl-8 contenedor-cards'>
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "8.png"
-                            titulo = "Monitorización de redes"
-                            texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                        <MiniComponentesCuartaSeccion
+                            imagen="8.png"
+                            titulo="Monitorización de redes"
+                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "9.png"
-                            titulo = "Monitorización UX"
-                            texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                        <MiniComponentesCuartaSeccion
+                            imagen="9.png"
+                            titulo="Monitorización UX"
+                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "10.png"
-                            titulo = "Monitorización Cloud"
-                            texto = "Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                        <MiniComponentesCuartaSeccion
+                            imagen="10.png"
+                            titulo="Monitorización Cloud"
+                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
                         />
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "11.png"
-                            titulo = "Servidores"
-                            texto = "Mainframe, IBM-i, Unix, Windows, Android y Linux: nuestro sistema es compatible con diversas plataformas."
+                        <MiniComponentesCuartaSeccion
+                            imagen="11.png"
+                            titulo="Servidores"
+                            texto="Mainframe, IBM-i, Unix, Windows, Android y Linux: nuestro sistema es compatible con diversas plataformas."
                         />
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "12.png"
-                            titulo = "Aplicaciones"
-                            texto = "Soluciones personalizables para casi cualquier caso y fuente de datos antes de afectar a los usuarios."
+                        <MiniComponentesCuartaSeccion
+                            imagen="12.png"
+                            titulo="Aplicaciones"
+                            texto="Soluciones personalizables para casi cualquier caso y fuente de datos antes de afectar a los usuarios."
                         />
-                        <MiniComponentesCuartaSeccion 
-                            imagen = "13.png"
-                            titulo = "Gestión de logs"
-                            texto = "Recoge y almacena registros de todo tipo (incluyendo eventos de Windows) para búsquedas y alertas eficientes. "
+                        <MiniComponentesCuartaSeccion
+                            imagen="13.png"
+                            titulo="Gestión de logs"
+                            texto="Recoge y almacena registros de todo tipo (incluyendo eventos de Windows) para búsquedas y alertas eficientes. "
                         />
                     </div>
                 </div>
             </section>
-            <MiniComponenteQuintaSeccion 
-                titulo = "+500 INTEGRACIONES:"
-                subtitulo = "EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1 = "Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2 = "Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+            <MiniComponenteQuintaSeccion
+                titulo="+500 INTEGRACIONES:"
+                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
+                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
+                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
             />
             <section className='container seccion-sexta'>
                 <h1 className='texting'> MÁS ALLÁ DE LOS LÍMITES, MÁS ALLÁ DE LAS EXPECTATIVAS </h1>
