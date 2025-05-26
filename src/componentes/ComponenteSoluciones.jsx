@@ -4,6 +4,7 @@ import "../estilos/componenteInicio.css"
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 import { MiniComponenteProductos } from "./ComponenteProductos";
 import ImagenOne from "../images/ultimg.png.png";
+import ImagenMarcus from "../images/marcus.webp";
 
 export function ComponenteEncabezadoSoluciones({ titulo, subtitulo, texto }) {
     return (
@@ -23,6 +24,19 @@ export function ComponenteEncabezadoSolucionesOne({ titulo, subtitulo, texto, bo
             <p> <b> {texto} </b> </p>
             <div style={{ background: "#CF0F09" }} className='btn btn-danger'>
                 <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_OneSecurity.pdf"} download={"Flammas-OneSecurity-Series"} rel="noopener noreferrer"> {boton} </a>
+            </div>
+        </section>
+    )
+}
+
+export function ComponenteEncabezadoSolucionesMarcus({ titulo, subtitulo, texto, boton }) {
+    return (
+        <section className="container-fluid seccionEncabezadoSoluciones">
+            <h3> {subtitulo} </h3>
+            <h1> {titulo} </h1>
+            <p> <b> {texto} </b> </p>
+            <div style={{ background: "#CF0F09" }} className='btn btn-danger'>
+                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Flammas-Marcus-Series.pdf"} rel="noopener noreferrer"> {boton} </a>
             </div>
         </section>
     )
@@ -956,7 +970,7 @@ export function ComponenteSolucionesOneSecurity() {
                         <img src={ImagenOne} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 style={{ color: "#CF0F09", marginBottom: "30px" }}> Técnicas de detección avanzadas </h1>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Técnicas de detección avanzadas </h1>
                         <p style={{ color: "black", marginBottom: "30px" }}> Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas. </p>
                         <ul>
                             {
@@ -972,8 +986,7 @@ export function ComponenteSolucionesOneSecurity() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h5 style={{ color: "white" }}> PORQUÉ FLAMMAS </h5>
-                    <h1 style={{ color: "#CF0F09" }}> La seguridad de endpoints redefinida </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> La seguridad de endpoints redefinida </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
@@ -1006,7 +1019,7 @@ export function ComponenteSolucionesOneSecurity() {
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 style={{ color: "#CF0F09" }}> Detección y respuesta integradas </h1>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> Detección y respuesta integradas </h1>
                         <p> Al usar One Security con Flammas, obtendrá capacidades de EDR & XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
                     </div>
                     <div className="col-12 col-md-6 info">
@@ -1027,9 +1040,160 @@ export function ComponenteSolucionesOneSecurity() {
 }
 
 export function ComponenteSolucionesMarcus() {
+    const [componenteActivo, setComponenteActivo] = useState("bitacoras");
+
+    const infoTecnicas = [
+        "Detección, mitigación y prevención de Vulnerabilidades",
+        "Monitoreo de integridad",
+        "Monitoreo de bitácoras",
+        "Monitoreo de aplicaciones multiplataforma",
+    ]
+
+    const infoDeteccionRespuesta = [
+        "Administración centralizada de eventos, alarmas, logs, tickets, etc. ",
+        "Dashboard intuitivo para eventos de seguridad.",
+        "Control de acceso basado en roles. ",
+        "Generación automatizada de informes. ",
+        "Consola gráfica basada en HTML5 para administración local y remota.",
+    ]
+
+    const componenteRenderData = () => {
+        switch (componenteActivo) {
+            case 'bitacoras':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de bitácoras </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Inspección de bitácoras del sistema operativo y aplicaciones para identificar eventos de seguridad relevantes o críticos.  </li>
+                            <li className="mb-2"> Permite la inspección de eventos generados en el visor de eventos para servidores Windows y en syslog messages para servidores con sistema operativo Linux.  </li>
+                            <li className="mb-2"> Permite la inspección de eventos generados por aplicaciones, almacenados en archivos de bitácoras.  </li>
+                            <li className="mb-2"> Capacidad de alertar en tiempo real cuando se genera un evento crítico o relevante, con envío de alertas por correo electrónico o syslog. </li>
+                            <li className="mb-2"> Creación de reglas personalizadas para el monitoreo de bitácoras.</li>
+                            <li className="mb-2"> Ejecución de tareas programadas y asignación automatizada de reglas de monitoreo de bitácoras recomendadas por la solución. </li>
+                        </ul>
+                    </section>
+                )
+            case 'integridad':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de integridad </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Identificación de cambios en archivos críticos, configuraciones, carpetas, servicios y claves del registro tanto del sistema operativo como de las aplicaciones, a través de reglas de monitoreo de integridad automatizadas.  </li>
+                            <li className="mb-2"> Capacidad de alertar en tiempo real cuando se detecte una modificación en carpetas, archivos o claves del registro del sistema operativo y aplicaciones. Las alertas pueden ser enviadas por correo electrónico o syslog.  </li>
+                            <li className="mb-2"> Creación de reglas personalizadas para el monitoreo de modificaciones en archivos críticos, carpetas y claves del registro.  </li>
+                            <li className="mb-2"> Capacidad para ejecutar tareas programadas y asignar automáticamente las reglas de monitoreo de integridad recomendadas por la solución. </li>
+                        </ul>
+                    </section>
+                )
+            case 'aplicaciones':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de aplicaciones multiplataforma </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Capacidad para detectar y bloquear software no autorizado de forma automática, sin limitaciones del sistema operativo, de acuerdo con la lista de sistemas operativos indicados en las características principales. </li>
+                            <li className="mb-2"> Escaneo del servidor para determinar qué aplicaciones están actualmente en ejecución.  </li>
+                            <li className="mb-2"> Bloqueo del sistema una vez creado el inventario, evitando la ejecución de nuevas aplicaciones que no estén en la lista blanca definida por el administrador. </li>
+                            <li className="mb-2"> Integración en un entorno DevOps para permitir cambios continuos en las listas de aplicaciones, manteniendo al mismo tiempo la protección mediante APIs. </li>
+                            <li className="mb-2"> Capacidad para capturar amenazas que aún no tienen firma, incluidas las amenazas zero-day.  </li>
+                        </ul>
+                    </section>
+                )
+            case 'tecnicas':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Especificaciones Técnicas </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Soporte para interfaces de cobre y varios tipos de fibra.  </li>
+                            <li className="mb-2"> Soporte para velocidades mínimas de 1G/10G.  </li>
+                            <li className="mb-2"> Capacidad para soportar un mínimo de 100 dispositivos concurrentes con todas las funcionalidades activas.  </li>
+                            <li className="mb-2"> Capacidad de almacenamiento histórico de datos con granularidad de visualización adaptable. </li>
+                        </ul>
+                    </section>
+                )
+            default:
+                return 'No hay info';
+        }
+    };
+
     return (
         <>
-            Marcus
+            <ComponenteEncabezadoSolucionesMarcus
+                titulo="MARCUS CON FLAMMAS"
+                subtitulo="SOLUCIONES DE FLAMMAS"
+                texto="Protección integral mediante un enfoque de seguridad por capas en los endpoints."
+                boton="Hoja de Datos"
+            />
+            <section className="deteccionOne">
+                <div className="row p-0 m-0">
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-content-center flex-row">
+                        <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
+                    </div>
+                    <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Seguridad completa para entornos físicos, virtuales, híbridos y en la nube. </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> Marcus tiene el propósito de garantizar la seguridad, detectar, analizar, y responder a amenazas especializadas y de prevenir proactivamente una administración en tiempo real. </p>
+                        <ul>
+                            {
+                                infoTecnicas.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section className="endpointOne">
+                <div className="titus" style={{ padding: "10px 50px" }}>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE MARCUS </h1>
+                </div>
+                <div style={{ padding: "10px 50px" }}>
+                    <div className="row">
+                        <div className="col-12 col-md-5 links">
+                            <h3 className={componenteActivo === 'bitacoras' ? 'active' : ''} onClick={() => setComponenteActivo('bitacoras')}> Monitoreo de bitácoras </h3>
+                            <h3 className={componenteActivo === 'integridad' ? 'active' : ''} onClick={() => setComponenteActivo('integridad')}> Monitoreo de integridad </h3>
+                            <h3 className={componenteActivo === 'aplicaciones' ? 'active' : ''} onClick={() => setComponenteActivo('aplicaciones')}> Monitoreo de aplicaciones multiplataforma </h3>
+                            <h3 className={componenteActivo === 'tecnicas' ? 'active' : ''} onClick={() => setComponenteActivo('tecnicas')}> Especificaciones Técnicas </h3>
+                        </div>
+                        <div className="col-12 col-md-7 info">
+                            {componenteRenderData()}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="endviñetas">
+                <EndVIñetas
+                    titulo="Caracteristicas de seguridad"
+                    texto="El sistema ofrece inspección profunda de paquetes (DPI) y monitoreo bidireccional del tráfico, permitiendo detectar y prevenir vulnerabilidades zero-day. Además, aplica parches virtuales sin afectar la operación y bloquea el tráfico entre interfaces de red de servidores para evitar movimientos laterales."
+                />
+                <EndVIñetas
+                    titulo="Control de aplicaciones"
+                    texto="El sistema permite la detección y bloqueo de software no autorizado, así como el inventario detallado y control efectivo de las aplicaciones instaladas en los servidores. Además, ofrece integración con entornos DevOps para una gestión automatizada y continua de la seguridad en todo el ciclo de vida del desarrollo."
+                />
+                <EndVIñetas
+                    titulo="Monitoreo"
+                    texto="El sistema permite el monitoreo de integridad de archivos, configuraciones, servicios y claves del registro, con alertas en tiempo real vía correo electrónico o syslog. Ofrece la creación de reglas personalizadas para supervisar la integridad y las bitácoras, además de ejecutar tareas programadas para facilitar acciones automatizadas y mantener la seguridad del entorno."
+                />
+            </section>
+            <section className="deteccionOne op d-flex justify-content-center align-content-center">
+                <div className="row m-0">
+                    <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
+                        <p> Marcus es un dispositivo de propósito específico de protección frente a amenazas avanzadas que proporciona visibilidad e inteligencia de toda la red, Es la mejor solución de detección y respuesta de red (NDR) de su clase diseñada para ayudar a las organizaciones con incidentes. </p>
+                    </div>
+                    <div className="col-12 col-md-6 info">
+                        <ul>
+                            {
+                                infoDeteccionRespuesta.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
