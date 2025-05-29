@@ -103,9 +103,8 @@ function App() {
                         <div className="col-12 col-sm-9 col-xl-9 links">
                             <div>
                                 <h3> SOLUCIONES </h3>
-                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/monitorizacion" rel='noreferrer'> Monitorización de redes </a>
-                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/infraestructura" rel='noreferrer'> Infraestructura integral </a>
-                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/cloud" rel='noreferrer'> Cloud y Virtualización </a >
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/marcus" rel='noreferrer'> Marcus </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/onesecurity" rel='noreferrer'> One Security </a>
                             </div>
                             <div>
                                 <h3> MONITORIZACIÓN </h3>
