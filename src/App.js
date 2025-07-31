@@ -9,7 +9,7 @@ import './App.css';
 // Importaciones de imágenes
 import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus } from './componentes';
+import { ComponenteLogin, ComponentePartner, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus } from './componentes';
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -51,6 +51,7 @@ function App() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="barra-nav">
                                 <Nav.Link as={Link} to="/inicio">Inicio</Nav.Link>
+                                <Nav.Link as={Link} to="/partners"> Partners</Nav.Link>
                                 <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
                                 <NavDropdown title="Soluciones" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/soluciones/monitorizacion" id="drop-item">Monitorización de Redes</NavDropdown.Item>
@@ -71,6 +72,7 @@ function App() {
                     <Routes>
                         <Route index path="/" element={<Navigate to="/inicio" />} />
                         <Route path="/inicio" element={<ComponenteInicio />} />
+                        <Route path="/partners" element={<ComponentePartner />} />
                         <Route path="/productos" element={<ComponenteProductos />} />
                         <Route path="/nosotros" element={<ComponenteNosotrosFlammas />} />
                         <Route path="/soluciones/monitorizacion" element={<ComponenteSolucionesMonitorizacion />} />
