@@ -9,7 +9,7 @@ import './App.css';
 // Importaciones de imágenes
 import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponentePartner, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus } from './componentes';
+import { ComponenteLogin, ComponentePartner, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus, ComponenteSolucionesZeroSpam, ComponenteSolucionesSecureDomain } from './componentes';
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -51,7 +51,6 @@ function App() {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="barra-nav">
                                 <Nav.Link as={Link} to="/inicio">Inicio</Nav.Link>
-                                <Nav.Link as={Link} to="/partners"> Partners</Nav.Link>
                                 <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
                                 <NavDropdown title="Soluciones" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/soluciones/monitorizacion" id="drop-item">Monitorización de Redes</NavDropdown.Item>
@@ -59,12 +58,15 @@ function App() {
                                     <NavDropdown.Item as={Link} to="/soluciones/cloud" id="drop-item">Cloud y Virtualización</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/onesecurity" id="drop-item"> One Security </NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/marcus" id="drop-item"> Marcus </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/soluciones/zero-spam" id="drop-item"> Zero Spam </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/soluciones/secure-domain" id="drop-item"> Secure Domain Intelligence </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/nosotros">¿Por qué Flammas?</Nav.Link>
                                 <NavDropdown title="Soporte" id="basic-nav-dropdown">
                                     <NavDropdown.Item as={Link} to="/soporte/profesional" id="drop-item">Servicios Profesionales</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soporte/tecnico" id="drop-item">Soporte Técnico</NavDropdown.Item>
                                 </NavDropdown>
+                                <Nav.Link as={Link} to="/partners"> Partners</Nav.Link>
                                 <Nav.Link as={Link} to="/login" id="contacto">Contacto</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
@@ -80,6 +82,8 @@ function App() {
                         <Route path="/soluciones/cloud" element={<ComponenteSolucionesCloud />} />
                         <Route path="/soluciones/onesecurity" element={<ComponenteSolucionesOneSecurity />} />
                         <Route path="/soluciones/marcus" element={<ComponenteSolucionesMarcus />} />
+                        <Route path="/soluciones/zero-spam" element={<ComponenteSolucionesZeroSpam />} />
+                        <Route path="/soluciones/secure-domain" element={<ComponenteSolucionesSecureDomain />} />
                         <Route path="/soporte/profesional" element={<ComponenteSoporteProfesional />} />
                         <Route path="/soporte/tecnico" element={<ComponenteSoporteTecnico />} />
                         <Route path="/login" element={<ComponenteLogin />} />

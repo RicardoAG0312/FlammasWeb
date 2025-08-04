@@ -185,7 +185,7 @@ function MiniComponentesSegundaSeccion({ imagen, titulo, texto }) {
 function EndVIñetas({ titulo, texto }) {
     return (
         <div className="card d-flex justify-content-center align-content-center p-5">
-            <h2 className="text-black"> {titulo} </h2>
+            <h2 className="text-black w-75"> {titulo} </h2>
             <p style={{ fontSize: "18px", fontFamily: "Montserrat" }}> {texto} </p>
         </div>
     )
@@ -1180,6 +1180,312 @@ export function ComponenteSolucionesMarcus() {
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
                         <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
                         <p> Marcus es un dispositivo de propósito específico de protección frente a amenazas avanzadas que proporciona visibilidad e inteligencia de toda la red, Es la mejor solución de detección y respuesta de red (NDR) de su clase diseñada para ayudar a las organizaciones con incidentes. </p>
+                    </div>
+                    <div className="col-12 col-md-6 info">
+                        <ul>
+                            {
+                                infoDeteccionRespuesta.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export function ComponenteSolucionesZeroSpam() {
+    const [componenteActivo, setComponenteActivo] = useState("cliente");
+
+    const infoTecnicas = [
+        "Autenticación de correos con políticas DMARC, SPF y DKIM.",
+        "Bloqueo proactivo de suplantaciones y correos no autorizados.",
+        "Supervisión centralizada con reportes detallados y en tiempo real.",
+        "Configuración y administración simplificadas desde una consola web.",
+    ];
+
+    const infoDeteccionRespuesta = [
+        "Protección completa contra suplantación de identidad y correos fraudulentos.",
+        "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
+        "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
+        "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
+        "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos.",
+    ];
+
+
+    const componenteRenderData = () => {
+        switch (componenteActivo) {
+            case 'cliente':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Atención al cliente </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Con una entrega fiable del correo electrónico, los equipos de atención al cliente pueden responder rápidamente a las consultas y resolver los problemas. Esto mejora la satisfacción del cliente y aumenta su fidelidad.  </li>
+                            <li className="mb-2"> DMARC garantiza la entrega de los mensajes de correo electrónico, lo que te permite llegar de forma proactiva a los clientes con información útil, actualizaciones de soporte u ofertas personalizadas. Esto refuerza el compromiso del cliente e impulsa el éxito.  </li>
+                            <li className="mb-2"> DMARC Proporciona una ubicación privilegiada de tu comunicaciones en las bandejas de entrada, evitando que los correos electrónicos lleguen a las carpetas de Spam o Correo no deseado o que sean rechazados por completo.  </li>
+                        </ul>
+                    </section>
+                )
+            case 'tecnologia':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Tecnología de la información (TI) </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> Accede a reportes DMARC que recopilan datos de servidores de todo el mundo para ofrecer información procesable y desvelar quién envía correos electrónicos desde tu dominio. Esto acelera las investigaciones de amenazas y la gestión de las quejas por spam. Nuestra plataforma también ofrece alertas personalizables para la visibilidad de amenazas en tiempo real, lo que permite una mitigación más rápida.  </li>
+                            <li className="mb-2"> Impide el uso no autorizado de tu dominio para enviar correos electrónicos falsos, de modo que los mensajes de phishing y spoofing no lleguen a las bandejas de entrada de los grupos de interés internos y externos.  </li>
+                            <li className="mb-2"> DMARC Permite a los equipos de TI implementar políticas de gobernanza del correo electrónico y mejores prácticas en toda la organización. Esto garantiza la coherencia de las políticas de autenticación y la integridad de las comunicaciones por correo electrónico, lo que en última instancia fomenta la confianza. </li>
+                        </ul>
+                    </section>
+                )
+            case 'directivos':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Directivos (C-level) </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> La rentable solución DMARC de Flammas te permite evitar las consecuencias de un ataque vía correo electrónico, que podría implicar pérdidas directas, responsabilidades legales y daños a tu reputación. Su política transparente de precios, despliegue flexible y escalabilidad se adapta a empresas de cualquier tamaño. </li>
+                            <li className="mb-2"> Bloquea amenazas perturbadoras como el spear-phishing o BEC, mientras garantizas un funcionamiento sin problemas con nuestras soluciones automatizadas, que se integran perfectamente en la infraestructura de correo electrónico existente, sin interrupciones en tu flujo de correo electrónico. </li>
+                            <li className="mb-2"> Nuestra solución DMARC proporciona supervisión y alertas en tiempo real para una rápida detección y mitigación de amenazas. Una vez configurada, pone en cuarentena o rechaza automáticamente los correos sospechosos y ofrece informes detallados para las auditorías de cumplimiento de reglas y estándares. </li>
+                        </ul>
+                    </section>
+                )
+            case 'empresarios':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Empresarios </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li className="mb-2"> DMARC cierra la puerta a las amenazas basadas en el correo electrónico que podrían provocar daños financieros y de reputación potencialmente irreparables, garantizando la continuidad de tu negocio y protegiendo tu cuenta de resultados. </li>
+                            <li className="mb-2"> Aunque la protección perimetral y antispam existentes pueden proteger a tus grupos de interés internos, no protegen a tus clientes, proveedores y al resto del mundo de los correos electrónicos fraudulentos enviados utilizando tu dominio. DMARC resuelve este problema al proteger a todos los grupos de interés.   </li>
+                            <li className="mb-2"> Es más probable que los clientes hagan negocios con organizaciones en las que confían. Garantizar la máxima seguridad del correo electrónico para tu negocios con DMARC significa que los clientes pueden confiar en que cada correo electrónico que lleva tu El nombre es el verdadero.  </li>
+                        </ul>
+                    </section>
+                )
+            default:
+                return 'No hay info';
+        }
+    };
+
+    return (
+        <>
+            {/* <ComponenteEncabezadoSolucionesMarcus
+                titulo="ZERO SPAM CON FLAMMAS"
+                subtitulo="SOLUCIONES DE FLAMMAS"
+                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
+                boton="Hoja de Datos"
+            /> */}
+            <ComponenteEncabezadoSoluciones
+                titulo="ZERO SPAM CON FLAMMAS"
+                subtitulo="SOLUCIONES DE FLAMMAS"
+                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
+            />
+            <section className="deteccionOne">
+                <div className="row p-0 m-0">
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-content-center flex-row">
+                        <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
+                    </div>
+                    <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Seguridad avanzada en tus comunicaciones por correo electrónico. </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> Nuestra solución permite implementar estándares como DMARC, SPF y DKIM, protegiendo tu dominio contra ataques de suplantación y asegurando la confianza de tus usuarios. </p>
+                        <ul>
+                            {
+                                infoTecnicas.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section className="endpointOne">
+                <div className="titus" style={{ padding: "10px 50px" }}>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE ZERO SPAM </h1>
+                </div>
+                <div style={{ padding: "10px 50px" }}>
+                    <div className="row">
+                        <div className="col-12 col-md-5 links">
+                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> Atención al cliente </h3>
+                            <h3 className={componenteActivo === 'tecnologia' ? 'active' : ''} onClick={() => setComponenteActivo('tecnologia')}> Tecnología de la información (TI) </h3>
+                            <h3 className={componenteActivo === 'directivos' ? 'active' : ''} onClick={() => setComponenteActivo('directivos')}> Directivos (C-level) </h3>
+                            <h3 className={componenteActivo === 'empresarios' ? 'active' : ''} onClick={() => setComponenteActivo('empresarios')}> Empresarios </h3>
+                        </div>
+                        <div className="col-12 col-md-7 info">
+                            {componenteRenderData()}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="endviñetas">
+                <EndVIñetas
+                    titulo="Filtrado inteligente en la nube"
+                    texto="El sistema de pre-filtrado basado en la nube puede bloquear hasta el 90 % del tráfico total de mensajes, incluyendo spam y correos maliciosos, antes de que lleguen a tu red. Esto reduce significativamente la carga sobre los servidores internos y mejora la eficiencia del análisis de seguridad."
+                />
+                <EndVIñetas
+                    titulo="Protección de datos con cifrado de correo"
+                    texto="El Cifrado de Correo Electrónico permite asegurar todos los mensajes salientes, evitando la filtración de información confidencial. Esta capa de seguridad es esencial para mantener la integridad de los datos en tránsito y cumplir con normativas de privacidad."
+                />
+                <EndVIñetas
+                    titulo="Defensa contra amenazas avanzadas"
+                    texto="La tecnología ATSE identifica tanto amenazas conocidas como desconocidas, ofreciendo protección contra ataques emergentes que aún no han sido catalogados. Esto garantiza una defensa proactiva frente a malware sofisticado y vulnerabilidades de día cero."
+                />
+            </section>
+            <section className="deteccionOne op d-flex justify-content-center align-content-center">
+                <div className="row m-0">
+                    <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
+                        <p> DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables. </p>
+                    </div>
+                    <div className="col-12 col-md-6 info">
+                        <ul>
+                            {
+                                infoDeteccionRespuesta.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}
+
+export function ComponenteSolucionesSecureDomain() {
+    const [componenteActivo, setComponenteActivo] = useState("cliente");
+
+    const infoTecnicas = [
+        "Monitoreo continuo en dark web y múltiples fuentes para detectar filtraciones.",
+        "Revelación de credenciales y datos personales expuestos o comprometidos.",
+        "Alertas en tiempo real para actuar rápidamente ante una brecha.",
+        "Visibilidad clara sobre exposiciones internas o de proveedores para cumplir normativas.",
+    ];
+
+    const infoDeteccionRespuesta = [
+        "Protección completa contra suplantación de identidad y correos fraudulentos.",
+        "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
+        "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
+        "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
+        "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos.",
+    ];
+
+
+    const componenteRenderData = () => {
+        switch (componenteActivo) {
+            case 'cliente':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Compromiso del sistema </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li>Distribución de malware o ransomware a través de sitios web falsificados.</li>
+                            <li>Acceso no autorizado a sistemas internos por parte de atacantes.</li>
+                            <li>Riesgo de interrupción operativa y pérdida de información crítica.</li>
+                        </ul>
+                    </section>
+                );
+            case 'amenazas':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Pérdidas financieras </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li>Venta engañosa de productos o servicios falsificados por parte de atacantes.</li>
+                            <li>Pérdida de ingresos debido a la desconfianza de clientes legítimos.</li>
+                            <li>Reducción de la productividad por incidentes derivados del fraude de dominios.</li>
+
+                        </ul>
+                    </section>
+                );
+            case 'riesgos':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Daños a la reputación </h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li>Pérdida de credibilidad frente a clientes, socios y proveedores.</li>
+                            <li>Asociación negativa de la marca con actividades fraudulentas.</li>
+                            <li>Dificultad para recuperar la confianza del público tras un incidente.</li>
+                        </ul>
+                    </section>
+                );
+            case 'marca':
+                return (
+                    <section>
+                        <h1 style={{ color: "#CF0F09" }}> Robo de datos</h1>
+                        <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
+                            <li>Exposición de información confidencial como DNI, direcciones o teléfonos.</li>
+                            <li>Riesgo de fraude por el robo de credenciales bancarias y tarjetas.</li>
+                            <li>Acceso no autorizado a cuentas personales o empresariales.</li>
+
+                        </ul>
+                    </section>
+                );
+            default:
+                return <div>No hay info</div>;
+        }
+    };
+
+
+    return (
+        <>
+            {/* <ComponenteEncabezadoSolucionesMarcus
+                titulo="SECURE DOMAIN INTELLIGENCE CON FLAMMAS"
+                subtitulo="SOLUCIONES DE FLAMMAS"
+                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
+                boton="Hoja de Datos"
+            /> */}
+            <ComponenteEncabezadoSoluciones
+                titulo="SECURE DOMAIN INTELLIGENCE CON FLAMMAS"
+                subtitulo="SOLUCIONES DE FLAMMAS"
+                texto="Defiende tu marca y a tus usuarios de dominios falsificados con tecnología de detección avanzada que identifica y bloquea amenazas antes de que causen daño."
+            />
+            <section className="deteccionOne">
+                <div className="row p-0 m-0">
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-content-center flex-row">
+                        <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
+                    </div>
+                    <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Detección avanzada de brechas y exposición de datos corporativos. </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> Secure Domain Intelligence supervisa múltiples fuentes, incluida la dark web, para descubrir datos robados o filtrados de tu empresa o proveedores terceros — como credenciales, contraseñas o información personal expuesta — y envía alertas inmediatas si se detecta alguna brecha. </p>
+                        <ul>
+                            {
+                                infoTecnicas.map((info, key) => (
+                                    <div key={key} >
+                                        <i className="bi bi-check-circle-fill me-2" style={{ color: "#CF0F09" }}> </i> {info}
+                                    </div>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section className="endpointOne">
+                <div className="titus" style={{ padding: "10px 50px" }}>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE SECURE DOMAIN INTELLIGENCE </h1>
+                </div>
+                <div style={{ padding: "10px 50px" }}>
+                    <div className="row">
+                        <div className="col-12 col-md-5 links">
+                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> Compromiso del sistema </h3>
+                            <h3 className={componenteActivo === 'amenazas' ? 'active' : ''} onClick={() => setComponenteActivo('amenazas')}> Pérdidas financieras </h3>
+                            <h3 className={componenteActivo === 'riesgos' ? 'active' : ''} onClick={() => setComponenteActivo('riesgos')}> Daños a la reputación </h3>
+                            <h3 className={componenteActivo === 'marca' ? 'active' : ''} onClick={() => setComponenteActivo('marca')}> Robo de datos </h3>
+                        </div>
+                        <div className="col-12 col-md-7 info">
+                            {componenteRenderData()}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="deteccionOne op d-flex justify-content-center align-content-center">
+                <div className="row m-0">
+                    <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
+                        <p> DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables. </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>
