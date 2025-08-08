@@ -9,7 +9,7 @@ import './App.css';
 // Importaciones de imágenes
 import LogoFlammas from './images/Recurso 7.png.png';
 // Importaciones Componentes
-import { ComponenteLogin, ComponentePartner, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus, ComponenteSolucionesZeroSpam, ComponenteSolucionesSecureDomain } from './componentes';
+import { ComponenteCertified, ComponenteLogin, ComponentePartner, ComponenteProductos, ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura, ComponenteSolucionesOneSecurity, ComponenteSolucionesCloud, ComponenteSoporteProfesional, ComponenteSoporteTecnico, ComponenteInicio, ComponenteNosotrosFlammas, ComponenteSolucionesMarcus, ComponenteSolucionesZeroSpam, ComponenteSolucionesSecureDomain } from './componentes';
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
@@ -86,6 +86,7 @@ function App() {
                         <Route path="/soluciones/secure-domain" element={<ComponenteSolucionesSecureDomain />} />
                         <Route path="/soporte/profesional" element={<ComponenteSoporteProfesional />} />
                         <Route path="/soporte/tecnico" element={<ComponenteSoporteTecnico />} />
+                        <Route path="/certified" element={<ComponenteCertified />} />
                         <Route path="/login" element={<ComponenteLogin />} />
                     </Routes>
                 </Router>

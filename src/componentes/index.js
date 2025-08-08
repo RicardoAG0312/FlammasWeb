@@ -5,3 +5,4 @@ export { ComponenteSolucionesMonitorizacion, ComponenteSolucionesInfraestructura
 export { ComponenteSoporteProfesional, ComponenteSoporteTecnico } from "./ComponenteSoporte";
 export { default as ComponenteInicio } from "./ComponenteInicio";
 export { default as ComponentePartner } from "./ComponentePartner";
+export { default as ComponenteCertified } from "./ComponenteCertified";
