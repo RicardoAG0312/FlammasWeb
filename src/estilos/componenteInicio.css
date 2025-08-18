@@ -966,7 +966,6 @@ video {
 /* Medio (para retratos de tabletas y teléfonos móviles grandes) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   .seccion-cuarta {
-    background-color: black;
     height: auto;
     padding: 40px;
   }
@@ -984,7 +983,6 @@ video {
 /* Medio pequeño (para teléfonos móviles grandes) */
 @media only screen and (min-width: 481px) and (max-width: 600px) {
   .seccion-cuarta {
-    background-color: black;
     height: auto;
     padding: 40px;
   }
@@ -1032,7 +1030,6 @@ video {
 /* Pequeño (para teléfonos móviles pequeños) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .seccion-cuarta {
-    background-color: black;
     height: auto;
     padding: 40px;
   }
@@ -1080,7 +1077,6 @@ video {
 /* Extra pequeño (para teléfonos móviles muy pequeños) */
 @media only screen and (max-width: 320px) {
   .seccion-cuarta {
-    background-color: black;
     height: auto;
     padding: 40px;
   }

@@ -58,7 +58,7 @@ function App() {
                                     <NavDropdown.Item as={Link} to="/soluciones/cloud" id="drop-item">Cloud y Virtualización</NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/onesecurity" id="drop-item"> One Security </NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/marcus" id="drop-item"> Marcus </NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to="/soluciones/zero-spam" id="drop-item"> Zero Spam </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/soluciones/zero-spam" id="drop-item"> ZeroSpam </NavDropdown.Item>
                                     <NavDropdown.Item as={Link} to="/soluciones/secure-domain" id="drop-item"> Secure Domain Intelligence </NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link as={Link} to="/nosotros">¿Por qué Flammas?</Nav.Link>
@@ -99,7 +99,7 @@ function App() {
                                 <a href="https://www.linkedin.com/company/flammas/?viewAsMember=true" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-linkedin"></i>
                                 </a>
-                                <a href="https://wa.me/573242927704" target='_blank' rel='noreferrer'>
+                                <a href="https://wa.me/573228396554" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-whatsapp"></i>
                                 </a>
                                 <a href="mailto: ventas@flammas.com" target='_blank' rel='noreferrer'>
@@ -112,6 +112,8 @@ function App() {
                                 <h3> SOLUCIONES </h3>
                                 <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/marcus" rel='noreferrer'> Marcus </a>
                                 <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/onesecurity" rel='noreferrer'> One Security </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/zero-spam" rel='noreferrer'> ZeroSpam </a>
+                                <a style={{ textDecoration: "none", color: "black" }} href="/soluciones/secure-domain" rel='noreferrer'> Secure Domain Intelligence </a>
                             </div>
                             <div>
                                 <h3> MONITORIZACIÓN </h3>

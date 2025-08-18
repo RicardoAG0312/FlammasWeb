@@ -41,6 +41,31 @@ export function ComponenteEncabezadoSolucionesMarcus({ titulo, subtitulo, texto,
         </section>
     )
 }
+export function ComponenteEncabezadoSolucionesZeroSpam({ titulo, subtitulo, texto, boton }) {
+    return (
+        <section className="container-fluid seccionEncabezadoSoluciones">
+            <h3> {subtitulo} </h3>
+            <h1> {titulo} </h1>
+            <p> <b> {texto} </b> </p>
+            <div style={{ background: "#CF0F09" }} className='btn btn-danger'>
+                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_ZeroSpam.pdf"} download={"Flammas-ZeroSpam-Series.pdf"} rel="noopener noreferrer"> {boton} </a>
+            </div>
+        </section>
+    )
+}
+export function ComponenteEncabezadoSolucionesDomain({ titulo, subtitulo, texto, boton }) {
+    return (
+        <section className="container-fluid seccionEncabezadoSoluciones">
+            <h3> {subtitulo} </h3>
+            <h1> {titulo} </h1>
+            <p> <b> {texto} </b> </p>
+            <div style={{ background: "#CF0F09" }} className='btn btn-danger'>
+                <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_SecureDomain.pdf"} download={"Flammas-SecureDomain-Series.pdf"} rel="noopener noreferrer"> {boton} </a>
+            </div>
+        </section>
+    )
+}
+
 function ComponenteInfoIzquierdaSoluciones({ titulo, texto, imagen, id }) {
     return (
         <section className="container contenedorCartaInfoIzquierda" id={id}>
@@ -1270,16 +1295,11 @@ export function ComponenteSolucionesZeroSpam() {
 
     return (
         <>
-            {/* <ComponenteEncabezadoSolucionesMarcus
-                titulo="ZERO SPAM CON FLAMMAS"
+            <ComponenteEncabezadoSolucionesZeroSpam
+                titulo="ZEROSPAM CON FLAMMAS"
                 subtitulo="SOLUCIONES DE FLAMMAS"
                 texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
                 boton="Hoja de Datos"
-            /> */}
-            <ComponenteEncabezadoSoluciones
-                titulo="ZERO SPAM CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">
@@ -1303,7 +1323,7 @@ export function ComponenteSolucionesZeroSpam() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE ZERO SPAM </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE ZEROSPAM </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
@@ -1431,16 +1451,11 @@ export function ComponenteSolucionesSecureDomain() {
 
     return (
         <>
-            {/* <ComponenteEncabezadoSolucionesMarcus
-                titulo="SECURE DOMAIN INTELLIGENCE CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
-                boton="Hoja de Datos"
-            /> */}
-            <ComponenteEncabezadoSoluciones
+            <ComponenteEncabezadoSolucionesDomain
                 titulo="SECURE DOMAIN INTELLIGENCE CON FLAMMAS"
                 subtitulo="SOLUCIONES DE FLAMMAS"
                 texto="Defiende tu marca y a tus usuarios de dominios falsificados con tecnología de detección avanzada que identifica y bloquea amenazas antes de que causen daño."
+                boton="Hoja de Datos"
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">

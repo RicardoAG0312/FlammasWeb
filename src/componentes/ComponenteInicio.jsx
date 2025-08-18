@@ -106,7 +106,7 @@ function ComponenteInicio() {
                         <h1> ¿CÓMO FUNCIONA FLAMMAS? </h1>
                     </div>
                     <div>
-                        <p> Así como el prisma descompone la luz en sus colores individuales, FLlammas divide la complejidad de los datos empresariales. Cada componente, ya sea proveniente de proveedores, servicios en la nube o clientes, se analiza con precisión milimétrica. Esto permite una comprensión detallada de cada aspecto, facilitando la identificación de áreas de mejora y optimización. </p>
+                        <p> Así como el prisma descompone la luz en sus colores individuales, Flammas divide la complejidad de los datos empresariales. Cada componente, ya sea proveniente de proveedores, servicios en la nube o clientes, se analiza con precisión milimétrica. Esto permite una comprensión detallada de cada aspecto, facilitando la identificación de áreas de mejora y optimización. </p>
                         <div> <a style={{ color: "black" }} className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
                     </div>
                     <div>
