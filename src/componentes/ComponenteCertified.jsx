@@ -148,10 +148,42 @@ function ComponenteCertified() {
                         </table>
                     </>
                 )}
+                {verifiedCode === "29734729235" && (
+                    <>
+                        <div style={{ color: "green", fontWeight: "bold", width: "100%", background: "#DEF1DE", padding: "16px 0", textAlign: "center", borderRadius: "8px" }}>
+                            This certificate is valid
+                        </div>
+                        <table className='table'>
+                            <tbody>
+                                <tr>
+                                    <td> Full Name: </td>
+                                    <td> Fernando Carlos Ramos Galindo </td>
+                                </tr>
+                                <tr>
+                                    <td> Certificate: </td>
+                                    <td> Marcus Certified Professional </td>
+                                </tr>
+                                <tr>
+                                    <td> Date Issued: </td>
+                                    <td> August 26, 2025 </td>
+                                </tr>
+                                <tr>
+                                    <td> Expiry Date: </td>
+                                    <td> August 26, 2027 </td>
+                                </tr>
+                                <tr>
+                                    <td> Status: </td>
+                                    <td> Valid </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </>
+                )}
                 {verifiedCode &&
                     (verifiedCode !== "26989600802" &&
                         verifiedCode !== "58341270965" &&
                         verifiedCode !== "94718052633" &&
+                        verifiedCode !== "29734729235" &&
                         verifiedCode !== "32059487106") && (
                         <div style={{ color: "#CF0F09", fontWeight: "bold" }}>
                             You have to insert a valid code to verify the certificate.
