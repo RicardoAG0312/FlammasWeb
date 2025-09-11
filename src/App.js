@@ -105,6 +105,7 @@ function App() {
                                 <a href="mailto: ventas@flammas.com" target='_blank' rel='noreferrer'>
                                     <i className="bi bi-envelope"></i>
                                 </a>
+                                {/* hola */}
                             </div>
                         </div>
                         <div className="col-12 col-sm-9 col-xl-9 links">
