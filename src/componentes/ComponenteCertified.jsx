@@ -157,7 +157,7 @@ function ComponenteCertified() {
                             <tbody>
                                 <tr>
                                     <td> Full Name: </td>
-                                    <td> Fernando Carlos Ramos Galindo </td>
+                                    <td> Fernando Carlos Ramos Galindo </td>    
                                 </tr>
                                 <tr>
                                     <td> Certificate: </td>
@@ -165,11 +165,11 @@ function ComponenteCertified() {
                                 </tr>
                                 <tr>
                                     <td> Date Issued: </td>
-                                    <td> August 26, 2025 </td>
+                                    <td> September 09, 2025 </td>
                                 </tr>
                                 <tr>
                                     <td> Expiry Date: </td>
-                                    <td> August 26, 2027 </td>
+                                    <td> September 09, 2027 </td>
                                 </tr>
                                 <tr>
                                     <td> Status: </td>
