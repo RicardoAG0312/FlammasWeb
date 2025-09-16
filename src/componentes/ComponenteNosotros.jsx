@@ -1,13 +1,15 @@
 import "../estilos/componenteNosotros.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
+import { useTranslation } from 'react-i18next';
 
-function ComponenteEncabezadoNosotros({ titulo, subtitulo }) {
+function ComponenteEncabezadoNosotros() {
+    const { t } = useTranslation();
     return (
         <section className="container-fluid seccionEncabezadoNosotros">
             <div>
-                <h3> {subtitulo} </h3>
-                <h1> {titulo} </h1>
+                <h3>{t("nosotros.encabezado.subtitulo")}</h3>
+                <h1>{t("nosotros.encabezado.titulo")}</h1>
             </div>
         </section>
     )
@@ -140,6 +142,7 @@ function ComponenteTSTI({ titulo, subtitulo, texto, imagen }) {
 
 //Componente a renderizar
 function ComponenteNosotrosFlammas() {
+    const {t} = useTranslation();
     return (
         <>
             <ComponenteEncabezadoNosotros
@@ -148,134 +151,96 @@ function ComponenteNosotrosFlammas() {
             />
             <section className="container-fluid seccion-HMV">
                 <div className="container">
-                    <button className="btn boton-oscuro btn-lg btn-full-width"><h2 className="txt-menu">Nuestra Historia</h2></button>
+                    <button className="btn boton-oscuro btn-lg btn-full-width"><h2 className="txt-menu">{t("nosotros.historia.tituloBoton")}</h2></button>
                     <div className="content mt-3">
                         <ComponenteSobreFlammas
                             imagen="82.png"
-                            titulo="SOBRE FLAMMAS:"
-                            texto="Comenzamos en el año 2004 primero con el nombre de Artica. Nuestra primera oficina era aproximadamente del mismo tamaño que un garaje californiano. El proyecto original se publicó bajo licencia de código abierto (GPL2), ya que originalmente surgió como un proyecto personal de su CEO y fundador, Sancho Lerena; a partir de entonces ha evolucionado, transformándose en una suite de monitorización para empresas, traspasando fronteras e idiomas y ofreciendo una de las soluciones más completas del mercado."
+                            titulo={t("nosotros.historia.sobreTitulo")}
+                            texto={t("nosotros.historia.sobreTexto")}
                         />
                     </div>
-                    <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">Misión</h2></button>
+                    <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">{t("nosotros.mision.tituloBoton")}</h2></button>
                     <div className="content mt-3">
                         <section className="container-fluid seccion-mision">
                             <div className="mt-3">
-                                <h2 className="text-center">NUESTRA MISIÓN</h2>
+                                <h2 className="text-center">{t("nosotros.mision.titulo")}</h2>
                             </div>
                             <div className="container contenedor-cartas">
                                 <ComponenteMision
                                     imagen="25.png"
-                                    texto="Nuestra misión es ofrecer un sistema de monitorización integrado y horizontal para medianas y grandes empresas, capaz de proveer información de distintas fuentes a diferentes departamentos, todo a través de una única consola."
+                                    texto={t("nosotros.mision.carta1")}
                                 />
                                 <ComponenteMision
                                     imagen="26.png"
-                                    texto="Creemos en el enorme potencial de la monitorización para mejorar cualquier organización que apoye su negocio en tecnología."
+                                    texto={t("nosotros.mision.carta2")}
                                 />
                                 <ComponenteMision
                                     imagen="25.png"
-                                    texto="Queremos ser una alerta temprana, queremos ser aquellos que avisan en el momento exacto antes de que suceda algo imprevisto, queremos ser ese compañero de viaje imprescindible para cualquier aventura y caminar juntos hasta la siguiente meta."
+                                    texto={t("nosotros.mision.carta3")}
                                 />
                             </div>
                         </section>
                     </div>
-                    <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">Visión</h2></button>
+                    <button className="btn boton-oscuro btn-lg btn-full-width mt-3"><h2 className="txt-menu">{t("nosotros.vision.tituloBoton")}</h2></button>
                     <div className="content mt-3">
                         <section className="container-fluid seccion-vision">
                             <div className="mt-3">
-                                <h2 className="text-center">NUESTRA VISIÓN</h2>
+                                <h2 className="text-center">{t("nosotros.vision.titulo")}</h2>
                             </div>
                             <ComponenteVision
                                 imagen="75.png"
-                                texto="Creemos en el crecimiento sostenido. No tenemos prisa, hemos venido para quedarnos. Nuestra relación con clientes y empleados siempre es a largo plazo. Sabemos que el mercado actual está maduro y se renueva constantemente, cambiando las reglas del juego."
-                                texto2="Aprendemos, nos adaptamos y crecemos conforme lo hacen nuestros clientes. Nuestra visión es ser los proveedores de tecnología de servicios clave y estar presentes en empresas de todos los sectores a nivel mundial."
+                                texto={t("nosotros.vision.parrafo1")}
+                                texto2={t("nosotros.vision.parrafo2")}
                             />
                         </section>
                     </div>
                 </div>
             </section>
             <section className="container-fluid contenedor-tercera-seccion">
-                <h2> FLAMMAS EN NÚMEROS EN LA ACTUALIDAD </h2>
-                <p> Desde 2004, Flammas no ha parado de crecer, posibilitando la evolución constante de este proyecto que hace que nos adaptemos a la realidad cambiante de hoy. </p>
+                <h2>{t("nosotros.numeros.titulo")}</h2>
+                <p>{t("nosotros.numeros.subtitulo")}</p>
                 <div className="container-fluid contenedor-cartas-terceraS">
-                    <ComponenteMiniTerceraSeccion
-                        titulo="+1M"
-                        subtitulo="Métricas en la mayor de las instalaciones en un cliente real."
-                    />
-                    <ComponenteMiniTerceraSeccion
-                        titulo="24/7"
-                        subtitulo="Soporte técnico disponible a nivel mundial."
-                    />
-                    <ComponenteMiniTerceraSeccion
-                        titulo="+60"
-                        subtitulo="Presentes en más de 60 países de todo el mundo en los cinco continentes."
-                    />
-                    <ComponenteMiniTerceraSeccion
-                        titulo="96%"
-                        subtitulo="De nuestros clientes se quedan con nosotros y renuevan cada año sus suscripciones."
-                    />
-                    <ComponenteMiniTerceraSeccion
-                        titulo="+100K"
-                        subtitulo="Usuarios en todo el mundo que utilizan Flammas en todo tipo de organizaciones."
-                    />
-                    <ComponenteMiniTerceraSeccion
-                        titulo="1 HORA"
-                        subtitulo="Es el tiempo que necesitas para instalarlo y cubrir tus sistemas."
-                    />
+                    {t("nosotros.numeros.items", { returnObjects: true }).map((item, i) => (
+                        <ComponenteMiniTerceraSeccion key={i} titulo={item.titulo} subtitulo={item.subtitulo} />
+                    ))}
                 </div>
             </section>
             <section className="container-fluid seccion-Img-Central">
                 <div className="mt-3 titulo">
-                    <h2 className="text-center mb-5">¿POR QUÉ CONTAR CON NOSOTROS?</h2>
+                    <h2 className="text-center mb-5">{t("nosotros.porQue.titulo")}</h2>
                 </div>
                 <ComponenteImagenCentral
-                    texto1="Somos expertos en migraciones y grandes implantaciones. Tenemos nuestro propio equipo de consultoría e ingeniería especializada."
-                    texto2="Quién mejor que el fabricante para asegurarse del éxito de un proyecto."
-                    texto3="Si no estamos lo suficientemente cerca, podemos colaborar con un partner que conozca."
-                    texto4="Precios muy competitivos."
+                    texto1={t("nosotros.porQue.texto1")}
+                    texto2={t("nosotros.porQue.texto2")}
+                    texto3={t("nosotros.porQue.texto3")}
+                    texto4={t("nosotros.porQue.texto4")}
                     imagen="74.png"
                 />
             </section>
             {/* Seccion Valores */}
             <section className="container-fluid seccion-valores">
                 <div className="mt-3 mb-5">
-                    <h2 className="text-center">NUESTROS VALORES</h2>
+                    <h2 className="text-center">{t("nosotros.valores.titulo")}</h2>
                 </div>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <ComponenteValores
-                            imagen="76.png"
-                            texto="Innovar como forma de ver la vida."
-                        />
-                        <ComponenteValores
-                            imagen="77.png"
-                            texto="Cuidar y escuchar a nuestros clientes, sobre todo si son críticos."
-                        />
-                        <ComponenteValores
-                            imagen="78.png"
-                            texto="Ofrecer el mejor soporte técnico a nuestros clientes."
-                        />
-                        <ComponenteValores
-                            imagen="79.png"
-                            texto="Seguir aprendiendo siempre, incluso de lo inesperado."
-                        />
-                        <ComponenteValores
-                            imagen="80.png"
-                            texto="Mejora continua y autocrítica constante."
-                        />
+                        {t("nosotros.valores.items", { returnObjects: true }).map((valor, i) => (
+                            <ComponenteValores key={i} imagen={`${76 + i}.png`} texto={valor} />
+                        ))}
                     </div>
                 </div>
             </section>
             <ComponenteTSTI
-                titulo="I+D+i"
-                subtitulo="Investigación + Desarrollo + Innovación"
-                texto="Desde sus orígenes Flammas siempre se ha caracterizado por ir más allá de lo establecido. Siempre hemos encontrado soluciones diferentes a los problemas nuevos y a los problemas de siempre. Nuestra filosofía de empresa de I+D+i nos acompaña desde 2007."
+                titulo={t("nosotros.tsti.titulo")}
+                subtitulo={t("nosotros.tsti.subtitulo")}
+                texto={t("nosotros.tsti.texto")}
                 imagen="81.png"
             />
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("nosotros.quintaSeccion.titulo")}
+                subtitulo={t("nosotros.quintaSeccion.subtitulo")}
+                texto1={t("nosotros.quintaSeccion.texto1")}
+                texto2={t("nosotros.quintaSeccion.texto2")}
             />
         </>
     )

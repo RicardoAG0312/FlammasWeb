@@ -2,6 +2,7 @@ import React from 'react'
 import "../estilos/componenteInicio.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import imagen7 from "../images/7.png.png";
+import { useTranslation } from 'react-i18next'; 
 
 export function MiniComponentesSegundaSeccion({ imagen, titulo, texto }) {
     return (
@@ -52,19 +53,19 @@ export function MiniComponenteQuintaSeccion({ titulo, subtitulo, texto1, texto2 
 
 //Componente a renderizar 
 function ComponenteInicio() {
+    const { t } = useTranslation();
     return (
         <>
             <section className='container-fluid seccion-encabezado'>
                 <div className="row">
                     <div className="col-12 col-sm-8 col-xxl-8 primera-columna">
                         <div>
-                            <h6> TRANSFORMA TU GESTIÓN CON FLAMMAS </h6>
-                            <h1> LA SOLUCIÓN INTEGRAL PARA </h1>
-                            <h2 > MONITORIZACIÓN Y OBSERVABILIDAD </h2>
-                            <p> Una Suite de Supervisión Integral que Incluye Auditoría, Monitorización, Gestión de Configuración, Control Remoto, ITSM, Inventario y Seguridad del Sistema. </p>
-                        </div>
+                            <h6>{t("inicio.encabezado.texto1")}</h6>
+                            <h1>{t("inicio.encabezado.texto2")}</h1>
+                            <h2>{t("inicio.encabezado.texto3")}</h2>
+                            <p>{t("inicio.encabezado.parrafo")}</p>                        </div>
                         <div className='btn btn-danger'>
-                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Flammas-Marcus-Series.pdf"} rel="noopener noreferrer"> Hoja de Datos </a>
+                            <a className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Flammas-Marcus-Series.pdf"} rel="noopener noreferrer">{t("inicio.encabezado.boton")}</a>
                         </div>
                     </div>
                     <div className="col-12 col-sm-4 col-xxl-4 segunda-columna">
@@ -78,36 +79,36 @@ function ComponenteInicio() {
             </section>
             <section className='container-fluid seccion-segunda'>
                 <div>
-                    <h1> ONE TOOL TO RULE THEM ALL </h1>
-                    <h2> SEA LO QUE SEA QUE QUIERAS SUPERVISAR, TENEMOS LO QUE NECESITAS </h2>
+                    <h1>{t("inicio.segundaSeccion.titulo")}</h1>
+                    <h2>{t("inicio.segundaSeccion.subtitulo")}</h2>
                 </div>
                 <div className='container contenedor-cartas'>
                     <MiniVideos
                         imagen="1"
-                        titulo="MONITORIZACIÓN INTEGRAL"
-                        texto="Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
+                        titulo={t("inicio.segundaSeccion.videos.video1.titulo")}
+                        texto={t("inicio.segundaSeccion.videos.video1.texto")}
                     />
                     <MiniVideos
                         imagen="2"
-                        titulo="CONTROL REMOTO"
-                        texto="Un entorno dinámico con acceso remoto a tus servidores o estaciones de trabajo."
+                        titulo={t("inicio.segundaSeccion.videos.video2.titulo")}
+                        texto={t("inicio.segundaSeccion.videos.video2.texto")}
                     />
                     <MiniVideos
                         imagen="3"
-                        titulo="IT SERVICE MANAGER"
-                        texto="Software de monitorización preparado y optimizado para cubrir todas tus necesidades."
+                        titulo={t("inicio.segundaSeccion.videos.video3.titulo")}
+                        texto={t("inicio.segundaSeccion.videos.video3.texto")}
                     />
                 </div>
             </section>
             <section className='container-fluid seccion-tercera'>
                 <div className='contenedor-info'>
                     <div>
-                        <span> ARQUITECTURA TI </span>
-                        <h1> ¿CÓMO FUNCIONA FLAMMAS? </h1>
+                        <span>{t("inicio.terceraSeccion.titulo")}</span>
+                        <h1>{t("inicio.terceraSeccion.subtitulo")}</h1>
                     </div>
                     <div>
-                        <p> Así como el prisma descompone la luz en sus colores individuales, Flammas divide la complejidad de los datos empresariales. Cada componente, ya sea proveniente de proveedores, servicios en la nube o clientes, se analiza con precisión milimétrica. Esto permite una comprensión detallada de cada aspecto, facilitando la identificación de áreas de mejora y optimización. </p>
-                        <div> <a style={{ color: "black" }} className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer"> DESCUBRE TODAS SUS FUNCIONALIDADES </a> </div>
+                         <p>{t("inicio.terceraSeccion.parrafo")}</p>
+                        <div> <a style={{ color: "black" }} className='botonInfoFlammas' href={process.env.PUBLIC_URL + "/Datasheet_Flammas.pdf"} download={"Datasheet_Flammas.pdf"} rel="noopener noreferrer">{t("inicio.terceraSeccion.boton")}</a> </div>
                     </div>
                     <div>
                     </div>
@@ -117,52 +118,52 @@ function ComponenteInicio() {
                 <div className='row'>
                     <div className='col-12 col-sm-4 col-xxl-4 info'>
                         <div>
-                            <span> FUNCIONALIDADES </span>
-                            <h3> Toma el control de tu empresa con nuestras soluciones de monitorización </h3>
+                            <span>{t("inicio.cuartaSeccion.titulo")}</span>
+                            <h3>{t("inicio.cuartaSeccion.subtitulo")}</h3>
                         </div>
                     </div>
                     <div className='col-12 col-sm-8 col-xxl-8 contenedor-cards'>
                         <MiniComponentesCuartaSeccion
                             imagen="8.png"
-                            titulo="Monitorización de redes"
-                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                            titulo={t("inicio.cuartaSeccion.items.item1.titulo")}
+                            texto={t("inicio.cuartaSeccion.items.item1.texto")}
                         />
                         <MiniComponentesCuartaSeccion
                             imagen="9.png"
-                            titulo="Monitorización UX"
-                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                            titulo={t("inicio.cuartaSeccion.items.item2.titulo")}
+                            texto={t("inicio.cuartaSeccion.items.item2.texto")}
                         />
                         <MiniComponentesCuartaSeccion
                             imagen="10.png"
-                            titulo="Monitorización Cloud"
-                            texto="Descubre todos tus equipos de red a través de mapas que muestran la estructura de tu red al detalle."
+                             titulo={t("inicio.cuartaSeccion.items.item3.titulo")}
+                             texto={t("inicio.cuartaSeccion.items.item3.texto")}
                         />
                         <MiniComponentesCuartaSeccion
                             imagen="11.png"
-                            titulo="Servidores"
-                            texto="Mainframe, IBM-i, Unix, Windows, Android y Linux: nuestro sistema es compatible con diversas plataformas."
+                            titulo={t("inicio.cuartaSeccion.items.item4.titulo")}
+                            texto={t("inicio.cuartaSeccion.items.item4.texto")}
                         />
                         <MiniComponentesCuartaSeccion
                             imagen="12.png"
-                            titulo="Aplicaciones"
-                            texto="Soluciones personalizables para casi cualquier caso y fuente de datos antes de afectar a los usuarios."
+                            titulo={t("inicio.cuartaSeccion.items.item5.titulo")}
+                            texto={t("inicio.cuartaSeccion.items.item5.texto")}
                         />
                         <MiniComponentesCuartaSeccion
                             imagen="13.png"
-                            titulo="Gestión de logs"
-                            texto="Recoge y almacena registros de todo tipo (incluyendo eventos de Windows) para búsquedas y alertas eficientes. "
+                            titulo={t("inicio.cuartaSeccion.items.item6.titulo")}
+                            texto={t("inicio.cuartaSeccion.items.item6.texto")}
                         />
                     </div>
                 </div>
             </section>
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("inicio.quintaSeccion.titulo")}
+                subtitulo={t("inicio.quintaSeccion.subtitulo")}
+                texto1={t("inicio.quintaSeccion.texto1")}
+                texto2={t("inicio.quintaSeccion.texto2")}
             />
             <section className='container seccion-sexta'>
-                <h1 className='texting'> MÁS ALLÁ DE LOS LÍMITES, MÁS ALLÁ DE LAS EXPECTATIVAS </h1>
+                <h1 className='texting'>{t("inicio.sextaSeccion.titulo")}</h1>
             </section>
         </>
     )

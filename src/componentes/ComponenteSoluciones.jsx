@@ -5,6 +5,7 @@ import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
 import { MiniComponenteProductos } from "./ComponenteProductos";
 import ImagenOne from "../images/ultimg.png.png";
 import ImagenMarcus from "../images/marcus.webp";
+import { useTranslation } from "react-i18next";
 
 export function ComponenteEncabezadoSoluciones({ titulo, subtitulo, texto }) {
     return (
@@ -222,136 +223,137 @@ function EndVIñetas({ titulo, texto }) {
 
 // Componentes a renderizar
 export function ComponenteSolucionesMonitorizacion() {
+    const { t } = useTranslation();
     return (
         <>
             <ComponenteEncabezadoSoluciones
-                subtitulo="Soluciones de Flammas"
-                titulo="Monitorización de red"
-                texto="Flammas te permite descubrir todos tus equipos de red y representar su topología en mapas que conectan interfaces y visualizan la estructura de su red al detalle. Ve más allá, unificando la gestión de tus dispositivos con una completa observabilidad en tu red."
+                subtitulo={t("soluciones1.monitorizacion1.encabezado.subtitulo")}
+                titulo={t("soluciones1.monitorizacion1.encabezado.titulo")}
+                texto={t("soluciones1.monitorizacion1.encabezado.texto")}
             />
             <section className="container-fluid seccionEscrituraPrincipalSoluciones">
-                <h2> ¿Qué aporta la monitorización de redes a tu compañía? </h2>
-                <p> En la actualidad, las redes son esenciales para el negocio de muchas empresas y organizaciones. Las interrupciones o pérdidas de rendimiento de estas pueden conllevar graves consecuencias, como paradas en el servicio o caídas en la productividad. Tu sistema debe ser capaz de supervisar en todo momento el estado de tus redes y los diferentes componentes que forman parte de esta. </p>
-                <p> Por ello, el monitoreo de redes será fundamental para prevenir incidencias o ayudar a resolverlas lo antes posible, cuando estas sean inevitables. </p>
+                <h2> {t("soluciones1.monitorizacion1.seccionPrincipal.titulo")}</h2>
+                <p>{t("soluciones1.monitorizacion1.seccionPrincipal.parrafo1")}</p>
+                <p> {t("soluciones1.monitorizacion1.seccionPrincipal.parrafo2")}</p>
             </section>
             <ComponenteInfoIzquierdaSoluciones
-                titulo="Desde lo más básico a lo inimaginable"
-                texto="Ancho de banda, pérdida de paquetes, latencia, disponibilidad, número de conexiones. Da igual el origen: routers, AP, switches, firewalls, servidores, estaciones de trabajo, IoT. Si tiene IP, Flammas puede coger el dato. No estamos limitados sólo a SNMP o a recogida de datos con agentes."
+                titulo={t("soluciones1.monitorizacion1.info.izquierda1_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.izquierda1_texto")}
                 imagen="41.png"
                 id="none"
             />
             <ComponenteInfoDerechoSoluciones
-                titulo="Gestión de IPs"
-                texto="Nuestro sistema IPAM permite gestionar redes, superedes y hacer subnetting. Podrás gestionar ubicaciones físicas, realizar reservas de IP y disponer de un mapa de IP así como informes de uso de IP, y alertas cuando te quedes sin IP disponibles. Se puede integrar con un servidor DHCP de Microsoft."
+                titulo={t("soluciones1.monitorizacion1.info.derecha1_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.derecha1_texto")}
                 imagen="42.png"
                 id="none"
             />
             <ComponenteInfoIzquierdaSoluciones
-                titulo="Análisis de red en tiempo real"
-                texto="Netflow sirve para obtener estadísticas en tiempo real de tus equipos de red (routers, switches, firewalls) y ofrecer informes de uso, cuellos de botella o ayudar a hacer diagnósticos de problemas."
+                titulo={t("soluciones1.monitorizacion1.info.izquierda2_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.izquierda2_texto")}
                 imagen="43.png"
             />
             <ComponenteInfoDerechoSoluciones
-                titulo="Alta escalabilidad"
-                texto="Escalabilidad prácticamente ilimitada gracias a Command Center, y nuestros Servidores Satélite que permiten escalar horizontalmente y generar decenas de miles de consultas de red por segundo de forma distribuida. Contamos con clientes con más 100.000 dispositivos de red en una única instancia."
+                titulo={t("soluciones1.monitorizacion1.info.derecha2_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.derecha2_texto")}
                 imagen="44.png"
                 id="none"
             />
             <ComponenteInfoIzquierdaSoluciones
-                titulo="Informes y cuadros de mando"
-                texto="Flammas recoge todo tipo de datos y te ofrece un editor de informes para que puedas generarlos de manera personalizada: top N, gráficas detalladas a cualquier escala de tiempo, informes SLA, informes de disponibilidad, cronogramas y decenas más."
+                titulo={t("soluciones1.monitorizacion1.info.izquierda3_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.izquierda3_texto")}
                 imagen="45.png"
             />
             <ComponenteInfoDerechoSoluciones
-                titulo="Gestión de configuraciones"
-                texto="Flammas puede recoger la configuraciones de tus equipos, detectar cuando cambian (y donde) y recuperar backup de dichas configuraciones. También podrá desplegar cambios masivamente en decenas de equipos (como por ejemplo añadir una VLAN)."
+                titulo={t("soluciones1.monitorizacion1.info.derecha3_titulo")}
+                texto={t("soluciones1.monitorizacion1.info.derecha3_texto")}
                 imagen="46.png"
             />
-            <header className="funcionalidades"> Funcionalidades Avanzadas </header>
+            <header className="funcionalidades">{t("soluciones1.monitorizacion1.funcionalidades.header")}</header>
             <section className="container-fluid seccionFuncionAvanzadas">
                 <ComponenteFuncionalidadAvanzada
                     imagen="25.png"
-                    titulo="Entornos distribuidos"
-                    texto="Descubre y monitoriza equipos remotos en redes de clientes de manera autónoma y desplegando una sencilla sonda instalable en Windows, Raspberrys o pequeñas máquinas virtuales. Nuestros servidores satélites funcionan de manera autónoma y silenciosa y son capaces de gestionar cientos de dispositivos."
+                    titulo={t("soluciones1.monitorizacion1.funcionalidades.f1_titulo")}
+                    texto={t("soluciones1.monitorizacion1.funcionalidades.f1_texto")}
                 />
                 <ComponenteFuncionalidadAvanzada
                     imagen="26.png"
-                    titulo="Licenciamiento sin sorpresas"
-                    texto="Conoce exactamente lo que te va a costar, sin sorpresas, sin ampliaciones, sin módulos adicionales. Planifica el crecimiento de su entorno con exactitud desde el día uno. En Flammas todo incluido, significa eso, todo incluido en el coste inicial de la licencia."
+                    titulo={t("soluciones1.monitorizacion1.funcionalidades.f2_titulo")}
+                    texto={t("soluciones1.monitorizacion1.funcionalidades.f2_texto")}
                 />
                 <ComponenteFuncionalidadAvanzada
                     imagen="27.png"
-                    titulo="Monitorización de seguridad"
-                    texto="Controla en todo momento de qué versiones, modelos e IP dispones. No sólo de equipos de red como switches, routers, también firewalls. Establece alertas si se usan modelos con vulnerabilidades. Envía los logs de todos tus sistemas a nuestra consola de logs y crea alertas de correlación."
+                    titulo={t("soluciones1.monitorizacion1.funcionalidades.f3_titulo")}
+                    texto={t("soluciones1.monitorizacion1.funcionalidades.f3_texto")}
                 />
                 <ComponenteFuncionalidadAvanzada
                     imagen="28.png"
-                    titulo="Inteligencia artificial"
-                    texto="Deja que se configuren solo los umbrales de fallo de manera automática, en base al uso cotidiano. Crea alertas en base al uso proyectado de tus recursos. Genera informes útiles para planificar el uso de tu red."
+                    titulo={t("soluciones1.monitorizacion1.funcionalidades.f4_titulo")}
+                    texto={t("soluciones1.monitorizacion1.funcionalidades.f4_texto")}
                 />
             </section>
             <ComponenteEncabezadoSoluciones
-                subtitulo="Soluciones de Flammas"
-                titulo="Gestión de Logs"
-                texto="Imagina poder buscar información en los logs a lo largo de todos tus sistemas monitorizados con un solo click de ratón. Si ya tienes actualmente instalado un agente de Flammas en esas máquinas, ¿por qué no recoger también logs?"
+                subtitulo={t("soluciones1.monitorizacion1.logs.encabezado.subtitulo")}
+                titulo={t("soluciones1.monitorizacion1.logs.encabezado.titulo")}
+                texto={t("soluciones1.monitorizacion1.logs.encabezado.texto")}
             />
             <ComponenteInfoIzquierdaSoluciones
-                titulo="Auditoría y seguridad (HIPAA, RGPD, ISO 27001)"
-                texto="Lo último que quieres es fallar en una auditoría o tener que revelar una posible violación de datos porque no has recogido los datos necesarios para una investigación o no dispones de los datos requeridos para averiguar lo que ha pasado. Si ya monitorizas esos sistemas, guarda sus logs."
+                titulo={t("soluciones1.monitorizacion1.logs.izquierda_titulo")}
+                texto={t("soluciones1.monitorizacion1.logs.izquierda_texto")}
                 imagen="23.png"
                 id="log"
             />
             <section className="container-fluid contenedor-cartitas">
                 <MiniComponenteProductos
-                    titulo="Almacenamiento económico para sus logs"
-                    texto="El tipo de almacenamiento para guardar logs en Flammas es muy asequible con respecto a otras herramientas similares. Con Flammas ahorrarás dinero en almacenamiento a largo plazo. La licencia Enterprise ya cubre esta funcionalidad, sólo tendrás que asignar más almacenamiento en tus servidores."
+                    titulo={t("soluciones1.monitorizacion1.logs.cartitas1_titulo")}
+                    texto={t("soluciones1.monitorizacion1.logs.cartitas1_texto")}
                 />
                 <MiniComponenteProductos
-                    titulo="Búsqueda de la información simple y sencilla"
-                    texto="No necesitarás ser un científico de datos ni normalizar la información en un complicado juego de plantillas. Busca cadenas o patrones mediante expresiones regulares, y guarda tus búsquedas. Tan simple como suena."
+                    titulo={t("soluciones1.monitorizacion1.logs.cartitas2_titulo")}
+                    texto={t("soluciones1.monitorizacion1.logs.cartitas2_texto")}
                 />
             </section>
             <section className="container-fluid contenedor-cartas-logs">
                 <ComponenteMinisLogs
                     nombreIcono="diagram-3"
-                    texto="Olvídate de formatos, parseos o definiciones estrictas."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto1")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="terminal"
-                    texto="Compatible con Linux, Windows y Unix por igual."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto2")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="chat"
-                    texto="Compatible con cualquier log en formato texto plano de cualquier aplicación."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto3")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="search"
-                    texto="Investiga entre tu historial de logs con búsquedas intuitivas y sencillas."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto4")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="filetype-csv"
-                    texto="Sencillo de extraer. No requiere instalar software intermedio ni redirigir logs a través de la red."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto5")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="lock"
-                    texto="Investiga los registros con filtros de búsqueda intuitivos y un veloz rendimiento, visualízalos en bonitos paneles de Kibana."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto6")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="database"
-                    texto="Tus datos seguirán siendo tuyos. Almacenamiento local 100% on-premise."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto7")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="pie-chart"
-                    texto="Escala según tus necesidades. Puedes ampliar la capacidad de almacenamiento según lo necesites."
+                    texto={t("soluciones1.monitorizacion1.logs.minis.texto8")}
                 />
             </section>
             <section className="container-fluid contenedor-animables">
-                <header> La solución de supervisión total para la observabilidad total </header>
+                <header> {t("soluciones1.monitorizacion1.observabilidad.header")} </header>
                 <div className="container contenedor-cartas-animables">
                     <ComponenteCartaAnimable
                         nombreIcono="bi-person-lines-fill"
-                        titulo="Experiencia de usuario"
-                        subtitulo="Experencia de usuario"
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.subtitulo")}
                         texto="Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes."
                     />
                     <ComponenteCartaAnimable

@@ -3,6 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../estilos/componenteSoporte.css";
 import { MiniComponenteQuintaSeccion } from "./ComponenteInicio";
+import { useTranslation } from 'react-i18next';
 
 function onChange(value) {
     //     console.log("Captcha value:", value);
@@ -36,6 +37,7 @@ function ComponenteViñetaAnimada({ nombreImagen, titulo, texto }) {
     )
 }
 function ComponenteInfojhoanIzquierdaSoluciones({ titulo, texto, imagen, imagen2 }) {
+    const { t } = useTranslation();
     return (
         <section className="container contenedorCartaInfojhoanIzquierda">
             <div className="row">
@@ -47,14 +49,14 @@ function ComponenteInfojhoanIzquierdaSoluciones({ titulo, texto, imagen, imagen2
                     <div>
                         <img src={require(`../images/${imagen}.png`)} alt="Imagen" className="imagen" />
                         <div className='correo'>
-                            <h3>ENVÍENOS UN MENSAJE</h3>
+                            <h3>{t("seccionEncabezado1.titulo.ventas")}</h3>
                             <p>ventas@flammas.com</p>
                         </div>
                     </div>
                     <div>
                         <img src={require(`../images/${imagen2}.png`)} alt="Imagen" className="imagen" />
                         <div className='telefono'>
-                            <h3>TELÉFONO</h3>
+                            <h3>{t("seccionEncabezado1.titulo.contacto")}</h3>
                             <p> +57 3228396554 </p>
                         </div>
                     </div>
@@ -66,45 +68,46 @@ function ComponenteInfojhoanIzquierdaSoluciones({ titulo, texto, imagen, imagen2
 
 //Componentes a renderizar
 export function ComponenteSoporteProfesional() {
+      const { t } = useTranslation();
     return (
         <>
             <section className='container-fluid seccion-encabezado-soporte'>
                 <div className="row">
                     <div className="col-12 col-sm-6 col-xxl-6 primera-columna">
                         <div>
-                            <h1> SERVICIOS PROFESIONALES DE FLAMMAS FMS </h1>
-                            <h2> NUESTRO EQUIPO DE EXPERTOS ESTÁ PARA AYUDARTE </h2>
-                            <p> La experiencia acumulada de nuestros ingenieros te permitirá afrontar cualquier reto de monitorización. Para información adicional sobre nuestros servicios, por favor contacta con nosotros. </p>
+                            <h1>{t("seccionEncabezado1.titulo.titulo1")}</h1>
+                            <h2>{t("seccionEncabezado1.titulo.subtitulo")} </h2>
+                            <p>{t("seccionEncabezado1.titulo.texto")} </p>
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-xxl-6 seccion-contac-soporte ">
                         <form action="https://formsubmit.co/ventas@flammas.com" method="POST">
                             <div>
-                                <label for="fname"> (*) Nombres: </label>
-                                <input type="text" id="fname" name="nombres" placeholder="Ingresa tus nombres" required="true" />
+                                <label for="fname">{t("seccionEncabezado1.seccionFormulario.campos.nombres")}: </label>
+                                <input type="text" id="fname" name="nombres" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.nombres")} required="true" />
                             </div>
                             <div>
-                                <label for="lname"> (*) Apellidos: </label>
-                                <input type="text" id="lname" name="apellidos" placeholder="Ingresa tus apellidos" required="true" />
+                                <label for="lname">{t("seccionEncabezado1.seccionFormulario.campos.apellidos")} </label>
+                                <input type="text" id="lname" name="apellidos" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.apellidos")} required="true" />
                             </div>
                             <div>
-                                <label for="email"> (*) Email: </label>
-                                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required="true" />
+                                <label for="email">{t("seccionEncabezado1.seccionFormulario.campos.email")} </label>
+                                <input type="email" id="email" name="email" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.email")} required="true" />
                             </div>
                             <div>
-                                <label for="company"> (*) Empresa - Compañia: </label>
-                                <input type="text" id="company" name="empresa" placeholder="Ingresa tu empresa - compañia" required="true" />
+                                <label for="company">{t("seccionEncabezado1.seccionFormulario.campos.empresa")}</label>
+                                <input type="text" id="company" name="empresa" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.empresa")} required="true" />
                             </div>
                             <div>
-                                <label for="country"> (*) País: </label>
-                                <input type="text" id="country" name="país" placeholder="Ingresa tu país" required="true" />
+                                <label for="country">{t("seccionEncabezado1.seccionFormulario.campos.pais")}</label>
+                                <input type="text" id="country" name="país" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.pais")}required="true" />
                             </div>
                             <div>
-                                <label for="message" className='mt-3'> (*) Mensaje: </label>
-                                <input type="text" id="message" name="mensaje" placeholder="Ingresa tu mensaje" required="true" />
+                                <label for="message" className='mt-3'>{t("seccionEncabezado1.seccionFormulario.campos.mensaje")} </label>
+                                <input type="text" id="message" name="mensaje" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.mensaje")} required="true" />
                             </div>
                             <div>
-                                <p> Flammas necesita la información de contacto que nos proporciona para ponernos en contacto contigo acerca de nuestros productos y servicios. Puedes darte de baja de estas comunicaciones en cualquier momento. Para obtener información sobre como darte de baja, asi como nuestras practicas de privacidad y el compromiso de proteger su privacidad, consulta nuestra Política de privacidad. </p>
+                                <p>{t("seccionEncabezado1.seccionFormulario.aviso")}</p>
                                 <div className="recaptcha">
                                     <ReCAPTCHA
                                         ref={ReCAPTCHA}
@@ -114,7 +117,7 @@ export function ComponenteSoporteProfesional() {
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="Enviar" />
+                                <input type="submit" value={t("seccionEncabezado1.seccionFormulario.submit")} />
                             </div>
                         </form>
                     </div>
@@ -122,125 +125,122 @@ export function ComponenteSoporteProfesional() {
             </section>
             <section className='container-fluid seccion-49'>
                 <div>
-                    <h2> SERVICIO PROFESIONALES PARA CLIENTE FINAL</h2>
+                    <h2>{t("seccionEncabezado1.seccionClienteFinal.titulo1")}</h2>
                 </div>
                 <section className="container-fluid seccion-viñetas-mart">
                     <ComponenteViñetaAnimada
                         nombreImagen="96.png"
-                        texto="Extensiones de soporte 24×7 sobre el contrato de soporte estándar."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto1")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="97.png"
-                        texto="Formación a medida, presencial o remota. Disponemos de varios niveles de certificación."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto2")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="98.png"
-                        texto="Desarrollo de funcionalidades a medida, públicas (que se incorporan a nuestro roadmap) o privadas."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto3")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="99.png"
-                        texto="Outsourcing de personal, completo o parcial. Remoto o presencial."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto4")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="100.png"
-                        texto="Desarrollo de integraciones a medida (plugins) para integrar la monitorización en aplicaciones propias o ampliar la monitorización de nuestros plugins actuales."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto5")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="102.png"
-                        texto="Proyectos por bolsas de horas para intervenciones puntuales (p.e: migraciones, integraciones, actualizaciones, despliegues de configuración)"
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto6")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="103.png"
-                        texto="Proyectos de despliegue completos llave en mano. Desde la consultoría de análisis hasta la coordinación de equipos propios y de terceros: jefe de proyecto, consultor especialista, desarrolladores e incluso diseñadores gráficos."
+                        texto={t("seccionEncabezado1.seccionClienteFinal.items1.texto7")}
                     />
                 </section>
             </section>
             <section className='container-fluid seccion-jhoan'>
                 <div>
-                    <h2> SERVICIO PROFESIONALES PARA MSP’S E INTEGRADORES</h2>
+                    <h2>{t("seccionEncabezado1.seccionMSP.titulo2")}</h2>
                 </div>
                 <section className="container-fluid seccion-viñetas-urquia">
                     <ComponenteViñetaAnimada
                         nombreImagen="88.png"
-                        texto="Colaboración en la implantación con personal técnico integrado en sus equipos."
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto1")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="89.png"
-                        texto="Jefatura externa de proyectos de implantación."
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto2")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="90.png"
-                        texto="Formación de equipos completos de operación."
-                    />
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto3")}                    />
                     <ComponenteViñetaAnimada
                         nombreImagen="91.png"
-                        texto="Ayuda en la puesta en marcha de soluciones SaaS propias."
-                    />
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto4")}                    />
                     <ComponenteViñetaAnimada
                         nombreImagen="92.png"
-                        texto="Creación personalizada de productos OEM."
-                    />
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto5")}                    />
                     <ComponenteViñetaAnimada
                         nombreImagen="93.png"
-                        texto="Ingeniería de monitorización a medida."
-                    />
+                        texto={t("seccionEncabezado1.seccionMSP.items2.texto6")}                    />
                 </section>
             </section>
             <ComponenteInfojhoanIzquierdaSoluciones
-                titulo="¡PONTE EN CONTACTO!"
-                texto="Nos encanta saber de ti. Nuestro equipo está siempre aquí para apoyarle"
+                titulo={t("seccionEncabezado1.contacto.titulo")}
+                texto={t("seccionEncabezado1.contacto.texto")}
                 imagen="94.png"
                 imagen2="95.png"
             />
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("seccionEncabezado1.quintaSeccion.titulo")}
+                subtitulo={t("seccionEncabezado1.quintaSeccion.subtitulo")}
+                texto1={t("seccionEncabezado1.quintaSeccion.texto1")}
+                texto2={t("seccionEncabezado1.quintaSeccion.texto2")}
             />
         </>
     )
 }
 export function ComponenteSoporteTecnico() {
+    const { t } = useTranslation(); 
     return (
         <>
             <section className='container-fluid seccion-encabezado-soporte'>
                 <div className="row">
                     <div className="col-12 col-sm-6 col-xxl-6 primera-columna">
                         <div>
-                            <h1> SOPORTE TÉCNICO DE FLAMMAS </h1>
-                            <h2> SOMOS EXPERTOS EN FLAMMAS </h2>
-                            <p> Garantizamos la continuidad del servicio y ofrecemos soporte a los equipos técnicos que gestionan Flammas. </p>
+                            <h1>{t("seccionEncabezado1.tituloSoporte.titulo")}</h1>
+                            <h2>{t("seccionEncabezado1.tituloSoporte.subtitulo")}</h2>
+                            <p>{t("seccionEncabezado1.tituloSoporte.texto")}</p>
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-xxl-6 seccion-contac-soporte ">
                         <form action="https://formsubmit.co/ventas@flammas.com" method="POST">
                             <div>
-                                <label for="fname"> (*) Nombres: </label>
-                                <input type="text" id="fname" name="nombres" placeholder="Ingresa tus nombres" required="true" />
+                                <label for="fname">{t("seccionEncabezado1.seccionFormulario.campos.nombres")} </label>
+                                <input type="text" id="fname" name="nombres" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.nombres")} required="true" />
                             </div>
                             <div>
-                                <label for="lname"> (*) Apellidos: </label>
-                                <input type="text" id="lname" name="apellidos" placeholder="Ingresa tus apellidos" required="true" />
+                                <label for="lname">{t("seccionEncabezado1.seccionFormulario.campos.apellidos")} </label>
+                                <input type="text" id="lname" name="apellidos" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.apellidos")} required="true" />
                             </div>
                             <div>
-                                <label for="email"> (*) Email: </label>
-                                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required="true" />
+                                <label for="email">{t("seccionEncabezado1.seccionFormulario.campos.email")} </label>
+                                <input type="email" id="email" name="email" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.email")} required="true" />
                             </div>
                             <div>
-                                <label for="company"> (*) Empresa - Compañia: </label>
-                                <input type="text" id="company" name="empresa" placeholder="Ingresa tu empresa - compañia" required="true" />
+                                <label for="company">{t("seccionEncabezado1.seccionFormulario.campos.empresa")}</label>
+                                <input type="text" id="company" name="empresa" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.empresa")} required="true" />
                             </div>
                             <div>
-                                <label for="country"> (*) País: </label>
-                                <input type="text" id="country" name="país" placeholder="Ingresa tu país" required="true" />
+                                <label for="country">{t("seccionEncabezado1.seccionFormulario.campos.pais")}</label>
+                                <input type="text" id="country" name="país" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.pais")} required="true" />
                             </div>
                             <div>
-                                <label for="message" className='mt-3'> (*) Mensaje: </label>
-                                <input type="text" id="message" name="mensaje" placeholder="Ingresa tu mensaje" required="true" />
+                                <label for="message" className='mt-3'>{t("seccionEncabezado1.seccionFormulario.campos.mensaje")}</label>
+                                <input type="text" id="message" name="mensaje" placeholder={t("seccionEncabezado1.seccionFormulario.placeholder.mensaje")} required="true" />
                             </div>
                             <div>
-                                <p> Flammas necesita la información de contacto que nos proporciona para ponernos en contacto contigo acerca de nuestros productos y servicios. Puedes darte de baja de estas comunicaciones en cualquier momento. Para obtener información sobre como darte de baja, asi como nuestras practicas de privacidad y el compromiso de proteger su privacidad, consulta nuestra Política de privacidad. </p>
+                                <p> {t("seccionEncabezado1.seccionFormulario.aviso")}</p>
                                 <div className="recaptcha" id="recap">
                                     <ReCAPTCHA
                                         ref={ReCAPTCHA}
@@ -250,50 +250,50 @@ export function ComponenteSoporteTecnico() {
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="Enviar" />
+                                <input type="submit" value={t("seccionEncabezado1.seccionFormulario.submit")} />
                             </div>
                         </form>
                     </div>
                 </div>
             </section>
             <ComponentetxtIzquierdaSoluciones
-                texto="El objetivo principal del servicio de soporte técnico es brindar soporte para ayudar a resolver cualquier problema relacionado con la instalación, funcionamiento y uso de Flammas."
-                texto1="El canal de soporte principal disponible para todos los clientes de soporte es nuestro Sistema de soporte, que garantiza la mensajería en línea para una comunicación rápida y fácil entre los clientes y nuestros especialistas técnicos. Damos soporte en inglés y español:"
-                texto2="Los clientes con niveles de soporte avanzados pueden acceder a los servicios de soporte por teléfono, llamando a números dedicados. El soporte 24/7 también está disponible para niveles de soporte avanzado."
+                texto={t("seccionEncabezado1.seccionSoporteTexto.texto")}
+                texto1={t("seccionEncabezado1.seccionSoporteTexto.texto1")}
+                texto2={t("seccionEncabezado1.seccionSoporteTexto.texto2")}
                 imagen="83.png"
             />
             <section className='container-fluid seccion-jhoan'>
                 <div>
-                    <h2> NOS GANAMOS LA CONFIANZA DE NUESTROS CLIENTES EN TODO EL MUNDO </h2>
+                    <h2>{t("seccionEncabezado1.seccionViñetas.tituloGlobal")}</h2>
                 </div>
                 <section className="container-fluid seccion-viñetas-jhoan">
                     <ComponenteViñetaAnimada
                         nombreImagen="84.png"
-                        titulo="Rápido y eficiente"
-                        texto="Soporte ofrecido por el equipo de ingeniería de Flammas."
+                        titulo={t("seccionEncabezado1.seccionViñetas.items.titulos.titulo1")}
+                        texto={t("seccionEncabezado1.seccionViñetas.items.textos.texto1")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="85.png"
-                        titulo="Soporte integral"
-                        texto="Ofrecemos soporte opcional 24/7 para entornos críticos."
+                        titulo={t("seccionEncabezado1.seccionViñetas.items.titulos.titulo2")}
+                        texto={t("seccionEncabezado1.seccionViñetas.items.textos.texto2")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="86.png"
-                        titulo="SLA controlado"
-                        texto="Nuestros procedimientos de soporte incluyen una estricto monitorización de SLA."
+                        titulo={t("seccionEncabezado1.seccionViñetas.items.titulos.titulo3")}
+                        texto={t("seccionEncabezado1.seccionViñetas.items.textos.texto3")}
                     />
                     <ComponenteViñetaAnimada
                         nombreImagen="87.png"
-                        titulo="Servicio confiable"
-                        texto="Nuestro soporte es el activo mejor valorado de nuestra plataforma."
+                        titulo={t("seccionEncabezado1.seccionViñetas.items.titulos.titulo4")}
+                        texto={t("seccionEncabezado1.seccionViñetas.items.textos.texto4")}
                     />
                 </section>
             </section>
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("seccionEncabezado1.seccionIntegraciones.titulo")}
+                subtitulo={t("seccionEncabezado1.seccionIntegraciones.subtitulo")}
+                texto1={t("seccionEncabezado1.seccionIntegraciones.texto1")}
+                texto2={t("seccionEncabezado1.seccionIntegraciones.texto2")}
             />
         </>
     )
