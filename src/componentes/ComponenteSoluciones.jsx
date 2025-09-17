@@ -352,328 +352,331 @@ export function ComponenteSolucionesMonitorizacion() {
                 <div className="container contenedor-cartas-animables">
                     <ComponenteCartaAnimable
                         nombreIcono="bi-person-lines-fill"
-                        titulo={t("soluciones1.monitorizacion1.observabilidad.titulo")}
-                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.subtitulo")}
-                        texto="Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-graph-up"
-                        titulo="Monitorización de aplicaciones (APM)"
-                        subtitulo="Monitorización de aplicaciones (APM)"
-                        texto="Supervisa tus aplicaciones empresariales a todo nivel y obten todos los datos APM que necesites."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-display"
-                        titulo="Monitorización de entornos virtuales"
-                        subtitulo="Monitorización de entornos virtuales"
-                        texto="Optimiza tu infraestructura ya sea en instalaciones hibridas, virtuales o cloud."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-exclamation-diamond-fill"
-                        titulo="Gestión de incidencias"
-                        subtitulo="Gestión de incidencias"
-                        texto="Integra el sistema de ticketing de tu infraestructura en Flammas."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-joystick"
-                        titulo="Control Remoto"
-                        subtitulo="Control Remoto"
-                        texto="Todos tus dispositivos controlados por una herramienta accesible con solo un navegador web."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-headset"
-                        titulo="Gestión de servicio y asistencia"
-                        subtitulo="Gestión de servicio y asistencia"
-                        texto="Mida y supervise su pila de TI para detectar resolver problemas en tu infraestructura de TI."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-cpu-fill"
-                        titulo="Monitorización mainframe"
-                        subtitulo="Monitorización mainframe"
-                        texto="Dispón de una única plataforma para recoger y mostrar la información venga de donde venga."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-ethernet"
-                        titulo="Monitorización de redes"
-                        subtitulo="Monitorización de redes"
-                        texto="Observa toda tu información en conjunto, incluso cuando tengas miles de dispositivos que supervisar."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-card-checklist"
-                        titulo="Inventario TI"
-                        subtitulo="Inventario TI"
-                        texto="Recoge y supervisa el estado de todos los datos de tu infraestructura informática en una sola herramienta."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-file-earmark-text"
-                        titulo="Recolección de logs"
-                        subtitulo="Recolección de logs"
-                        texto="Recoge, visualiza y centraliza todos tus registros en un único punto."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_texto")}
                     />
                 </div>
             </section>
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("soluciones1.monitorizacion1.quintaSeccion.titulo")}
+                subtitulo={t("soluciones1.monitorizacion1.quintaSeccion.subtitulo")}
+                texto1={t("soluciones1.monitorizacion1.quintaSeccion.texto1")}
+                texto2={t("soluciones1.monitorizacion1.quintaSeccion.texto2")}
             />
         </>
     )
 }
 export function ComponenteSolucionesInfraestructura() {
+    const { t } = useTranslation();
     return (
         <>
             <ComponenteEncabezadoSoluciones
-                titulo="MONITORIZACIÓN DE INFRAESTRUCTURA"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Flammas no es un puzzle de distintas soluciones integradas de forma superficial, cubrimos desde el hardware hasta las aplicaciones de usuario."
+                titulo={t("solucionesInfraestructura.encabezado.titulo")}
+                subtitulo={t("solucionesInfraestructura.encabezado.subtitulo")}
+                texto={t("solucionesInfraestructura.encabezado.texto")}
             />
             <section className="container-fluid contenedor-cartas-infra">
                 <ComponenteMinisLogs
                     nombreIcono="alarm-fill"
-                    texto="Gracias a que todos los datos empleados se integran en tiempo real y su potente capacidad de histórico para ver gráficas de varios meses."
+                    texto={t("solucionesInfraestructura.minis.texto1")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="arrow-down-circle"
-                    texto="Dashboard en tiempo real, informes personalizables al milímetro y un sistema de notificaciones flexible que proporcionan una visión de 360º."
+                    texto={t("solucionesInfraestructura.minis.texto2")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="bag-check"
-                    texto="Sistema operativo base, aplicaciones, bases de datos, logs, almacenamiento, redes, experiencia de usuario. Todo en una única plataforma."
+                    texto={t("solucionesInfraestructura.minis.texto3")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="calendar2-week-fill"
-                    texto="integradas en nuestra librería de tecnología."
+                    texto={t("solucionesInfraestructura.minis.texto4")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="camera-video-fill"
-                    texto="100% multitenant, podrá dar servicio a diferentes empresas con la misma instancia."
+                    texto={t("solucionesInfraestructura.minis.texto5")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="cloud-arrow-down-fill"
-                    texto="Mediante plantillas, despliegue de plugins y una configuración remota integrada en la interfaz gráfica."
+                    texto={t("solucionesInfraestructura.minis.texto6")}
                 />
             </section>
             <section className="container-fluid contenedor-tercero-infra">
-                <header> CARACTERÍSTICAS ESPECIALES </header>
+                <header> {t("solucionesInfraestructura.caracteristicasEspeciales.header")} </header>
                 <div className="row">
                     <div className="col-12 col-sm-4 col-xl-4">
-                        <h2> MONITORIZACIÓN SIN AGENTES </h2>
-                        <p> Aunque te recomendamos instalar un agente local, también podrás descubrir tus servidores y obtener información remotamente de ellos, sin necesidad de instalar agentes. </p>
+                        <h2>{t("solucionesInfraestructura.caracteristicasEspeciales.c1_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.caracteristicasEspeciales.c1_texto")}</p>
                     </div>
                     <div className="col-12 col-sm-4 col-xl-4">
-                        <h2> MONITORIZACIÓN A BAJO NIVEL </h2>
-                        <p> Los agentes de Flammas, como el resto de nuestra tecnología, son un desarrollo propio, no derivado de terceros. Pueden obtener la información directamente de la fuente, usando llamadas nativas al sistema operativo, sin conectores de terceros o artefactos pesados. Su huella en el sistema es mínima. </p>
+                        <h2>{t("solucionesInfraestructura.caracteristicasEspeciales.c2_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.caracteristicasEspeciales.c2_texto")}</p>
                     </div>
                     <div className="col-12 col-sm-4 col-xl-4">
-                        <h2> PERSONALIZACIÓN TOTAL </h2>
-                        <p> Flammas te permitirá personalizar tu monitorización de servidores y cualquier proceso, servicio o aplicación, reutilizando scripts propios o facilitando el despliegue de nuevos. </p>
+                        <h2>{t("solucionesInfraestructura.caracteristicasEspeciales.c3_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.caracteristicasEspeciales.c3_texto")}</p>
                     </div>
                 </div>
             </section>
             <section className="container-fluid contenedor-cuarta-infra">
-                <header> CARACTERÍSTICAS TÉCNICAS </header>
+                <header> {t("solucionesInfraestructura.caracteristicasTecnicas.header")} </header>
                 <div className="row">
                     <div className="col-12 col-sm-6 col-xl-6 primera-col">
                         <ComponenteMiniInfra
                             nombreIcono="building"
-                            texto="Alta escalabilidad, para gestionar miles de servidores por medio de una única consola, nuestro Command Center™"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.izquierda.texto1")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="box"
-                            texto="Agentes paquetizados para instalación desatendida"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.izquierda.texto2")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="arrow-repeat"
-                            texto="Sistema de provisión automática y centralizada basada en reglas"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.izquierda.texto3")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="graph-up"
-                            texto="API/CLI para automatización en provisión y configuración posterior"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.izquierda.texto4")}
                         />
                     </div>
                     <div className="col-12 col-sm-6 col-xl-6 segunda-col">
                         <ComponenteMiniInfra
                             nombreIcono="cloud"
-                            texto="Monitorización integrada de Kubernetes, Vmware, AWS, Azure y Google Cloud"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.derecha.texto1")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="pencil"
-                            texto="Personalización OEM en instaladores e interfaz"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.derecha.texto2")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="diagram-2"
-                            texto="Proxys directos e inversos en el caso de que su topología sea compleja"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.derecha.texto3")}
                         />
                         <ComponenteMiniInfra
                             nombreIcono="cloud-arrow-up"
-                            texto="HA en toda la plataforma"
+                            texto={t("solucionesInfraestructura.caracteristicasTecnicas.derecha.texto4")}
                         />
                     </div>
                 </div>
             </section>
             <ComponenteEncabezadoSoluciones
-                titulo="MONITORIZACIÓN DE EXPERIENCIA DE USUARIO"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Detecta y analiza problemas que afectan al usuario en cualquier punto de tu stack tecnológico."
+                titulo={t("solucionesInfraestructura.usuario.encabezado.titulo")}
+                subtitulo={t("solucionesInfraestructura.usuario.encabezado.subtitulo")}
+                texto={t("solucionesInfraestructura.usuario.encabezado.texto")}
             />
             <section className="container-fluid contenedor-cartas-infra">
                 <ComponenteMinisLogs
                     nombreIcono="geo-alt"
-                    texto="Ubicaciones múltiples, podrá lanzar diferentes pruebas desde diferentes lugares geográficos."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto1")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="clipboard-check"
-                    texto="Podrás crear la prueba de experiencia de usuario a través de un grabador, sin tener que codificar nada."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto2")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="eye"
-                    texto="Visibilidad end-to-end, reduciendo MTTR y asegurando una SLA del 100%."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto3")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="bar-chart-line"
-                    texto="Capturas de pantalla, al encontrar un fallo en la transacción para saber exactamente cómo lo ve el usuario, independientemente del código."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto4")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="pencil"
-                    texto="Mejora el rendimiento, identificando las métricas clave de rendimiento para la carga de páginas, interacción de usuario y descarga de elementos. Detecta cuellos de botella y problemas de latencia."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto5")}
                 />
                 <ComponenteMinisLogs
                     nombreIcono="arrow-repeat"
-                    texto="Compatible con cualquier tecnología, al realizar toda la monitorización utilizando navegadores estandarizados. Como un usuario más."
+                    texto={t("solucionesInfraestructura.usuario.minis.texto6")}
                 />
             </section >
             <section className="container-fluid contenedor-segunda-usu">
-                <header> ¿POR QUÉ ELEGIR FLAMMAS TU MONITORIZACIÓN DE EXPERIENCIA DE USUARIO? </header>
+                <header> {t("solucionesInfraestructura.usuario.razones.header")} </header>
                 <div className="container sub-contenedor-usu">
                     <div>
                         <i className="bi bi-broadcast"></i>
-                        <h2> ¿Utilizas Selenium u otros programas de monitorización UX? </h2>
-                        <p> Flammas es flexible y se adapta a cualquier tecnología del mercado, pudiendo integrar toda la monitorización en un solo punto, podemos reutilizar tus scrips actuales e integrarlos. </p>
+                        <h2>{t("solucionesInfraestructura.usuario.razones.r1_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.usuario.razones.r1_texto")}</p>
                     </div>
                     <div>
                         <i className="bi bi-robot"></i>
-                        <h2> Automatización todo-en-uno </h2>
-                        <p> Si dispones de un sistema de automatización de tareas, Flammas UX te permitirá ejecutar los scripts que hayas desarrollado e implementado, para monitorizar su ejecución. </p>
+                        <h2>{t("solucionesInfraestructura.usuario.razones.r2_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.usuario.razones.r2_texto")}</p>
                     </div>
                     <div>
                         <i className="bi bi-person-circle"></i>
-                        <h2> End User Experience controlado </h2>
-                        <p> Podrá monitorizar el rendimiento de tráfico de datos, así como los tiempos de respuesta de su aplicación, además de solventar cualquier problema antes que tus clientes. </p>
+                        <h2>{t("solucionesInfraestructura.usuario.razones.r3_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.usuario.razones.r3_texto")}</p>
                     </div>
                     <div>
                         <i className="bi bi-lightbulb"></i>
-                        <h2> Licencia sencilla de entender </h2>
-                        <p> La monitorización de experiencia de usuario está incluida de serie en la licencia estándar Enterprise. No hagas cábalas, y disfruta sin límites de la monitorización extremo a extremo que ofrecemos. </p>
+                        <h2>{t("solucionesInfraestructura.usuario.razones.r4_titulo")}</h2>
+                        <p>{t("solucionesInfraestructura.usuario.razones.r4_texto")}</p>
                     </div>
                 </div>
             </section>
             <section className="container-fluid contenedor-animables">
-                <header> La solución de supervisión total para la observabilidad total </header>
+                <header>{t("soluciones1.monitorizacion1.observabilidad.header")}</header>
                 <div className="container contenedor-cartas-animables">
                     <ComponenteCartaAnimable
                         nombreIcono="bi-person-lines-fill"
-                        titulo="Experiencia de usuario"
-                        subtitulo="Experencia de usuario"
-                        texto="Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-graph-up"
-                        titulo="Monitorización de aplicaciones (APM)"
-                        subtitulo="Monitorización de aplicaciones (APM)"
-                        texto="Supervisa tus aplicaciones empresariales a todo nivel y obten todos los datos APM que necesites."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-display"
-                        titulo="Monitorización de entornos virtuales"
-                        subtitulo="Monitorización de entornos virtuales"
-                        texto="Optimiza tu infraestructura ya sea en instalaciones hibridas, virtuales o cloud."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-exclamation-diamond-fill"
-                        titulo="Gestión de incidencias"
-                        subtitulo="Gestión de incidencias"
-                        texto="Integra el sistema de ticketing de tu infraestructura en Flammas."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-joystick"
-                        titulo="Control Remoto"
-                        subtitulo="Control Remoto"
-                        texto="Todos tus dispositivos controlados por una herramienta accesible con solo un navegador web."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-headset"
-                        titulo="Gestión de servicio y asistencia"
-                        subtitulo="Gestión de servicio y asistencia"
-                        texto="Mida y supervise su pila de TI para detectar resolver problemas en tu infraestructura de TI."
-                    />
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_texto")}
+                    />                    
                     <ComponenteCartaAnimable
                         nombreIcono="bi-cpu-fill"
-                        titulo="Monitorización mainframe"
-                        subtitulo="Monitorización mainframe"
-                        texto="Dispón de una única plataforma para recoger y mostrar la información venga de donde venga."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-ethernet"
-                        titulo="Monitorización de redes"
-                        subtitulo="Monitorización de redes"
-                        texto="Observa toda tu información en conjunto, incluso cuando tengas miles de dispositivos que supervisar."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-card-checklist"
-                        titulo="Inventario TI"
-                        subtitulo="Inventario TI"
-                        texto="Recoge y supervisa el estado de todos los datos de tu infraestructura informática en una sola herramienta."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-file-earmark-text"
-                        titulo="Recolección de logs"
-                        subtitulo="Recolección de logs"
-                        texto="Recoge, visualiza y centraliza todos tus registros en un único punto."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_texto")}
                     />
                 </div>
             </section>
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("soluciones1.monitorizacion1.quintaSeccion.titulo")}
+                subtitulo={t("soluciones1.monitorizacion1.quintaSeccion.subtitulo")}
+                texto1= {t("soluciones1.monitorizacion1.quintaSeccion.texto1")}
+                texto2={t("soluciones1.monitorizacion1.quintaSeccion.texto2")}
             />
         </>
     )
 }
 export function ComponenteSolucionesCloud() {
+    const { t } = useTranslation();
+    
     return (
         <>
             <ComponenteEncabezadoSoluciones
-                titulo="MONITORIZACIÓN CLOUD Y VIRTUAL"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
+                titulo={t("solucionesCloud.encabezado1.titulo")}
+                subtitulo={t("solucionesCloud.encabezado1.subtitulo")}
+                texto={t("solucionesCloud.encabezado1.texto")}
             />
             <ComponentetxtDerechoSoluciones
-                titulo="Monitorización centralizada de entornos híbridos"
-                texto="Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción."
-                texto1="Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
+                titulo={t("solucionesCloud.txtDerecho1.titulo")}
+                texto={t("solucionesCloud.txtDerecho1.texto")}
+                texto1={t("solucionesCloud.txtDerecho1.texto1")}
                 imagen="40.png"
             />
             <ComponentetxtIzquierdaSoluciones
-                titulo="Entornos Cloud"
-                texto="Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor."
+                titulo={t("solucionesCloud.txtIzquierda1.titulo")}
+                texto={t("solucionesCloud.txtIzquierda1.texto")}
                 imagen="47.png"
             />
             <ComponentetxtDerechoSoluciones
-                titulo="Toma el control de los datos de tus sistemas"
-                texto="Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo."
-                texto1="Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
+                titulo={t("solucionesCloud.txtDerecho2.titulo")}
+                texto={t("solucionesCloud.txtDerecho2.texto")}
+                texto1={t("solucionesCloud.txtDerecho2.texto1")}
                 imagen="48.png"
             />
             <section className="container-fluid bg-white contenedorFondoBlanco">
                 <div className="row">
                     <div className="col-12 col-sm-6 col-xl-6 info text-white">
-                        <h2 className="text-start"> <span className="text-white">INTEGRACIÓN</span> LAAS </h2>
-                        <p> En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.</p>
-                        <p>Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas.</p>
+                        <h2 className="text-start"> <span className="text-white">{t("solucionesCloud.integracion.titulo")} </span> {t("solucionesCloud.integracion.titulo2")}</h2>
+                        <p> {t("solucionesCloud.integracion.texto1")}</p>
+                        <p>{t("solucionesCloud.integracion.texto2")}</p>
                     </div>
                     <div className="col-12 col-sm-6 col-xl-6 imagen">
                         <img src={require(`../images/49.png.png`)} alt="Imagen" />
@@ -681,113 +684,113 @@ export function ComponenteSolucionesCloud() {
                 </div>
             </section>
             <ComponenteInfoCentral
-                titulo="INFRAESTRUCTURA DE VIRTUALIZACIÓN"
-                texto1="Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información."
-                texto2="También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
+                titulo={t("solucionesCloud.infraestructura.titulo")}
+                texto1={t("solucionesCloud.infraestructura.texto1")}
+                texto2={t("solucionesCloud.infraestructura.texto2")}
             />
             <ComponenteEncabezadoSoluciones
-                titulo="Monitorización Continua de la Seguridad del Sistema"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
+                titulo={t("solucionesCloud.encabezado2.titulo")}
+                subtitulo={t("solucionesCloud.encabezado2.subtitulo")}
+                texto={t("solucionesCloud.encabezado2.texto")}
             />
             <section className="container-fluid seccion-segunda">
                 <div className='container contenedor-cartas'>
                     <MiniComponentesSegundaSeccion
                         imagen="1"
-                        titulo="MONITORIZACIÓN DEL HARDENING"
-                        texto="Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
+                        titulo={t("solucionesCloud.miniComponentes.hardening.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.hardening.texto")}
                     />
                     <MiniComponentesSegundaSeccion
                         imagen="2"
-                        titulo="MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE"
-                        texto="Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
+                        titulo={t("solucionesCloud.miniComponentes.vulnerabilidades.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.vulnerabilidades.texto")}
                     />
                     <MiniComponentesSegundaSeccion
                         imagen="3"
-                        titulo="FLEXIBILIDAD EN EL INVENTARIO"
-                        texto="Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Flammas puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
+                        titulo={t("solucionesCloud.miniComponentes.inventario.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.inventario.texto")}
                     />
                     <MiniComponentesSegundaSeccion
                         imagen="4"
-                        titulo="MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD"
-                        texto="Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
+                        titulo={t("solucionesCloud.miniComponentes.infraestructuraSeguridad.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.infraestructuraSeguridad.texto")}
                     />
                     <MiniComponentesSegundaSeccion
                         imagen="5"
-                        titulo="MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES"
-                        texto="Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
+                        titulo={t("solucionesCloud.miniComponentes.servidores.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.servidores.texto")}
                     />
                     <MiniComponentesSegundaSeccion
                         imagen="6"
-                        titulo="ALERTAS PROACTIVAS"
-                        texto="No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
+                        titulo={t("solucionesCloud.miniComponentes.alertas.titulo")}
+                        texto={t("solucionesCloud.miniComponentes.alertas.texto")}
                     />
                 </div>
             </section>
             <section className="container-fluid seccion-viñetas-animadas">
                 <ComponenteViñetaAnimada
                     nombreImagen="58.png"
-                    titulo="INVENTARIO Y CONTROL DE ACTIVOS HARDWARE Y SOFTWARE"
-                    texto="Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere."
+                    titulo={t("solucionesCloud.viñetas.inventario.titulo")}
+                    texto={t("solucionesCloud.viñetas.inventario.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="59.png"
-                    titulo="Inventario y Control de Dispositivos"
-                    texto="En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
+                    titulo={t("solucionesCloud.viñetas.dispositivos.titulo")}
+                    texto={t("solucionesCloud.viñetas.dispositivos.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="60.png"
-                    titulo="Gestión de Vulnerabilidades"
-                    texto="Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad."
+                    titulo={t("solucionesCloud.viñetas.gestionVulnerabilidades.titulo")}
+                    texto={t("solucionesCloud.viñetas.gestionVulnerabilidades.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="61.png"
-                    titulo="Uso Controlado de Privilegios Administrativos"
-                    texto="Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos."
+                    titulo={t("solucionesCloud.viñetas.privilegios.titulo")}
+                    texto={t("solucionesCloud.viñetas.privilegios.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="62.png"
-                    titulo="Configuración Segura de Hardware y Software"
-                    texto="Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables."
+                    titulo={t("solucionesCloud.viñetas.configuracion.titulo")}
+                    texto={t("solucionesCloud.viñetas.configuracion.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="63.png"
-                    titulo="Mantenimiento, Supervisión y Análisis de Logs de Auditoría"
-                    texto="Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad."
+                    titulo={t("solucionesCloud.viñetas.logs.titulo")}
+                    texto={t("solucionesCloud.viñetas.logs.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="64.png"
-                    titulo="Defensas contra Malware"
-                    texto="Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques."
+                    titulo={t("solucionesCloud.viñetas.malware.titulo")}
+                    texto={t("solucionesCloud.viñetas.malware.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="65.png"
-                    titulo="Protección del Correo Electrónico y los Navegadores Web"
-                    texto="Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red."
+                    titulo={t("solucionesCloud.viñetas.correo.titulo")}
+                    texto={t("solucionesCloud.viñetas.correo.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="66.png"
-                    titulo="Capacidades de Recuperación de Datos"
-                    texto="Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos."
+                    titulo={t("solucionesCloud.viñetas.recuperacion.titulo")}
+                    texto={t("solucionesCloud.viñetas.recuperacion.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="67.png"
-                    titulo="Defensa de Límites y Protección de Datos"
-                    texto="Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos."
+                    titulo={t("solucionesCloud.viñetas.defensa.titulo")}
+                    texto={t("solucionesCloud.viñetas.defensa.texto")}
                 />
                 <ComponenteViñetaAnimada
                     nombreImagen="68.png"
-                    titulo="Supervisión y Control de Cuentas"
-                    texto="Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos."
+                    titulo={t("solucionesCloud.viñetas.cuentas.titulo")}
+                    texto={t("solucionesCloud.viñetas.cuentas.texto")}
                 />
             </section>
             <section className="container-fluid seccionImg">
                 <div></div>
             </section>
             <ComponentetxtDerechoSoluciones
-                titulo="LA BASE DE DATOS DE VULNERABILIDADES MÁS COMPLETA"
-                texto="Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar."
-                texto1="Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
+                titulo={t("solucionesCloud.vulnerabilidades.titulo")}
+                texto={t("solucionesCloud.vulnerabilidades.texto")}
+                texto1={t("solucionesCloud.vulnerabilidades.texto1")}
                 imagen="70.png"
             />
             <section className="container-fluid bg-white contenedorIMGTopBot">
@@ -796,16 +799,16 @@ export function ComponenteSolucionesCloud() {
                         <img src={require(`../images/71.png.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info text-dark">
-                        <h2 className="text-center"> <span className="text-dark">NUESTRO</span> ROADMAP <span className="text-dark">DE SEGURIDAD</span></h2>
-                        <p className="p-orange fw-bold">Estamos construyendo una herramienta para controlarlo todo.</p>
-                        <p> Flammas es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.</p>
-                        <p>Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.</p>
+                        <h2 className="text-center"> <span className="text-dark"> {t("solucionesCloud.roadmap.titulo1")} </span> {t("solucionesCloud.roadmap.titulo2")}  <span className="text-dark"> {t("solucionesCloud.roadmap.titulo3")} </span></h2>
+                        <p className="p-orange fw-bold">{t("solucionesCloud.roadmap.texto1")}</p>
+                        <p> {t("solucionesCloud.roadmap.texto2")}</p>
+                        <p>{t("solucionesCloud.roadmap.texto3")}</p>
                     </div>
                     <div className="col-12 container-fluid imagen-fullwidth">
 
                     </div>
                     <div className="container-fluid info text-dark">
-                        <p className="p-orange fw-bold">Flammas será verdaderamente, la herramienta única para controlarlo todo.</p>
+                        <p className="p-orange fw-bold">{t("solucionesCloud.roadmap.texto4")}</p>
                     </div>
                 </div>
             </section>
@@ -815,81 +818,81 @@ export function ComponenteSolucionesCloud() {
                         <img src={require(`../images/73.png.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info2 text-black">
-                        <h2 className="text-center"> <span className="text-black">SEGURIDAD QUE PUEDES</span> VER Y VERIFICAR</h2>
-                        <p>Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno.</p>
+                        <h2 className="text-center"> <span className="text-black">{t("solucionesCloud.seguridadVerificable.titulo")}</span> {t("solucionesCloud.seguridadVerificable.titulo2")}</h2>
+                        <p>{t("solucionesCloud.seguridadVerificable.texto")}</p>
                     </div>
                 </div>
             </section>
             <section className="container-fluid contenedor-animables">
-                <header> La solución de supervisión total para la observabilidad total </header>
+                <header>{t("soluciones1.monitorizacion1.observabilidad.header")}</header>
                 <div className="container contenedor-cartas-animables">
                     <ComponenteCartaAnimable
                         nombreIcono="bi-person-lines-fill"
-                        titulo="Experiencia de usuario"
-                        subtitulo="Experencia de usuario"
-                        texto="Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c1_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-graph-up"
-                        titulo="Monitorización de aplicaciones (APM)"
-                        subtitulo="Monitorización de aplicaciones (APM)"
-                        texto="Supervisa tus aplicaciones empresariales a todo nivel y obten todos los datos APM que necesites."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c2_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-display"
-                        titulo="Monitorización de entornos virtuales"
-                        subtitulo="Monitorización de entornos virtuales"
-                        texto="Optimiza tu infraestructura ya sea en instalaciones hibridas, virtuales o cloud."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c3_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-exclamation-diamond-fill"
-                        titulo="Gestión de incidencias"
-                        subtitulo="Gestión de incidencias"
-                        texto="Integra el sistema de ticketing de tu infraestructura en Flammas."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c4_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-joystick"
-                        titulo="Control Remoto"
-                        subtitulo="Control Remoto"
-                        texto="Todos tus dispositivos controlados por una herramienta accesible con solo un navegador web."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c5_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-headset"
-                        titulo="Gestión de servicio y asistencia"
-                        subtitulo="Gestión de servicio y asistencia"
-                        texto="Mida y supervise su pila de TI para detectar resolver problemas en tu infraestructura de TI."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c6_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-cpu-fill"
-                        titulo="Monitorización mainframe"
-                        subtitulo="Monitorización mainframe"
-                        texto="Dispón de una única plataforma para recoger y mostrar la información venga de donde venga."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c7_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-ethernet"
-                        titulo="Monitorización de redes"
-                        subtitulo="Monitorización de redes"
-                        texto="Observa toda tu información en conjunto, incluso cuando tengas miles de dispositivos que supervisar."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c8_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-card-checklist"
-                        titulo="Inventario TI"
-                        subtitulo="Inventario TI"
-                        texto="Recoge y supervisa el estado de todos los datos de tu infraestructura informática en una sola herramienta."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c9_texto")}
                     />
                     <ComponenteCartaAnimable
                         nombreIcono="bi-file-earmark-text"
-                        titulo="Recolección de logs"
-                        subtitulo="Recolección de logs"
-                        texto="Recoge, visualiza y centraliza todos tus registros en un único punto."
+                        titulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_titulo")}
+                        subtitulo={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_subtitulo")}
+                        texto={t("soluciones1.monitorizacion1.observabilidad.cartas.c10_texto")}
                     />
                 </div>
             </section>
             <MiniComponenteQuintaSeccion
-                titulo="+500 INTEGRACIONES:"
-                subtitulo="EXPANDE EL PODER DE TU MONITORIZACIÓN"
-                texto1="Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo. Proveemos soluciones prácticas a problemas cotidianos a través de plugins de aplicaciones empresariales en colaboración con nuestros clientes. Contamos con integraciones con tecnologías actuales, utilizadas en entornos de producción en todo el mundo."
-                texto2="Apoyamos tecnologías emergentes, establecidas e incluso sistemas heredados."
+                titulo={t("soluciones1.monitorizacion1.quintaSeccion.titulo")}
+                subtitulo={t("soluciones1.monitorizacion1.quintaSeccion.subtitulo")}
+                texto1= {t("soluciones1.monitorizacion1.quintaSeccion.texto1")}
+                texto2={t("soluciones1.monitorizacion1.quintaSeccion.texto2")}
             />
         </>
     )

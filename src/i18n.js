@@ -619,7 +619,7 @@ const resources = {
             header:
               "La solución de supervisión total para la observabilidad total",
             cartas: {
-              titulo:"Expericia de usuario",
+              titulo: "Expericia de usuario",
               c1_subtitulo: "Experiencia de usuario",
               c1_texto:
                 "Comprueba si tu aplicación como se espera. Detecta el fallo antes que lo hagan tus clientes.",
@@ -637,7 +637,7 @@ const resources = {
                 "Integra el sistema de ticketing de tu infraestructura en Flammas.",
               c5_titulo: "Control Remoto",
               c5_subtitulo: "Control Remoto",
-              
+
               c5_texto:
                 "Todos tus dispositivos controlados por una herramienta accesible con solo un navegador web.",
               c6_titulo: "Gestión de servicio y asistencia",
@@ -672,6 +672,231 @@ const resources = {
           },
         },
       },
+
+      //****SOLUCIONES-INFRAESTRUCTURA*****/
+      solucionesInfraestructura: {
+        encabezado: {
+          titulo: "MONITORIZACIÓN DE INFRAESTRUCTURA",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto:
+            "Flammas no es un puzzle de distintas soluciones integradas de forma superficial, cubrimos desde el hardware hasta las aplicaciones de usuario.",
+        },
+        minis: {
+          texto1:
+            "Gracias a que todos los datos empleados se integran en tiempo real y su potente capacidad de histórico para ver gráficas de varios meses.",
+          texto2:
+            "Dashboard en tiempo real, informes personalizables al milímetro y un sistema de notificaciones flexible que proporcionan una visión de 360º.",
+          texto3:
+            "Sistema operativo base, aplicaciones, bases de datos, logs, almacenamiento, redes, experiencia de usuario. Todo en una única plataforma.",
+          texto4: "integradas en nuestra librería de tecnología.",
+          texto5:
+            "100% multitenant, podrá dar servicio a diferentes empresas con la misma instancia.",
+          texto6:
+            "Mediante plantillas, despliegue de plugins y una configuración remota integrada en la interfaz gráfica.",
+        },
+        caracteristicasEspeciales: {
+          header: "CARACTERÍSTICAS ESPECIALES",
+          c1_titulo: "MONITORIZACIÓN SIN AGENTES",
+          c1_texto:
+            "Aunque te recomendamos instalar un agente local, también podrás descubrir tus servidores y obtener información remotamente de ellos, sin necesidad de instalar agentes.",
+          c2_titulo: "MONITORIZACIÓN A BAJO NIVEL",
+          c2_texto:
+            "Los agentes de Flammas, como el resto de nuestra tecnología, son un desarrollo propio, no derivado de terceros. Pueden obtener la información directamente de la fuente, usando llamadas nativas al sistema operativo, sin conectores de terceros o artefactos pesados. Su huella en el sistema es mínima.",
+          c3_titulo: "PERSONALIZACIÓN TOTAL",
+          c3_texto:
+            "Flammas te permitirá personalizar tu monitorización de servidores y cualquier proceso, servicio o aplicación, reutilizando scripts propios o facilitando el despliegue de nuevos.",
+        },
+        caracteristicasTecnicas: {
+          header: "CARACTERÍSTICAS TÉCNICAS",
+          izquierda: {
+            texto1:
+              "Alta escalabilidad, para gestionar miles de servidores por medio de una única consola, nuestro Command Center™",
+            texto2: "Agentes paquetizados para instalación desatendida",
+            texto3:
+              "Sistema de provisión automática y centralizada basada en reglas",
+            texto4:
+              "API/CLI para automatización en provisión y configuración posterior",
+          },
+          derecha: {
+            texto1:
+              "Monitorización integrada de Kubernetes, Vmware, AWS, Azure y Google Cloud",
+            texto2: "Personalización OEM en instaladores e interfaz",
+            texto3:
+              "Proxys directos e inversos en el caso de que su topología sea compleja",
+            texto4: "HA en toda la plataforma",
+          },
+        },
+        usuario: {
+          encabezado: {
+            titulo: "MONITORIZACIÓN DE EXPERIENCIA DE USUARIO",
+            subtitulo: "SOLUCIONES DE FLAMMAS",
+            texto:
+              "Detecta y analiza problemas que afectan al usuario en cualquier punto de tu stack tecnológico.",
+          },
+          minis: {
+            texto1:
+              "Ubicaciones múltiples, podrá lanzar diferentes pruebas desde diferentes lugares geográficos.",
+            texto2:
+              "Podrás crear la prueba de experiencia de usuario a través de un grabador, sin tener que codificar nada.",
+            texto3:
+              "Visibilidad end-to-end, reduciendo MTTR y asegurando una SLA del 100%.",
+            texto4:
+              "Capturas de pantalla, al encontrar un fallo en la transacción para saber exactamente cómo lo ve el usuario, independientemente del código.",
+            texto5:
+              "Mejora el rendimiento, identificando las métricas clave de rendimiento para la carga de páginas, interacción de usuario y descarga de elementos. Detecta cuellos de botella y problemas de latencia.",
+            texto6:
+              "Compatible con cualquier tecnología, al realizar toda la monitorización utilizando navegadores estandarizados. Como un usuario más.",
+          },
+          razones: {
+            header:
+              "¿POR QUÉ ELEGIR FLAMMAS TU MONITORIZACIÓN DE EXPERIENCIA DE USUARIO?",
+            r1_titulo:
+              "¿Utilizas Selenium u otros programas de monitorización UX?",
+            r1_texto:
+              "Flammas es flexible y se adapta a cualquier tecnología del mercado, pudiendo integrar toda la monitorización en un solo punto, podemos reutilizar tus scrips actuales e integrarlos.",
+            r2_titulo: "Automatización todo-en-uno",
+            r2_texto:
+              "Si dispones de un sistema de automatización de tareas, Flammas UX te permitirá ejecutar los scripts que hayas desarrollado e implementado, para monitorizar su ejecución.",
+            r3_titulo: "End User Experience controlado",
+            r3_texto:
+              "Podrá monitorizar el rendimiento de tráfico de datos, así como los tiempos de respuesta de su aplicación, además de solventar cualquier problema antes que tus clientes.",
+            r4_titulo: "Licencia sencilla de entender",
+            r4_texto:
+              "La monitorización de experiencia de usuario está incluida de serie en la licencia estándar Enterprise. No hagas cábalas, y disfruta sin límites de la monitorización extremo a extremo que ofrecemos.",
+          },
+        },
+      },
+
+      //****SOLUCIONES-CLOUD*****/
+      solucionesCloud: {
+        encabezado1: {
+          titulo: "MONITORIZACIÓN CLOUD Y VIRTUAL",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto: "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
+        },
+        txtDerecho1: {
+          titulo: "Monitorización centralizada de entornos híbridos",
+          texto: "Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción.",
+          texto1: "Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
+        },
+        txtIzquierda1: {
+          titulo: "Entornos Cloud",
+          texto: "Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor."
+        },
+        txtDerecho2: {
+          titulo: "Toma el control de los datos de tus sistemas",
+          texto: "Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo.",
+          texto1: "Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
+        },
+        integracion: {
+          titulo: "INTEGRACIÓN ",
+          titulo2: "LAAS",
+          texto1: "En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.",
+          texto2: "Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas."
+        },
+        infraestructura: {
+          titulo: "INFRAESTRUCTURA DE VIRTUALIZACIÓN",
+          texto1: "Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información.",
+          texto2: "También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
+        },
+        encabezado2: {
+          titulo: "Monitorización Continua de la Seguridad del Sistema",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto: "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
+        },
+        miniComponentes: {
+          hardening: {
+            titulo: "MONITORIZACIÓN DEL HARDENING",
+            texto: "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
+          },
+          vulnerabilidades: {
+            titulo: "MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE",
+            texto: "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
+          },
+          inventario: {
+            titulo: "FLEXIBILIDAD EN EL INVENTARIO",
+            texto: "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Flammas puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
+          },
+          infraestructuraSeguridad: {
+            titulo: "MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD",
+            texto: "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
+          },
+          servidores: {
+            titulo: "MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES",
+            texto: "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
+          },
+          alertas: {
+            titulo: "ALERTAS PROACTIVAS",
+            texto: "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
+          }
+        },
+        viñetas: {
+          inventario: {
+            titulo: "INVENTARIO Y CONTROL DE ACTIVOS HARDWARE Y SOFTWARE",
+            texto: "Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere."
+          },
+          dispositivos: {
+            titulo: "Inventario y Control de Dispositivos",
+            texto: "En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
+          },
+          gestionVulnerabilidades: {
+            titulo: "Gestión de Vulnerabilidades",
+            texto: "Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad."
+          },
+          privilegios: {
+            titulo: "Uso Controlado de Privilegios Administrativos",
+            texto: "Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos."
+          },
+          configuracion: {
+            titulo: "Configuración Segura de Hardware y Software",
+            texto: "Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables."
+          },
+          logs: {
+            titulo: "Mantenimiento, Supervisión y Análisis de Logs de Auditoría",
+            texto: "Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad."
+          },
+          malware: {
+            titulo: "Defensas contra Malware",
+            texto: "Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques."
+          },
+          correo: {
+            titulo: "Protección del Correo Electrónico y los Navegadores Web",
+            texto: "Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red."
+          },
+          recuperacion: {
+            titulo: "Capacidades de Recuperación de Datos",
+            texto: "Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos."
+          },
+          defensa: {
+            titulo: "Defensa de Límites y Protección de Datos",
+            texto: "Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos."
+          },
+          cuentas: {
+            titulo: "Supervisión y Control de Cuentas",
+            texto: "Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos."
+          }
+        },
+        vulnerabilidades: {
+          titulo: "LA BASE DE DATOS DE VULNERABILIDADES MÁS COMPLETA",
+          texto: "Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar.",
+          texto1: "Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
+        },
+        roadmap: {
+          titulo1: "NUESTRO",
+          titulo2: "ROADMAP",
+          titulo3: "DE SEGURIDAD",
+          texto1: "Estamos construyendo una herramienta para controlarlo todo.",
+          texto2: "Flammas es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.",
+          texto3: "Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.",
+          texto4: "Flammas será verdaderamente, la herramienta única para controlarlo todo."
+        },
+        seguridadVerificable: {
+          titulo: "SEGURIDAD QUE PUEDES",
+          titulo2: "VER Y VERIFICAR",
+          texto: "Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno."
+        }
+      }
+    
     },
   },
 
@@ -1207,129 +1432,365 @@ const resources = {
       },
       // soluciones - monitorizacion
       soluciones1: {
-          monitorizacion1: {
+        monitorizacion1: {
+          encabezado: {
+            subtitulo: "Flammas Solutions",
+            titulo: "Network Monitoring",
+            texto:
+              "Flammas lets you discover all your network devices and represent their topology on maps that connect interfaces and visualize your network’s structure in detail. Go further by unifying device management with complete observability of your network.",
+          },
+          seccionPrincipal: {
+            titulo: "What does network monitoring bring to your company?",
+            parrafo1:
+              "Nowadays, networks are essential to the business of many companies and organizations. Interruptions or performance loss can have serious consequences, such as service outages or productivity drops. Your system must be able to constantly monitor the status of your networks and their components.",
+            parrafo2:
+              "That’s why network monitoring is fundamental to prevent incidents or help solve them as quickly as possible when they are unavoidable.",
+          },
+          info: {
+            izquierda1_titulo: "From the basics to the unimaginable",
+            izquierda1_texto:
+              "Bandwidth, packet loss, latency, availability, number of connections. Regardless of origin: routers, APs, switches, firewalls, servers, workstations, IoT. If it has an IP, Flammas can capture the data. We are not limited only to SNMP or agent-based data collection.",
+            derecha1_titulo: "IP Management",
+            derecha1_texto:
+              "Our IPAM system allows you to manage networks, supernets and perform subnetting. You can manage physical locations, reserve IPs, and have an IP map as well as IP usage reports, and alerts when you run out of available IPs. It can integrate with a Microsoft DHCP server.",
+            izquierda2_titulo: "Real-time network analysis",
+            izquierda2_texto:
+              "Netflow is used to obtain real-time statistics from your network devices (routers, switches, firewalls) and provide usage reports, bottlenecks, or help diagnose problems.",
+            derecha2_titulo: "High scalability",
+            derecha2_texto:
+              "Virtually unlimited scalability thanks to Command Center, and our Satellite Servers that allow horizontal scaling and generate tens of thousands of network queries per second in a distributed way. We have clients with more than 100,000 network devices on a single instance.",
+            izquierda3_titulo: "Reports and dashboards",
+            izquierda3_texto:
+              "Flammas collects all kinds of data and offers you a report editor so you can generate them in a personalized way: top N, detailed charts at any time scale, SLA reports, availability reports, timelines, and dozens more.",
+            derecha3_titulo: "Configuration management",
+            derecha3_texto:
+              "Flammas can collect your devices’ configurations, detect when (and where) they change, and recover backups. It can also deploy changes massively on dozens of devices (such as adding a VLAN).",
+          },
+          funcionalidades: {
+            header: "Advanced Features",
+            f1_titulo: "Distributed environments",
+            f1_texto:
+              "Discover and monitor remote devices on client networks autonomously by deploying a simple probe installable on Windows, Raspberrys or small virtual machines. Our satellite servers work autonomously and silently and are capable of managing hundreds of devices.",
+            f2_titulo: "No-surprise licensing",
+            f2_texto:
+              "Know exactly what it will cost, with no surprises, no add-ons, no extra modules. Plan your environment’s growth accurately from day one. In Flammas all included means everything is covered in the initial license cost.",
+            f3_titulo: "Security monitoring",
+            f3_texto:
+              "Control at all times what versions, models and IPs you have. Not only for network devices such as switches, routers, but also firewalls. Set alerts if vulnerable models are used. Send all your systems’ logs to our log console and create correlation alerts.",
+            f4_titulo: "Artificial intelligence",
+            f4_texto:
+              "Let failure thresholds configure themselves automatically, based on everyday usage. Create alerts based on projected resource usage. Generate useful reports to plan your network usage.",
+          },
+          logs: {
             encabezado: {
               subtitulo: "Flammas Solutions",
-              titulo: "Network Monitoring",
+              titulo: "Log Management",
               texto:
-                "Flammas lets you discover all your network devices and represent their topology on maps that connect interfaces and visualize your network’s structure in detail. Go further by unifying device management with complete observability of your network."
+                "Imagine being able to search for information in logs across all your monitored systems with a single click. If you already have a Flammas agent installed on those machines, why not collect logs as well?",
             },
-            seccionPrincipal: {
-              titulo: "What does network monitoring bring to your company?",
-              parrafo1:
-                "Nowadays, networks are essential to the business of many companies and organizations. Interruptions or performance loss can have serious consequences, such as service outages or productivity drops. Your system must be able to constantly monitor the status of your networks and their components.",
-              parrafo2:
-                "That’s why network monitoring is fundamental to prevent incidents or help solve them as quickly as possible when they are unavoidable."
+            izquierda_titulo: "Audit and security (HIPAA, GDPR, ISO 27001)",
+            izquierda_texto:
+              "The last thing you want is to fail an audit or have to disclose a possible data breach because you didn’t collect the necessary data for an investigation or lack the required data to figure out what happened. If you already monitor those systems, store their logs.",
+            cartitas1_titulo: "Cost-effective storage for your logs",
+            cartitas1_texto:
+              "The type of storage used to save logs in Flammas is very affordable compared to other similar tools. With Flammas you’ll save money on long-term storage. The Enterprise license already covers this functionality; you’ll just need to assign more storage on your servers.",
+            cartitas2_titulo: "Simple and easy information search",
+            cartitas2_texto:
+              "You don’t need to be a data scientist or normalize the information in a complicated template system. Search strings or patterns with regular expressions and save your searches. As simple as it sounds.",
+            minis: {
+              texto1: "Forget about formats, parsing or strict definitions.",
+              texto2: "Compatible with Linux, Windows and Unix alike.",
+              texto3:
+                "Compatible with any plain text log from any application.",
+              texto4:
+                "Search through your log history with intuitive and simple queries.",
+              texto5:
+                "Easy extraction. No need to install intermediate software or redirect logs over the network.",
+              texto6:
+                "Investigate records with intuitive filters and fast performance, visualize them in beautiful Kibana dashboards.",
+              texto7:
+                "Your data will always be yours. 100% on-premise local storage.",
+              texto8:
+                "Scale as needed. You can increase storage capacity as required.",
             },
-            info: {
-              izquierda1_titulo: "From the basics to the unimaginable",
-              izquierda1_texto:
-                "Bandwidth, packet loss, latency, availability, number of connections. Regardless of origin: routers, APs, switches, firewalls, servers, workstations, IoT. If it has an IP, Flammas can capture the data. We are not limited only to SNMP or agent-based data collection.",
-              derecha1_titulo: "IP Management",
-              derecha1_texto:
-                "Our IPAM system allows you to manage networks, supernets and perform subnetting. You can manage physical locations, reserve IPs, and have an IP map as well as IP usage reports, and alerts when you run out of available IPs. It can integrate with a Microsoft DHCP server.",
-              izquierda2_titulo: "Real-time network analysis",
-              izquierda2_texto:
-                "Netflow is used to obtain real-time statistics from your network devices (routers, switches, firewalls) and provide usage reports, bottlenecks, or help diagnose problems.",
-              derecha2_titulo: "High scalability",
-              derecha2_texto:
-                "Virtually unlimited scalability thanks to Command Center, and our Satellite Servers that allow horizontal scaling and generate tens of thousands of network queries per second in a distributed way. We have clients with more than 100,000 network devices on a single instance.",
-              izquierda3_titulo: "Reports and dashboards",
-              izquierda3_texto:
-                "Flammas collects all kinds of data and offers you a report editor so you can generate them in a personalized way: top N, detailed charts at any time scale, SLA reports, availability reports, timelines, and dozens more.",
-              derecha3_titulo: "Configuration management",
-              derecha3_texto:
-                "Flammas can collect your devices’ configurations, detect when (and where) they change, and recover backups. It can also deploy changes massively on dozens of devices (such as adding a VLAN)."
+          },
+          observabilidad: {
+            header: "The complete monitoring solution for total observability",
+            cartas: {
+              titulo: "User experience",
+              c1_subtitulo: "User experience",
+              c1_texto:
+                "Check if your application works as expected. Detect failures before your customers do.",
+              c2_titulo: "Application Monitoring (APM)",
+              c2_subtitulo: "Application Monitoring (APM)",
+              c2_texto:
+                "Monitor your enterprise applications at all levels and get all the APM data you need.",
+              c3_titulo: "Virtual environment monitoring",
+              c3_subtitulo: "Virtual environment monitoring",
+              c3_texto:
+                "Optimize your infrastructure whether hybrid, virtual or cloud.",
+              c4_titulo: "Incident management",
+              c4_subtitulo: "Incident management",
+              c4_texto:
+                "Integrate your infrastructure’s ticketing system into Flammas.",
+              c5_titulo: "Remote control",
+              c5_subtitulo: "Remote control",
+              c5_texto:
+                "All your devices controlled by a tool accessible with just a web browser.",
+              c6_titulo: "Service and support management",
+              c6_subtitulo: "Service and support management",
+              c6_texto:
+                "Measure and monitor your IT stack to detect and solve issues in your IT infrastructure.",
+              c7_titulo: "Mainframe monitoring",
+              c7_subtitulo: "Mainframe monitoring",
+              c7_texto:
+                "Have a single platform to collect and display information regardless of its source.",
+              c8_titulo: "Network monitoring",
+              c8_subtitulo: "Network monitoring",
+              c8_texto:
+                "View all your information together, even when you have thousands of devices to monitor.",
+              c9_titulo: "IT inventory",
+              c9_subtitulo: "IT inventory",
+              c9_texto:
+                "Collect and monitor the status of all IT infrastructure data in a single tool.",
+              c10_titulo: "Log collection",
+              c10_subtitulo: "Log collection",
+              c10_texto:
+                "Collect, visualize and centralize all your logs in one place.",
             },
-            funcionalidades: {
-              header: "Advanced Features",
-              f1_titulo: "Distributed environments",
-              f1_texto:
-                "Discover and monitor remote devices on client networks autonomously by deploying a simple probe installable on Windows, Raspberrys or small virtual machines. Our satellite servers work autonomously and silently and are capable of managing hundreds of devices.",
-              f2_titulo: "No-surprise licensing",
-              f2_texto:
-                "Know exactly what it will cost, with no surprises, no add-ons, no extra modules. Plan your environment’s growth accurately from day one. In Flammas all included means everything is covered in the initial license cost.",
-              f3_titulo: "Security monitoring",
-              f3_texto:
-                "Control at all times what versions, models and IPs you have. Not only for network devices such as switches, routers, but also firewalls. Set alerts if vulnerable models are used. Send all your systems’ logs to our log console and create correlation alerts.",
-              f4_titulo: "Artificial intelligence",
-              f4_texto:
-                "Let failure thresholds configure themselves automatically, based on everyday usage. Create alerts based on projected resource usage. Generate useful reports to plan your network usage."
-            },
-            logs: {
-              encabezado: {
-                subtitulo: "Flammas Solutions",
-                titulo: "Log Management",
-                texto:
-                  "Imagine being able to search for information in logs across all your monitored systems with a single click. If you already have a Flammas agent installed on those machines, why not collect logs as well?"
-              },
-              izquierda_titulo: "Audit and security (HIPAA, GDPR, ISO 27001)",
-              izquierda_texto:
-                "The last thing you want is to fail an audit or have to disclose a possible data breach because you didn’t collect the necessary data for an investigation or lack the required data to figure out what happened. If you already monitor those systems, store their logs.",
-              cartitas1_titulo:
-                "Cost-effective storage for your logs",
-              cartitas1_texto:
-                "The type of storage used to save logs in Flammas is very affordable compared to other similar tools. With Flammas you’ll save money on long-term storage. The Enterprise license already covers this functionality; you’ll just need to assign more storage on your servers.",
-              cartitas2_titulo:
-                "Simple and easy information search",
-              cartitas2_texto:
-                "You don’t need to be a data scientist or normalize the information in a complicated template system. Search strings or patterns with regular expressions and save your searches. As simple as it sounds.",
-              minis: {
-                texto1: "Forget about formats, parsing or strict definitions.",
-                texto2: "Compatible with Linux, Windows and Unix alike.",
-                texto3: "Compatible with any plain text log from any application.",
-                texto4: "Search through your log history with intuitive and simple queries.",
-                texto5: "Easy extraction. No need to install intermediate software or redirect logs over the network.",
-                texto6: "Investigate records with intuitive filters and fast performance, visualize them in beautiful Kibana dashboards.",
-                texto7: "Your data will always be yours. 100% on-premise local storage.",
-                texto8: "Scale as needed. You can increase storage capacity as required."
-              }
-            },
-            observabilidad: {
-              header: "The complete monitoring solution for total observability",
-              cartas: {
-                titulo: "User experience",
-                c1_subtitulo: "User experience",
-                c1_texto: "Check if your application works as expected. Detect failures before your customers do.",
-                c2_titulo: "Application Monitoring (APM)",
-                c2_subtitulo: "Application Monitoring (APM)",
-                c2_texto: "Monitor your enterprise applications at all levels and get all the APM data you need.",
-                c3_titulo: "Virtual environment monitoring",
-                c3_subtitulo: "Virtual environment monitoring",
-                c3_texto: "Optimize your infrastructure whether hybrid, virtual or cloud.",
-                c4_titulo: "Incident management",
-                c4_subtitulo: "Incident management",
-                c4_texto: "Integrate your infrastructure’s ticketing system into Flammas.",
-                c5_titulo: "Remote control",
-                c5_subtitulo: "Remote control",
-                c5_texto: "All your devices controlled by a tool accessible with just a web browser.",
-                c6_titulo: "Service and support management",
-                c6_subtitulo: "Service and support management",
-                c6_texto: "Measure and monitor your IT stack to detect and solve issues in your IT infrastructure.",
-                c7_titulo: "Mainframe monitoring",
-                c7_subtitulo: "Mainframe monitoring",
-                c7_texto: "Have a single platform to collect and display information regardless of its source.",
-                c8_titulo: "Network monitoring",
-                c8_subtitulo: "Network monitoring",
-                c8_texto: "View all your information together, even when you have thousands of devices to monitor.",
-                c9_titulo: "IT inventory",
-                c9_subtitulo: "IT inventory",
-                c9_texto: "Collect and monitor the status of all IT infrastructure data in a single tool.",
-                c10_titulo: "Log collection",
-                c10_titulo: "Log collection",
-                c10_texto: "Collect, visualize and centralize all your logs in one place."
-              }
-            },
-            quintaSeccion: {
-              titulo: "+500 INTEGRATIONS:",
-              subtitulo: "EXPAND THE POWER OF YOUR MONITORING",
-              texto1:
-                "We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide. We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide. We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide.",
-              texto2:
-                "We support emerging, established and even legacy technologies."
-            }
+          },
+          quintaSeccion: {
+            titulo: "+500 INTEGRATIONS:",
+            subtitulo: "EXPAND THE POWER OF YOUR MONITORING",
+            texto1:
+              "We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide. We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide. We provide practical solutions to everyday problems through business application plugins in collaboration with our customers. We have integrations with current technologies used in production environments worldwide.",
+            texto2:
+              "We support emerging, established and even legacy technologies.",
+          },
+        },
+      },
+      //soluciones - complete-infrastructure
+      solucionesInfraestructura: {
+        encabezado: {
+          titulo: "INFRASTRUCTURE MONITORING",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto:
+            "Flammas is not a puzzle of different solutions superficially integrated, we cover from hardware to user applications.",
+        },
+        minis: {
+          texto1:
+            "Thanks to all the data being integrated in real time and its powerful historical capacity to view graphs for several months.",
+          texto2:
+            "Real-time dashboard, customizable reports down to the smallest detail and a flexible notification system providing a 360º view.",
+          texto3:
+            "Base operating system, applications, databases, logs, storage, networks, user experience. All in a single platform.",
+          texto4: "integrated in our technology library.",
+          texto5:
+            "100% multitenant, able to serve different companies with the same instance.",
+          texto6:
+            "Through templates, plugin deployment and remote configuration integrated into the graphical interface.",
+        },
+        caracteristicasEspeciales: {
+          header: "SPECIAL FEATURES",
+          c1_titulo: "AGENTLESS MONITORING",
+          c1_texto:
+            "Although we recommend installing a local agent, you can also discover your servers and obtain information remotely from them, without needing to install agents.",
+          c2_titulo: "LOW-LEVEL MONITORING",
+          c2_texto:
+            "Flammas agents, like the rest of our technology, are self-developed, not derived from third parties. They can obtain information directly from the source using native system calls, without third-party connectors or heavy artifacts. Their footprint on the system is minimal.",
+          c3_titulo: "TOTAL CUSTOMIZATION",
+          c3_texto:
+            "Flammas allows you to customize your monitoring of servers and any process, service or application, reusing your own scripts or facilitating the deployment of new ones.",
+        },
+        caracteristicasTecnicas: {
+          header: "TECHNICAL FEATURES",
+          izquierda: {
+            texto1:
+              "High scalability, to manage thousands of servers through a single console, our Command Center™",
+            texto2: "Packaged agents for unattended installation",
+            texto3:
+              "Automatic and centralized provisioning system based on rules",
+            texto4:
+              "API/CLI for automation in provisioning and later configuration",
+          },
+          derecha: {
+            texto1:
+              "Integrated monitoring of Kubernetes, Vmware, AWS, Azure and Google Cloud",
+            texto2: "OEM customization in installers and interface",
+            texto3:
+              "Direct and reverse proxies in case your topology is complex",
+            texto4: "HA across the entire platform",
+          },
+        },
+        usuario: {
+          encabezado: {
+            titulo: "USER EXPERIENCE MONITORING",
+            subtitulo: "FLAMMAS SOLUTIONS",
+            texto:
+              "Detect and analyze problems that affect the user at any point in your technology stack.",
+          },
+          minis: {
+            texto1:
+              "Multiple locations, able to launch different tests from different geographical places.",
+            texto2:
+              "You can create the user experience test through a recorder, without having to code anything.",
+            texto3:
+              "End-to-end visibility, reducing MTTR and ensuring 100% SLA.",
+            texto4:
+              "Screenshots when finding a failure in the transaction to know exactly how the user sees it, regardless of code.",
+            texto5:
+              "Improve performance by identifying key performance metrics for page load, user interaction and element download. Detect bottlenecks and latency issues.",
+            texto6:
+              "Compatible with any technology, performing all monitoring using standardized browsers. Like any other user.",
+          },
+          razones: {
+            header: "WHY CHOOSE FLAMMAS FOR YOUR USER EXPERIENCE MONITORING?",
+            r1_titulo: "Do you use Selenium or other UX monitoring programs?",
+            r1_texto:
+              "Flammas is flexible and adapts to any technology on the market, integrating all monitoring in a single point. We can reuse your current scripts and integrate them.",
+            r2_titulo: "All-in-one automation",
+            r2_texto:
+              "If you have a task automation system, Flammas UX allows you to execute the scripts you have developed and implemented to monitor their execution.",
+            r3_titulo: "Controlled End User Experience",
+            r3_texto:
+              "You can monitor data traffic performance as well as your application's response times, solving any issue before your customers do.",
+            r4_titulo: "Easy-to-understand license",
+            r4_texto:
+              "User experience monitoring is included by default in the standard Enterprise license. No calculations, just enjoy unlimited end-to-end monitoring we offer.",
+          },
+        },
+      },
+
+      //solucines cloud 
+      solucionesCloud: {
+        encabezado1: {
+          titulo: "CLOUD AND VIRTUAL MONITORING",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto: "It is the all-in-one solution that will help you monitor your infrastructure, whether on-premise, virtualized, hybrid, or cloud-based."
+        },
+        txtDerecho1: {
+          titulo: "Centralized Monitoring of Hybrid Environments",
+          texto: "Monitor every detail of your environments wherever they are, regardless of the service provider, virtualization technology, or abstraction API.",
+          texto1: "Unify all your asset control in one place: the Flammas console. You can manage from hundreds to several hundred thousand elements from multiple sources, scaling progressively and dynamically."
+        },
+        txtIzquierda1: {
+          titulo: "Cloud Environments",
+          texto: "By using remote APIs and in a centralized manner, we can unify data from different providers, offering an umbrella of information unification (including costs) that allows comparing and reporting data from any type of provider."
+        },
+        txtDerecho2: {
+          titulo: "Take Control of Your Systems’ Data",
+          texto: "Years ago, it was much simpler to obtain information about your infrastructure. Nowadays, it is much more complex given the variety of on-premise architectures with dynamic containers, mixed with cloud environments and all kinds of external SaaS.",
+          texto1: "Control the growth and usage of all your systems. Thanks to our agents, remote probes, or use of APIs accessing cloud infrastructure, you can maximize your resources, save money, and estimate future investments."
+        },
+        integracion: {
+          titulo: "INTEGRATION",
+          titulo2: "IAAS ",
+          texto1: "If you do not have access to infrastructure servers, you can install agents on your machines or monitor them externally.",
+          texto2: "In addition, you can dynamically register systems in a simple way, using your IaaS provider’s provisioning mechanisms and Flammas APIs."
+        },
+        infraestructura: {
+          titulo: "VIRTUALIZATION INFRASTRUCTURE",
+          texto1: "Andora FMS automatically monitors ESX servers, DataStores, virtual machines, and VirtualCenter from your VMware architecture. Moreover, monitoring virtual environments does not affect VMware system performance. Our software uses the official API to collect all information.",
+          texto2: "It can also be used with virtualization like Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV following the same principles (with access to external APIs)."
+        },
+        encabezado2: {
+          titulo: "Continuous System Security Monitoring",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto: "At Flammas, we understand the importance of maintaining the integrity and security of your systems in an ever-evolving digital world. Our platform is designed to provide you with the necessary tools to audit and secure your systems with confidence."
+        },
+        miniComponentes: {
+          hardening: {
+            titulo: "HARDENING MONITORING",
+            texto: "We have combined CIS recommendations with our monitoring technology to offer you an integrated hardening audit system with more than 1500 individual checks. This allows you to track and assess in real time the evolution of your hardening measures across all your environments."
+          },
+          vulnerabilidades: {
+            titulo: "PERMANENT VULNERABILITY MONITORING",
+            texto: "We integrate the entire Mitre (CVE) and NIST vulnerability database to continuously audit vulnerable software throughout your organization. Both agents and the remote Discovery component will be used to determine which of your systems have software with vulnerabilities."
+          },
+          inventario: {
+            titulo: "INVENTORY FLEXIBILITY",
+            texto: "Whether you use Linux systems from various distributions or any version of Windows, we adapt to everything. No matter the complexity of your infrastructure, with Flammas you can perform a detailed inventory of all types of systems and customize it as you like."
+          },
+          infraestructuraSeguridad: {
+            titulo: "SECURITY INFRASTRUCTURE MONITORING",
+            texto: "Monitor the status of security infrastructures: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, authentication systems, storage systems, log collection, etc."
+          },
+          servidores: {
+            titulo: "SERVER SECURITY MONITORING",
+            texto: "We verify in real time the security of remote access, passwords, open ports, and changes to key system files. If something moves, you will be notified almost in real time."
+          },
+          alertas: {
+            titulo: "PROACTIVE ALERTS",
+            texto: "We not only help you detect potential security breaches but also provide proactive alerts and recommendations to address any issue before it becomes a real threat."
           }
         },
+        viñetas: {
+          inventario: {
+            titulo: "HARDWARE AND SOFTWARE ASSET INVENTORY AND CONTROL",
+            texto: "Monitor and manage all devices and software on your network. Keep an updated inventory of your technology assets and use authentication to block unauthorized items. Also, monitor and manage the software on your network, allowing only authorized ones and blocking unauthorized ones. Your security requires it."
+          },
+          dispositivos: {
+            titulo: "Device Inventory and Control",
+            texto: "At Flammas, we care for your systems' security from the ground up, meaning identifying and managing your hardware devices so that only authorized ones have access, blocking unwanted ones. Maintaining proper inventory minimizes internal risks, organizes your environment, and provides clarity to your network."
+          },
+          gestionVulnerabilidades: {
+            titulo: "Vulnerability Management",
+            texto: "Continuously analyze your assets to detect potential vulnerabilities and fix them before they become an issue. Strengthen your network security by ensuring that software and operating systems in your organization are always up to date with the latest security measures."
+          },
+          privilegios: {
+            titulo: "Controlled Use of Administrative Privileges",
+            texto: "Closely monitor access controls and user behavior with privileged accounts to prevent any unauthorized access to critical systems. Ensure that only authorized people have elevated privileges to avoid misuse of administrative privileges."
+          },
+          configuracion: {
+            titulo: "Secure Hardware and Software Configuration",
+            texto: "Establish and maintain security configurations based on standards approved by your organization. Create a rigorous configuration management system that detects and alerts about any misconfiguration, and establish a change control process to prevent attackers from exploiting vulnerable services and configurations."
+          },
+          logs: {
+            titulo: "Audit Log Maintenance, Monitoring and Analysis",
+            texto: "Collect, manage, and analyze audit logs of events to identify possible anomalies. Keep detailed records to thoroughly understand attacks and effectively respond to security incidents."
+          },
+          malware: {
+            titulo: "Malware Defenses",
+            texto: "Monitor and control the installation and execution of malicious code at multiple points in your company to prevent attacks. Configure and use antimalware software and leverage automation to ensure quick defense updates and agile corrective action in case of attacks."
+          },
+          correo: {
+            titulo: "Email and Web Browser Protection",
+            texto: "Protect and manage your web browsers and email systems against online threats to reduce your attack surface. Disable unauthorized browsers and email plugins and ensure users only access trusted websites through network-based URL filters."
+          },
+          recuperacion: {
+            titulo: "Data Recovery Capabilities",
+            texto: "Establish processes and tools to ensure that your organization's critical information is properly backed up. Make sure you have a reliable data recovery system to restore information in case of attacks that jeopardize critical data."
+          },
+          defensa: {
+            titulo: "Boundary Defense and Data Protection",
+            texto: "Identify and separate sensitive data, and establish a set of processes that include encryption, data exfiltration protection plans, and data loss prevention techniques."
+          },
+          cuentas: {
+            titulo: "Account Monitoring and Control",
+            texto: "Closely monitor the entire lifecycle of your systems and application accounts, from creation to deletion, including usage and inactivity. This active management prevents attackers from leveraging legitimate but inactive user accounts for malicious purposes."
+          }
+        },
+        vulnerabilidades: {
+          titulo: "THE MOST COMPLETE VULNERABILITY DATABASE",
+          texto: "No matter how many systems you have or where they are, we will search every installed software component and cross-check it with the world's largest public databases (CVE, NVD, VulnDB, NVR, MSUG, RHSD) and our comprehensive vulnerabilities database to tell you where to act.",
+          texto1: "Set alerts, create dashboards and technical reports to filter by machine groups, attack types, intrusion vectors, privilege usage and many other fields."
+        },
+        roadmap: {
+          titulo1: "OUR",
+          titulo2: "ROADMAP",
+          titulo3: "SECURITY",
+          texto1: "We are building a tool to control everything.",
+          texto2: "Flammas is the basis to monitor, audit, collect logs, generate alerts, manage configurations (NCM), execute distributed tasks (RMM) and much more.",
+          texto3: "With security monitoring, hardening analysis and vulnerability detection we have taken the first step but our roadmap is much more ambitious.",
+          texto4: "Flammas will truly be the single tool to control everything."
+        },
+        seguridadVerificable: {
+          titulo: "SECURITY YOU CAN",
+          titulo2: "SEE AND VERIFY",
+          texto: "We are committed to providing you with transparency at all times. Our platform allows you to easily verify the implementation of each control and continuously track the state of your security. Not all categories are applicable to all systems, but we have developed controls that will help you determine if they are relevant to your environment."
+        }
+      }
+
     },
   },
 };
