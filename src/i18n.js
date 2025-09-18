@@ -1,6 +1,7 @@
 // src/i18n.js
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 // Recursos de traducción
 const resources = {
@@ -126,10 +127,15 @@ const resources = {
           "Contacta el equipo de ventas, pide presupuesto o resuelve tus dudas sobre nuestras licencias.",
         form: {
           nombres: "(*) Nombres:",
+          placeholderNombres: "Ingresa tu nombre",
           apellidos: "(*) Apellidos:",
+          placeholderApellidos: "Ingresa tu apellido",
           email: "(*) Email:",
+          placeholderEmail: "Ingresa tu email",
           telefono: "(*) Número de teléfono:",
+          placeholderTelefono: "Ingresa tu teléfono",
           empresa: "(*) Empresa:",
+          placeholderEmpresa: "Ingresa tu empresa",
           cargo: "(*) Cargo:",
           options: {
             select: "Selecciona",
@@ -1383,10 +1389,15 @@ const resources = {
           "Contact the sales team, request a quote or resolve your doubts...",
         form: {
           nombres: "(*) First Name:",
+          placeholderNombres: "Enter your first name",
           apellidos: "(*) Last Name:",
+          placeholderApellidos: "Enter your last name",
           email: "(*) Email:",
+          placeholderEmail: "Enter your email",
           telefono: "(*) Phone Number:",
+          placeholderTelefono: "Enter your phone number",
           empresa: "(*) Company:",
+          placeholderEmpresa: "Enter your company",
           cargo: "(*) Position:",
           options: {
             select: "Select",
@@ -2509,9 +2520,15 @@ const resources = {
 };
 
 // Inicialización
+i18n.use(LanguageDetector);
 i18n.use(initReactI18next).init({
   resources,
-  lng: "es", // idioma por defecto
+  fallbackLng: "es",
+  deteccion:{
+    order:["localStorage","navigator"],
+    caches:["localStorage"],
+  } ,// idioma de reserva
+  // lng: "en", // idioma por defecto
   interpolation: {
     escapeValue: false,
   },

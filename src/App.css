@@ -28,7 +28,7 @@ html,
   -ms-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
 }
-.barra-nav a:hover {
+.barra-nav  a:hover {
   color: #cf0f09;
 }
 .navbar {
@@ -74,6 +74,13 @@ html,
   text-align: center;
   color: white;
 }
+
+#contacto:hover {
+  
+  color: #480f0d !important;
+  
+}
+
 .nav-link:active {
   color: black !important;
 }

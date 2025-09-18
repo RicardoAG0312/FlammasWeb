@@ -87,7 +87,7 @@ function App() {
                   {t("productos")}
                 </Nav.Link>
 
-                <NavDropdown title={t("soluciones")} id="basic-nav-dropdown contacto">
+                <NavDropdown title={t("soluciones")} id="basic-nav-dropdown">
                   <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/monitorizacion">
                     {t("monitorizacion")}
                   </NavDropdown.Item>
