@@ -818,7 +818,7 @@ export function ComponenteSolucionesCloud() {
                         <img src={require(`../images/73.png.png`)} alt="Imagen" />
                     </div>
                     <div className=" container-fluid info2 text-black">
-                        <h2 className="text-center"> <span className="text-black">{t("solucionesCloud.seguridadVerificable.titulo")}</span> {t("solucionesCloud.seguridadVerificable.titulo2")}</h2>
+                        <h2 className="text-center"> <span className="text-black">{t("solucionesCloud.seguridadVerificable.titulo")}</span> {t("solucionesCloud.seguridadVerificable.titulo2e")}</h2>
                         <p>{t("solucionesCloud.seguridadVerificable.texto")}</p>
                     </div>
                 </div>
@@ -902,82 +902,73 @@ export function ComponenteSolucionesCloud() {
 
 export function ComponenteSolucionesOneSecurity() {
     const [componenteActivo, setComponenteActivo] = useState("maxima");
+    const { t } = useTranslation();
+    
 
-    const infoTecnicas = [
-        "Machine learning en pre-ejecución y en runtime",
-        "Detección más precisa de malware avanzado, como el tipo de fileless y las amenazas de ransomware",
-        "Técnicas de noise-cancelling como el censo y el safelisting a lo largo de cada capa de detección para reducir de forma dramática los falsos positivos",
-        "Protección efectiva contra scripts, injection, ransomware y ataques contra navegadores y memoria a través de un innovador análisis de comportamiento.",
-    ]
+    const infoTecnicas = Object.values(t("solucionesOneSecurity.deteccion.lista", { returnObjects: true }));
 
-    const infoDeteccionRespuesta = [
-        "Reciba alertas procesables",
-        "Descubra el impacto e inicie una respuesta directa",
-        "Consiga detección, investigación y respuesta correlacionadas y mejoradas en email, redes, nubes y workloads",
-        "Identifique amenazas y valide actividad sospechosa",
-        "Integre mediante API con plataformas SIEM y herramientas SOAR",
-        "Utilice las 24 horas, los 7 días de la semana, los 365 días del año"
-    ]
+    const infoDeteccionRespuesta = Object.values(t("solucionesOneSecurity.deteccionRespuesta.lista", { returnObjects: true }));
 
     const componenteRenderData = () => {
+       
         switch (componenteActivo) {
             case 'maxima':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> La seguridad de endpoints redefinida </h1>
+                        <h1 style={{ color: "#CF0F09" }}>{t("solucionesOneSecurity.maxima.titulo")}</h1>
                         <p>
-                            One Security utiliza un sistema de prevención de intrusiones basado en host (HIPS) para aplicar parches de forma virtual vulnerabilidades conocidas y desconocidas antes de que el parche esté disponible o pueda desplegarse.
+                            {t("solucionesOneSecurity.maxima.texto")}
                         </p>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Eliminar la exposición al riesgo </li>
-                            <li className="mb-2"> Extender la protección hasta las plataformas críticas y los dispositivos físicos o virtuales </li>
-                            <li className="mb-2"> Reducir el tiempo de inactividad durante la recuperación y la aplicación de parches de emergencia </li>
-                            <li className="mb-2"> Identificar vulnerabilidades basadas en CVE, MS-ID y gravedad </li>
-                            <li className="mb-2"> Detectar más vulnerabilidades que cualquier otro proveedor gracias a nuestra investigación líder en el sector </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.maxima.lista.texto1")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.maxima.lista.texto2")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.maxima.lista.texto3")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.maxima.lista.texto4")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.maxima.lista.texto5")} </li>
                         </ul>
                     </section>
                 )
             case 'proteccion':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Seguridad efectiva para sus datos sensibles </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesOneSecurity.proteccion.titulo")} </h1>
                         <p>
-                            Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption, DLP integrado y control de dispositivos.
+                            {t("solucionesOneSecurity.proteccion.texto")}
                         </p>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Proteja el más amplio rango de dispositivos, aplicaciones y tipos de archivos </li>
-                            <li className="mb-2"> Cumple con la mayoria de las regulaciones, incluyendo GDPR </li>
-                            <li className="mb-2"> Protege sus datos con encripción completa del disco, folders y archivos, y encripción de dispositivos externos </li>
-                            <li className="mb-2"> Activa políticas granulares para el control de dispositivos y la gestión de datos </li>
-                            <li className="mb-2"> Utiliza llaves de encripción de Microsoft BitLocker y Apple FileVault </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.proteccion.lista.texto1")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.proteccion.lista.texto2")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.proteccion.lista.texto3")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.proteccion.lista.texto4")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.proteccion.lista.texto5")} </li>
                         </ul>
                     </section>
                 )
             case 'control':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Control mejorado de aplicaciones frente a software malicioso </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesOneSecurity.control.titulo")} </h1>
                         <p>
-                            Evite que se ejecuten aplicaciones no deseadas y desconocidas en sus endpoints. Te permite:
+                            {t("solucionesOneSecurity.control.texto")}
                         </p>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Usa politícas personalizables de lockdown, safelisting y blocklisting para bloquear software malicioso </li>
-                            <li className="mb-2"> Cree politícas dinámicas a través de la categorización de aplicaciones e inteligencia de la reputación para reducir la gestión de gastos generales </li>
-                            <li className="mb-2"> Correlacionar datos de millones de eventos de aplicaciones para identificar amenazas y mantener una base de datos actualizada de aplicaciones validadas </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.control.lista.texto1")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.control.lista.texto2")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.control.lista.texto3")} </li>
                         </ul>
                     </section>
                 )
             case 'insights':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Manténgase al día con One Security </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesOneSecurity.insights.titulo")} </h1>
                         <p>
-                            La aplicación proporciona alertas de producto e información de amenazas en tiempo real, permitiéndole:
+                            {t("solucionesOneSecurity.insights.texto")}
                         </p>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Ver de forma instantánea el estatus de sus despliegues para evitar correr versiones desactualizadas </li>
-                            <li className="mb-2"> Alinear despligues con las mejores prácticas de asegurar una protección óptima </li>
-                            <li className="mb-2"> Mantenerse un paso adelante con asesorías en tiempo real de nuevas vulnerabilidades / amenazas y notificaciones de nuevos y esenciales parches </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.insights.lista.texto1")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.insights.lista.texto2")} </li>
+                            <li className="mb-2"> {t("solucionesOneSecurity.insights.lista.texto3")} </li>
                         </ul>
                     </section>
                 )
@@ -989,10 +980,10 @@ export function ComponenteSolucionesOneSecurity() {
     return (
         <>
             <ComponenteEncabezadoSolucionesOne
-                titulo="ONE SECURITY CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Máxima protección con seguridad de endpoint por capas."
-                boton="Hoja de Datos"
+                titulo= {t("solucionesOneSecurity.encabezado.titulo")}
+                subtitulo= {t("solucionesOneSecurity.encabezado.subtitulo")}
+                texto= {t("solucionesOneSecurity.encabezado.texto")}
+                boton= {t("solucionesOneSecurity.encabezado.boton")}
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">
@@ -1000,8 +991,8 @@ export function ComponenteSolucionesOneSecurity() {
                         <img src={ImagenOne} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Técnicas de detección avanzadas </h1>
-                        <p style={{ color: "black", marginBottom: "30px" }}> Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> {t("solucionesOneSecurity.deteccion.titulo")} </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> {t("solucionesOneSecurity.deteccion.texto")} </p>
                         <ul>
                             {
                                 infoTecnicas.map((info, key) => (
@@ -1016,15 +1007,15 @@ export function ComponenteSolucionesOneSecurity() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> La seguridad de endpoints redefinida </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("solucionesOneSecurity.maxima.titulo")} </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
                         <div className="col-12 col-md-5 links">
-                            <h3 className={componenteActivo === 'maxima' ? 'active' : ''} onClick={() => setComponenteActivo('maxima')}> Máxima Protección </h3>
-                            <h3 className={componenteActivo === 'proteccion' ? 'active' : ''} onClick={() => setComponenteActivo('proteccion')}> Protección Datos Sensibles </h3>
-                            <h3 className={componenteActivo === 'control' ? 'active' : ''} onClick={() => setComponenteActivo('control')}> Control Mejorado de Aplicaciones </h3>
-                            <h3 className={componenteActivo === 'insights' ? 'active' : ''} onClick={() => setComponenteActivo('insights')}> Insights en tiempo real </h3>
+                            <h3 className={componenteActivo === 'maxima' ? 'active' : ''} onClick={() => setComponenteActivo('maxima')}> {t("solucionesOneSecurity.pilares.item.titulo1")} </h3>
+                            <h3 className={componenteActivo === 'proteccion' ? 'active' : ''} onClick={() => setComponenteActivo('proteccion')}> {t("solucionesOneSecurity.pilares.item.titulo2")} </h3>
+                            <h3 className={componenteActivo === 'control' ? 'active' : ''} onClick={() => setComponenteActivo('control')}> {t("solucionesOneSecurity.pilares.item.titulo3")} </h3>
+                            <h3 className={componenteActivo === 'insights' ? 'active' : ''} onClick={() => setComponenteActivo('insights')}> {t("solucionesOneSecurity.pilares.item.titulo4")} </h3>
                         </div>
                         <div className="col-12 col-md-7 info">
                             {componenteRenderData()}
@@ -1034,23 +1025,23 @@ export function ComponenteSolucionesOneSecurity() {
             </section>
             <section className="endviñetas">
                 <EndVIñetas
-                    titulo="Automatizado"
-                    texto="Reciba detección y respuesta frente amenazas automatizadas y avanzadas, así como protección contra una variedad de amenazas en continuo crecimiento como ataques sin archivos y ransomware. Nuestra combinación de técnicas avanzadas de distintas generaciones ofrece una protección de endpoints que maximiza el rendimiento y la eficacia."
+                    titulo={t("solucionesOneSecurity.endVinetas.automatizado.titulo")}
+                    texto={t("solucionesOneSecurity.endVinetas.automatizado.texto")}
                 />
                 <EndVIñetas
-                    titulo="Integrada"
-                    texto="Obtenga información práctica, funciones de investigación ampliadas y visibilidad centralizada con un conjunto de herramientas EDR & XDR unificado, integración SIEM consolidada y un juego de API abierto. Realice investigaciones de amenazas correlacionadas y extendidas que van más allá del endpoint y de reforzar sus equipos de seguridad con un servicio de detección y respuesta gestionadas."
+                    titulo={t("solucionesOneSecurity.endVinetas.integrada.titulo")}
+                    texto={t("solucionesOneSecurity.endVinetas.integrada.texto")}
                 />
                 <EndVIñetas
-                    titulo="Integración"
-                    texto="En un panorama tecnológica y de amenazas que no para de evolucionar, usted necesita una seguridad que vaya más allá del antivirus tradicional. One Security ofrece detección de amenazas, investigación y respuestas con un único agente. Consolide capacidades y consolas y obtenga flexibilidad de implementación a través de las opciones: on premise y SaaS."
+                    titulo={t("solucionesOneSecurity.endVinetas.integracion.titulo")}
+                    texto={t("solucionesOneSecurity.endVinetas.integracion.texto")}
                 />
             </section>
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> Detección y respuesta integradas </h1>
-                        <p> Al usar One Security con Flammas, obtendrá capacidades de EDR & XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("solucionesOneSecurity.deteccionRespuesta.titulo")} </h1>
+                        <p> {t("solucionesOneSecurity.deteccionRespuesta.texto")} </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>
@@ -1071,72 +1062,62 @@ export function ComponenteSolucionesOneSecurity() {
 
 export function ComponenteSolucionesMarcus() {
     const [componenteActivo, setComponenteActivo] = useState("bitacoras");
+    const { t } = useTranslation();
 
-    const infoTecnicas = [
-        "Detección, mitigación y prevención de Vulnerabilidades",
-        "Monitoreo de integridad",
-        "Monitoreo de bitácoras",
-        "Monitoreo de aplicaciones multiplataforma",
-    ]
+    const infoTecnicas = Object.values(t("solucionesMarcus.infoTecnicas", { returnObjects: true }));
 
-    const infoDeteccionRespuesta = [
-        "Administración centralizada de eventos, alarmas, logs, tickets, etc. ",
-        "Dashboard intuitivo para eventos de seguridad.",
-        "Control de acceso basado en roles. ",
-        "Generación automatizada de informes. ",
-        "Consola gráfica basada en HTML5 para administración local y remota.",
-    ]
+    const infoDeteccionRespuesta = Object.values(t("solucionesMarcus.gestion.infoDeteccionRespuesta", { returnObjects: true }));
 
     const componenteRenderData = () => {
         switch (componenteActivo) {
             case 'bitacoras':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de bitácoras </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesMarcus.funciones.header.bitacoras_titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Inspección de bitácoras del sistema operativo y aplicaciones para identificar eventos de seguridad relevantes o críticos.  </li>
-                            <li className="mb-2"> Permite la inspección de eventos generados en el visor de eventos para servidores Windows y en syslog messages para servidores con sistema operativo Linux.  </li>
-                            <li className="mb-2"> Permite la inspección de eventos generados por aplicaciones, almacenados en archivos de bitácoras.  </li>
-                            <li className="mb-2"> Capacidad de alertar en tiempo real cuando se genera un evento crítico o relevante, con envío de alertas por correo electrónico o syslog. </li>
-                            <li className="mb-2"> Creación de reglas personalizadas para el monitoreo de bitácoras.</li>
-                            <li className="mb-2"> Ejecución de tareas programadas y asignación automatizada de reglas de monitoreo de bitácoras recomendadas por la solución. </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto1")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto2")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto3")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto4")} </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto5")}</li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.bitacoras_texto6")} </li>
                         </ul>
                     </section>
                 )
             case 'integridad':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de integridad </h1>
+                        <h1 style={{ color: "#CF0F09" }}>{t("solucionesMarcus.funciones.header.integridad_titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Identificación de cambios en archivos críticos, configuraciones, carpetas, servicios y claves del registro tanto del sistema operativo como de las aplicaciones, a través de reglas de monitoreo de integridad automatizadas.  </li>
-                            <li className="mb-2"> Capacidad de alertar en tiempo real cuando se detecte una modificación en carpetas, archivos o claves del registro del sistema operativo y aplicaciones. Las alertas pueden ser enviadas por correo electrónico o syslog.  </li>
-                            <li className="mb-2"> Creación de reglas personalizadas para el monitoreo de modificaciones en archivos críticos, carpetas y claves del registro.  </li>
-                            <li className="mb-2"> Capacidad para ejecutar tareas programadas y asignar automáticamente las reglas de monitoreo de integridad recomendadas por la solución. </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.integridad_texto1")}  </li>
+                            <li className="mb-2">{t("solucionesMarcus.funciones.header.integridad_texto2")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.integridad_texto3")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.integridad_texto4")} </li>
                         </ul>
                     </section>
                 )
             case 'aplicaciones':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Monitoreo de aplicaciones multiplataforma </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesMarcus.funciones.header.aplicaciones_titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Capacidad para detectar y bloquear software no autorizado de forma automática, sin limitaciones del sistema operativo, de acuerdo con la lista de sistemas operativos indicados en las características principales. </li>
-                            <li className="mb-2"> Escaneo del servidor para determinar qué aplicaciones están actualmente en ejecución.  </li>
-                            <li className="mb-2"> Bloqueo del sistema una vez creado el inventario, evitando la ejecución de nuevas aplicaciones que no estén en la lista blanca definida por el administrador. </li>
-                            <li className="mb-2"> Integración en un entorno DevOps para permitir cambios continuos en las listas de aplicaciones, manteniendo al mismo tiempo la protección mediante APIs. </li>
-                            <li className="mb-2"> Capacidad para capturar amenazas que aún no tienen firma, incluidas las amenazas zero-day.  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.aplicaciones_texto1")} </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.aplicaciones_texto2")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.aplicaciones_texto3")} </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.aplicaciones_texto4")} </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.aplicaciones_texto5")}  </li>
                         </ul>
                     </section>
                 )
             case 'tecnicas':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Especificaciones Técnicas </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("solucionesMarcus.funciones.header.tecnicas_titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Soporte para interfaces de cobre y varios tipos de fibra.  </li>
-                            <li className="mb-2"> Soporte para velocidades mínimas de 1G/10G.  </li>
-                            <li className="mb-2"> Capacidad para soportar un mínimo de 100 dispositivos concurrentes con todas las funcionalidades activas.  </li>
-                            <li className="mb-2"> Capacidad de almacenamiento histórico de datos con granularidad de visualización adaptable. </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.tecnicas_texto1")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.tecnicas_texto2")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.tecnicas_texto3")}  </li>
+                            <li className="mb-2"> {t("solucionesMarcus.funciones.header.tecnicas_texto4")} </li>
                         </ul>
                     </section>
                 )
@@ -1148,10 +1129,10 @@ export function ComponenteSolucionesMarcus() {
     return (
         <>
             <ComponenteEncabezadoSolucionesMarcus
-                titulo="MARCUS CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Protección integral mediante un enfoque de seguridad por capas en los endpoints."
-                boton="Hoja de Datos"
+                titulo={t("solucionesMarcus.encabezado.titulo")}
+                subtitulo={t("solucionesMarcus.encabezado.subtitulo")}
+                texto={t("solucionesMarcus.encabezado.texto")}
+                boton={t("solucionesMarcus.encabezado.boton")}
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">
@@ -1159,8 +1140,8 @@ export function ComponenteSolucionesMarcus() {
                         <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Seguridad completa para entornos físicos, virtuales, híbridos y en la nube. </h1>
-                        <p style={{ color: "black", marginBottom: "30px" }}> Marcus tiene el propósito de garantizar la seguridad, detectar, analizar, y responder a amenazas especializadas y de prevenir proactivamente una administración en tiempo real. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> {t("solucionesMarcus.encabezado.tituloPrincipal")} </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> {t("solucionesMarcus.encabezado.textoPrincipal")} </p>
                         <ul>
                             {
                                 infoTecnicas.map((info, key) => (
@@ -1175,15 +1156,15 @@ export function ComponenteSolucionesMarcus() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE MARCUS </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("solucionesMarcus.funciones.header.titulo")} </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
                         <div className="col-12 col-md-5 links">
-                            <h3 className={componenteActivo === 'bitacoras' ? 'active' : ''} onClick={() => setComponenteActivo('bitacoras')}> Monitoreo de bitácoras </h3>
-                            <h3 className={componenteActivo === 'integridad' ? 'active' : ''} onClick={() => setComponenteActivo('integridad')}> Monitoreo de integridad </h3>
-                            <h3 className={componenteActivo === 'aplicaciones' ? 'active' : ''} onClick={() => setComponenteActivo('aplicaciones')}> Monitoreo de aplicaciones multiplataforma </h3>
-                            <h3 className={componenteActivo === 'tecnicas' ? 'active' : ''} onClick={() => setComponenteActivo('tecnicas')}> Especificaciones Técnicas </h3>
+                            <h3 className={componenteActivo === 'bitacoras' ? 'active' : ''} onClick={() => setComponenteActivo('bitacoras')}> {t("solucionesMarcus.funciones.header.bitacoras_titulo")} </h3>
+                            <h3 className={componenteActivo === 'integridad' ? 'active' : ''} onClick={() => setComponenteActivo('integridad')}> {t("solucionesMarcus.funciones.header.integridad_titulo")} </h3>
+                            <h3 className={componenteActivo === 'aplicaciones' ? 'active' : ''} onClick={() => setComponenteActivo('aplicaciones')}> {t("solucionesMarcus.funciones.header.aplicaciones_titulo")} </h3>
+                            <h3 className={componenteActivo === 'tecnicas' ? 'active' : ''} onClick={() => setComponenteActivo('tecnicas')}> {t("solucionesMarcus.funciones.header.tecnicas_titulo")} </h3>
                         </div>
                         <div className="col-12 col-md-7 info">
                             {componenteRenderData()}
@@ -1193,23 +1174,23 @@ export function ComponenteSolucionesMarcus() {
             </section>
             <section className="endviñetas">
                 <EndVIñetas
-                    titulo="Caracteristicas de seguridad"
-                    texto="El sistema ofrece inspección profunda de paquetes (DPI) y monitoreo bidireccional del tráfico, permitiendo detectar y prevenir vulnerabilidades zero-day. Además, aplica parches virtuales sin afectar la operación y bloquea el tráfico entre interfaces de red de servidores para evitar movimientos laterales."
+                    titulo={t("solucionesMarcus.caracteristicas.c1_titulo")}
+                    texto={t("solucionesMarcus.caracteristicas.c1_texto")}
                 />
                 <EndVIñetas
-                    titulo="Control de aplicaciones"
-                    texto="El sistema permite la detección y bloqueo de software no autorizado, así como el inventario detallado y control efectivo de las aplicaciones instaladas en los servidores. Además, ofrece integración con entornos DevOps para una gestión automatizada y continua de la seguridad en todo el ciclo de vida del desarrollo."
+                    titulo={t("solucionesMarcus.caracteristicas.c2_titulo")}
+                    texto={t("solucionesMarcus.caracteristicas.c2_texto")}
                 />
                 <EndVIñetas
-                    titulo="Monitoreo"
-                    texto="El sistema permite el monitoreo de integridad de archivos, configuraciones, servicios y claves del registro, con alertas en tiempo real vía correo electrónico o syslog. Ofrece la creación de reglas personalizadas para supervisar la integridad y las bitácoras, además de ejecutar tareas programadas para facilitar acciones automatizadas y mantener la seguridad del entorno."
+                    titulo={t("solucionesMarcus.caracteristicas.c3_titulo")}
+                    texto={t("solucionesMarcus.caracteristicas.c3_texto")}
                 />
             </section>
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
-                        <p> Marcus es un dispositivo de propósito específico de protección frente a amenazas avanzadas que proporciona visibilidad e inteligencia de toda la red, Es la mejor solución de detección y respuesta de red (NDR) de su clase diseñada para ayudar a las organizaciones con incidentes. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("solucionesMarcus.gestion.header")}</h1>
+                        <p> {t("solucionesMarcus.gestion.texto")} </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>
@@ -1230,21 +1211,11 @@ export function ComponenteSolucionesMarcus() {
 
 export function ComponenteSolucionesZeroSpam() {
     const [componenteActivo, setComponenteActivo] = useState("cliente");
+    const { t } = useTranslation();
+    
+    const infoTecnicas = Object.values(t("zerospam.infoTecnicas", { returnObjects: true }));
 
-    const infoTecnicas = [
-        "Autenticación de correos con políticas DMARC, SPF y DKIM.",
-        "Bloqueo proactivo de suplantaciones y correos no autorizados.",
-        "Supervisión centralizada con reportes detallados y en tiempo real.",
-        "Configuración y administración simplificadas desde una consola web.",
-    ];
-
-    const infoDeteccionRespuesta = [
-        "Protección completa contra suplantación de identidad y correos fraudulentos.",
-        "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
-        "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
-        "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
-        "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos.",
-    ];
+    const infoDeteccionRespuesta = Object.values(t("zerospam.infoDeteccionRespuesta", { returnObjects: true }));
 
 
     const componenteRenderData = () => {
@@ -1252,44 +1223,44 @@ export function ComponenteSolucionesZeroSpam() {
             case 'cliente':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Atención al cliente </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("zerospam.funciones.cliente.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Con una entrega fiable del correo electrónico, los equipos de atención al cliente pueden responder rápidamente a las consultas y resolver los problemas. Esto mejora la satisfacción del cliente y aumenta su fidelidad.  </li>
-                            <li className="mb-2"> DMARC garantiza la entrega de los mensajes de correo electrónico, lo que te permite llegar de forma proactiva a los clientes con información útil, actualizaciones de soporte u ofertas personalizadas. Esto refuerza el compromiso del cliente e impulsa el éxito.  </li>
-                            <li className="mb-2"> DMARC Proporciona una ubicación privilegiada de tu comunicaciones en las bandejas de entrada, evitando que los correos electrónicos lleguen a las carpetas de Spam o Correo no deseado o que sean rechazados por completo.  </li>
+                            <li className="mb-2"> {t("zerospam.funciones.cliente.texto1")} </li>
+                            <li className="mb-2"> {t("zerospam.funciones.cliente.texto2")}  </li>
+                            <li className="mb-2"> {t("zerospam.funciones.cliente.texto3")}  </li>
                         </ul>
                     </section>
                 )
             case 'tecnologia':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Tecnología de la información (TI) </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("zerospam.funciones.tecnologia.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> Accede a reportes DMARC que recopilan datos de servidores de todo el mundo para ofrecer información procesable y desvelar quién envía correos electrónicos desde tu dominio. Esto acelera las investigaciones de amenazas y la gestión de las quejas por spam. Nuestra plataforma también ofrece alertas personalizables para la visibilidad de amenazas en tiempo real, lo que permite una mitigación más rápida.  </li>
-                            <li className="mb-2"> Impide el uso no autorizado de tu dominio para enviar correos electrónicos falsos, de modo que los mensajes de phishing y spoofing no lleguen a las bandejas de entrada de los grupos de interés internos y externos.  </li>
-                            <li className="mb-2"> DMARC Permite a los equipos de TI implementar políticas de gobernanza del correo electrónico y mejores prácticas en toda la organización. Esto garantiza la coherencia de las políticas de autenticación y la integridad de las comunicaciones por correo electrónico, lo que en última instancia fomenta la confianza. </li>
+                            <li className="mb-2"> {t("zerospam.funciones.tecnologia.texto1")}  </li>
+                            <li className="mb-2"> {t("zerospam.funciones.tecnologia.texto2")}  </li>
+                            <li className="mb-2"> {t("zerospam.funciones.tecnologia.texto3")} </li>
                         </ul>
                     </section>
                 )
             case 'directivos':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Directivos (C-level) </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("zerospam.funciones.directivos.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> La rentable solución DMARC de Flammas te permite evitar las consecuencias de un ataque vía correo electrónico, que podría implicar pérdidas directas, responsabilidades legales y daños a tu reputación. Su política transparente de precios, despliegue flexible y escalabilidad se adapta a empresas de cualquier tamaño. </li>
-                            <li className="mb-2"> Bloquea amenazas perturbadoras como el spear-phishing o BEC, mientras garantizas un funcionamiento sin problemas con nuestras soluciones automatizadas, que se integran perfectamente en la infraestructura de correo electrónico existente, sin interrupciones en tu flujo de correo electrónico. </li>
-                            <li className="mb-2"> Nuestra solución DMARC proporciona supervisión y alertas en tiempo real para una rápida detección y mitigación de amenazas. Una vez configurada, pone en cuarentena o rechaza automáticamente los correos sospechosos y ofrece informes detallados para las auditorías de cumplimiento de reglas y estándares. </li>
+                            <li className="mb-2"> {t("zerospam.funciones.directivos.texto1")} </li>
+                            <li className="mb-2"> {t("zerospam.funciones.directivos.texto2")} </li>
+                            <li className="mb-2"> {t("zerospam.funciones.directivos.texto3")} </li>
                         </ul>
                     </section>
                 )
             case 'empresarios':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Empresarios </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("zerospam.funciones.empresarios.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li className="mb-2"> DMARC cierra la puerta a las amenazas basadas en el correo electrónico que podrían provocar daños financieros y de reputación potencialmente irreparables, garantizando la continuidad de tu negocio y protegiendo tu cuenta de resultados. </li>
-                            <li className="mb-2"> Aunque la protección perimetral y antispam existentes pueden proteger a tus grupos de interés internos, no protegen a tus clientes, proveedores y al resto del mundo de los correos electrónicos fraudulentos enviados utilizando tu dominio. DMARC resuelve este problema al proteger a todos los grupos de interés.   </li>
-                            <li className="mb-2"> Es más probable que los clientes hagan negocios con organizaciones en las que confían. Garantizar la máxima seguridad del correo electrónico para tu negocios con DMARC significa que los clientes pueden confiar en que cada correo electrónico que lleva tu El nombre es el verdadero.  </li>
+                            <li className="mb-2"> {t("zerospam.funciones.empresarios.texto1")} </li>
+                            <li className="mb-2"> {t("zerospam.funciones.empresarios.texto2")}   </li>
+                            <li className="mb-2"> {t("zerospam.funciones.empresarios.texto3")}  </li>
                         </ul>
                     </section>
                 )
@@ -1301,10 +1272,10 @@ export function ComponenteSolucionesZeroSpam() {
     return (
         <>
             <ComponenteEncabezadoSolucionesZeroSpam
-                titulo="ZEROSPAM CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico."
-                boton="Hoja de Datos"
+                titulo={t("zerospam.encabezado.titulo")}
+                subtitulo={t("zerospam.encabezado.subtitulo")}
+                texto={t("zerospam.encabezado.texto")}
+                boton={t("zerospam.encabezado.boton")}
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">
@@ -1312,8 +1283,8 @@ export function ComponenteSolucionesZeroSpam() {
                         <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Seguridad avanzada en tus comunicaciones por correo electrónico. </h1>
-                        <p style={{ color: "black", marginBottom: "30px" }}> Nuestra solución permite implementar estándares como DMARC, SPF y DKIM, protegiendo tu dominio contra ataques de suplantación y asegurando la confianza de tus usuarios. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> {t("zerospam.principal.titulo")} </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> {t("zerospam.principal.texto")} </p>
                         <ul>
                             {
                                 infoTecnicas.map((info, key) => (
@@ -1328,15 +1299,15 @@ export function ComponenteSolucionesZeroSpam() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE ZEROSPAM </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("zerospam.funciones.funcion")} </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
                         <div className="col-12 col-md-5 links">
-                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> Atención al cliente </h3>
-                            <h3 className={componenteActivo === 'tecnologia' ? 'active' : ''} onClick={() => setComponenteActivo('tecnologia')}> Tecnología de la información (TI) </h3>
-                            <h3 className={componenteActivo === 'directivos' ? 'active' : ''} onClick={() => setComponenteActivo('directivos')}> Directivos (C-level) </h3>
-                            <h3 className={componenteActivo === 'empresarios' ? 'active' : ''} onClick={() => setComponenteActivo('empresarios')}> Empresarios </h3>
+                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> {t("zerospam.funciones.cliente.titulo")} </h3>
+                            <h3 className={componenteActivo === 'tecnologia' ? 'active' : ''} onClick={() => setComponenteActivo('tecnologia')}> {t("zerospam.funciones.tecnologia.titulo")} </h3>
+                            <h3 className={componenteActivo === 'directivos' ? 'active' : ''} onClick={() => setComponenteActivo('directivos')}> {t("zerospam.funciones.directivos.titulo")} </h3>
+                            <h3 className={componenteActivo === 'empresarios' ? 'active' : ''} onClick={() => setComponenteActivo('empresarios')}> {t("zerospam.funciones.empresarios.titulo")} </h3>
                         </div>
                         <div className="col-12 col-md-7 info">
                             {componenteRenderData()}
@@ -1346,23 +1317,23 @@ export function ComponenteSolucionesZeroSpam() {
             </section>
             <section className="endviñetas">
                 <EndVIñetas
-                    titulo="Filtrado inteligente en la nube"
-                    texto="El sistema de pre-filtrado basado en la nube puede bloquear hasta el 90 % del tráfico total de mensajes, incluyendo spam y correos maliciosos, antes de que lleguen a tu red. Esto reduce significativamente la carga sobre los servidores internos y mejora la eficiencia del análisis de seguridad."
+                    titulo={t("zerospam.endviñetas.viñeta1.titulo")}
+                    texto={t("zerospam.endviñetas.viñeta1.texto")}
                 />
                 <EndVIñetas
-                    titulo="Protección de datos con cifrado de correo"
-                    texto="El Cifrado de Correo Electrónico permite asegurar todos los mensajes salientes, evitando la filtración de información confidencial. Esta capa de seguridad es esencial para mantener la integridad de los datos en tránsito y cumplir con normativas de privacidad."
+                    titulo={t("zerospam.endviñetas.viñeta2.titulo")}
+                    texto={t("zerospam.endviñetas.viñeta2.texto")}
                 />
                 <EndVIñetas
-                    titulo="Defensa contra amenazas avanzadas"
-                    texto="La tecnología ATSE identifica tanto amenazas conocidas como desconocidas, ofreciendo protección contra ataques emergentes que aún no han sido catalogados. Esto garantiza una defensa proactiva frente a malware sofisticado y vulnerabilidades de día cero."
+                    titulo={t("zerospam.endviñetas.viñeta3.titulo")}
+                    texto={t("zerospam.endviñetas.viñeta3.texto")}
                 />
             </section>
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
-                        <p> DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("zerospam.gestion.titulo")} </h1>
+                        <p> {t("zerospam.gestion.texto")} </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>
@@ -1383,21 +1354,11 @@ export function ComponenteSolucionesZeroSpam() {
 
 export function ComponenteSolucionesSecureDomain() {
     const [componenteActivo, setComponenteActivo] = useState("cliente");
+    const { t } = useTranslation();
 
-    const infoTecnicas = [
-        "Monitoreo continuo en dark web y múltiples fuentes para detectar filtraciones.",
-        "Revelación de credenciales y datos personales expuestos o comprometidos.",
-        "Alertas en tiempo real para actuar rápidamente ante una brecha.",
-        "Visibilidad clara sobre exposiciones internas o de proveedores para cumplir normativas.",
-    ];
+    const infoTecnicas = Object.values(t("securedomain.infoTecnicas", { returnObjects: true }));
 
-    const infoDeteccionRespuesta = [
-        "Protección completa contra suplantación de identidad y correos fraudulentos.",
-        "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
-        "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
-        "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
-        "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos.",
-    ];
+    const infoDeteccionRespuesta = Object.values(t("securedomain.infoDeteccionRespuesta", { returnObjects: true }));
 
 
     const componenteRenderData = () => {
@@ -1405,22 +1366,22 @@ export function ComponenteSolucionesSecureDomain() {
             case 'cliente':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Compromiso del sistema </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("securedomain.funciones.cliente.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li>Distribución de malware o ransomware a través de sitios web falsificados.</li>
-                            <li>Acceso no autorizado a sistemas internos por parte de atacantes.</li>
-                            <li>Riesgo de interrupción operativa y pérdida de información crítica.</li>
+                            <li>{t("securedomain.funciones.cliente.texto1")}</li>
+                            <li>{t("securedomain.funciones.cliente.texto2")}</li>
+                            <li>{t("securedomain.funciones.cliente.texto3")}</li>
                         </ul>
                     </section>
                 );
             case 'amenazas':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Pérdidas financieras </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("securedomain.funciones.amenazas.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li>Venta engañosa de productos o servicios falsificados por parte de atacantes.</li>
-                            <li>Pérdida de ingresos debido a la desconfianza de clientes legítimos.</li>
-                            <li>Reducción de la productividad por incidentes derivados del fraude de dominios.</li>
+                            <li>{t("securedomain.funciones.amenazas.texto1")}</li>
+                            <li>{t("securedomain.funciones.amenazas.texto2")}</li>
+                            <li>{t("securedomain.funciones.amenazas.texto3")}</li>
 
                         </ul>
                     </section>
@@ -1428,22 +1389,22 @@ export function ComponenteSolucionesSecureDomain() {
             case 'riesgos':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Daños a la reputación </h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("securedomain.funciones.riesgos.titulo")} </h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li>Pérdida de credibilidad frente a clientes, socios y proveedores.</li>
-                            <li>Asociación negativa de la marca con actividades fraudulentas.</li>
-                            <li>Dificultad para recuperar la confianza del público tras un incidente.</li>
+                            <li>{t("securedomain.funciones.riesgos.texto1")}</li>
+                            <li>{t("securedomain.funciones.riesgos.texto2")}</li>
+                            <li>{t("securedomain.funciones.riesgos.texto3")}</li>
                         </ul>
                     </section>
                 );
             case 'marca':
                 return (
                     <section>
-                        <h1 style={{ color: "#CF0F09" }}> Robo de datos</h1>
+                        <h1 style={{ color: "#CF0F09" }}> {t("securedomain.funciones.marca.titulo")}</h1>
                         <ul style={{ fontSize: "18px", fontFamily: "Montserrat" }}>
-                            <li>Exposición de información confidencial como DNI, direcciones o teléfonos.</li>
-                            <li>Riesgo de fraude por el robo de credenciales bancarias y tarjetas.</li>
-                            <li>Acceso no autorizado a cuentas personales o empresariales.</li>
+                            <li>{t("securedomain.funciones.marca.texto1")}</li>
+                            <li>{t("securedomain.funciones.marca.texto2")}</li>
+                            <li>{t("securedomain.funciones.marca.texto3")}</li>
 
                         </ul>
                     </section>
@@ -1457,10 +1418,10 @@ export function ComponenteSolucionesSecureDomain() {
     return (
         <>
             <ComponenteEncabezadoSolucionesDomain
-                titulo="SECURE DOMAIN INTELLIGENCE CON FLAMMAS"
-                subtitulo="SOLUCIONES DE FLAMMAS"
-                texto="Defiende tu marca y a tus usuarios de dominios falsificados con tecnología de detección avanzada que identifica y bloquea amenazas antes de que causen daño."
-                boton="Hoja de Datos"
+                titulo={t("securedomain.encabezado.titulo")}
+                subtitulo={t("securedomain.encabezado.subtitulo")}
+                texto={t("securedomain.encabezado.texto")}
+                boton={t("securedomain.encabezado.boton")}
             />
             <section className="deteccionOne">
                 <div className="row p-0 m-0">
@@ -1468,8 +1429,8 @@ export function ComponenteSolucionesSecureDomain() {
                         <img src={ImagenMarcus} className="img-fluid" alt="Imagen" />
                     </div>
                     <div className="col-12 col-md-8 info d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> Detección avanzada de brechas y exposición de datos corporativos. </h1>
-                        <p style={{ color: "black", marginBottom: "30px" }}> Secure Domain Intelligence supervisa múltiples fuentes, incluida la dark web, para descubrir datos robados o filtrados de tu empresa o proveedores terceros — como credenciales, contraseñas o información personal expuesta — y envía alertas inmediatas si se detecta alguna brecha. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09", marginBottom: "30px" }}> {t("securedomain.principal.titulo")} </h1>
+                        <p style={{ color: "black", marginBottom: "30px" }}> {t("securedomain.principal.texto")} </p>
                         <ul>
                             {
                                 infoTecnicas.map((info, key) => (
@@ -1484,15 +1445,15 @@ export function ComponenteSolucionesSecureDomain() {
             </section>
             <section className="endpointOne">
                 <div className="titus" style={{ padding: "10px 50px" }}>
-                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> FUNCIONES DE SECURE DOMAIN INTELLIGENCE </h1>
+                    <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("securedomain.funciones.tituloPrincipal")} </h1>
                 </div>
                 <div style={{ padding: "10px 50px" }}>
                     <div className="row">
                         <div className="col-12 col-md-5 links">
-                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> Compromiso del sistema </h3>
-                            <h3 className={componenteActivo === 'amenazas' ? 'active' : ''} onClick={() => setComponenteActivo('amenazas')}> Pérdidas financieras </h3>
-                            <h3 className={componenteActivo === 'riesgos' ? 'active' : ''} onClick={() => setComponenteActivo('riesgos')}> Daños a la reputación </h3>
-                            <h3 className={componenteActivo === 'marca' ? 'active' : ''} onClick={() => setComponenteActivo('marca')}> Robo de datos </h3>
+                            <h3 className={componenteActivo === 'cliente' ? 'active' : ''} onClick={() => setComponenteActivo('cliente')}> {t("securedomain.funciones.cliente.titulo")} </h3>
+                            <h3 className={componenteActivo === 'amenazas' ? 'active' : ''} onClick={() => setComponenteActivo('amenazas')}> {t("securedomain.funciones.amenazas.titulo")} </h3>
+                            <h3 className={componenteActivo === 'riesgos' ? 'active' : ''} onClick={() => setComponenteActivo('riesgos')}> {t("securedomain.funciones.riesgos.titulo")} </h3>
+                            <h3 className={componenteActivo === 'marca' ? 'active' : ''} onClick={() => setComponenteActivo('marca')}> {t("securedomain.funciones.marca.titulo")} </h3>
                         </div>
                         <div className="col-12 col-md-7 info">
                             {componenteRenderData()}
@@ -1504,8 +1465,8 @@ export function ComponenteSolucionesSecureDomain() {
             <section className="deteccionOne op d-flex justify-content-center align-content-center">
                 <div className="row m-0">
                     <div className="col-12 col-md-6 d-flex justify-content-evenly align-content-center flex-column">
-                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> GESTIÓN </h1>
-                        <p> DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables. </p>
+                        <h1 className="fw-bold" style={{ color: "#CF0F09" }}> {t("securedomain.gestion.titulo")} </h1>
+                        <p> {t("securedomain.gestion.texto")} </p>
                     </div>
                     <div className="col-12 col-md-6 info">
                         <ul>

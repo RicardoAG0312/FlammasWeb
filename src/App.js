@@ -87,26 +87,26 @@ function App() {
                   {t("productos")}
                 </Nav.Link>
 
-                <NavDropdown title={t("soluciones")} id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="/soluciones/monitorizacion">
+                <NavDropdown title={t("soluciones")} id="basic-nav-dropdown contacto">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/monitorizacion">
                     {t("monitorizacion")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/infraestructura">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/infraestructura">
                     {t("infraestructura")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/cloud">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/cloud">
                     {t("cloud")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/onesecurity">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/onesecurity">
                     {t("onesecurity")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/marcus">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/marcus">
                     {t("marcus")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/zero-spam">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/zero-spam">
                     {t("zeroSpam")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soluciones/secure-domain">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soluciones/secure-domain">
                     {t("secureDomain")}
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -116,18 +116,18 @@ function App() {
                 </Nav.Link>
 
                 <NavDropdown title={t("soporte")} id="basic-nav-dropdown">
-                  <NavDropdown.Item as={Link} to="/soporte/profesional">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soporte/profesional">
                     {t("serviciosProfesionales")}
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/soporte/tecnico">
+                  <NavDropdown.Item as={Link} id="drop-item" to="/soporte/tecnico">
                     {t("soporteTecnico")}
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link as={Link} to="/partners">
+                <Nav.Link as={Link}   to="/partners">
                   {t("partners")}
                 </Nav.Link>
-                <Nav.Link as={Link} to="/login">
+                <Nav.Link as={Link} id="contacto" to="/login">
                   {t("contacto")}
                 </Nav.Link>
               </Nav>

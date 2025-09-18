@@ -772,131 +772,494 @@ const resources = {
         encabezado1: {
           titulo: "MONITORIZACIÓN CLOUD Y VIRTUAL",
           subtitulo: "SOLUCIONES DE FLAMMAS",
-          texto: "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud."
+          texto:
+            "Es la solución todo-en-uno que te ayudará a supervisar tu infraestructura, sin importar si es on-premise, virtualizada, híbrida o en cloud.",
         },
         txtDerecho1: {
           titulo: "Monitorización centralizada de entornos híbridos",
-          texto: "Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción.",
-          texto1: "Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica."
+          texto:
+            "Supervisa todos los detalles de tus entornos allí donde estén, sin importar el proveedor de servicios, tecnología de virtualización o API de abstracción.",
+          texto1:
+            "Unifica todo el control de tus activos en un único lugar: la consola de Flammas. Podrás gestionar desde cien elementos a varios cientos de miles desde múltiples orígenes, escalando de forma progresiva y dinámica.",
         },
         txtIzquierda1: {
           titulo: "Entornos Cloud",
-          texto: "Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor."
+          texto:
+            "Haciendo uso de APIs remotas y de manera centralizada somos capaces de unificar los datos de diferentes proveedores ofreciendo un paraguas de unificación de información (incluyendo costes) que permiten comparar y reportar datos de cualquier tipo de proveedor.",
         },
         txtDerecho2: {
           titulo: "Toma el control de los datos de tus sistemas",
-          texto: "Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo.",
-          texto1: "Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones."
+          texto:
+            "Hace años, era mucho más sencillo obtener información de tu infraestructura. Hoy en día, es mucho más complicado ante la variedad de arquitecturas on-premise de contenedores dinámicos, mezclada con entornos cloud y SaaS externos de todo tipo.",
+          texto1:
+            "Controla el crecimiento y uso de todos tus sistemas. Gracias a nuestros agentes, sondas remotas o uso de APIs de acceso a la infraestructura cloud, podrá sacar el máximo partido a sus recursos, ahorrar y estimar futuras inversiones.",
         },
         integracion: {
           titulo: "INTEGRACIÓN ",
           titulo2: "LAAS",
-          texto1: "En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.",
-          texto2: "Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas."
+          texto1:
+            "En el caso de que no tengas acceso a los servidores de infraestructura, podrás instalar agentes en tus máquinas o monitorizarlas desde fuera.",
+          texto2:
+            "Además, podrás dar de alta dinámicamente sistemas de manera sencilla, utilizando los mecanismos de provisión de tu proveedor de IaaS y las APIs de Flammas.",
         },
         infraestructura: {
           titulo: "INFRAESTRUCTURA DE VIRTUALIZACIÓN",
-          texto1: "Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información.",
-          texto2: "También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas)."
+          texto1:
+            "Andora FMS monitoriza automáticamente servidores ESX, DataStores, máquinas virtuales y VirtualCenter de su arquitectura VMware. Además, la monitorización de entornos virtuales no afecta al rendimiento del sistema VMware. Nuestro software utiliza la API oficial para recopilar toda la información.",
+          texto2:
+            "También puede ser utilizada con virtualización Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV siguiendo los mismos principios (con acceso a las APIs externas).",
         },
         encabezado2: {
           titulo: "Monitorización Continua de la Seguridad del Sistema",
           subtitulo: "SOLUCIONES DE FLAMMAS",
-          texto: "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza."
+          texto:
+            "En Flammas, entendemos la importancia de mantener la integridad y la seguridad de tus sistemas en un mundo digital en constante evolución. Nuestra plataforma está diseñada para proporcionarte las herramientas necesarias para auditar y asegurar tus sistemas con confianza.",
         },
         miniComponentes: {
           hardening: {
             titulo: "MONITORIZACIÓN DEL HARDENING",
-            texto: "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos."
+            texto:
+              "Hemos fusionado las recomendaciones del CIS con nuestra tecnología de monitorización para ofrecerte un sistema de auditoría de securización integrado con más de 1500 comprobaciones individuales. Esto te permite rastrear y evaluar en tiempo real la evolución de tus medidas de hardening en todos tus entornos.",
           },
           vulnerabilidades: {
             titulo: "MONITORIZACIÓN DE VULNERABILIDADES PERMANENTE",
-            texto: "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades."
+            texto:
+              "Integramos toda la base de datos de vulnerabilidades de Mitre (CVE) y NIST para poder realizar auditorías de software vulnerable en toda su organización de manera continuada. Se utilizarán tanto los agentes como el componente remoto Discovery para determinar cuáles de sus sistemas tienen software con vulnerabilidades.",
           },
           inventario: {
             titulo: "FLEXIBILIDAD EN EL INVENTARIO",
-            texto: "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Flammas puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto."
+            texto:
+              "Ya sea que utilices sistemas Linux de varias distribuciones o cualquier versión de Windows, nos adaptamos a todo. No importa la complejidad de tu infraestructura, con Flammas puedes realizar un inventario detallado de todo tipo de sistemas y personalizarlo a tu gusto.",
           },
           infraestructuraSeguridad: {
             titulo: "MONITORIZACIÓN DE LA INFRAESTRUCTURA DE SEGURIDAD",
-            texto: "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc."
+            texto:
+              "Monitoriza el estado de infraestructuras de seguridad: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, sistemas de autenticación, sistemas de almacenamiento, recogida de logs, etc.",
           },
           servidores: {
             titulo: "MONITORIZACIÓN DE LA SEGURIDAD EN SERVIDORES",
-            texto: "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real."
+            texto:
+              "Verificamos en tiempo real la seguridad del acceso remoto, de las contraseñas, de los puertos abiertos y del cambio sobre ficheros clave del sistema. Si algo se mueve, serás avisado casi en tiempo real.",
           },
           alertas: {
             titulo: "ALERTAS PROACTIVAS",
-            texto: "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real."
-          }
+            texto:
+              "No solo te ayudamos a detectar posibles brechas de seguridad, sino que también te brindamos alertas proactivas y recomendaciones para abordar cualquier problema antes de que se convierta en una amenaza real.",
+          },
         },
         viñetas: {
           inventario: {
             titulo: "INVENTARIO Y CONTROL DE ACTIVOS HARDWARE Y SOFTWARE",
-            texto: "Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere."
+            texto:
+              "Supervisa y gestiona todos los dispositivos y software en tu red. Lleva un inventario actualizado de tus activos tecnológicos y usa la autenticación para bloquear lo no autorizado. Además, supervisa y gestiona el software en tu red, solo permite lo autorizado y bloquea lo que no lo es. Tu seguridad lo requiere.",
           },
           dispositivos: {
             titulo: "Inventario y Control de Dispositivos",
-            texto: "En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red."
+            texto:
+              "En Flammas, cuidamos la seguridad de tus sistemas desde la base, esto significa identificar y gestionar tus dispositivos de hardware para que solo los autorizados tengan acceso, bloqueando los no deseados. Mantener un inventario adecuado minimiza riesgos internos, organiza tu entorno y brinda claridad a tu red.",
           },
           gestionVulnerabilidades: {
             titulo: "Gestión de Vulnerabilidades",
-            texto: "Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad."
+            texto:
+              "Analiza tus activos de forma continua para detectar vulnerabilidades potenciales y soluciónalas antes de que se conviertan en un problema. Refuerza la seguridad de tu red asegurándote de que el software y los sistemas operativos en tu organización estén siempre actualizados con las últimas medidas de seguridad.",
           },
           privilegios: {
             titulo: "Uso Controlado de Privilegios Administrativos",
-            texto: "Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos."
+            texto:
+              "Supervisa de cerca los controles de acceso y el comportamiento de los usuarios con cuentas privilegiadas para evitar cualquier acceso no autorizado a sistemas críticos. Asegúrate de que solo las personas autorizadas tengan privilegios elevados para evitar cualquier mal uso de los privilegios administrativos.",
           },
           configuracion: {
             titulo: "Configuración Segura de Hardware y Software",
-            texto: "Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables."
+            texto:
+              "Establece y mantiene configuraciones de seguridad basadas en los estándares aprobados por tu organización. Crea un sistema de gestión de configuraciones riguroso que detecte y alerte sobre cualquier configuración incorrecta, y establece un proceso de control de cambios para evitar que los atacantes se aprovechen de servicios y configuraciones vulnerables.",
           },
           logs: {
-            titulo: "Mantenimiento, Supervisión y Análisis de Logs de Auditoría",
-            texto: "Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad."
+            titulo:
+              "Mantenimiento, Supervisión y Análisis de Logs de Auditoría",
+            texto:
+              "Recopila, administra y analiza los logs de auditoría de eventos para identificar posibles anomalías. Mantén registros detallados para comprender a fondo los ataques y poder responder de manera eficaz a los incidentes de seguridad.",
           },
           malware: {
             titulo: "Defensas contra Malware",
-            texto: "Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques."
+            texto:
+              "Supervisa y controla la instalación y ejecución de código malicioso en varios puntos de tu empresa para prevenir ataques. Configura y utiliza software antimalware y aprovecha la automatización para garantizar actualizaciones rápidas de defensas y una acción correctiva ágil en caso de ataques.",
           },
           correo: {
             titulo: "Protección del Correo Electrónico y los Navegadores Web",
-            texto: "Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red."
+            texto:
+              "Protege y administra tus navegadores web y sistemas de correo electrónico contra amenazas en línea para reducir tu superficie de ataque. Desactiva navegadores y complementos de correo electrónico no autorizados y asegura que los usuarios solo accedan a sitios web de confianza mediante filtros de URL basados en la red.",
           },
           recuperacion: {
             titulo: "Capacidades de Recuperación de Datos",
-            texto: "Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos."
+            texto:
+              "Establece procesos y herramientas para asegurar que la información crítica de tu organización esté respaldada adecuadamente. Asegúrate de contar con un sistema de recuperación de datos confiable para restaurar la información en caso de ataques que pongan en peligro los datos críticos.",
           },
           defensa: {
             titulo: "Defensa de Límites y Protección de Datos",
-            texto: "Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos."
+            texto:
+              "Identifica y separa los datos sensibles, y establece una serie de procesos que incluyan la codificación, planes de protección contra la infiltración de datos y técnicas de prevención de pérdida de datos.",
           },
           cuentas: {
             titulo: "Supervisión y Control de Cuentas",
-            texto: "Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos."
-          }
+            texto:
+              "Supervisa de cerca todo el ciclo de vida de tus sistemas y cuentas de aplicaciones, desde su creación hasta su eliminación, pasando por su uso e inactividad. Esta gestión activa previene que los atacantes aprovechen cuentas de usuarios legítimos pero inactivos para fines maliciosos.",
+          },
         },
         vulnerabilidades: {
           titulo: "LA BASE DE DATOS DE VULNERABILIDADES MÁS COMPLETA",
-          texto: "Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar.",
-          texto1: "Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos."
+          texto:
+            "Tengas el número de sistemas que tengas, estén donde estén, buscaremos cada pieza de software instalada contrastaremos con la mayor base de datos pública del mundo (CVE, NVD, VulnDB, NVR, MSUG, RHSD) y la contrastaremos con la mayor base de datos del mundo de vulnerabilidades para decirte dónde tienes que actuar.",
+          texto1:
+            "Establece alertas, crea dashboards e informes técnicos para filtrar por grupos de máquina, tipos de ataque, vector de intrusión, uso de privilegios y otros muchos campos.",
         },
         roadmap: {
           titulo1: "NUESTRO",
           titulo2: "ROADMAP",
           titulo3: "DE SEGURIDAD",
           texto1: "Estamos construyendo una herramienta para controlarlo todo.",
-          texto2: "Flammas es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.",
-          texto3: "Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.",
-          texto4: "Flammas será verdaderamente, la herramienta única para controlarlo todo."
+          texto2:
+            "Flammas es la base para monitorizar, auditar, obtener logs, generar alertas, gestionar configuraciones (NCM), ejecutar tareas de manera distribuida (RMM) y mucho más.",
+          texto3:
+            "Con la monitorización de seguridad, el análisis de hardening y la detección de vulnerabilidades hemos dado el primer paso pero nuestro roadmap es mucho más ambicioso.",
+          texto4:
+            "Flammas será verdaderamente, la herramienta única para controlarlo todo.",
         },
         seguridadVerificable: {
           titulo: "SEGURIDAD QUE PUEDES",
           titulo2: "VER Y VERIFICAR",
-          texto: "Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno."
+          texto:
+            "Estamos comprometidos a brindarte transparencia en todo momento. Nuestra plataforma te permite verificar fácilmente la implementación de cada control y realizar un seguimiento constante del estado de tu seguridad. No todas las categorías son aplicables a todos los sistemas, pero hemos desarrollado controles que te ayudarán a determinar si son relevantes para tu entorno.",
+        },
+      },
+      //----One Security----
+      solucionesOneSecurity: {
+        encabezado: {
+          titulo: "ONE SECURITY CON FLAMMAS",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto: "Máxima protección con seguridad de endpoint por capas.",
+          boton: "Hoja de Datos",
+        },
+        deteccion: {
+          titulo: "Técnicas de detección avanzadas",
+          texto:
+            "Utiliza una mezcla de técnicas intergeneracionales de amenazas para ofrecerle la protección más amplia frente a todos los tipos de amenazas.",
+          lista: {
+            texto1: "Machine learning en pre-ejecución y en runtime",
+            texto2:
+              "Detección más precisa de malware avanzado, como el tipo de fileless y las amenazas de ransomware",
+            texto3:
+              "Técnicas de noise-cancelling como el censo y el safelisting a lo largo de cada capa de detección para reducir de forma dramática los falsos positivos",
+            texto4:
+              "Protección efectiva contra scripts, injection, ransomware y ataques contra navegadores y memoria a través de un innovador análisis de comportamiento.",
+          },
+        },
+        maxima: {
+          titulo: "La seguridad de endpoints redefinida",
+          texto:
+            "One Security utiliza un sistema de prevención de intrusiones basado en host (HIPS) para aplicar parches de forma virtual vulnerabilidades conocidas y desconocidas antes de que el parche esté disponible o pueda desplegarse.",
+          lista: {
+            texto1: "Eliminar la exposición al riesgo",
+            texto2:
+              "Extender la protección hasta las plataformas críticas y los dispositivos físicos o virtuales",
+            texto3:
+              "Reducir el tiempo de inactividad durante la recuperación y la aplicación de parches de emergencia",
+            texto4:
+              "Identificar vulnerabilidades basadas en CVE, MS-ID y gravedad",
+            texto5:
+              "Detectar más vulnerabilidades que cualquier otro proveedor gracias a nuestra investigación líder en el sector",
+          },
+        },
+        proteccion: {
+          titulo: "Seguridad efectiva para sus datos sensibles",
+          texto:
+            "Proteja sus datos sensibles, dentro y fuera de la red, para lograr la máxima visibilidad y el máximo control. Endpoint encryption, DLP integrado y control de dispositivos.",
+          lista: {
+            texto1:
+              "Proteja el más amplio rango de dispositivos, aplicaciones y tipos de archivos",
+            texto2:
+              "Cumple con la mayoria de las regulaciones, incluyendo GDPR",
+            texto3:
+              "Protege sus datos con encripción completa del disco, folders y archivos, y encripción de dispositivos externos",
+            texto4:
+              "Activa políticas granulares para el control de dispositivos y la gestión de datos",
+            texto5:
+              "Utiliza llaves de encripción de Microsoft BitLocker y Apple FileVault",
+          },
+        },
+        control: {
+          titulo:
+            "Control mejorado de aplicaciones frente a software malicioso",
+          texto:
+            "Evite que se ejecuten aplicaciones no deseadas y desconocidas en sus endpoints. Te permite:",
+          lista: {
+            texto1:
+              "Usa politícas personalizables de lockdown, safelisting y blocklisting para bloquear software malicioso",
+            texto2:
+              "Cree politícas dinámicas a través de la categorización de aplicaciones e inteligencia de la reputación para reducir la gestión de gastos generales",
+            texto3:
+              "Correlacionar datos de millones de eventos de aplicaciones para identificar amenazas y mantener una base de datos actualizada de aplicaciones validadas",
+          },
+        },
+        insights: {
+          titulo: "Manténgase al día con One Security",
+          texto:
+            "La aplicación proporciona alertas de producto e información de amenazas en tiempo real, permitiéndole:",
+          lista: {
+            texto1:
+              "Ver de forma instantánea el estatus de sus despliegues para evitar correr versiones desactualizadas",
+            texto2:
+              "Alinear despligues con las mejores prácticas de asegurar una protección óptima",
+            texto3:
+              "Mantenerse un paso adelante con asesorías en tiempo real de nuevas vulnerabilidades / amenazas y notificaciones de nuevos y esenciales parches",
+          },
+        },
+
+        pilares: {
+          item:{
+          titulo1: "Maxima protección",
+          titulo2: "Protección Datos Sensibles",
+          titulo3: "Control Mejorado de Aplicaciones",
+          titulo4: "Insights en Tiempo Real",
+          }
+        },
+        
+      
+
+        endVinetas: {
+          automatizado: {
+            titulo: "Automatizado",
+            texto:
+              "Reciba detección y respuesta frente amenazas automatizadas y avanzadas, así como protección contra una variedad de amenazas en continuo crecimiento como ataques sin archivos y ransomware. Nuestra combinación de técnicas avanzadas de distintas generaciones ofrece una protección de endpoints que maximiza el rendimiento y la eficacia.",
+          },
+          integrada: {
+            titulo: "Integrada",
+            texto:
+              "Obtenga información práctica, funciones de investigación ampliadas y visibilidad centralizada con un conjunto de herramientas EDR & XDR unificado, integración SIEM consolidada y un juego de API abierto. Realice investigaciones de amenazas correlacionadas y extendidas que van más allá del endpoint y de reforzar sus equipos de seguridad con un servicio de detección y respuesta gestionadas.",
+          },
+          integracion: {
+            titulo: "Integración",
+            texto:
+              "En un panorama tecnológica y de amenazas que no para de evolucionar, usted necesita una seguridad que vaya más allá del antivirus tradicional. One Security ofrece detección de amenazas, investigación y respuestas con un único agente. Consolide capacidades y consolas y obtenga flexibilidad de implementación a través de las opciones: on premise y SaaS.",
+          },
+        },
+        deteccionRespuesta: {
+          titulo: "Detección y respuesta integradas",
+          texto:
+            "Al usar One Security con Flammas, obtendrá capacidades de EDR & XDR líderes del mercado. Potencie las capacidades de detección, investigación y respuesta en múltiples capas de seguridad para obtener una visibilidad completa de las amenazas que afectan a toda la organización.",
+          lista: {
+            texto1: "Reciba alertas procesables",
+            texto2: "Descubra el impacto e inicie una respuesta directa",
+            texto3:
+              "Consiga detección, investigación y respuesta correlacionadas y mejoradas en email, redes, nubes y workloads",
+            texto4: "Identifique amenazas y valide actividad sospechosa",
+            texto5:
+              "Integre mediante API con plataformas SIEM y herramientas SOAR",
+            texto6:
+              "Utilice las 24 horas, los 7 días de la semana, los 365 días del año",
+          },
+        },
+      },
+
+      //----SOLUCIONES-MARCUS*****/
+      solucionesMarcus: {
+      encabezado: {
+        titulo: "MARCUS CON FLAMMAS",
+        subtitulo: "SOLUCIONES DE FLAMMAS",
+        texto: "Protección integral mediante un enfoque de seguridad por capas en los endpoints.",
+        boton: "Hoja de Datos",
+        tituloPrincipal: "Seguridad completa para entornos físicos, virtuales, híbridos y en la nube.",
+        textoPrincipal: "Marcus tiene el propósito de garantizar la seguridad, detectar, analizar, y responder a amenazas especializadas y de prevenir proactivamente una administración en tiempo real."
+      },
+      infoTecnicas: {
+        texto1: "Detección, mitigación y prevención de Vulnerabilidades",
+        texto2: "Monitoreo de integridad",
+        texto3: "Monitoreo de bitácoras",
+        texto4: "Monitoreo de aplicaciones multiplataforma"
+      },
+      funciones: {
+        header:{
+          titulo:  "FUNCIONES DE MARCUS",
+        
+        bitacoras_titulo: "Monitoreo de bitácoras",
+        bitacoras_texto1: "Inspección de bitácoras del sistema operativo y aplicaciones para identificar eventos de seguridad relevantes o críticos.",
+        bitacoras_texto2: "Permite la inspección de eventos generados en el visor de eventos para servidores Windows y en syslog messages para servidores con sistema operativo Linux.",
+        bitacoras_texto3: "Permite la inspección de eventos generados por aplicaciones, almacenados en archivos de bitácoras.",
+        bitacoras_texto4: "Capacidad de alertar en tiempo real cuando se genera un evento crítico o relevante, con envío de alertas por correo electrónico o syslog.",
+        bitacoras_texto5: "Creación de reglas personalizadas para el monitoreo de bitácoras.",
+        bitacoras_texto6: "Ejecución de tareas programadas y asignación automatizada de reglas de monitoreo de bitácoras recomendadas por la solución.",
+
+        integridad_titulo: "Monitoreo de integridad",
+        integridad_texto1: "Identificación de cambios en archivos críticos, configuraciones, carpetas, servicios y claves del registro tanto del sistema operativo como de las aplicaciones, a través de reglas de monitoreo de integridad automatizadas.",
+        integridad_texto2: "Capacidad de alertar en tiempo real cuando se detecte una modificación en carpetas, archivos o claves del registro del sistema operativo y aplicaciones. Las alertas pueden ser enviadas por correo electrónico o syslog.",
+        integridad_texto3: "Creación de reglas personalizadas para el monitoreo de modificaciones en archivos críticos, carpetas y claves del registro.",
+        integridad_texto4: "Capacidad para ejecutar tareas programadas y asignar automáticamente las reglas de monitoreo de integridad recomendadas por la solución.",
+
+        aplicaciones_titulo: "Monitoreo de aplicaciones multiplataforma",
+        aplicaciones_texto1: "Capacidad para detectar y bloquear software no autorizado de forma automática, sin limitaciones del sistema operativo, de acuerdo con la lista de sistemas operativos indicados en las características principales.",
+        aplicaciones_texto2: "Escaneo del servidor para determinar qué aplicaciones están actualmente en ejecución.",
+        aplicaciones_texto3: "Bloqueo del sistema una vez creado el inventario, evitando la ejecución de nuevas aplicaciones que no estén en la lista blanca definida por el administrador.",
+        aplicaciones_texto4: "Integración en un entorno DevOps para permitir cambios continuos en las listas de aplicaciones, manteniendo al mismo tiempo la protección mediante APIs.",
+        aplicaciones_texto5: "Capacidad para capturar amenazas que aún no tienen firma, incluidas las amenazas zero-day.",
+
+        tecnicas_titulo: "Especificaciones Técnicas",
+        tecnicas_texto1: "Soporte para interfaces de cobre y varios tipos de fibra.",
+        tecnicas_texto2: "Soporte para velocidades mínimas de 1G/10G.",
+        tecnicas_texto3: "Capacidad para soportar un mínimo de 100 dispositivos concurrentes con todas las funcionalidades activas.",
+        tecnicas_texto4: "Capacidad de almacenamiento histórico de datos con granularidad de visualización adaptable."
+        }
+      },
+      caracteristicas: {
+        c1_titulo: "Caracteristicas de seguridad",
+        c1_texto: "El sistema ofrece inspección profunda de paquetes (DPI) y monitoreo bidireccional del tráfico, permitiendo detectar y prevenir vulnerabilidades zero-day. Además, aplica parches virtuales sin afectar la operación y bloquea el tráfico entre interfaces de red de servidores para evitar movimientos laterales.",
+        c2_titulo: "Control de aplicaciones",
+        c2_texto: "El sistema permite la detección y bloqueo de software no autorizado, así como el inventario detallado y control efectivo de las aplicaciones instaladas en los servidores. Además, ofrece integración con entornos DevOps para una gestión automatizada y continua de la seguridad en todo el ciclo de vida del desarrollo.",
+        c3_titulo: "Monitoreo",
+        c3_texto: "El sistema permite el monitoreo de integridad de archivos, configuraciones, servicios y claves del registro, con alertas en tiempo real vía correo electrónico o syslog. Ofrece la creación de reglas personalizadas para supervisar la integridad y las bitácoras, además de ejecutar tareas programadas para facilitar acciones automatizadas y mantener la seguridad del entorno."
+      },
+      gestion: {
+        header: "GESTIÓN",
+        texto: "Marcus es un dispositivo de propósito específico de protección frente a amenazas avanzadas que proporciona visibilidad e inteligencia de toda la red, Es la mejor solución de detección y respuesta de red (NDR) de su clase diseñada para ayudar a las organizaciones con incidentes.",
+        infoDeteccionRespuesta: {
+          texto1: "Administración centralizada de eventos, alarmas, logs, tickets, etc.",
+          texto2: "Dashboard intuitivo para eventos de seguridad.",
+          texto3: "Control de acceso basado en roles.",
+          texto4: "Generación automatizada de informes.",
+          texto5: "Consola gráfica basada en HTML5 para administración local y remota."
+        }
+      }
+    },
+
+      //----SOLUCIONES-ZEROSPAM*****/
+      zerospam: {
+        encabezado: {
+          titulo: "ZEROSPAM CON FLAMMAS",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto: "Protección integral mediante un enfoque de seguridad por capas en la infraestructura de correo electrónico.",
+          boton: "Hoja de Datos"
+        },
+        principal: {
+          titulo: "Seguridad avanzada en tus comunicaciones por correo electrónico.",
+          texto: "Nuestra solución permite implementar estándares como DMARC, SPF y DKIM, protegiendo tu dominio contra ataques de suplantación y asegurando la confianza de tus usuarios."
+        },
+        infoTecnicas: {
+          texto1: "Autenticación de correos con políticas DMARC, SPF y DKIM.",
+          texto2: "Bloqueo proactivo de suplantaciones y correos no autorizados.",
+          texto3: "Supervisión centralizada con reportes detallados y en tiempo real.",
+          texto4: "Configuración y administración simplificadas desde una consola web."
+        },
+        funciones: {
+          funcion:"FUNCIONES DE ZEROSPAM",
+          cliente: {
+            titulo: "Atención al cliente",
+            texto1: "Con una entrega fiable del correo electrónico, los equipos de atención al cliente pueden responder rápidamente a las consultas y resolver los problemas. Esto mejora la satisfacción del cliente y aumenta su fidelidad.",
+            texto2: "DMARC garantiza la entrega de los mensajes de correo electrónico, lo que te permite llegar de forma proactiva a los clientes con información útil, actualizaciones de soporte u ofertas personalizadas. Esto refuerza el compromiso del cliente e impulsa el éxito.",
+            texto3: "DMARC Proporciona una ubicación privilegiada de tus comunicaciones en las bandejas de entrada, evitando que los correos electrónicos lleguen a las carpetas de Spam o Correo no deseado o que sean rechazados por completo."
+          },
+          tecnologia: {
+            titulo: "Tecnología de la información (TI)",
+            texto1: "Accede a reportes DMARC que recopilan datos de servidores de todo el mundo para ofrecer información procesable y desvelar quién envía correos electrónicos desde tu dominio. Esto acelera las investigaciones de amenazas y la gestión de las quejas por spam. Nuestra plataforma también ofrece alertas personalizables para la visibilidad de amenazas en tiempo real, lo que permite una mitigación más rápida.",
+            texto2: "Impide el uso no autorizado de tu dominio para enviar correos electrónicos falsos, de modo que los mensajes de phishing y spoofing no lleguen a las bandejas de entrada de los grupos de interés internos y externos.",
+            texto3: "DMARC Permite a los equipos de TI implementar políticas de gobernanza del correo electrónico y mejores prácticas en toda la organización. Esto garantiza la coherencia de las políticas de autenticación y la integridad de las comunicaciones por correo electrónico, lo que en última instancia fomenta la confianza."
+          },
+          directivos: {
+            titulo: "Directivos (C-level)",
+            texto1: "La rentable solución DMARC de Flammas te permite evitar las consecuencias de un ataque vía correo electrónico, que podría implicar pérdidas directas, responsabilidades legales y daños a tu reputación. Su política transparente de precios, despliegue flexible y escalabilidad se adapta a empresas de cualquier tamaño.",
+            texto2: "Bloquea amenazas perturbadoras como el spear-phishing o BEC, mientras garantizas un funcionamiento sin problemas con nuestras soluciones automatizadas, que se integran perfectamente en la infraestructura de correo electrónico existente, sin interrupciones en tu flujo de correo electrónico.",
+            texto3: "Nuestra solución DMARC proporciona supervisión y alertas en tiempo real para una rápida detección y mitigación de amenazas. Una vez configurada, pone en cuarentena o rechaza automáticamente los correos sospechosos y ofrece informes detallados para las auditorías de cumplimiento de reglas y estándares."
+          },
+          empresarios: {
+            titulo: "Empresarios",
+            texto1: "DMARC cierra la puerta a las amenazas basadas en el correo electrónico que podrían provocar daños financieros y de reputación potencialmente irreparables, garantizando la continuidad de tu negocio y protegiendo tu cuenta de resultados.",
+            texto2: "Aunque la protección perimetral y antispam existentes pueden proteger a tus grupos de interés internos, no protegen a tus clientes, proveedores y al resto del mundo de los correos electrónicos fraudulentos enviados utilizando tu dominio. DMARC resuelve este problema al proteger a todos los grupos de interés.",
+            texto3: "Es más probable que los clientes hagan negocios con organizaciones en las que confían. Garantizar la máxima seguridad del correo electrónico para tu negocio con DMARC significa que los clientes pueden confiar en que cada correo electrónico que lleva tu nombre es el verdadero."
+          }
+        },
+        endviñetas: {
+          viñeta1: {
+            titulo: "Filtrado inteligente en la nube",
+            texto: "El sistema de pre-filtrado basado en la nube puede bloquear hasta el 90 % del tráfico total de mensajes, incluyendo spam y correos maliciosos, antes de que lleguen a tu red. Esto reduce significativamente la carga sobre los servidores internos y mejora la eficiencia del análisis de seguridad."
+          },
+          viñeta2: {
+            titulo: "Protección de datos con cifrado de correo",
+            texto: "El Cifrado de Correo Electrónico permite asegurar todos los mensajes salientes, evitando la filtración de información confidencial. Esta capa de seguridad es esencial para mantener la integridad de los datos en tránsito y cumplir con normativas de privacidad."
+          },
+          viñeta3: {
+            titulo: "Defensa contra amenazas avanzadas",
+            texto: "La tecnología ATSE identifica tanto amenazas conocidas como desconocidas, ofreciendo protección contra ataques emergentes que aún no han sido catalogados. Esto garantiza una defensa proactiva frente a malware sofisticado y vulnerabilidades de día cero."
+          }
+        },
+        gestion: {
+          titulo: "GESTIÓN",
+          texto: "DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables."
+        },
+        infoDeteccionRespuesta: {
+          texto1: "Protección completa contra suplantación de identidad y correos fraudulentos.",
+          texto2: "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
+          texto3: "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
+          texto4: "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
+          texto5: "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos."
+        }
+      },
+
+      //----SOLUCIONES-SECUREDOMAIN*****/
+      securedomain: {
+        encabezado: {
+          titulo: "SECURE DOMAIN INTELLIGENCE CON FLAMMAS",
+          subtitulo: "SOLUCIONES DE FLAMMAS",
+          texto: "Defiende tu marca y a tus usuarios de dominios falsificados con tecnología de detección avanzada que identifica y bloquea amenazas antes de que causen daño.",
+          boton: "Hoja de Datos"
+        },
+        principal: {
+          titulo: "Detección avanzada de brechas y exposición de datos corporativos.",
+          texto: "Secure Domain Intelligence supervisa múltiples fuentes, incluida la dark web, para descubrir datos robados o filtrados de tu empresa o proveedores terceros — como credenciales, contraseñas o información personal expuesta — y envía alertas inmediatas si se detecta alguna brecha."
+        },
+        infoTecnicas: {
+          texto1: "Monitoreo continuo en dark web y múltiples fuentes para detectar filtraciones.",
+          texto2: "Revelación de credenciales y datos personales expuestos o comprometidos.",
+          texto3: "Alertas en tiempo real para actuar rápidamente ante una brecha.",
+          texto4: "Visibilidad clara sobre exposiciones internas o de proveedores para cumplir normativas."
+        },
+        funciones: {
+          tituloPrincipal:"FUNCIONES DE SECURE DOMAIN INTELLIGENCE",
+          cliente: {
+            titulo: "Compromiso del sistema",
+            texto1: "Distribución de malware o ransomware a través de sitios web falsificados.",
+            texto2: "Acceso no autorizado a sistemas internos por parte de atacantes.",
+            texto3: "Riesgo de interrupción operativa y pérdida de información crítica."
+          },
+          amenazas: {
+            titulo: "Pérdidas financieras",
+            texto1: "Venta engañosa de productos o servicios falsificados por parte de atacantes.",
+            texto2: "Pérdida de ingresos debido a la desconfianza de clientes legítimos.",
+            texto3: "Reducción de la productividad por incidentes derivados del fraude de dominios."
+          },
+          riesgos: {
+            titulo: "Daños a la reputación",
+            texto1: "Pérdida de credibilidad frente a clientes, socios y proveedores.",
+            texto2: "Asociación negativa de la marca con actividades fraudulentas.",
+            texto3: "Dificultad para recuperar la confianza del público tras un incidente."
+          },
+          marca: {
+            titulo: "Robo de datos",
+            texto1: "Exposición de información confidencial como DNI, direcciones o teléfonos.",
+            texto2: "Riesgo de fraude por el robo de credenciales bancarias y tarjetas.",
+            texto3: "Acceso no autorizado a cuentas personales o empresariales."
+          }
+        },
+        gestion: {
+          titulo: "GESTIÓN",
+          texto: "DMARC se encarga de asegurar tu empresa contra estas amenazas e incrementa la protección ante daños empresariales potencialmente irreparables."
+        },
+        infoDeteccionRespuesta: {
+          texto1: "Protección completa contra suplantación de identidad y correos fraudulentos.",
+          texto2: "Supervisión y alertas en tiempo real para detectar y mitigar amenazas.",
+          texto3: "Gestión sencilla de registros SPF, DKIM y DMARC desde una única plataforma.",
+          texto4: "Mejora la reputación de tu dominio asegurando la entrega de correos legítimos.",
+          texto5: "Incrementa la confianza del cliente al garantizar que tus emails sean auténticos."
         }
       }
     
+
     },
   },
 
@@ -1661,136 +2024,486 @@ const resources = {
         },
       },
 
-      //solucines cloud 
+      //solucines cloud
       solucionesCloud: {
         encabezado1: {
           titulo: "CLOUD AND VIRTUAL MONITORING",
           subtitulo: "FLAMMAS SOLUTIONS",
-          texto: "It is the all-in-one solution that will help you monitor your infrastructure, whether on-premise, virtualized, hybrid, or cloud-based."
+          texto:
+            "It is the all-in-one solution that will help you monitor your infrastructure, whether on-premise, virtualized, hybrid, or cloud-based.",
         },
         txtDerecho1: {
           titulo: "Centralized Monitoring of Hybrid Environments",
-          texto: "Monitor every detail of your environments wherever they are, regardless of the service provider, virtualization technology, or abstraction API.",
-          texto1: "Unify all your asset control in one place: the Flammas console. You can manage from hundreds to several hundred thousand elements from multiple sources, scaling progressively and dynamically."
+          texto:
+            "Monitor every detail of your environments wherever they are, regardless of the service provider, virtualization technology, or abstraction API.",
+          texto1:
+            "Unify all your asset control in one place: the Flammas console. You can manage from hundreds to several hundred thousand elements from multiple sources, scaling progressively and dynamically.",
         },
         txtIzquierda1: {
           titulo: "Cloud Environments",
-          texto: "By using remote APIs and in a centralized manner, we can unify data from different providers, offering an umbrella of information unification (including costs) that allows comparing and reporting data from any type of provider."
+          texto:
+            "By using remote APIs and in a centralized manner, we can unify data from different providers, offering an umbrella of information unification (including costs) that allows comparing and reporting data from any type of provider.",
         },
         txtDerecho2: {
           titulo: "Take Control of Your Systems’ Data",
-          texto: "Years ago, it was much simpler to obtain information about your infrastructure. Nowadays, it is much more complex given the variety of on-premise architectures with dynamic containers, mixed with cloud environments and all kinds of external SaaS.",
-          texto1: "Control the growth and usage of all your systems. Thanks to our agents, remote probes, or use of APIs accessing cloud infrastructure, you can maximize your resources, save money, and estimate future investments."
+          texto:
+            "Years ago, it was much simpler to obtain information about your infrastructure. Nowadays, it is much more complex given the variety of on-premise architectures with dynamic containers, mixed with cloud environments and all kinds of external SaaS.",
+          texto1:
+            "Control the growth and usage of all your systems. Thanks to our agents, remote probes, or use of APIs accessing cloud infrastructure, you can maximize your resources, save money, and estimate future investments.",
         },
         integracion: {
           titulo: "INTEGRATION",
           titulo2: "IAAS ",
-          texto1: "If you do not have access to infrastructure servers, you can install agents on your machines or monitor them externally.",
-          texto2: "In addition, you can dynamically register systems in a simple way, using your IaaS provider’s provisioning mechanisms and Flammas APIs."
+          texto1:
+            "If you do not have access to infrastructure servers, you can install agents on your machines or monitor them externally.",
+          texto2:
+            "In addition, you can dynamically register systems in a simple way, using your IaaS provider’s provisioning mechanisms and Flammas APIs.",
         },
         infraestructura: {
           titulo: "VIRTUALIZATION INFRASTRUCTURE",
-          texto1: "Andora FMS automatically monitors ESX servers, DataStores, virtual machines, and VirtualCenter from your VMware architecture. Moreover, monitoring virtual environments does not affect VMware system performance. Our software uses the official API to collect all information.",
-          texto2: "It can also be used with virtualization like Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV following the same principles (with access to external APIs)."
+          texto1:
+            "Andora FMS automatically monitors ESX servers, DataStores, virtual machines, and VirtualCenter from your VMware architecture. Moreover, monitoring virtual environments does not affect VMware system performance. Our software uses the official API to collect all information.",
+          texto2:
+            "It can also be used with virtualization like Kubernetes, Docker Swarm, OpenStack, Nutanix, XEN, RHEV, HyperV following the same principles (with access to external APIs).",
         },
         encabezado2: {
           titulo: "Continuous System Security Monitoring",
           subtitulo: "FLAMMAS SOLUTIONS",
-          texto: "At Flammas, we understand the importance of maintaining the integrity and security of your systems in an ever-evolving digital world. Our platform is designed to provide you with the necessary tools to audit and secure your systems with confidence."
+          texto:
+            "At Flammas, we understand the importance of maintaining the integrity and security of your systems in an ever-evolving digital world. Our platform is designed to provide you with the necessary tools to audit and secure your systems with confidence.",
         },
         miniComponentes: {
           hardening: {
             titulo: "HARDENING MONITORING",
-            texto: "We have combined CIS recommendations with our monitoring technology to offer you an integrated hardening audit system with more than 1500 individual checks. This allows you to track and assess in real time the evolution of your hardening measures across all your environments."
+            texto:
+              "We have combined CIS recommendations with our monitoring technology to offer you an integrated hardening audit system with more than 1500 individual checks. This allows you to track and assess in real time the evolution of your hardening measures across all your environments.",
           },
           vulnerabilidades: {
             titulo: "PERMANENT VULNERABILITY MONITORING",
-            texto: "We integrate the entire Mitre (CVE) and NIST vulnerability database to continuously audit vulnerable software throughout your organization. Both agents and the remote Discovery component will be used to determine which of your systems have software with vulnerabilities."
+            texto:
+              "We integrate the entire Mitre (CVE) and NIST vulnerability database to continuously audit vulnerable software throughout your organization. Both agents and the remote Discovery component will be used to determine which of your systems have software with vulnerabilities.",
           },
           inventario: {
             titulo: "INVENTORY FLEXIBILITY",
-            texto: "Whether you use Linux systems from various distributions or any version of Windows, we adapt to everything. No matter the complexity of your infrastructure, with Flammas you can perform a detailed inventory of all types of systems and customize it as you like."
+            texto:
+              "Whether you use Linux systems from various distributions or any version of Windows, we adapt to everything. No matter the complexity of your infrastructure, with Flammas you can perform a detailed inventory of all types of systems and customize it as you like.",
           },
           infraestructuraSeguridad: {
             titulo: "SECURITY INFRASTRUCTURE MONITORING",
-            texto: "Monitor the status of security infrastructures: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, authentication systems, storage systems, log collection, etc."
+            texto:
+              "Monitor the status of security infrastructures: Backups, antivirus, VPN, firewalls, IDS/IPS, SIEM, honeypots, authentication systems, storage systems, log collection, etc.",
           },
           servidores: {
             titulo: "SERVER SECURITY MONITORING",
-            texto: "We verify in real time the security of remote access, passwords, open ports, and changes to key system files. If something moves, you will be notified almost in real time."
+            texto:
+              "We verify in real time the security of remote access, passwords, open ports, and changes to key system files. If something moves, you will be notified almost in real time.",
           },
           alertas: {
             titulo: "PROACTIVE ALERTS",
-            texto: "We not only help you detect potential security breaches but also provide proactive alerts and recommendations to address any issue before it becomes a real threat."
-          }
+            texto:
+              "We not only help you detect potential security breaches but also provide proactive alerts and recommendations to address any issue before it becomes a real threat.",
+          },
         },
         viñetas: {
           inventario: {
             titulo: "HARDWARE AND SOFTWARE ASSET INVENTORY AND CONTROL",
-            texto: "Monitor and manage all devices and software on your network. Keep an updated inventory of your technology assets and use authentication to block unauthorized items. Also, monitor and manage the software on your network, allowing only authorized ones and blocking unauthorized ones. Your security requires it."
+            texto:
+              "Monitor and manage all devices and software on your network. Keep an updated inventory of your technology assets and use authentication to block unauthorized items. Also, monitor and manage the software on your network, allowing only authorized ones and blocking unauthorized ones. Your security requires it.",
           },
           dispositivos: {
             titulo: "Device Inventory and Control",
-            texto: "At Flammas, we care for your systems' security from the ground up, meaning identifying and managing your hardware devices so that only authorized ones have access, blocking unwanted ones. Maintaining proper inventory minimizes internal risks, organizes your environment, and provides clarity to your network."
+            texto:
+              "At Flammas, we care for your systems' security from the ground up, meaning identifying and managing your hardware devices so that only authorized ones have access, blocking unwanted ones. Maintaining proper inventory minimizes internal risks, organizes your environment, and provides clarity to your network.",
           },
           gestionVulnerabilidades: {
             titulo: "Vulnerability Management",
-            texto: "Continuously analyze your assets to detect potential vulnerabilities and fix them before they become an issue. Strengthen your network security by ensuring that software and operating systems in your organization are always up to date with the latest security measures."
+            texto:
+              "Continuously analyze your assets to detect potential vulnerabilities and fix them before they become an issue. Strengthen your network security by ensuring that software and operating systems in your organization are always up to date with the latest security measures.",
           },
           privilegios: {
             titulo: "Controlled Use of Administrative Privileges",
-            texto: "Closely monitor access controls and user behavior with privileged accounts to prevent any unauthorized access to critical systems. Ensure that only authorized people have elevated privileges to avoid misuse of administrative privileges."
+            texto:
+              "Closely monitor access controls and user behavior with privileged accounts to prevent any unauthorized access to critical systems. Ensure that only authorized people have elevated privileges to avoid misuse of administrative privileges.",
           },
           configuracion: {
             titulo: "Secure Hardware and Software Configuration",
-            texto: "Establish and maintain security configurations based on standards approved by your organization. Create a rigorous configuration management system that detects and alerts about any misconfiguration, and establish a change control process to prevent attackers from exploiting vulnerable services and configurations."
+            texto:
+              "Establish and maintain security configurations based on standards approved by your organization. Create a rigorous configuration management system that detects and alerts about any misconfiguration, and establish a change control process to prevent attackers from exploiting vulnerable services and configurations.",
           },
           logs: {
             titulo: "Audit Log Maintenance, Monitoring and Analysis",
-            texto: "Collect, manage, and analyze audit logs of events to identify possible anomalies. Keep detailed records to thoroughly understand attacks and effectively respond to security incidents."
+            texto:
+              "Collect, manage, and analyze audit logs of events to identify possible anomalies. Keep detailed records to thoroughly understand attacks and effectively respond to security incidents.",
           },
           malware: {
             titulo: "Malware Defenses",
-            texto: "Monitor and control the installation and execution of malicious code at multiple points in your company to prevent attacks. Configure and use antimalware software and leverage automation to ensure quick defense updates and agile corrective action in case of attacks."
+            texto:
+              "Monitor and control the installation and execution of malicious code at multiple points in your company to prevent attacks. Configure and use antimalware software and leverage automation to ensure quick defense updates and agile corrective action in case of attacks.",
           },
           correo: {
             titulo: "Email and Web Browser Protection",
-            texto: "Protect and manage your web browsers and email systems against online threats to reduce your attack surface. Disable unauthorized browsers and email plugins and ensure users only access trusted websites through network-based URL filters."
+            texto:
+              "Protect and manage your web browsers and email systems against online threats to reduce your attack surface. Disable unauthorized browsers and email plugins and ensure users only access trusted websites through network-based URL filters.",
           },
           recuperacion: {
             titulo: "Data Recovery Capabilities",
-            texto: "Establish processes and tools to ensure that your organization's critical information is properly backed up. Make sure you have a reliable data recovery system to restore information in case of attacks that jeopardize critical data."
+            texto:
+              "Establish processes and tools to ensure that your organization's critical information is properly backed up. Make sure you have a reliable data recovery system to restore information in case of attacks that jeopardize critical data.",
           },
           defensa: {
             titulo: "Boundary Defense and Data Protection",
-            texto: "Identify and separate sensitive data, and establish a set of processes that include encryption, data exfiltration protection plans, and data loss prevention techniques."
+            texto:
+              "Identify and separate sensitive data, and establish a set of processes that include encryption, data exfiltration protection plans, and data loss prevention techniques.",
           },
           cuentas: {
             titulo: "Account Monitoring and Control",
-            texto: "Closely monitor the entire lifecycle of your systems and application accounts, from creation to deletion, including usage and inactivity. This active management prevents attackers from leveraging legitimate but inactive user accounts for malicious purposes."
-          }
+            texto:
+              "Closely monitor the entire lifecycle of your systems and application accounts, from creation to deletion, including usage and inactivity. This active management prevents attackers from leveraging legitimate but inactive user accounts for malicious purposes.",
+          },
         },
         vulnerabilidades: {
           titulo: "THE MOST COMPLETE VULNERABILITY DATABASE",
-          texto: "No matter how many systems you have or where they are, we will search every installed software component and cross-check it with the world's largest public databases (CVE, NVD, VulnDB, NVR, MSUG, RHSD) and our comprehensive vulnerabilities database to tell you where to act.",
-          texto1: "Set alerts, create dashboards and technical reports to filter by machine groups, attack types, intrusion vectors, privilege usage and many other fields."
+          texto:
+            "No matter how many systems you have or where they are, we will search every installed software component and cross-check it with the world's largest public databases (CVE, NVD, VulnDB, NVR, MSUG, RHSD) and our comprehensive vulnerabilities database to tell you where to act.",
+          texto1:
+            "Set alerts, create dashboards and technical reports to filter by machine groups, attack types, intrusion vectors, privilege usage and many other fields.",
         },
         roadmap: {
           titulo1: "OUR",
           titulo2: "ROADMAP",
           titulo3: "SECURITY",
           texto1: "We are building a tool to control everything.",
-          texto2: "Flammas is the basis to monitor, audit, collect logs, generate alerts, manage configurations (NCM), execute distributed tasks (RMM) and much more.",
-          texto3: "With security monitoring, hardening analysis and vulnerability detection we have taken the first step but our roadmap is much more ambitious.",
-          texto4: "Flammas will truly be the single tool to control everything."
+          texto2:
+            "Flammas is the basis to monitor, audit, collect logs, generate alerts, manage configurations (NCM), execute distributed tasks (RMM) and much more.",
+          texto3:
+            "With security monitoring, hardening analysis and vulnerability detection we have taken the first step but our roadmap is much more ambitious.",
+          texto4:
+            "Flammas will truly be the single tool to control everything.",
         },
         seguridadVerificable: {
           titulo: "SECURITY YOU CAN",
           titulo2: "SEE AND VERIFY",
-          texto: "We are committed to providing you with transparency at all times. Our platform allows you to easily verify the implementation of each control and continuously track the state of your security. Not all categories are applicable to all systems, but we have developed controls that will help you determine if they are relevant to your environment."
+          texto:
+            "We are committed to providing you with transparency at all times. Our platform allows you to easily verify the implementation of each control and continuously track the state of your security. Not all categories are applicable to all systems, but we have developed controls that will help you determine if they are relevant to your environment.",
+        },
+      },
+
+      //----one security---
+      solucionesOneSecurity: {
+        encabezado: {
+          titulo: "ONE SECURITY WITH FLAMMAS",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto: "Maximum protection with layered endpoint security.",
+          boton: "Data Sheet",
+        },
+        deteccion: {
+          titulo: "Advanced detection techniques",
+          texto:
+            "It uses a mix of intergenerational threat techniques to provide the broadest protection against all types of threats.",
+          lista: {
+            texto1: "Machine learning in pre-execution and runtime",
+            texto2:
+              "More accurate detection of advanced malware, such as fileless threats and ransomware",
+            texto3:
+              "Noise-cancelling techniques such as census and safelisting across each detection layer to dramatically reduce false positives",
+            texto4:
+              "Effective protection against scripts, injection, ransomware and attacks on browsers and memory through innovative behavior analysis.",
+          },
+        },
+        maxima: {
+          titulo: "Endpoint security redefined",
+          texto:
+            "One Security uses a host-based intrusion prevention system (HIPS) to virtually patch known and unknown vulnerabilities before the patch is available or can be deployed.",
+          lista: {
+            texto1: "Eliminate risk exposure",
+            texto2:
+              "Extend protection to critical platforms and physical or virtual devices",
+            texto3: "Reduce downtime during recovery and emergency patching",
+            texto4: "Identify vulnerabilities based on CVE, MS-ID and severity",
+            texto5:
+              "Detect more vulnerabilities than any other provider thanks to our industry-leading research",
+          },
+        },
+        proteccion: {
+          titulo: "Effective security for your sensitive data",
+          texto:
+            "Protect your sensitive data, inside and outside the network, to achieve maximum visibility and control. Endpoint encryption, integrated DLP and device control.",
+          lista: {
+            texto1:
+              "Protect the widest range of devices, applications and file types",
+            texto2: "Complies with most regulations, including GDPR",
+            texto3:
+              "Protects your data with full disk, folder and file encryption, and external device encryption",
+            texto4:
+              "Enforce granular policies for device control and data management",
+            texto5:
+              "Uses Microsoft BitLocker and Apple FileVault encryption keys",
+          },
+        },
+        control: {
+          titulo: "Enhanced application control against malicious software",
+          texto:
+            "Prevent unwanted and unknown applications from running on your endpoints. It allows you to:",
+          lista: {
+            texto1:
+              "Use customizable lockdown, safelisting and blocklisting policies to block malicious software",
+            texto2:
+              "Create dynamic policies through application categorization and reputation intelligence to reduce management overhead",
+            texto3:
+              "Correlate data from millions of application events to identify threats and maintain an up-to-date database of validated applications",
+          },
+        },
+        insights: {
+          titulo: "Stay up to date with One Security",
+          texto:
+            "The application provides real-time product alerts and threat intelligence, allowing you to:",
+          lista: {
+            texto1:
+              "Instantly view the status of your deployments to avoid running outdated versions",
+            texto2:
+              "Align deployments with best practices to ensure optimal protection",
+            texto3:
+              "Stay one step ahead with real-time advisories on new vulnerabilities/threats and notifications of new and essential patches",
+          },
+        },
+        pilares: {
+          item:{
+          titulo1: "Maximum Protection",
+          titulo2: "Sensitive Data Protection",
+          titulo3: "Enhanced Application Control",
+          titulo4: "Real-Time Insights",
+          }
+        },
+        endVinetas: {
+          automatizado: {
+            titulo: "Automated",
+            texto:
+              "Receive automated and advanced threat detection and response, as well as protection against a variety of growing threats such as fileless attacks and ransomware. Our combination of advanced multi-generational techniques delivers endpoint protection that maximizes performance and effectiveness.",
+          },
+          integrada: {
+            titulo: "Integrated",
+            texto:
+              "Gain actionable insights, enhanced investigative functions and centralized visibility with a unified EDR & XDR toolset, consolidated SIEM integration and an open API suite. Perform correlated and extended threat investigations beyond the endpoint and strengthen your security teams with a managed detection and response service.",
+          },
+          integracion: {
+            titulo: "Integration",
+            texto:
+              "In a constantly evolving technology and threat landscape, you need security that goes beyond traditional antivirus. One Security provides threat detection, investigation and response with a single agent. Consolidate capabilities and consoles and gain deployment flexibility through on-premise and SaaS options.",
+          },
+        },
+        deteccionRespuesta: {
+          titulo: "Integrated detection and response",
+          texto:
+            "By using One Security with Flammas, you gain market-leading EDR & XDR capabilities. Enhance detection, investigation and response across multiple security layers to achieve complete visibility of threats affecting the entire organization.",
+          lista: {
+            texto1: "Receive actionable alerts",
+            texto2: "Discover the impact and initiate a direct response",
+            texto3:
+              "Achieve correlated and enhanced detection, investigation and response across email, networks, clouds and workloads",
+            texto4: "Identify threats and validate suspicious activity",
+            texto5: "Integrate via API with SIEM platforms and SOAR tools",
+            texto6: "Use 24 hours a day, 7 days a week, 365 days a year",
+          },
+        },
+      },
+
+      //soluciones - marcus 
+      solucionesMarcus: {
+  encabezado: {
+    titulo: "MARCUS WITH FLAMMAS",
+    subtitulo: "FLAMMAS SOLUTIONS",
+    texto: "Comprehensive protection through a layered security approach at endpoints.",
+    boton: "Data Sheet",
+    tituloPrincipal: "Complete security for physical, virtual, hybrid, and cloud environments.",
+    textoPrincipal: "Marcus aims to ensure security, detect, analyze, and respond to specialized threats, and proactively prevent with real-time management."
+  },
+  infoTecnicas: {
+    texto1: "Detection, mitigation, and prevention of vulnerabilities",
+    texto2: "Integrity monitoring",
+    texto3: "Log monitoring",
+    texto4: "Cross-platform application monitoring"
+  },
+  funciones: {
+    header: {
+    titulo:"MARCUS FUNCTIONS",
+    bitacoras_titulo: "Log monitoring",
+    bitacoras_texto1: "Inspection of operating system and application logs to identify relevant or critical security events.",
+    bitacoras_texto2: "Allows inspection of events generated in the event viewer for Windows servers and in syslog messages for Linux servers.",
+    bitacoras_texto3: "Allows inspection of events generated by applications stored in log files.",
+    bitacoras_texto4: "Ability to alert in real-time when a critical or relevant event is generated, with notifications via email or syslog.",
+    bitacoras_texto5: "Creation of custom rules for log monitoring.",
+    bitacoras_texto6: "Execution of scheduled tasks and automated assignment of recommended log monitoring rules.",
+
+    integridad_titulo: "Integrity monitoring",
+    integridad_texto1: "Identification of changes in critical files, configurations, folders, services, and registry keys in both the operating system and applications through automated integrity monitoring rules.",
+    integridad_texto2: "Ability to alert in real-time when a modification is detected in folders, files, or registry keys of the operating system and applications. Alerts can be sent via email or syslog.",
+    integridad_texto3: "Creation of custom rules for monitoring modifications in critical files, folders, and registry keys.",
+    integridad_texto4: "Ability to execute scheduled tasks and automatically assign integrity monitoring rules recommended by the solution.",
+
+    aplicaciones_titulo: "Cross-platform application monitoring",
+    aplicaciones_texto1: "Ability to automatically detect and block unauthorized software, regardless of the operating system, according to the list of supported systems indicated in the main features.",
+    aplicaciones_texto2: "Server scanning to determine which applications are currently running.",
+    aplicaciones_texto3: "System blocking once the inventory is created, preventing the execution of new applications not included in the whitelist defined by the administrator.",
+    aplicaciones_texto4: "Integration in a DevOps environment to allow continuous changes in application lists while maintaining protection via APIs.",
+    aplicaciones_texto5: "Ability to capture threats that do not yet have a signature, including zero-day threats.",
+
+    tecnicas_titulo: "Technical specifications",
+    tecnicas_texto1: "Support for copper interfaces and various types of fiber.",
+    tecnicas_texto2: "Support for minimum speeds of 1G/10G.",
+    tecnicas_texto3: "Capacity to support a minimum of 100 concurrent devices with all features enabled.",
+    tecnicas_texto4: "Capacity for historical data storage with adaptable visualization granularity."
+    }
+  },
+  caracteristicas: {
+    c1_titulo: "Security features",
+    c1_texto: "The system offers deep packet inspection (DPI) and bidirectional traffic monitoring, allowing detection and prevention of zero-day vulnerabilities. In addition, it applies virtual patches without affecting operations and blocks traffic between server network interfaces to prevent lateral movements.",
+    c2_titulo: "Application control",
+    c2_texto: "The system allows detection and blocking of unauthorized software, as well as detailed inventory and effective control of applications installed on servers. It also provides integration with DevOps environments for automated and continuous security management throughout the development lifecycle.",
+    c3_titulo: "Monitoring",
+    c3_texto: "The system enables monitoring of file, configuration, service, and registry key integrity, with real-time alerts via email or syslog. It offers the creation of custom rules for supervising integrity and logs, as well as executing scheduled tasks to facilitate automated actions and maintain environment security."
+  },
+  gestion: {
+    header: "MANAGEMENT",
+    texto: "Marcus is a purpose-built device for advanced threat protection that provides visibility and intelligence across the entire network. It is the best-in-class Network Detection and Response (NDR) solution designed to help organizations handle incidents.",
+    infoDeteccionRespuesta: {
+      texto1: "Centralized management of events, alarms, logs, tickets, etc.",
+      texto2: "Intuitive dashboard for security events.",
+      texto3: "Role-based access control.",
+      texto4: "Automated report generation.",
+      texto5: "HTML5-based graphical console for local and remote administration."
+    }
+  }
+},
+
+      //zero spam
+      zerospam: {
+        encabezado: {
+          titulo: "ZEROSPAM WITH FLAMMAS",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto: "Comprehensive protection through a layered security approach in the email infrastructure.",
+          boton: "Data Sheet"
+        },
+        principal: {
+          titulo: "Advanced security in your email communications.",
+          texto: "Our solution allows the implementation of standards such as DMARC, SPF, and DKIM, protecting your domain against spoofing attacks and ensuring user trust."
+        },
+        infoTecnicas: {
+          texto1: "Email authentication with DMARC, SPF, and DKIM policies.",
+          texto2: "Proactive blocking of spoofing and unauthorized emails.",
+          texto3: "Centralized monitoring with detailed, real-time reports.",
+          texto4: "Simplified configuration and management from a web console."
+        },
+        funciones: {
+          funcion:"ZEROSPAM FEATURES",
+          cliente: {
+            titulo: "Customer Service",
+            texto1: "With reliable email delivery, customer service teams can quickly respond to inquiries and resolve issues. This improves customer satisfaction and increases loyalty.",
+            texto2: "DMARC ensures the delivery of email messages, allowing you to proactively reach customers with useful information, support updates, or personalized offers. This strengthens customer engagement and drives success.",
+            texto3: "DMARC provides a privileged placement of your communications in inboxes, preventing emails from being sent to Spam or Junk folders or being completely rejected."
+          },
+          tecnologia: {
+            titulo: "Information Technology (IT)",
+            texto1: "Access DMARC reports that collect data from servers worldwide to provide actionable information and reveal who is sending emails from your domain. This speeds up threat investigations and spam complaint management. Our platform also offers customizable alerts for real-time threat visibility, enabling faster mitigation.",
+            texto2: "Prevents unauthorized use of your domain to send fake emails, so phishing and spoofing messages do not reach the inboxes of internal and external stakeholders.",
+            texto3: "DMARC allows IT teams to implement email governance policies and best practices across the organization. This ensures consistency in authentication policies and the integrity of email communications, ultimately fostering trust."
+          },
+          directivos: {
+            titulo: "Executives (C-level)",
+            texto1: "Flammas's cost-effective DMARC solution helps you avoid the consequences of an email-based attack, which could involve direct losses, legal liabilities, and damage to your reputation. Its transparent pricing policy, flexible deployment, and scalability adapt to businesses of any size.",
+            texto2: "Blocks disruptive threats such as spear-phishing or BEC while ensuring smooth operation with our automated solutions, which integrate seamlessly into your existing email infrastructure without interruptions to your email flow.",
+            texto3: "Our DMARC solution provides real-time monitoring and alerts for rapid threat detection and mitigation. Once configured, it automatically quarantines or rejects suspicious emails and provides detailed reports for compliance audits."
+          },
+          empresarios: {
+            titulo: "Business Owners",
+            texto1: "DMARC closes the door to email-based threats that could cause potentially irreparable financial and reputational damage, ensuring business continuity and protecting your bottom line.",
+            texto2: "Although existing perimeter and anti-spam protection can safeguard your internal stakeholders, they do not protect your customers, suppliers, and the rest of the world from fraudulent emails sent using your domain. DMARC solves this problem by protecting all stakeholders.",
+            texto3: "Customers are more likely to do business with organizations they trust. Ensuring maximum email security for your business with DMARC means that customers can trust that every email bearing your name is genuine."
+          }
+        },
+        endviñetas: {
+          viñeta1: {
+            titulo: "Smart Cloud Filtering",
+            texto: "The cloud-based pre-filtering system can block up to 90% of total message traffic, including spam and malicious emails, before they reach your network. This significantly reduces the load on internal servers and improves security analysis efficiency."
+          },
+          viñeta2: {
+            titulo: "Data Protection with Email Encryption",
+            texto: "Email Encryption ensures all outgoing messages are secured, preventing confidential information leaks. This security layer is essential to maintain data integrity in transit and comply with privacy regulations."
+          },
+          viñeta3: {
+            titulo: "Defense Against Advanced Threats",
+            texto: "ATSE technology identifies both known and unknown threats, offering protection against emerging attacks that have not yet been cataloged. This ensures proactive defense against sophisticated malware and zero-day vulnerabilities."
+          }
+        },
+        gestion: {
+          titulo: "MANAGEMENT",
+          texto: "DMARC ensures your company is protected against these threats and increases defense against potentially irreparable business damage."
+        },
+        infoDeteccionRespuesta: {
+          texto1: "Comprehensive protection against identity spoofing and fraudulent emails.",
+          texto2: "Real-time monitoring and alerts to detect and mitigate threats.",
+          texto3: "Simple management of SPF, DKIM, and DMARC records from a single platform.",
+          texto4: "Improves your domain’s reputation by ensuring legitimate email delivery.",
+          texto5: "Increases customer trust by guaranteeing your emails are authentic."
+        }
+      },
+
+      //----SOLUCIONES-SECUREDOMAIN*****/
+       securedomain: {
+        encabezado: {
+          titulo: "SECURE DOMAIN INTELLIGENCE WITH FLAMMAS",
+          subtitulo: "FLAMMAS SOLUTIONS",
+          texto: "Defend your brand and users from spoofed domains with advanced detection technology that identifies and blocks threats before they cause harm.",
+          boton: "Data Sheet"
+        },
+        principal: {
+          titulo: "Advanced breach detection and exposure of corporate data.",
+          texto: "Secure Domain Intelligence monitors multiple sources, including the dark web, to uncover stolen or leaked data from your company or third-party providers — such as credentials, passwords, or exposed personal information — and sends immediate alerts if a breach is detected."
+        },
+        infoTecnicas: {
+          texto1: "Continuous monitoring on the dark web and multiple sources to detect leaks.",
+          texto2: "Exposure of credentials and personal data that are leaked or compromised.",
+          texto3: "Real-time alerts to act quickly in the event of a breach.",
+          texto4: "Clear visibility of internal or supplier exposures to comply with regulations."
+        },
+        funciones: {
+          tituloPrincipal:"SECURE DOMAIN INTELLIGENCE FEATURES",
+          cliente: {
+            titulo: "System Compromise",
+            texto1: "Distribution of malware or ransomware through spoofed websites.",
+            texto2: "Unauthorized access to internal systems by attackers.",
+            texto3: "Risk of operational disruption and loss of critical information."
+          },
+          amenazas: {
+            titulo: "Financial Losses",
+            texto1: "Fraudulent sale of counterfeit products or services by attackers.",
+            texto2: "Loss of revenue due to distrust from legitimate customers.",
+            texto3: "Reduced productivity from incidents caused by domain fraud."
+          },
+          riesgos: {
+            titulo: "Reputation Damage",
+            texto1: "Loss of credibility with customers, partners, and suppliers.",
+            texto2: "Negative association of the brand with fraudulent activities.",
+            texto3: "Difficulty regaining public trust after an incident."
+          },
+          marca: {
+            titulo: "Data Theft",
+            texto1: "Exposure of confidential information such as ID, addresses, or phone numbers.",
+            texto2: "Fraud risk from stolen banking credentials and credit cards.",
+            texto3: "Unauthorized access to personal or business accounts."
+          }
+        },
+        gestion: {
+          titulo: "MANAGEMENT",
+          texto: "DMARC ensures your company is protected against these threats and strengthens defense against potentially irreparable business damage."
+        },
+        infoDeteccionRespuesta: {
+          texto1: "Comprehensive protection against identity spoofing and fraudulent emails.",
+          texto2: "Real-time monitoring and alerts to detect and mitigate threats.",
+          texto3: "Simple management of SPF, DKIM, and DMARC records from a single platform.",
+          texto4: "Improves your domain’s reputation by ensuring legitimate email delivery.",
+          texto5: "Increases customer trust by guaranteeing your emails are authentic."
         }
       }
-
     },
   },
 };
