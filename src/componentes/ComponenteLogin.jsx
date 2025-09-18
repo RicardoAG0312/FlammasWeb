@@ -39,7 +39,7 @@ function ComponenteLogin() {
                 type="text"
                 id="fname"
                 name="nombre"
-                placeholder="ingresa tu nombre"
+                placeholder={t("login.form.placeholderNombres")}
                 required
               />
 
@@ -48,7 +48,7 @@ function ComponenteLogin() {
                 type="text"
                 id="lname"
                 name="apellido"
-                placeholder="ingresa tu apellido"
+                placeholder={t("login.form.placeholderApellidos")}
                 required
               />
 
@@ -57,7 +57,7 @@ function ComponenteLogin() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="ingresa tu email"
+                placeholder={t("login.form.placeholderEmail")}
                 required
               />
 
@@ -66,7 +66,7 @@ function ComponenteLogin() {
                 type="number"
                 id="phone"
                 name="celular"
-                placeholder="ingresa tu telefono"
+                placeholder={t("login.form.placeholderTelefono")}
                 required
               />
 
@@ -75,7 +75,7 @@ function ComponenteLogin() {
                 type="text"
                 id="company"
                 name="empresa"
-                placeholder="ingresa tu empresa"
+                placeholder={t("login.form.placeholderEmpresa")}
                 required
               />
 
